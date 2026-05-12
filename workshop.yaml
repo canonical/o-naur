@@ -1,0 +1,9 @@
+# workshop.yaml
+name: opencode
+base: ubuntu@24.04
+sdks:
+  - name: opencode
+    channel: latest/stable
+
+actions:
+  opencode: opencode "$@"
