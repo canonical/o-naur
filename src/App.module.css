@@ -38,3 +38,8 @@
   flex-direction: column;
   gap: 20px;
 }
+
+.status {
+  color: var(--text-secondary);
+  font-size: 13px;
+}

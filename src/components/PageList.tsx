@@ -10,8 +10,7 @@ export default function PageList({ pages }: Props) {
   return (
     <div className={styles.list}>
       <div className={styles.header}>
-        <span className={styles.colPath}>Page</span>
-        <span className={styles.colOwner}>Owner</span>
+        <span>Page</span>
         <span className={styles.colIssues}>Issues</span>
       </div>
       {pages.map((page) => (

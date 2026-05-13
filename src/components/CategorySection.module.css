@@ -37,36 +37,11 @@
 .issue {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
+  gap: 12px;
   padding: 8px 10px;
   border-radius: calc(var(--radius) - 2px);
   background: var(--surface);
   border: 1px solid var(--border);
-}
-
-.badge {
-  font-size: 10px;
-  font-weight: 600;
-  padding: 2px 6px;
-  border-radius: 3px;
-  white-space: nowrap;
-  flex-shrink: 0;
-  margin-top: 1px;
-}
-
-.critical {
-  background: var(--critical-bg);
-  color: var(--critical);
-}
-
-.needs-work {
-  background: var(--needs-work-bg);
-  color: var(--needs-work);
-}
-
-.minor {
-  background: var(--minor-bg);
-  color: var(--minor);
 }
 
 .body {
@@ -74,6 +49,7 @@
   flex-direction: column;
   gap: 2px;
   min-width: 0;
+  flex: 1;
 }
 
 .description {
@@ -95,4 +71,29 @@
   padding: 1px 5px;
   border-radius: 3px;
   display: inline-block;
+}
+
+.badge {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 3px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.critical {
+  background: var(--critical-bg);
+  color: var(--critical);
+}
+
+.needs-work {
+  background: var(--needs-work-bg);
+  color: var(--needs-work);
+}
+
+.minor {
+  background: var(--minor-bg);
+  color: var(--minor);
 }

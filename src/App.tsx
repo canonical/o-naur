@@ -1,20 +1,14 @@
 import { useState } from 'react';
-import type { SiteData, SiteId } from './types';
-import ubuntuData from './data/ubuntu-com.json';
-import canonicalData from './data/canonical-com.json';
+import type { SiteId } from './types';
+import { useSiteData } from './hooks/useSiteData';
 import SiteToggle from './components/SiteToggle';
 import SummaryStats from './components/SummaryStats';
 import PageList from './components/PageList';
 import styles from './App.module.css';
 
-const sites: Record<SiteId, SiteData> = {
-  'ubuntu.com': ubuntuData as SiteData,
-  'canonical.com': canonicalData as SiteData,
-};
-
 export default function App() {
   const [activeSite, setActiveSite] = useState<SiteId>('ubuntu.com');
-  const siteData = sites[activeSite];
+  const { data, loading, error } = useSiteData(activeSite);
 
   return (
     <div className={styles.app}>
@@ -25,8 +19,14 @@ export default function App() {
         </div>
       </header>
       <main className={styles.main}>
-        <SummaryStats pages={siteData.pages} />
-        <PageList pages={siteData.pages} />
+        {loading && <p className={styles.status}>Loading…</p>}
+        {error && <p className={styles.status}>{error}</p>}
+        {data && (
+          <>
+            <SummaryStats pages={data.pages} />
+            <PageList pages={data.pages} />
+          </>
+        )}
       </main>
     </div>
   );

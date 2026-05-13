@@ -15,9 +15,9 @@ export interface Category {
 
 export interface PageAudit {
   path: string;
-  owner: string;
-  ownerInitials: string;
+  url: string;
   date: string;
+  copyDocUrl?: string;
   categories: Category[];
 }
 

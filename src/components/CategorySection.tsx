@@ -23,13 +23,13 @@ export default function CategorySection({ category }: Props) {
       <ul className={styles.issues}>
         {category.issues.map((issue, i) => (
           <li key={i} className={styles.issue}>
-            <span className={`${styles.badge} ${styles[issue.severity]}`}>
-              {SEVERITY_LABEL[issue.severity]}
-            </span>
             <span className={styles.body}>
               <span className={styles.description}>{issue.description}</span>
               <span className={styles.location}>{issue.location}</span>
               {issue.line && <code className={styles.line}>{issue.line}</code>}
+            </span>
+            <span className={`${styles.badge} ${styles[issue.severity]}`}>
+              {SEVERITY_LABEL[issue.severity]}
             </span>
           </li>
         ))}

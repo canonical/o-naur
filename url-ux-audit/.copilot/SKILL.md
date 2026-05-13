@@ -90,9 +90,48 @@ Load `references/report-template.md` and use it as the structure for the report.
 ## Step 4 — Deliver and save the report
 
 1. Output the report inline in chat as markdown.
-2. **Automatically save** the report to `reports/` using the filename format `[page-slug]-[YYYY-MM-DD].md`. Derive the page slug from the URL path (lowercase, hyphens, no spaces) — e.g. `reports/checkout-2026-04-20.md`. Do not ask the user for confirmation before saving.
-3. Tell the user the report has been saved and the filename.
-4. Offer to dive deeper into any specific section or issue.
+
+2. **Save the markdown report** to the repo root `reports/` directory using the filename format `[site-slug]-[page-slug]-[YYYY-MM-DD].md`. Do not ask for confirmation before saving.
+
+   Derive the slugs from the URL:
+   - **site-slug** — domain with dots replaced by hyphens: `ubuntu.com` → `ubuntu-com`, `canonical.com` → `canonical-com`
+   - **page-slug** — URL path, lowercase, hyphens, no leading slash: `/` → `home`, `/ceph` → `ceph`, `/ceph/support` → `ceph-support`
+
+   Examples: `reports/ubuntu-com-home-2026-05-13.md`, `reports/canonical-com-ceph-2026-04-29.md`
+
+3. **Update the dashboard data** at `public/data/[site-slug].json`. This file feeds the live dashboard — keep it current every audit run.
+
+   - Read the existing file if it exists (it contains all pages for that site)
+   - Find the entry whose `path` matches the audited URL path, or insert a new entry if it does not exist
+   - Replace that entry with the structured findings from this audit, following this schema (defined in `src/types.ts`):
+
+   ```json
+   {
+     "path": "/ceph",
+     "owner": "",
+     "ownerInitials": "",
+     "date": "YYYY-MM-DD",
+     "categories": [
+       {
+         "name": "Structure",
+         "issues": [
+           {
+             "description": "...",
+             "location": "...",
+             "severity": "critical"
+           }
+         ]
+       }
+     ]
+   }
+   ```
+
+   Severity values: `"critical"` (🔴), `"needs-work"` (🟡), `"minor"` (🔵). Only include categories that have issues — omit empty ones. Leave `owner` and `ownerInitials` blank if not known.
+
+   - Write the updated array back to `public/data/[site-slug].json` (the full file, not just the changed page)
+
+4. Tell the user both files have been saved and the dashboard will reflect the new data on next refresh.
+5. Offer to dive deeper into any specific section or issue.
 
 ---
 
@@ -111,4 +150,5 @@ Load `references/report-template.md` and use it as the structure for the report.
 
 - `references/default-checklist.md` — Full default UX content checklist (adapted for live pages)
 - `references/report-template.md` — Report structure template
-- `reports/` — Saved audit reports, named `[page-slug]-[YYYY-MM-DD].md`
+- `reports/` (repo root) — Saved audit reports, named `[site-slug]-[page-slug]-[YYYY-MM-DD].md`
+- `public/data/` (repo root) — Dashboard JSON data, one file per site (`ubuntu-com.json`, `canonical-com.json`)

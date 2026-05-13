@@ -7,7 +7,7 @@
 
 .header {
   display: grid;
-  grid-template-columns: 1fr 160px 80px;
+  grid-template-columns: 1fr 48px;
   padding: 8px 16px;
   background: var(--bg);
   border-bottom: 1px solid var(--border);
@@ -16,10 +16,6 @@
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--text-secondary);
-}
-
-.colOwner {
-  text-align: left;
 }
 
 .colIssues {
