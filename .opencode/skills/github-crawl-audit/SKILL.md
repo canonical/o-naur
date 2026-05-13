@@ -94,73 +94,79 @@ Look for these file patterns:
    - Exclude: `templates/engage/_article-card.html`
    - Exclude: `templates/macros/_macro-example.jinja`
    
-2. **Files with `noindex` meta tag** — Pages marked as not indexable
-   - Check each HTML file for `<meta name="robots" content="noindex">` or similar
-   - Exclude: Any file containing `noindex` in the robots meta tag content
-   - Example: `<meta name="robots" content="noindex, nofollow">`
-
-3. **Non-page files** — Skip configuration and data files
-   - Exclude: `form-data.json`
-   - Exclude: `list_endpoints.py`
-   - Exclude: `ubuntu-ia.csv`, `ubuntu-ia.txt`
-   - Exclude: `sitemap.xml` files
-
-### File Discovery Process
-
-1. Recursively list all files in templates directory
-2. Filter for `*.html` files only
-3. Exclude files starting with `_`
-4. For each remaining file, fetch raw HTML content and check for `noindex` meta tag
-5. Exclude files with `noindex` in robots meta tag
-6. Build URL mapping for remaining files
-
-### Exclusion Rules
-
-**Exclude files that match any of the following criteria:**
-
-1. **Underscore-prefixed files** — Files starting with `_` are partials/includes
-   - Exclude: `templates/shared/_header.html`
-   - Exclude: `templates/engage/_article-card.html`
-   - Exclude: `templates/macros/_macro-example.jinja`
+2. **Base files** — Files starting with `base_` are base templates/includes
+   - Exclude: `templates/desktop/base_desktop.html`
+   - Exclude: `templates/engage/base.html`
+   - Exclude: `templates/shared/base_shared.html`
    
-2. **Files with `noindex` meta tag** — Pages marked as not indexable
+3. **Directories starting with underscore** — Skip entire directories prefixed with `_`
+   - Exclude: `templates/_image-testing/*`
+   - Exclude: `templates/_*/*` (any directory starting with `_`)
+   
+4. **Files in shared/partials/macros directories** — Reusable components and partials
+   - Exclude: `templates/shared/*` (all files in shared directory)
+   - Exclude: `templates/partials/*` (all files in partials directory)
+   - Exclude: `templates/macros/*` (all macro files)
+   
+5. **Files with `noindex` meta tag** — Pages marked as not indexable
    - Check each HTML file for `<meta name="robots" content="noindex">` or similar
    - Exclude: Any file containing `noindex` in the robots meta tag content
    - Example: `<meta name="robots" content="noindex, nofollow">`
 
-3. **Non-page files** — Skip configuration and data files
+6. **Non-page files** — Skip configuration and data files
    - Exclude: `form-data.json`
    - Exclude: `list_endpoints.py`
    - Exclude: `ubuntu-ia.csv`, `ubuntu-ia.txt`
    - Exclude: `sitemap.xml` files
-
-### File Discovery Process
-
-1. Recursively list all files in templates directory
-2. Filter for `*.html` files only
-3. Exclude files starting with `_`
-4. For each remaining file, fetch raw HTML content and check for `noindex` meta tag
-5. Exclude files with `noindex` in robots meta tag
-6. Build URL mapping for remaining files
 
 ---
 
 ## Step 3 — Generate audit URLs
 
-For each template file discovered:
+For each template file discovered, convert the file path to a page URL using these rules:
 
-1. **Index pages** — If file is `index.html` in a folder, the URL is the folder path
+### URL Building Rules
+
+There are two scenarios for building page URLs:
+
+1. **Direct HTML file** — If file path is `templates/a/b.html`, the URL is `/a/b`
    - `templates/desktop/index.html` → `/desktop`
-   
-2. **Regular pages** — Convert file path to URL
-   - `templates/desktop/upcoming-features.html` → `/desktop/upcoming-features`
-   
-3. **Nested pages** — Preserve directory structure
    - `templates/engage/resources/guide.html` → `/engage/resources/guide`
+   
+2. **Index file in folder** — If file path is `templates/a/b/index.html`, the URL is `/a/b`
+   - `templates/desktop/index.html` → `/desktop`
+   - `templates/engage/resources/index.html` → `/engage/resources`
 
-4. **Remove file extensions** — Strip `.html`, `.md` from paths
+### URL Conversion Process
 
-5. **Build full URLs** — Combine with base URL from environment
+1. **Remove `templates/` prefix** from the file path
+2. **Strip file extension** (`.html`)
+3. **Handle index files**:
+   - If path ends with `/index.html`, remove `/index.html`
+   - If path ends with `.html`, keep the filename as the path segment
+4. **Build URL**:
+   - Prepend `/` to the remaining path
+   - Example: `desktop/index.html` → `desktop` → `/desktop`
+   - Example: `engage/resources/guide.html` → `engage/resources/guide` → `/engage/resources/guide`
+
+### Examples
+
+| File Path | URL Path |
+|---|---|
+| `templates/index.html` | `/` |
+| `templates/desktop/index.html` | `/desktop` |
+| `templates/desktop/upcoming-features.html` | `/desktop/upcoming-features` |
+| `templates/engage/resources/guide.html` | `/engage/resources/guide` |
+| `templates/engage/resources/index.html` | `/engage/resources` |
+| `templates/kubernetes/index.html` | `/kubernetes` |
+| `templates/kubernetes/managed.html` | `/kubernetes/managed` |
+
+### Final URL
+
+Combine the URL path with the base URL:
+- Base: `https://ubuntu.com`
+- Path: `/desktop`
+- Final: `https://ubuntu.com/desktop`
 
 ---
 
