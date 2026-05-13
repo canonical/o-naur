@@ -4,8 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev": "node scripts/build-data.mjs && vite",
+    "build": "node scripts/build-data.mjs && tsc && vite build",
+    "build-data": "node scripts/build-data.mjs",
     "preview": "vite preview"
   },
   "dependencies": {

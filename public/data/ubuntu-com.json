@@ -2,22 +2,29 @@
   "site": "ubuntu.com",
   "pages": [
     {
-      "path": "/",
-      "url": "https://ubuntu.com",
+      "path": "/16-04",
+      "url": "https://ubuntu.com/16-04",
+      "date": "2026-05-13",
+      "categories": []
+    },
+    {
+      "path": "/404",
+      "url": "https://ubuntu.com/404",
+      "date": "2026-05-13",
+      "categories": []
+    },
+    {
+      "path": "/500",
+      "url": "https://ubuntu.com/500",
       "date": "2026-05-13",
       "categories": [
         {
-          "name": "Structure",
+          "name": "Structure & Hierarchy",
           "issues": [
             {
-              "description": "\"Loading...\" appears as content placeholder instead of real content",
-              "location": "Main section — Latest news",
-              "severity": "needs-work"
-            },
-            {
-              "description": "Multiple \"Contact us ›\" CTAs with identical text but different destinations",
-              "location": "Footer, Multiple sections",
-              "severity": "needs-work"
+              "description": "Page title — Could be more descriptive (e.g., \"Server Error | Ubuntu\")",
+              "location": "",
+              "severity": "minor"
             }
           ]
         },
@@ -25,23 +32,80 @@
           "name": "CTAs",
           "issues": [
             {
-              "description": "\"Submit\" button has no context — does not describe what the user is submitting or what happens next",
-              "location": "Contact form",
+              "description": "Recovery CTAs — Should provide clear next steps for users who encounter server error",
+              "location": "",
+              "severity": "needs-work"
+            }
+          ]
+        },
+        {
+          "name": "Links",
+          "issues": [
+            {
+              "description": "Return paths — Should have prominent link back to homepage",
+              "location": "",
+              "severity": "needs-work"
+            }
+          ]
+        },
+        {
+          "name": "Error & Feedback States",
+          "issues": [
+            {
+              "description": "Error communication — 500 error pages need clear explanation that this is a temporary server issue",
+              "location": "",
               "severity": "critical"
             },
             {
-              "description": "Generic \"Learn more\" CTA repeated across multiple sections without differentiation",
-              "location": "Public cloud optimization, Multi-cloud Kubernetes, Carrier-grade private cloud, Ultra secure things, Workstations and desktops, Data center automation, Smart robots, Multi-cloud applications",
+              "description": "User guidance — Missing reassurance that this is not user error and suggestions for recovery",
+              "location": "",
+              "severity": "critical"
+            }
+          ]
+        },
+        {
+          "name": "Accessibility",
+          "issues": [
+            {
+              "description": "Error status — Error status should be communicated to screen readers (ARIA live region)",
+              "location": "",
+              "severity": "needs-work"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/about",
+      "url": "https://ubuntu.com/about",
+      "date": "2026-05-13",
+      "categories": [
+        {
+          "name": "Structure & Hierarchy",
+          "issues": [
+            {
+              "description": "Content density — Information-heavy page could benefit from better visual hierarchy",
+              "location": "",
               "severity": "needs-work"
             },
             {
-              "description": "\"Let's talk open source\" is vague and sets no expectation of what will happen",
-              "location": "Enterprise savings section",
+              "description": "Section spacing — Some sections could use more whitespace for readability",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "CTAs",
+          "issues": [
+            {
+              "description": "Primary action — Clear CTA for new visitors could be more prominent",
+              "location": "",
               "severity": "needs-work"
             },
             {
-              "description": "\"Click here\" style phrasing is not descriptive in link context",
-              "location": "Japanese/Chinese site prompts",
+              "description": "CTA placement — Secondary CTAs could be better positioned",
+              "location": "",
               "severity": "minor"
             }
           ]
@@ -50,54 +114,14 @@
           "name": "Links",
           "issues": [
             {
-              "description": "External links lack any indication that they open in a new tab or go to an external site",
-              "location": "Kubernetes section (AKS, EKS, GKE links)",
+              "description": "External links — Some links to Canonical site should have external indicators",
+              "location": "",
               "severity": "needs-work"
             },
             {
-              "description": "\"Loading...\" text appears to be a link placeholder — not real link text",
-              "location": "Latest news section",
-              "severity": "needs-work"
-            },
-            {
-              "description": "\"›\" arrow used inconsistently as a link indicator across the page",
-              "location": "Throughout page",
+              "description": "Link variety — Mix of button and link CTAs could be standardized",
+              "location": "",
               "severity": "minor"
-            },
-            {
-              "description": "Some links use full sentences as link text, making them harder to scan",
-              "location": "Blog references",
-              "severity": "minor"
-            }
-          ]
-        },
-        {
-          "name": "Forms",
-          "issues": [
-            {
-              "description": "Form inputs lack visible labels — only placeholder text is visible, which disappears on focus",
-              "location": "Contact form (First name, Last name, Email, Company, Mobile, Website, Name, Tell us about your project)",
-              "severity": "critical"
-            },
-            {
-              "description": "Required fields not clearly marked — users cannot tell which fields are mandatory before submitting",
-              "location": "Contact form",
-              "severity": "needs-work"
-            },
-            {
-              "description": "Dropdown uses generic \"Select...\" label with no hint of what to select",
-              "location": "Country dropdown",
-              "severity": "minor"
-            }
-          ]
-        },
-        {
-          "name": "Error states",
-          "issues": [
-            {
-              "description": "\"Loading...\" state has no descriptive text to indicate what is being loaded or how long it will take",
-              "location": "Latest news section",
-              "severity": "needs-work"
             }
           ]
         },
@@ -105,18 +129,110 @@
           "name": "Accessibility",
           "issues": [
             {
-              "description": "Social media icons lack visible text labels — icon-only links with no accessible name for screen readers",
-              "location": "Footer social links",
+              "description": "Image accessibility — Ensure all images have descriptive alt text",
+              "location": "",
               "severity": "needs-work"
             },
             {
-              "description": "Search icon has no visible label or accessible name",
-              "location": "Header search",
+              "description": "Color contrast — Verify all text meets WCAG AA standards",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/blog",
+      "url": "https://ubuntu.com/blog",
+      "date": "2026-05-13",
+      "categories": [
+        {
+          "name": "Structure & Hierarchy",
+          "issues": [
+            {
+              "description": "Content organization — Blog feed could benefit from better filtering visibility",
+              "location": "",
               "severity": "needs-work"
             },
             {
-              "description": "Some image alt text could be more descriptive for assistive technology users",
-              "location": "Product/feature images",
+              "description": "Post titles — H2/H3 hierarchy for blog posts is generally clear",
+              "location": "",
+              "severity": "minor"
+            },
+            {
+              "description": "Section spacing — Good use of whitespace between posts",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "CTAs",
+          "issues": [
+            {
+              "description": "Newsletter signup — CTA could be more prominent",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Read more links — Could be standardized as buttons for consistency",
+              "location": "",
+              "severity": "minor"
+            },
+            {
+              "description": "CTA placement — Newsletter CTA could appear in more locations",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "Links",
+          "issues": [
+            {
+              "description": "External links — External links should have clear indicators",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Link text — \"Read more\" links could be more descriptive (include post title)",
+              "location": "",
+              "severity": "minor"
+            },
+            {
+              "description": "Category links — Category navigation could be more prominent",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "Forms & Inputs",
+          "issues": [
+            {
+              "description": "Newsletter form — Form inputs should have clear labels and validation",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Email field — Should use proper input type=\"email\"",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "Accessibility",
+          "issues": [
+            {
+              "description": "Image accessibility — Blog post images should have descriptive alt text",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Skip links — Skip-to-content link should be present",
+              "location": "",
               "severity": "minor"
             }
           ]
@@ -125,33 +241,884 @@
           "name": "Navigation",
           "issues": [
             {
-              "description": "Navigation uses anchor links (#products-navigation) which may not update URL or browser history, breaking back-button behaviour",
-              "location": "Top navigation",
-              "severity": "needs-work"
-            }
-          ]
-        },
-        {
-          "name": "Mobile",
-          "issues": [
-            {
-              "description": "Dense feature lists with multiple columns may not translate well to narrow viewports",
-              "location": "Multi-cloud Kubernetes, Data center automation, Smart robots sections",
-              "severity": "needs-work"
-            },
-            {
-              "description": "Long country dropdown list may be challenging to use on mobile",
-              "location": "Contact form",
-              "severity": "needs-work"
-            },
-            {
-              "description": "Multiple logos in rows may cause truncation or scaling issues at small sizes",
-              "location": "Company logo sections throughout",
+              "description": "Blog navigation — Category/tag navigation could be more accessible",
+              "location": "",
               "severity": "needs-work"
             }
           ]
         }
       ]
+    },
+    {
+      "path": "/community",
+      "url": "https://ubuntu.com/community",
+      "date": "2026-05-13",
+      "categories": [
+        {
+          "name": "Structure & Hierarchy",
+          "issues": [
+            {
+              "description": "Content sections — Multiple community sections could benefit from clearer visual separation",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "H2 hierarchy — Community features have clear H2 headers",
+              "location": "",
+              "severity": "minor"
+            },
+            {
+              "description": "Section flow — Logical progression from forums to events to circles",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "CTAs",
+          "issues": [
+            {
+              "description": "Join CTA — Community participation CTA could be more prominent",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "CTA variety — Good mix of join, attend, and learn more CTAs",
+              "location": "",
+              "severity": "minor"
+            },
+            {
+              "description": "CTA placement — CTAs well-positioned throughout page",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "Links",
+          "issues": [
+            {
+              "description": "External links — Links to Discourse, Launchpad, etc. should have indicators",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Forum links — Forum and documentation links are descriptive",
+              "location": "",
+              "severity": "minor"
+            },
+            {
+              "description": "Event links — Event registration links are clear",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "Forms & Inputs",
+          "issues": [
+            {
+              "description": "Newsletter signup — Form inputs should have clear labels",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Email field — Should use proper input type=\"email\"",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "Accessibility",
+          "issues": [
+            {
+              "description": "Community links — External community platform links should have alt text",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Alt text — Community event images should have descriptive alt text",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/contact-us",
+      "url": "https://ubuntu.com/contact-us",
+      "date": "2026-05-13",
+      "categories": [
+        {
+          "name": "Structure & Hierarchy",
+          "issues": [
+            {
+              "description": "Form organization — Multiple form sections could benefit from clearer visual grouping",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Section headers — Form sections have clear headers but could be more descriptive",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "CTAs",
+          "issues": [
+            {
+              "description": "Submit button — Primary CTA could be more prominent and action-oriented",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Button text — \"Submit\" is generic; could be more specific (e.g., \"Send Message\")",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "Forms & Inputs",
+          "issues": [
+            {
+              "description": "Input validation — Client-side validation feedback may not be clear or accessible",
+              "location": "",
+              "severity": "critical"
+            },
+            {
+              "description": "Required fields — Required field indicators should be consistent and accessible",
+              "location": "",
+              "severity": "critical"
+            },
+            {
+              "description": "Field labels — Some inputs may have placeholder-only labels (poor accessibility)",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Error messaging — Form error states need clear, actionable messaging",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Input types — Ensure proper input types for better mobile UX",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "Error & Feedback States",
+          "issues": [
+            {
+              "description": "Error announcements — Form errors should be announced via ARIA live regions for screen readers",
+              "location": "",
+              "severity": "critical"
+            },
+            {
+              "description": "Success states — Success confirmation should be clear and accessible",
+              "location": "",
+              "severity": "critical"
+            },
+            {
+              "description": "Validation timing — Real-time validation should not interrupt user flow",
+              "location": "",
+              "severity": "needs-work"
+            }
+          ]
+        },
+        {
+          "name": "Accessibility",
+          "issues": [
+            {
+              "description": "Label associations — All form inputs must have associated labels (not just placeholders)",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Focus indicators — Form focus states must be clearly visible",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Error descriptions — Error messages should explain how to fix the issue",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/credentials",
+      "url": "https://ubuntu.com/credentials",
+      "date": "2026-05-13",
+      "categories": [
+        {
+          "name": "Structure & Hierarchy",
+          "issues": [
+            {
+              "description": "Multiple sections — Page has many sections (syllabus, schedule, exam, etc.) - could benefit from tabbed or accordion layout",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Section headers — Clear H2 headers for each section",
+              "location": "",
+              "severity": "minor"
+            },
+            {
+              "description": "Navigation — Page navigation could be more prominent",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "CTAs",
+          "issues": [
+            {
+              "description": "Primary CTAs — \"Register now\" and \"Schedule exam\" CTAs could be more prominent",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "CTA placement — Multiple CTAs may cause decision paralysis",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "CTA variety — Good mix of register, schedule, and learn more CTAs",
+              "location": "",
+              "severity": "minor"
+            },
+            {
+              "description": "CTA wording — Clear and action-oriented",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "Links",
+          "issues": [
+            {
+              "description": "External links — Links to certification bodies should have indicators",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Internal linking — Good use of internal links to syllabus and FAQ",
+              "location": "",
+              "severity": "minor"
+            },
+            {
+              "description": "Resource links — Download links are descriptive",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "Forms & Inputs",
+          "issues": [
+            {
+              "description": "Registration form — Form validation and error states need improvement",
+              "location": "",
+              "severity": "critical"
+            },
+            {
+              "description": "Required fields — Required field indicators should be accessible",
+              "location": "",
+              "severity": "critical"
+            },
+            {
+              "description": "Field labels — All inputs must have proper label associations",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Date pickers — Schedule form date pickers should be accessible",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Input types — Should use proper input types for better mobile UX",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "Error & Feedback States",
+          "issues": [
+            {
+              "description": "Error announcements — Form errors should use ARIA live regions",
+              "location": "",
+              "severity": "critical"
+            },
+            {
+              "description": "Success states — Confirmation messages should be clear and accessible",
+              "location": "",
+              "severity": "critical"
+            },
+            {
+              "description": "Validation timing — Real-time validation should not interrupt user flow",
+              "location": "",
+              "severity": "needs-work"
+            }
+          ]
+        },
+        {
+          "name": "Accessibility",
+          "issues": [
+            {
+              "description": "Calendar/schedule — Interactive calendar should be keyboard accessible",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Form labels — All form inputs must have associated labels",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Alt text — Certification badges should have descriptive alt text",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/desktop",
+      "url": "https://ubuntu.com/desktop",
+      "date": "2026-05-13",
+      "categories": [
+        {
+          "name": "Structure & Hierarchy",
+          "issues": [
+            {
+              "description": "Feature sections — Could benefit from clearer visual separation between features",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "H2 hierarchy — Product features have clear H2 headers",
+              "location": "",
+              "severity": "minor"
+            },
+            {
+              "description": "Section flow — Logical progression from overview to features to download",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "CTAs",
+          "issues": [
+            {
+              "description": "Primary CTA — Download button should be most prominent element",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "CTA consistency — Multiple download options could be visually distinguished",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "CTA wording — \"Download Ubuntu\" is clear and action-oriented",
+              "location": "",
+              "severity": "minor"
+            },
+            {
+              "description": "Secondary CTAs — \"Learn more\" and \"Try before you buy\" links well-positioned",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "Links",
+          "issues": [
+            {
+              "description": "External links — Links to documentation should have external indicators",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Internal linking — Good use of internal links to related pages",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "Accessibility",
+          "issues": [
+            {
+              "description": "Download instructions — Should be accessible to screen readers",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Image alt text — Product screenshots should have descriptive alt text",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/kubernetes",
+      "url": "https://ubuntu.com/kubernetes",
+      "date": "2026-05-13",
+      "categories": [
+        {
+          "name": "Structure & Hierarchy",
+          "issues": [
+            {
+              "description": "Technical content — Kubernetes content could benefit from progressive disclosure",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Feature sections — Clear H2 structure for Charmed Kubernetes features",
+              "location": "",
+              "severity": "minor"
+            },
+            {
+              "description": "Information flow — Good progression from overview to features to comparisons",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "CTAs",
+          "issues": [
+            {
+              "description": "Download/install CTA — Could be more prominent",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Contact CTA — Enterprise contact should be more visible",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "CTA variety — Good mix of install, compare, and contact CTAs",
+              "location": "",
+              "severity": "minor"
+            },
+            {
+              "description": "CTA placement — CTAs well-positioned throughout page",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "Links",
+          "issues": [
+            {
+              "description": "Documentation links — External K8s documentation links need indicators",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Comparison links — \"Compare Kubernetes\" link is descriptive",
+              "location": "",
+              "severity": "minor"
+            },
+            {
+              "description": "Resource links — Blog and resource links are well-labeled",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "Accessibility",
+          "issues": [
+            {
+              "description": "Technical diagrams — Architecture diagrams should have alt text and descriptions",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Alt text — Product screenshots should have descriptive alt text",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/pricing",
+      "url": "https://ubuntu.com/pricing",
+      "date": "2026-05-13",
+      "categories": [
+        {
+          "name": "Structure & Hierarchy",
+          "issues": [
+            {
+              "description": "Pricing tables — Could benefit from clearer visual hierarchy between plans",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Feature comparison — Feature comparison could be more scannable",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Section headers — Clear H2 headers for each product category",
+              "location": "",
+              "severity": "minor"
+            },
+            {
+              "description": "Pricing tiers — Logical organization of free vs. paid options",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "CTAs",
+          "issues": [
+            {
+              "description": "Primary CTAs — \"Get started\" and \"Contact sales\" CTAs could be more prominent",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "CTA consistency — Button styles vary across different product sections",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "CTA placement — CTAs appropriately placed next to relevant pricing tiers",
+              "location": "",
+              "severity": "minor"
+            },
+            {
+              "description": "CTA wording — Clear and action-oriented",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "Links",
+          "issues": [
+            {
+              "description": "FAQ links — External FAQ links should have indicators",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Internal linking — Good use of internal links to product pages",
+              "location": "",
+              "severity": "minor"
+            },
+            {
+              "description": "Contact links — \"Contact us\" links are descriptive",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "Forms & Inputs",
+          "issues": [
+            {
+              "description": "Quote request — Form inputs should have clear validation and labels",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Email field — Should use proper input type=\"email\"",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "Accessibility",
+          "issues": [
+            {
+              "description": "Pricing tables — Tables should be properly structured for screen readers",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Feature lists — Checkmarks and feature indicators should have alt text",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Color contrast — Verify all text meets WCAG AA standards",
+              "location": "",
+              "severity": "minor"
+            },
+            {
+              "description": "Focus indicators — Form focus states must be clearly visible",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/security",
+      "url": "https://ubuntu.com/security",
+      "date": "2026-05-13",
+      "categories": [
+        {
+          "name": "Structure & Hierarchy",
+          "issues": [
+            {
+              "description": "Information density — Security page is information-heavy; could benefit from better visual hierarchy",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Section grouping — Related security features could be grouped more clearly",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Heading structure — H2/H3 hierarchy generally clear",
+              "location": "",
+              "severity": "minor"
+            },
+            {
+              "description": "Feature cards — Security features well-organized in card layout",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "CTAs",
+          "issues": [
+            {
+              "description": "Primary action — Ubuntu Pro CTA could be more prominent",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "CTA variety — Good mix of learn more, download, and contact CTAs",
+              "location": "",
+              "severity": "minor"
+            },
+            {
+              "description": "CTA placement — CTAs appropriately placed throughout page",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "Links",
+          "issues": [
+            {
+              "description": "External references — CVE, NIST, and other external security references need indicators",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Documentation links — Links to security documentation should have external indicators",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Internal linking — Good use of internal links to related security pages",
+              "location": "",
+              "severity": "minor"
+            },
+            {
+              "description": "Link text — Security notice links are descriptive",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "Accessibility",
+          "issues": [
+            {
+              "description": "Security badges — Compliance badges and certifications should have alt text explaining what they mean",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Tables — Security timeline tables should be properly structured for screen readers",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Color usage — Color should not be the only indicator of security status",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/server",
+      "url": "https://ubuntu.com/server",
+      "date": "2026-05-13",
+      "categories": [
+        {
+          "name": "Structure & Hierarchy",
+          "issues": [
+            {
+              "description": "Technical content — Could benefit from collapsible sections for advanced users",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Feature organization — Clear H2 structure for server features",
+              "location": "",
+              "severity": "minor"
+            },
+            {
+              "description": "Information flow — Logical progression from overview to features to use cases",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "CTAs",
+          "issues": [
+            {
+              "description": "Download prominence — Server download CTA could be more prominent",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Contact CTA — \"Contact us\" for enterprise should be more visible",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "CTA variety — Good mix of download, learn more, and contact CTAs",
+              "location": "",
+              "severity": "minor"
+            },
+            {
+              "description": "CTA placement — CTAs well-positioned throughout page",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "Links",
+          "issues": [
+            {
+              "description": "Documentation links — External documentation links should have indicators",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Case study links — Good use of descriptive link text for success stories",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        },
+        {
+          "name": "Accessibility",
+          "issues": [
+            {
+              "description": "Technical specs — Server specifications should be accessible",
+              "location": "",
+              "severity": "needs-work"
+            },
+            {
+              "description": "Alt text — Server images should have descriptive alt text",
+              "location": "",
+              "severity": "minor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/ubuntu.com/16-04",
+      "url": "https://ubuntu.com/ubuntu.com/16-04",
+      "date": "2026-05-13",
+      "categories": []
+    },
+    {
+      "path": "/ubuntu.com/16-04/azure",
+      "url": "https://ubuntu.com/ubuntu.com/16-04/azure",
+      "date": "2026-05-13",
+      "categories": []
+    },
+    {
+      "path": "/ubuntu.com/18-04",
+      "url": "https://ubuntu.com/ubuntu.com/18-04",
+      "date": "2026-05-13",
+      "categories": []
+    },
+    {
+      "path": "/ubuntu.com/18-04/aws",
+      "url": "https://ubuntu.com/ubuntu.com/18-04/aws",
+      "date": "2026-05-13",
+      "categories": []
+    },
+    {
+      "path": "/ubuntu.com/18-04/azure",
+      "url": "https://ubuntu.com/ubuntu.com/18-04/azure",
+      "date": "2026-05-13",
+      "categories": []
+    },
+    {
+      "path": "/ubuntu.com/18-04/gcp",
+      "url": "https://ubuntu.com/ubuntu.com/18-04/gcp",
+      "date": "2026-05-13",
+      "categories": []
+    },
+    {
+      "path": "/ubuntu.com/18-04/ibm",
+      "url": "https://ubuntu.com/ubuntu.com/18-04/ibm",
+      "date": "2026-05-13",
+      "categories": []
+    },
+    {
+      "path": "/ubuntu.com/18-04/oci",
+      "url": "https://ubuntu.com/ubuntu.com/18-04/oci",
+      "date": "2026-05-13",
+      "categories": []
+    },
+    {
+      "path": "/ubuntu.com/20-04",
+      "url": "https://ubuntu.com/ubuntu.com/20-04",
+      "date": "2026-05-13",
+      "categories": []
+    },
+    {
+      "path": "/ubuntu.com/20-04/aws",
+      "url": "https://ubuntu.com/ubuntu.com/20-04/aws",
+      "date": "2026-05-13",
+      "categories": []
     }
   ]
 }
