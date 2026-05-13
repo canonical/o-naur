@@ -36,7 +36,11 @@ specific page sections and elements.
 
 ## Step 1 — Fetch and extract content from the URL
 
-Use `WebFetch` to retrieve the page. Extract all visible text content, grouped by page section using HTML landmarks and structure as a guide:
+Use `WebFetch` with `format: "html"` to retrieve the full page HTML. From the raw HTML, extract:
+
+1. **Copydoc URL** — parse the HTML for `<meta name="copydoc" content="...">` and record the `content` attribute value. Include this in the report header.
+
+2. **Visible text content** — strip all HTML tags and extract visible text, grouped by page section using HTML landmarks and structure as a guide:
 
 ```
 Section: [landmark or inferred role — e.g. Header, Nav, Hero, Main, Form, Footer]
@@ -83,7 +87,7 @@ Work through each section of the checklist (default or custom). For each item:
 
 ## Step 3 — Write the audit report
 
-Load `references/report-template.md` and use it as the structure for the report. Fill in every section based on findings from Step 2. Remove sections that have no findings (e.g. if no forms were found, remove Forms & Inputs entirely rather than leaving it blank).
+Load `references/report-template.md` and use it as the structure for the report. Include the **Copydoc URL** extracted in Step 1 near the top of the report (e.g. as `**Copydoc:** [URL]`). Fill in every section based on findings from Step 2. Remove sections that have no findings (e.g. if no forms were found, remove Forms & Inputs entirely rather than leaving it blank).
 
 ---
 

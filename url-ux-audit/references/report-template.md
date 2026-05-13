@@ -2,6 +2,7 @@
 
 **URL:** [page URL]
 **Date:** [today's date]
+**Copydoc:** [URL from `<meta name="copydoc">`, or "none found"]
 **Note:** [omit, or note if JS-rendered content may not have been captured]
 
 ---
@@ -13,6 +14,7 @@
 | UX quality check | X | X | X | X |
 
 **Total issues:** N (X critical, X needs work, X minor)
+**Total passes:** X
 
 ---
 
