@@ -1,196 +1,133 @@
-# UX Content Audit Report
+# UX content audit report — live page
 
-**URL:** https://ubuntu.com  
-**Date:** 2026-05-13  
-**Auditor:** Automated UX Content Audit
+**URL:** https://ubuntu.com
+**Date:** 2026-05-13
+**Copydoc:** https://docs.google.com/document/d/1ySJxQbqVdeH4Tra0zwBm2Tn0s56kFGnEF7d8xDRTxwU/edit
+**Note:** This page heavily relies on JavaScript for navigation dropdowns (Products, Use cases, Support, Community, Download), blog content (latest-news section loads via JS), takeover A/B testing, and the contact form modal. Only content present in initial static HTML was captured. JS-rendered states should be checked manually.
 
 ---
 
 ## Summary
 
-| Category | Issues Found |
-|----------|--------------|
-| 🔴 Critical | 1 |
-| 🟡 Needs work | 8 |
-| 🔵 Minor | 3 |
+| Check | ✅ Pass | 🔴 Critical | 🟡 Needs Work | 🔵 Minor |
+|---|---|---|---|---|
+| Structure & hierarchy | 3 | 0 | 0 | 0 |
+| CTAs | 6 | 0 | 0 | 1 |
+| Links | 5 | 0 | 0 | 1 |
+| Accessibility | 5 | 0 | 2 | 0 |
+| Navigation | 2 | 0 | 0 | 1 |
+| Mobile considerations | 0 | 0 | 1 | 0 |
 
-**Overall Assessment:** The page has solid structure and clear value propositions, but contains several areas for improvement in link clarity, CTA specificity, and form accessibility.
-
----
-
-## 1. Structure & Hierarchy
-
-### ✅ Pass
-- Headers flow logically (H1 → H2 → H3)
-- Section headings are descriptive and meaningful
-- Most sections have clear intro text before lists
-
-### 🟡 Needs work
-
-| Issue | Location | Severity |
-|-------|----------|----------|
-| "Loading..." appears as content placeholder | Main section - Latest news | 🟡 |
-| Multiple "Contact us ›" CTAs with identical text but different destinations | Footer, Multiple sections | 🟡 |
+**Total issues:** 6 (0 critical, 3 needs work, 3 minor)
+**Total passes:** 21
 
 ---
 
-## 2. CTAs
+## UX quality check
 
-### ✅ Pass
-- Most CTAs use action-oriented language (e.g., "Download for free", "Discover Ubuntu's security features")
-- Primary CTAs are distinct from secondary actions
+### Structure & hierarchy
 
-### 🟡 Needs work
-
-| Issue | Location | Severity |
-|-------|----------|----------|
-| Generic "Learn more" CTA used multiple times | Public cloud optimization, Multi-cloud Kubernetes, Carrier-grade private cloud, Ultra secure things, Workstations and desktops, Data center automation, Smart robots, Multi-cloud applications | 🟡 |
-| "Let's talk open source" is vague | Enterprise savings section | 🟡 |
-| "Submit" button without context in contact form | Contact form | 🔴 |
-
-### 🔵 Minor
-
-| Issue | Location | Severity |
-|-------|----------|----------|
-| "Click here" style phrasing in some contexts | Japanese/Chinese site prompts | 🔵 |
+#### ✅ Passes
+- **Heading flow** — H1 → H2 → H3 throughout is logical. No skipped levels. The H1 is present in the takeover section.
+- **Section headings are meaningful** — "Open source security", "Significant enterprise savings", "Public cloud optimization", etc. are descriptive.
+- **Lists have contextual intro** — Each ticked list is preceded by a heading and paragraph intro.
 
 ---
 
-## 3. Links
+### CTAs
 
-### ✅ Pass
-- Most links have descriptive text
-- Link destinations are generally clear from context
+#### 🔵 Minor
+- **Section: Multi-cloud Kubernetes** — The links "AKS.", "EKS.", "GKE." with trailing periods and external domains used as CTA/pitch text. These read as abbreviations rather than clear destinations. Out of context, a user wouldn't know these lead to Azure, AWS, and GKE docs.
+  - *Found:* `AKS.` → `https://azure.microsoft.com/en-us/services/kubernetes-service/`
+  - *Recommendation:* Use expanded labels: "Amazon EKS", "Azure AKS", "Google GKE" — or add a visible qualifier.
 
-### 🟡 Needs work
-
-| Issue | Location | Severity |
-|-------|----------|----------|
-| External links lack indication they open externally | Kubernetes section (AKS, EKS, GKE links) | 🟡 |
-| "›" arrow used inconsistently as link indicator | Throughout page | 🔵 |
-| "Loading..." text appears to be a link placeholder | Latest news section | 🟡 |
-
-### 🔵 Minor
-
-| Issue | Location | Severity |
-|-------|----------|----------|
-| Some links use full sentences as link text | Blog references | 🔵 |
+#### ✅ Passes
+- CTAs use specific verbs: "Get Ubuntu Pro", "Download for free", "Learn more", "Contact us" — all are clear and context-appropriate.
+- No vague "click here" or "submit" patterns.
+- Primary and secondary CTAs are visually distinguishable and not identically labelled.
 
 ---
 
-## 4. Forms & Inputs
+### Links
 
-### 🔴 Critical
+#### 🔵 Minor
+- **Section: Multi-cloud Kubernetes** — Same link label issue as CTAs. "AKS.", "EKS.", "GKE." are cryptic as standalone link text for screen reader users navigating by links list.
+  - *Found:* `AKS.` → `https://azure.microsoft.com/en-us/services/kubernetes-service/`
+  - *Recommendation:* Include the cloud provider name in the link text.
 
-| Issue | Location | Severity |
-|-------|----------|----------|
-| Form inputs lack visible labels — only placeholder text visible | Contact form ("Tell us about your project", "First name:", "Last name:", "Email:", "Company:", "Mobile/cell phone number:", "Website:", "Name:") | 🔴 |
-
-### 🟡 Needs work
-
-| Issue | Location | Severity |
-|-------|----------|----------|
-| Required fields not clearly marked | Contact form | 🟡 |
-| Dropdown labels use generic "Select..." | Country dropdown | 🔵 |
+#### ✅ Passes
+- Most link text is descriptive ("Build your AI models on Ubuntu", "Discover Ubuntu's security features").
+- No entire sentences hyperlinked.
+- No same-text-different-destination issues observed.
 
 ---
 
-## 5. Error & Feedback States
+### Accessibility
 
-### ✅ Pass
-- Success messages are clear when present (e.g., "Your submission was sent successfully!")
-- Error guidance includes link to file bug report
+#### 🟡 Needs Work
+- **Decorative images with empty alt text** — The page contains numerous `<img>` elements with `alt=""`. While intentionally decorative, the page should verify these are all truly decorative and not inadvertently stripping context.
+  - *Found:* 12 images with `alt=""` across hero, feature sections, and product illustrations.
+  - *Recommendation:* Confirm each image is purely decorative. If any convey information (e.g., the "Significant enterprise savings" chart), they need descriptive alt text.
 
-### 🟡 Needs work
+- **Blog section loading state** — The latest news section shows `<i class="p-icon--spinner">Loading...</i>` which is a fallback accessible label. However, if JS fails, this loading spinner persists indefinitely with no fallback content.
+  - *Found:* `<noscript>` fallback only provides a generic link to the blog.
+  - *Recommendation:* Ensure the noscript fallback includes meaningful content or a clear message about the failed load.
 
-| Issue | Location | Severity |
-|-------|----------|----------|
-| "Loading..." state has no descriptive text | Latest news section | 🟡 |
-
----
-
-## 6. Accessibility
-
-### ✅ Pass
-- Most images appear to have alt text (based on extracted content)
-- Logo and brand elements have descriptive alt text
-
-### 🟡 Needs work
-
-| Issue | Location | Severity |
-|-------|----------|----------|
-| Social media icons lack visible text labels | Footer social links | 🟡 |
-| Search icon has no visible label | Header search | 🟡 |
-
-### 🔵 Minor
-
-| Issue | Location | Severity |
-|-------|----------|----------|
-| Some image alt text could be more descriptive | Product/feature images | 🔵 |
+#### ✅ Passes
+- All customer logos have descriptive alt text (AWS, Microsoft Azure, AT&T, Google Cloud, NIST, etc.).
+- Link text is generally descriptive — no "click here" or "read more".
+- No instructions relying on visual position observed.
 
 ---
 
-## 7. Navigation
+### Navigation
 
-### ✅ Pass
-- Navigation labels are consistent (Products, Use cases, Support, Community, Download Ubuntu)
-- Users can identify main sections clearly
+#### 🔵 Minor
+- **Dropdown menus loaded via JS** — Navigation flyouts for Products, Use cases, Support, Community, Download are loaded dynamically. This means the content of these menus was not captured and cannot be audited.
+  - *Found:* Navigation items with `onmouseenter="fetchDropdown(...)"`.
+  - *Recommendation:* Manually inspect each dropdown for label clarity, consistency, and accessibility.
 
-### 🟡 Needs work
-
-| Issue | Location | Severity |
-|-------|----------|----------|
-| Navigation uses anchor links (#products-navigation) which may not update URL/history | Top navigation | 🟡 |
-
----
-
-## 8. Mobile Considerations
-
-### 🟡 Needs work
-
-| Issue | Location | Severity |
-|-------|----------|----------|
-| Dense feature lists with multiple columns may not translate well to mobile | Multi-cloud Kubernetes, Data center automation, Smart robots sections | 🟡 |
-| Long country dropdown list may be challenging on mobile | Contact form | 🟡 |
-| Multiple logos in rows may cause truncation or scaling issues | Company logo sections throughout | 🟡 |
+#### ✅ Passes
+- Top-level navigation labels are clear: Products, Use cases, Support, Community, Download Ubuntu.
+- Footer navigation is comprehensive and logically organized by product/category.
 
 ---
 
-## 9. Manual Checks (Reminders)
+### Mobile considerations
 
-These items require manual verification:
-
-- [ ] **Live page compare** — Verify only intended sections have changed
-- [ ] **Keyboard navigation** — Tab through contact form and navigation to confirm correct order
-- [ ] **Form validation** — Test form submission with invalid data to verify error messages
-- [ ] **Mobile testing** — Review actual rendering on mobile devices for flagged sections
+#### 🟡 Flag for review
+- **Content density** — The page has 10+ full-width sections with dense tick lists (some with 8-10 items each). On mobile, this may create excessive scrolling and cognitive load.
+  - *Recommendation:* Test at 375px viewport. Consider collapsing secondary sections or show key items with a "view all" toggle.
+- **Navigation dropdowns** — The primary navigation uses hover-based dropdowns that may not work well on touch devices. A mobile hamburger menu is present but its content is JS-loaded and could not be audited.
 
 ---
 
-## 10. Language & Localization
+## ✅ What looks good
 
-### ✅ Pass
-- Multilingual prompts are clear (Japanese and Chinese site links)
-- Language-specific content is appropriately directed
-
----
-
-## Recommendations Priority
-
-### High Priority
-1. **Add visible labels to all form inputs** — Current placeholder-only approach fails accessibility standards
-2. **Replace "Submit" with specific action label** — e.g., "Send message" or "Contact us"
-3. **Add external link indicators** — Inform users when links open in new tabs
-
-### Medium Priority
-4. **Replace generic "Learn more" CTAs** — Use more specific language describing what users will discover
-5. **Improve loading state messaging** — Add descriptive text instead of "Loading..."
-6. **Label icon-only elements** — Add accessible labels to search and social icons
-
-### Low Priority
-7. **Standardize link indicators** — Consistent use of arrows or other visual cues
-8. **Review mobile layout** — Test and optimize dense content sections for mobile
+- **Strong H1 usage** — The takeover correctly uses an H1 with a compelling, timely message about Ubuntu 26.04 LTS.
+- **Consistent section structure** — Every major content section follows the same pattern: heading → subheading → descriptive paragraph → tick list → CTA, creating a predictable reading rhythm.
+- **Excellent alt text on logos** — All company/partner logos have meaningful, descriptive alt text identifying each organization.
+- **No placeholder or lorem ipsum text** — All copy appears to be production-ready.
+- **Clear CTAs throughout** — Most CTAs use specific, action-oriented language.
+- **Comprehensive legal/accessibility links in footer** — Privacy notice, tracker settings, bug reporting all present.
+- **Contact form is well-structured** — The hidden contact modal includes visible labels (not placeholder-only), required field indicators, and proper autocomplete attributes.
 
 ---
 
-*Report saved to: reports/ubuntu-com-2026-05-13.md*
+## Recommended priority order
+
+1. **Address 🟡 Needs Work:** Verify decorative images are properly marked with `alt=""` (not just missing alt). Audit JS-loaded navigation dropdown labels. Add noscript resilience for the blog section.
+2. **Polish 🔵 Minor:** Consider expanding "AKS/EKS/GKE" link text for clarity. Test mobile layout at 375px.
+3. **Review manual check items** (see below).
+
+---
+
+## 🔲 Manual checks for reviewer
+
+- [ ] **JS-rendered navigation** — Hover over each nav item (Products, Use cases, Support, Community, Download Ubuntu) and inspect dropdown link labels and accessibility.
+- [ ] **Blog section** — Confirm JS loads correctly and article cards display with proper headings and link text.
+- [ ] **Takeover A/B test** — Verify the variant takeover ("A CTO's guide to real-time Linux") is hidden by default and the default takeover shows. Check both for H1 and CTA quality.
+- [ ] **Contact form modal** — Trigger the contact modal and audit all form fields, validation messages, and error states.
+- [ ] **Keyboard navigation** — Tab through the page to confirm correct focus order, especially through the navigation dropdowns.
+- [ ] **Mobile view** — Resize to 375px and check hero tagline readability, tick list layout, and navigation usability.
+- [ ] **Copydoc comparison** — Cross-reference the Google Doc with the live page to verify copy accuracy and check for any copy not yet published.
