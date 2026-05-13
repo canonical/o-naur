@@ -24,7 +24,7 @@ export default function App() {
         {data && (
           <>
             <SummaryStats pages={data.pages} />
-            <PageList pages={data.pages} />
+            <PageList key={activeSite} pages={data.pages} />
           </>
         )}
       </main>
