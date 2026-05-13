@@ -1,0 +1,52 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-left: 3px solid;
+}
+
+.count {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.label {
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-secondary);
+}
+
+.critical {
+  border-left-color: var(--critical);
+}
+.critical .count {
+  color: var(--critical);
+}
+
+.needs-work {
+  border-left-color: var(--needs-work);
+}
+.needs-work .count {
+  color: var(--needs-work);
+}
+
+.minor {
+  border-left-color: var(--minor);
+}
+.minor .count {
+  color: var(--minor);
+}
