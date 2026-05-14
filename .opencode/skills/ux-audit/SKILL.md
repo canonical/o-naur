@@ -36,11 +36,24 @@ specific page sections and elements.
 
 ## Step 1 — Fetch and extract content from the URL
 
-Use `WebFetch` with `format: "html"` to retrieve the full page HTML. From the raw HTML, extract:
+### 1a — Extract the Copydoc URL (Bash)
 
-1. **Copydoc URL** — parse the HTML for `<meta name="copydoc" content="...">` and record the `content` attribute value. Include this in the report header.
+Use `Bash` to extract the copydoc URL directly from the raw HTML, because:
+- `WebFetch` converts HTML to markdown and strips `<meta>` tags before you see the content
+- ubuntu.com's `<meta name="copydoc">` attribute value is multi-line, so the URL appears on a separate line from the tag itself
 
-2. **Visible text content** — strip all HTML tags and extract visible text, grouped by page section using HTML landmarks and structure as a guide:
+Run:
+```bash
+curl -s "URL" | grep -A5 'name="copydoc"' | grep -o 'https://[^"]*'
+```
+
+Record the result as the Copydoc URL. If the command returns nothing, record `Not found`.
+
+### 1b — Extract visible page content (WebFetch)
+
+Use `WebFetch` to retrieve the page content. From the output, extract:
+
+1. **Visible text content** — extract visible text, grouped by page section using HTML landmarks and structure as a guide:
 
 ```
 Section: [landmark or inferred role — e.g. Header, Nav, Hero, Main, Form, Footer]
