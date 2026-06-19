@@ -328,6 +328,1313 @@
     ]
   },
   {
+    "suggested_url": "https://canonical.com/careers/alliances-and-channels",
+    "suggestions": [
+      {
+        "id": "onaur-c4a2af635a35",
+        "anchor": {
+          "preceding_text": "LATAM Enterprise Account Executive",
+          "following_text": "Spanish speaker"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "LATAM Enterprise Account Executive - Spanish speaker",
+          "text_after_change": "LATAM Enterprise Account Executive \u2013 Spanish speaker"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Featured Roles",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-ffeee5d8d83d",
+        "anchor": {
+          "preceding_text": "Manager of Enterprise ",
+          "following_text": " Sales Team"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "Open Source",
+          "new_text": "open source"
+        },
+        "verification": {
+          "text_before_change": "Manager of Enterprise Open Source Sales Team",
+          "text_after_change": "Manager of Enterprise open source Sales Team"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Featured Roles",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/careers/commercial-operations",
+    "suggestions": [
+      {
+        "id": "onaur-b41573196dc8",
+        "anchor": {
+          "preceding_text": "Software Engineering Manager",
+          "following_text": "Sustaining Engineering"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "Software Engineering Manager - Sustaining Engineering",
+          "text_after_change": "Software Engineering Manager \u2013 Sustaining Engineering"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Featured Roles",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-ce46f1401c56",
+        "anchor": {
+          "preceding_text": " operate with mastery if you understand your domain deeply, ",
+          "following_text": " re-use and iteration, and bring a sharp mind to every probl"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "prioritise",
+          "new_text": "prioritize"
+        },
+        "verification": {
+          "text_before_change": " operate with mastery if you understand your domain deeply, prioritise re-use and iteration, and bring a sharp mind to every probl",
+          "text_after_change": " operate with mastery if you understand your domain deeply, prioritize re-use and iteration, and bring a sharp mind to every probl"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Projects you'll work on",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-fc044ea82460",
+        "anchor": {
+          "preceding_text": "ou find time zones easy and if technical customers are your ",
+          "following_text": "."
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "favourite",
+          "new_text": "favorite"
+        },
+        "verification": {
+          "text_before_change": "ou find time zones easy and if technical customers are your favourite.",
+          "text_after_change": "ou find time zones easy and if technical customers are your favorite."
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Who you are",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/careers/company-culture/diversity",
+    "suggestions": [
+      {
+        "id": "onaur-3f6d2490d154",
+        "anchor": {
+          "preceding_text": "hard to assess the ability and potential of every candidate ",
+          "following_text": " minimising bias associated with personal identity."
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "whilst",
+          "new_text": "while"
+        },
+        "verification": {
+          "text_before_change": "hard to assess the ability and potential of every candidate whilst minimising bias associated with personal identity.",
+          "text_after_change": "hard to assess the ability and potential of every candidate while minimising bias associated with personal identity."
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Our hiring process",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-a6f995ff24b0",
+        "anchor": {
+          "preceding_text": "nvite differing viewpoints to make a truly fair assessment, ",
+          "following_text": " allowing our candidates to feel comfortable during the proc"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "whilst",
+          "new_text": "while"
+        },
+        "verification": {
+          "text_before_change": "nvite differing viewpoints to make a truly fair assessment, whilst allowing our candidates to feel comfortable during the proc",
+          "text_after_change": "nvite differing viewpoints to make a truly fair assessment, while allowing our candidates to feel comfortable during the proc"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Behind the process",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/careers/company-culture/progression",
+    "suggestions": [
+      {
+        "id": "onaur-077906ec23b1",
+        "anchor": {
+          "preceding_text": "s to the program, I've learned to pick up new skills quickly",
+          "following_text": "to me one month at Canonical feels like six months of develo"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "s to the program, I've learned to pick up new skills quickly - to me one month at Canonical feels like six months of develo",
+          "text_after_change": "s to the program, I've learned to pick up new skills quickly \u2013 to me one month at Canonical feels like six months of develo"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Hear from team members on the Journey to Prof I",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/careers/company-culture/remote-work",
+    "suggestions": [
+      {
+        "id": "onaur-233ca5b186fe",
+        "anchor": {
+          "preceding_text": "Explore the world with Canonical",
+          "following_text": "browse careers\u00a0\u203a"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "Explore the world with Canonical - browse careers\u00a0\u203a",
+          "text_after_change": "Explore the world with Canonical \u2013 browse careers\u00a0\u203a"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "We travel",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-477efc20ff1c",
+        "anchor": {
+          "preceding_text": "e relationships and get to know their colleagues in person, ",
+          "following_text": " exploring inspirational locations."
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "whilst",
+          "new_text": "while"
+        },
+        "verification": {
+          "text_before_change": "e relationships and get to know their colleagues in person, whilst exploring inspirational locations.",
+          "text_after_change": "e relationships and get to know their colleagues in person, while exploring inspirational locations."
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "An inside look at our sprints",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/careers/company-culture/sustainability",
+    "suggestions": [
+      {
+        "id": "onaur-83e6997cda12",
+        "anchor": {
+          "preceding_text": "Whether it's travelling to see customers,  running a ",
+          "following_text": ", or just making Ubuntu energy efficient for all our users, "
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "data centre",
+          "new_text": "data center"
+        },
+        "verification": {
+          "text_before_change": "Whether it's travelling to see customers,  running a data centre, or just making Ubuntu energy efficient for all our users, ",
+          "text_after_change": "Whether it's travelling to see customers,  running a data center, or just making Ubuntu energy efficient for all our users, "
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Sustainability",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-d1eb83ba157b",
+        "anchor": {
+          "preceding_text": "Whether it's ",
+          "following_text": " to see customers,  running a data centre, or just making Ub"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "travelling",
+          "new_text": "traveling"
+        },
+        "verification": {
+          "text_before_change": "Whether it's travelling to see customers,  running a data centre, or just making Ub",
+          "text_after_change": "Whether it's traveling to see customers,  running a data centre, or just making Ub"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Sustainability",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-e8f2ee4bb2b4",
+        "anchor": {
+          "preceding_text": "our products from the kernel to Ubuntu Desktop, devices and ",
+          "following_text": ", liaising with our strategic partners."
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "data centres",
+          "new_text": "data center"
+        },
+        "verification": {
+          "text_before_change": "our products from the kernel to Ubuntu Desktop, devices and data centres, liaising with our strategic partners.",
+          "text_after_change": "our products from the kernel to Ubuntu Desktop, devices and data center, liaising with our strategic partners."
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "How we've made a difference",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-4c82969ddfd8",
+        "anchor": {
+          "preceding_text": "in-person sprints. We're compiling practical information to ",
+          "following_text": " rail travel, and we are aiming to integrate rail as a prime"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "facilitate",
+          "new_text": "help"
+        },
+        "verification": {
+          "text_before_change": "in-person sprints. We're compiling practical information to facilitate rail travel, and we are aiming to integrate rail as a prime",
+          "text_after_change": "in-person sprints. We're compiling practical information to help rail travel, and we are aiming to integrate rail as a prime"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Facilitating train travel",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-15a8f93e6ffc",
+        "anchor": {
+          "preceding_text": "We ",
+          "following_text": " sessions to share expertise around exciting topics such as "
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "organise",
+          "new_text": "organize"
+        },
+        "verification": {
+          "text_before_change": "We organise sessions to share expertise around exciting topics such as ",
+          "text_after_change": "We organize sessions to share expertise around exciting topics such as "
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Knowledge sharing",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/careers/engineering",
+    "suggestions": [
+      {
+        "id": "onaur-7459bbf5bbf6",
+        "anchor": {
+          "preceding_text": "Define strategy and ",
+          "following_text": " teams"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "assist",
+          "new_text": "help"
+        },
+        "verification": {
+          "text_before_change": "Define strategy and assist teams",
+          "text_after_change": "Define strategy and help teams"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Position Level",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-80f778e32a8e",
+        "anchor": {
+          "preceding_text": "Embedded Linux Consultant",
+          "following_text": "Japan"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "Embedded Linux Consultant - Japan",
+          "text_after_change": "Embedded Linux Consultant \u2013 Japan"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Featured Roles",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-0d73497a29e0",
+        "anchor": {
+          "preceding_text": "Engineering Manager",
+          "following_text": "Solutions Engineering"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "Engineering Manager - Solutions Engineering",
+          "text_after_change": "Engineering Manager \u2013 Solutions Engineering"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Featured Roles",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-0d73497a29e0",
+        "anchor": {
+          "preceding_text": "Engineering Manager",
+          "following_text": "Ubuntu Core"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "Engineering Manager - Ubuntu Core",
+          "text_after_change": "Engineering Manager \u2013 Ubuntu Core"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Featured Roles",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-ccbbae483c0c",
+        "anchor": {
+          "preceding_text": ", leadership, or management. We don\u2019t prescribe your journey",
+          "following_text": "explore different kinds of career development and choose the"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": ", leadership, or management. We don\u2019t prescribe your journey - explore different kinds of career development and choose the",
+          "text_after_change": ", leadership, or management. We don\u2019t prescribe your journey \u2013 explore different kinds of career development and choose the"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Engineering at Canonical",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/careers/legal",
+    "suggestions": [
+      {
+        "id": "onaur-36fad18087b9",
+        "anchor": {
+          "preceding_text": "Legal Counsel",
+          "following_text": "Regulatory Compliance, Product and Privacy"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "Legal Counsel - Regulatory Compliance, Product and Privacy",
+          "text_after_change": "Legal Counsel \u2013 Regulatory Compliance, Product and Privacy"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Featured Roles",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-110cbed4e6f0",
+        "anchor": {
+          "preceding_text": "y of the largest organisations in a wide range of industries",
+          "following_text": "from telecommunications to retail, financial services and me"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "y of the largest organisations in a wide range of industries - from telecommunications to retail, financial services and me",
+          "text_after_change": "y of the largest organisations in a wide range of industries \u2013 from telecommunications to retail, financial services and me"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Legal at Canonical",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-f44dea0b05de",
+        "anchor": {
+          "preceding_text": "upport complex deals in a way that protects all parties and ",
+          "following_text": " friction."
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "minimises",
+          "new_text": "minimize"
+        },
+        "verification": {
+          "text_before_change": "upport complex deals in a way that protects all parties and minimises friction.",
+          "text_after_change": "upport complex deals in a way that protects all parties and minimize friction."
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Projects you'll work on",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/careers/marketing",
+    "suggestions": [
+      {
+        "id": "onaur-94b28c87b237",
+        "anchor": {
+          "preceding_text": "Technical Product Marketing Manager",
+          "following_text": "Cybersecurity"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "Technical Product Marketing Manager - Cybersecurity",
+          "text_after_change": "Technical Product Marketing Manager \u2013 Cybersecurity"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Featured Roles",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/careers/people",
+    "suggestions": [
+      {
+        "id": "onaur-11fb90856c0d",
+        "anchor": {
+          "preceding_text": "Executive Search Lead",
+          "following_text": "Technology"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "Executive Search Lead - Technology",
+          "text_after_change": "Executive Search Lead \u2013 Technology"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Featured Roles",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-d562ff569ce6",
+        "anchor": {
+          "preceding_text": "Lead HR Generalist",
+          "following_text": "Americas"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "Lead HR Generalist - Americas",
+          "text_after_change": "Lead HR Generalist \u2013 Americas"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Featured Roles",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-4bf833c78c35",
+        "anchor": {
+          "preceding_text": "Regional HR Manager",
+          "following_text": "AMER"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "Regional HR Manager - AMER",
+          "text_after_change": "Regional HR Manager \u2013 AMER"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Featured Roles",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-4bf833c78c35",
+        "anchor": {
+          "preceding_text": "Regional HR Manager",
+          "following_text": "EMEA"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "Regional HR Manager - EMEA",
+          "text_after_change": "Regional HR Manager \u2013 EMEA"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Featured Roles",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-78ebeff4b25f",
+        "anchor": {
+          "preceding_text": "Senior HR Generalist",
+          "following_text": "EMEA"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "Senior HR Generalist - EMEA",
+          "text_after_change": "Senior HR Generalist \u2013 EMEA"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Featured Roles",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-4fa3756c762d",
+        "anchor": {
+          "preceding_text": "Talent Scientist",
+          "following_text": "Graduate Lead"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "Talent Scientist - Graduate Lead",
+          "text_after_change": "Talent Scientist \u2013 Graduate Lead"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Featured Roles",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/careers/product",
+    "suggestions": [
+      {
+        "id": "onaur-7db9815b0358",
+        "anchor": {
+          "preceding_text": "technology. Product Management is both an art and a science ",
+          "following_text": " full of creativity, problem solving, organisation, and lead"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "\u2014",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "technology. Product Management is both an art and a science \u2014 full of creativity, problem solving, organisation, and lead",
+          "text_after_change": "technology. Product Management is both an art and a science  \u2013  full of creativity, problem solving, organisation, and lead"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Product",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-eed4defa876d",
+        "anchor": {
+          "preceding_text": "nonical is a nexus between the various parts of the company ",
+          "following_text": " the CEO, engineering, marketing, sales, field sales, suppor"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "\u2014",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "nonical is a nexus between the various parts of the company \u2014 the CEO, engineering, marketing, sales, field sales, suppor",
+          "text_after_change": "nonical is a nexus between the various parts of the company  \u2013  the CEO, engineering, marketing, sales, field sales, suppor"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Product Management at Canonical",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-033d2c5bf96c",
+        "anchor": {
+          "preceding_text": "he CEO, engineering, marketing, sales, field sales, support ",
+          "following_text": " and the various audiences that use, contribute to, influenc"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "\u2014",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "he CEO, engineering, marketing, sales, field sales, support \u2014 and the various audiences that use, contribute to, influenc",
+          "text_after_change": "he CEO, engineering, marketing, sales, field sales, support  \u2013  and the various audiences that use, contribute to, influenc"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Product Management at Canonical",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-cadf9c01c1ec",
+        "anchor": {
+          "preceding_text": "nd products. We all work together across the full portfolio ",
+          "following_text": " you are expected to understand the big picture of how Canon"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "\u2014",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "nd products. We all work together across the full portfolio \u2014 you are expected to understand the big picture of how Canon",
+          "text_after_change": "nd products. We all work together across the full portfolio  \u2013  you are expected to understand the big picture of how Canon"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Projects you'll work on",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-5b487b62a716",
+        "anchor": {
+          "preceding_text": "asm. You partner with and influence the entire organisation ",
+          "following_text": " and are passionate about the future of technology."
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "\u2014",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "asm. You partner with and influence the entire organisation \u2014 and are passionate about the future of technology.",
+          "text_after_change": "asm. You partner with and influence the entire organisation  \u2013  and are passionate about the future of technology."
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Who you are",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-a1bad10122d6",
+        "anchor": {
+          "preceding_text": "with every part of the organisation to realise that success ",
+          "following_text": " whether it's marketing, sales, engineering, or any other ke"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "\u2014",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "with every part of the organisation to realise that success \u2014 whether it's marketing, sales, engineering, or any other ke",
+          "text_after_change": "with every part of the organisation to realise that success  \u2013  whether it's marketing, sales, engineering, or any other ke"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Who you are",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-201e2dd69e39",
+        "anchor": {
+          "preceding_text": "icators and can speak to and write effectively for everyone ",
+          "following_text": " from marketers to engineers to c-suite executives. You comm"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "\u2014",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "icators and can speak to and write effectively for everyone \u2014 from marketers to engineers to c-suite executives. You comm",
+          "text_after_change": "icators and can speak to and write effectively for everyone  \u2013  from marketers to engineers to c-suite executives. You comm"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Who you are",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/careers/project-management",
+    "suggestions": [
+      {
+        "id": "onaur-9b34204b1016",
+        "anchor": {
+          "preceding_text": "Project Manager",
+          "following_text": "Ubuntu Embedded Systems"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "Project Manager - Ubuntu Embedded Systems",
+          "text_after_change": "Project Manager \u2013 Ubuntu Embedded Systems"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Featured Roles",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/careers/sales",
+    "suggestions": [
+      {
+        "id": "onaur-aa78e8d1218e",
+        "anchor": {
+          "preceding_text": "LATAM Enterprise Account Executive",
+          "following_text": "Spanish speaker"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "LATAM Enterprise Account Executive - Spanish speaker",
+          "text_after_change": "LATAM Enterprise Account Executive \u2013 Spanish speaker"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Featured Roles",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-bb9654e66525",
+        "anchor": {
+          "preceding_text": "Manager of Enterprise ",
+          "following_text": " Sales Team"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "Open Source",
+          "new_text": "open source"
+        },
+        "verification": {
+          "text_before_change": "Manager of Enterprise Open Source Sales Team",
+          "text_after_change": "Manager of Enterprise open source Sales Team"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Featured Roles",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-27aefa2e4e09",
+        "anchor": {
+          "preceding_text": "",
+          "following_text": " Enterprise Sales / Alliances"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "Open Source",
+          "new_text": "open source"
+        },
+        "verification": {
+          "text_before_change": "Open Source Enterprise Sales / Alliances",
+          "text_after_change": "open source Enterprise Sales / Alliances"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Featured Roles",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-27aefa2e4e09",
+        "anchor": {
+          "preceding_text": "",
+          "following_text": " Enterprise Sales Manager - North America"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "Open Source",
+          "new_text": "open source"
+        },
+        "verification": {
+          "text_before_change": "Open Source Enterprise Sales Manager - North America",
+          "text_after_change": "open source Enterprise Sales Manager - North America"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Featured Roles",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-bc316fcf61b4",
+        "anchor": {
+          "preceding_text": "Open Source Enterprise Sales Manager",
+          "following_text": "North America"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "Open Source Enterprise Sales Manager - North America",
+          "text_after_change": "Open Source Enterprise Sales Manager \u2013 North America"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Featured Roles",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-44eb0f14b7ee",
+        "anchor": {
+          "preceding_text": " and goal-oriented, and you know how to invest your time to ",
+          "following_text": " the benefit for customers and the company."
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "maximise",
+          "new_text": "maximize"
+        },
+        "verification": {
+          "text_before_change": " and goal-oriented, and you know how to invest your time to maximise the benefit for customers and the company.",
+          "text_after_change": " and goal-oriented, and you know how to invest your time to maximize the benefit for customers and the company."
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Who you are",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-640b8ae95a2a",
+        "anchor": {
+          "preceding_text": "You are ",
+          "following_text": ", persistent, friendly and hard-working. You are effective i"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "organised",
+          "new_text": "organize"
+        },
+        "verification": {
+          "text_before_change": "You are organised, persistent, friendly and hard-working. You are effective i",
+          "text_after_change": "You are organize, persistent, friendly and hard-working. You are effective i"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Who you are",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-174e025c7f7b",
+        "anchor": {
+          "preceding_text": "liver for your customers. You are professionally competitive",
+          "following_text": "respectful of the competition and determined to improve unti"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "liver for your customers. You are professionally competitive - respectful of the competition and determined to improve unti",
+          "text_after_change": "liver for your customers. You are professionally competitive \u2013 respectful of the competition and determined to improve unti"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Who you are",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/careers/support-engineering",
+    "suggestions": [
+      {
+        "id": "onaur-b1937834d7fc",
+        "anchor": {
+          "preceding_text": "Software Engineering Manager",
+          "following_text": "Sustaining Engineering"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "Software Engineering Manager - Sustaining Engineering",
+          "text_after_change": "Software Engineering Manager \u2013 Sustaining Engineering"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Featured Roles",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/careers/web-and-design",
+    "suggestions": [
+      {
+        "id": "onaur-da35844c3ea8",
+        "anchor": {
+          "preceding_text": "Engineering Manager",
+          "following_text": "Web"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "Engineering Manager - Web",
+          "text_after_change": "Engineering Manager \u2013 Web"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Featured Roles",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-b082bb32e5cc",
+        "anchor": {
+          "preceding_text": "Senior Design Researcher",
+          "following_text": "User Science"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "Senior Design Researcher - User Science",
+          "text_after_change": "Senior Design Researcher \u2013 User Science"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Featured Roles",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-16dc0fe7d8cc",
+        "anchor": {
+          "preceding_text": "Staff Design Engineer",
+          "following_text": "Cloud Networking UX"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "Staff Design Engineer - Cloud Networking UX",
+          "text_after_change": "Staff Design Engineer \u2013 Cloud Networking UX"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Featured Roles",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-9b58e179a974",
+        "anchor": {
+          "preceding_text": "Usability Engineer",
+          "following_text": "User Science"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "Usability Engineer - User Science",
+          "text_after_change": "Usability Engineer \u2013 User Science"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Featured Roles",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-857bc464f51b",
+        "anchor": {
+          "preceding_text": "UX Designer",
+          "following_text": "Design systems"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "UX Designer - Design systems",
+          "text_after_change": "UX Designer \u2013 Design systems"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Featured Roles",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-857bc464f51b",
+        "anchor": {
+          "preceding_text": "UX Designer",
+          "following_text": "Developer experience"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "UX Designer - Developer experience",
+          "text_after_change": "UX Designer \u2013 Developer experience"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Featured Roles",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-857bc464f51b",
+        "anchor": {
+          "preceding_text": "UX Designer",
+          "following_text": "Infrastructure"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": " - ",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "UX Designer - Infrastructure",
+          "text_after_change": "UX Designer \u2013 Infrastructure"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Featured Roles",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-ecf09d4ebcca",
+        "anchor": {
+          "preceding_text": "unity to work on every layer of the stack \u2013 from bare metal ",
+          "following_text": " operations to virtualisation infrastructure and cloud, to t"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "data centre",
+          "new_text": "data center"
+        },
+        "verification": {
+          "text_before_change": "unity to work on every layer of the stack \u2013 from bare metal data centre operations to virtualisation infrastructure and cloud, to t",
+          "text_after_change": "unity to work on every layer of the stack \u2013 from bare metal data center operations to virtualisation infrastructure and cloud, to t"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Projects you'll work on",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-02a4e4b590c8",
+        "anchor": {
+          "preceding_text": "ffective in working collaboratively in a digital space, and ",
+          "following_text": " time spent face-to-face at company sprints and summits. You"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "maximise",
+          "new_text": "maximize"
+        },
+        "verification": {
+          "text_before_change": "ffective in working collaboratively in a digital space, and maximise time spent face-to-face at company sprints and summits. You",
+          "text_after_change": "ffective in working collaboratively in a digital space, and maximize time spent face-to-face at company sprints and summits. You"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Who you are",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
     "suggested_url": "https://canonical.com/case-study",
     "suggestions": [
       {
