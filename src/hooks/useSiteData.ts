@@ -1,12 +1,19 @@
 import { useEffect, useState } from 'react';
-import type { SiteData, SiteId } from '../types';
+import type { Lane, SiteData, SiteId } from '../types';
 
 const SITE_SLUG: Record<SiteId, string> = {
   'ubuntu.com': 'ubuntu-com',
   'canonical.com': 'canonical-com',
 };
 
-export function useSiteData(site: SiteId): {
+// audit  → deterministic audits (build-data.mjs writes {slug}.json)
+// review → advisory copy review (review.py writes {slug}-review.json)
+function dataFile(site: SiteId, lane: Lane): string {
+  const slug = SITE_SLUG[site];
+  return lane === 'review' ? `${slug}-review.json` : `${slug}.json`;
+}
+
+export function useSiteData(site: SiteId, lane: Lane = 'audit'): {
   data: SiteData | null;
   loading: boolean;
   error: string | null;
@@ -20,7 +27,7 @@ export function useSiteData(site: SiteId): {
     setLoading(true);
     setError(null);
 
-    fetch(`/data/${SITE_SLUG[site]}.json`)
+    fetch(`/data/${dataFile(site, lane)}`)
       .then((res) => {
         if (!res.ok) throw new Error(`Failed to load data for ${site}`);
         return res.json() as Promise<SiteData>;
@@ -41,7 +48,7 @@ export function useSiteData(site: SiteId): {
     return () => {
       cancelled = true;
     };
-  }, [site]);
+  }, [site, lane]);
 
   return { data, loading, error };
 }
