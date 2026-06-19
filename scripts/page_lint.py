@@ -659,6 +659,11 @@ def check_numbers(text: str, section: str, line_num: int) -> list[Finding]:
         preceding = text[:start]
         if re.search(r'https?://\S*$', preceding) or re.search(r'\]\([^)]*$', preceding):
             continue
+        # Skip standard/spec identifiers (e.g. ISO 27001, IEC 21434, RFC 1918)
+        # — these are names, not quantities, and must not get thousands separators.
+        if re.search(r'\b(ISO|IEC|RFC|CVE|SOC|ANSI|NIST|FIPS|PCI|DSS|EN|UL|SAE|AS)[\s/-]*$',
+                     preceding, re.IGNORECASE):
+            continue
         if "," not in num and int(num) >= 10000:
             formatted = f"{int(num):,}"
             findings.append(Finding(
