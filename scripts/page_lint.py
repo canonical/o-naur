@@ -582,7 +582,7 @@ def check_claims(text: str, section: str, line_num: int) -> list[Finding]:
                 continue
             findings.append(Finding(
                 rule="superlatives",
-                severity="needs-work",
+                severity="minor",
                 section=section,
                 message=f'Superlative "{m.group()}" — verify it is backed by evidence',
                 found=m.group(),
@@ -675,8 +675,17 @@ def check_duplicate_ctas(all_links: list[tuple[str, str, str]]) -> list[Finding]
     findings = []
     seen: dict[str, list[str]] = {}
 
+    # Generic UI control labels (modal/overlay/menu controls) are expected to
+    # repeat and are not marketing CTAs — don't flag them as duplicates.
+    GENERIC_UI_LABELS = {
+        "close", "menu", "open menu", "close menu", "search", "back", "next",
+        "previous", "toggle navigation", "skip to main content",
+    }
+
     for link_text, url, section in all_links:
         key = link_text.strip().lower()
+        if key in GENERIC_UI_LABELS:
+            continue
         if key not in seen:
             seen[key] = []
         seen[key].append(section)
