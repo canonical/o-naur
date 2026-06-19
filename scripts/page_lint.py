@@ -722,14 +722,19 @@ def lint_content(lines: list[str], metadata: dict[str, str] | None = None) -> li
         if re.match(r'^!\[', line) or re.match(r'^https?://', line.strip()):
             continue
 
-        findings.extend(check_uk_spelling(line, section_name, line_num))
-        findings.extend(check_product_names(line, section_name, line_num))
-        findings.extend(check_banned_words(line, section_name, line_num))
-        findings.extend(check_punctuation(line, section_name, line_num))
+        # Prose checks run on visible text only: collapse markdown links
+        # [text](url) to their text so URL slugs (e.g. /open-source-security)
+        # are not flagged as copy errors. Link/CTA checks still see the URL.
+        prose = re.sub(r'\[([^\]]*)\]\([^)]*\)', r'\1', line)
+
+        findings.extend(check_uk_spelling(prose, section_name, line_num))
+        findings.extend(check_product_names(prose, section_name, line_num))
+        findings.extend(check_banned_words(prose, section_name, line_num))
+        findings.extend(check_punctuation(prose, section_name, line_num))
         findings.extend(check_links_and_ctas(line, section_name, line_num))
-        findings.extend(check_placeholders(line, section_name, line_num))
-        findings.extend(check_claims(line, section_name, line_num))
-        findings.extend(check_numbers(line, section_name, line_num))
+        findings.extend(check_placeholders(prose, section_name, line_num))
+        findings.extend(check_claims(prose, section_name, line_num))
+        findings.extend(check_numbers(prose, section_name, line_num))
 
         # Collect links for cross-line checks
         for link_text, url in extract_links(line):
@@ -742,47 +747,110 @@ def lint_content(lines: list[str], metadata: dict[str, str] | None = None) -> li
     return findings
 
 
+# Elements whose text is never visible page copy and must not be linted.
+_NON_VISIBLE_TAGS = [
+    "script", "style", "head", "noscript", "template", "svg",
+    "code", "pre", "kbd", "samp",
+]
+
+# Class names commonly used to visually hide text (screen-reader-only,
+# off-screen, collapsed mega-menus). Present in the DOM but not seen by users.
+_HIDDEN_CLASS_RE = re.compile(
+    r"\b(u-off-screen|u-hide|is-hidden|sr-only|screen-?reader|"
+    r"visually-?hidden|visuallyhidden)\b",
+    re.IGNORECASE,
+)
+
+
+def _html_to_markdown_bs4(html: str) -> str:
+    """Extract visible page text as markdown using BeautifulSoup.
+
+    Drops scripts, styles, code samples and hidden DOM nodes so the linter
+    only sees copy a user actually reads. This avoids false positives from
+    e.g. collapsed nav menus or screen-reader-only text that a visible-page
+    search would never surface.
+    """
+    from bs4 import BeautifulSoup, NavigableString
+    import html as html_module
+
+    soup = BeautifulSoup(html, "html.parser")
+
+    # Drop tags whose contents are never visible copy.
+    for tag in soup(_NON_VISIBLE_TAGS):
+        tag.decompose()
+
+    # Drop elements hidden from sighted users but still present in the DOM.
+    for tag in soup.find_all(True):
+        if tag.decomposed:
+            continue
+        if tag.has_attr("hidden"):
+            tag.decompose()
+            continue
+        if str(tag.get("aria-hidden", "")).lower() == "true":
+            tag.decompose()
+            continue
+        style = str(tag.get("style", "")).lower().replace(" ", "")
+        if "display:none" in style or "visibility:hidden" in style:
+            tag.decompose()
+            continue
+        classes = " ".join(tag.get("class", []))
+        if classes and _HIDDEN_CLASS_RE.search(classes):
+            tag.decompose()
+            continue
+
+    # Preserve links as markdown so downstream link/CTA checks still work.
+    for a in soup.find_all("a"):
+        if a.decomposed:
+            continue
+        text = a.get_text(" ", strip=True)
+        href = a.get("href", "")
+        a.replace_with(NavigableString(f"[{text}]({href})" if href else text))
+
+    # Preserve heading levels as markdown so heading-structure checks work.
+    for level in range(1, 7):
+        for tag in soup.find_all(f"h{level}"):
+            if tag.decomposed:
+                continue
+            text = tag.get_text(" ", strip=True)
+            tag.replace_with(NavigableString(f"\n{'#' * level} {text}\n"))
+
+    raw = html_module.unescape(soup.get_text("\n"))
+    return "\n".join(line.strip() for line in raw.splitlines() if line.strip())
+
+
+def _html_to_markdown_legacy(html: str) -> str:
+    """Regex-based HTML-to-text fallback when BeautifulSoup is unavailable."""
+    text = re.sub(r'<script[^>]*>.*?</script>', '', html, flags=re.DOTALL | re.IGNORECASE)
+    text = re.sub(r'<style[^>]*>.*?</style>', '', text, flags=re.DOTALL | re.IGNORECASE)
+    text = re.sub(r'<!--.*?-->', '', text, flags=re.DOTALL)
+
+    for i in range(1, 7):
+        text = re.sub(rf'<h{i}[^>]*>(.*?)</h{i}>', rf'{"#" * i} \1', text, flags=re.DOTALL | re.IGNORECASE)
+
+    text = re.sub(r'<a[^>]*href=["\']([^"\']*)["\'][^>]*>(.*?)</a>', r'[\2](\1)', text, flags=re.DOTALL | re.IGNORECASE)
+    text = re.sub(r'<[^>]+>', ' ', text)
+
+    import html as html_module
+    text = html_module.unescape(text)
+
+    return "\n".join(line.strip() for line in text.splitlines() if line.strip())
+
+
 def fetch_page_markdown(url: str) -> str:
-    """Fetch a URL and return markdown content using a simple curl + html-to-text approach."""
+    """Fetch a URL and return its visible text as markdown."""
     try:
-        # Use curl to get HTML, then do a basic HTML-to-text conversion
-        # For a proper implementation, you'd use WebFetch or a library like markdownify
         result = subprocess.run(
             ["curl", "-sL", "--max-time", "15", url],
             capture_output=True, text=True, timeout=20
         )
         html = result.stdout
 
-        # Basic HTML to readable text extraction
-        # Remove script and style blocks
-        text = re.sub(r'<script[^>]*>.*?</script>', '', html, flags=re.DOTALL | re.IGNORECASE)
-        text = re.sub(r'<style[^>]*>.*?</style>', '', text, flags=re.DOTALL | re.IGNORECASE)
-        text = re.sub(r'<!--.*?-->', '', text, flags=re.DOTALL)
-
-        # Convert headings
-        for i in range(1, 7):
-            text = re.sub(rf'<h{i}[^>]*>(.*?)</h{i}>', rf'{"#" * i} \1', text, flags=re.DOTALL | re.IGNORECASE)
-
-        # Convert links
-        text = re.sub(r'<a[^>]*href=["\']([^"\']*)["\'][^>]*>(.*?)</a>', r'[\2](\1)', text, flags=re.DOTALL | re.IGNORECASE)
-
-        # Remove remaining tags
-        text = re.sub(r'<[^>]+>', ' ', text)
-
-        # Decode HTML entities
-        text = text.replace('&amp;', '&').replace('&lt;', '<').replace('&gt;', '>')
-        text = text.replace('&nbsp;', ' ').replace('&quot;', '"').replace('&#39;', "'")
-        text = re.sub(r'&#x[0-9a-fA-F]+;', '', text)
-        text = re.sub(r'&#\d+;', '', text)
-
-        # Clean up whitespace
-        lines = []
-        for line in text.splitlines():
-            stripped = line.strip()
-            if stripped:
-                lines.append(stripped)
-
-        return "\n".join(lines)
+        try:
+            return _html_to_markdown_bs4(html)
+        except ImportError:
+            print("BeautifulSoup not available, using regex fallback "
+                  "(higher false-positive risk)", file=sys.stderr)
+            return _html_to_markdown_legacy(html)
 
     except (subprocess.TimeoutExpired, Exception) as e:
         print(f"Error fetching {url}: {e}", file=sys.stderr)
@@ -851,6 +919,19 @@ def format_findings(findings: list[Finding], source: str) -> str:
     return "\n".join(lines)
 
 
+def url_to_report_path(url: str) -> Path:
+    """Convert a URL to a report file path under reports/."""
+    from urllib.parse import urlparse
+    from datetime import date
+
+    parsed = urlparse(url)
+    domain = parsed.netloc.replace(".", "-")  # ubuntu.com → ubuntu-com
+    path_slug = parsed.path.strip("/").replace("/", "-") or "home"
+    today = date.today().isoformat()
+    filename = f"{domain}-{path_slug}-{today}.md"
+    return Path("reports") / filename
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Lint a live web page for Canonical UX content issues"
@@ -858,6 +939,8 @@ def main():
     parser.add_argument("target", nargs="?", help="URL to lint (or use --file)")
     parser.add_argument("--file", help="Path to pre-fetched markdown file")
     parser.add_argument("--json", action="store_true", help="Output findings as JSON")
+    parser.add_argument("--save", action="store_true",
+                        help="Save report to reports/ and push to GitHub")
     args = parser.parse_args()
 
     if not args.target and not args.file:
@@ -881,9 +964,27 @@ def main():
     findings = lint_content(lines, metadata)
 
     if args.json:
-        print(json.dumps([asdict(f) for f in findings], indent=2))
+        output = json.dumps([asdict(f) for f in findings], indent=2)
     else:
-        print(format_findings(findings, source))
+        output = format_findings(findings, source)
+
+    print(output)
+
+    # Save report and push to GitHub
+    if args.save and args.target:
+        report_path = url_to_report_path(args.target)
+        report_path.parent.mkdir(parents=True, exist_ok=True)
+        report_path.write_text(output + "\n", encoding="utf-8")
+        print(f"\n📄 Report saved: {report_path}", file=sys.stderr)
+
+        # Git add, commit, push
+        subprocess.run(["git", "add", str(report_path)], check=True)
+        subprocess.run(
+            ["git", "commit", "-m", f"report: lint {source}"],
+            check=True
+        )
+        subprocess.run(["git", "push"], check=True)
+        print("✅ Pushed to GitHub", file=sys.stderr)
 
     # Exit with non-zero if critical issues found
     if any(f.severity == "critical" for f in findings):
