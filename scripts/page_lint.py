@@ -311,7 +311,8 @@ PRODUCT_NAME_RULES = [
     (r"\bUbuntu\s+server\b", "Ubuntu Server requires capital S", "Ubuntu Server", "needs-work"),
     (r"(?<!\w)open-source(?!\w)", '"open source" — no hyphen', "open source", "needs-work"),
     (r"(?<!\w)opensource(?!\w)", '"open source" — two words', "open source", "needs-work"),
-    (r"(?<![.A-Z])Open\s+Source(?!\s+(Initiative|Definition|Security))", '"open source" — lowercase mid-sentence', "open source", "needs-work"),
+    # NB: "Open Source" → "open source" is handled separately in
+    # _check_open_source() so it can honour the proper-noun exceptions below.
     # Product names with a single canonical spelling that are commonly mistyped.
     # Conservative set only — context-dependent casing (charm, snap, chisel) is
     # excluded to avoid false positives on ordinary English words.
@@ -319,6 +320,42 @@ PRODUCT_NAME_RULES = [
     (r"\bCharm\s+[Hh]ub\b|\bCharmHub\b", "Charmhub — one word, capital C only", "Charmhub", "needs-work"),
     (r"\bSnap\s+craft\b|\bSnapCraft\b", "Snapcraft — one word, capital S only", "Snapcraft", "needs-work"),
 ]
+
+
+# Proper nouns that legitimately contain a capitalised "Open Source" and must
+# NOT be lowercased. Add new exceptions here — matching is case-sensitive and
+# exact, so only these specific names are spared.
+OPEN_SOURCE_PROPER_NOUNS = [
+    "Open Source Initiative",
+    "Open Source Definition",
+    "Open Source Security",
+    "Android Open Source Project",
+]
+
+
+def _check_open_source(text: str, section: str, line_num: int) -> list[Finding]:
+    """Flag mid-sentence "Open Source" → "open source", but skip any occurrence
+    that sits inside a known proper noun (e.g. Android Open Source Project)."""
+    # Character spans covered by an exception phrase.
+    exempt: list[tuple[int, int]] = []
+    for phrase in OPEN_SOURCE_PROPER_NOUNS:
+        for m in re.finditer(re.escape(phrase), text):
+            exempt.append((m.start(), m.end()))
+
+    findings = []
+    for m in re.finditer(r"(?<![.A-Z])Open\s+Source", text):
+        if any(s <= m.start() and m.end() <= e for s, e in exempt):
+            continue  # part of an allowed proper noun — leave capitalised
+        findings.append(Finding(
+            rule="product-names",
+            severity="needs-work",
+            section=section,
+            message='"open source" — lowercase mid-sentence',
+            found=m.group(),
+            suggestion="open source",
+            line=line_num,
+        ))
+    return findings
 
 
 def check_product_names(text: str, section: str, line_num: int) -> list[Finding]:
@@ -335,6 +372,7 @@ def check_product_names(text: str, section: str, line_num: int) -> list[Finding]
                 suggestion=suggestion,
                 line=line_num,
             ))
+    findings += _check_open_source(text, section, line_num)
     return findings
 
 
