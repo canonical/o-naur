@@ -39,6 +39,11 @@ class Finding:
     found: str = ""
     suggestion: str = ""
     line: int = 0
+    # Anchor context — exact text immediately before/after the match on its
+    # line. Populated after matching (see lint_content) and used to locate the
+    # change unambiguously in source (maps to Bauer's SuggestionAnchor).
+    preceding: str = ""
+    following: str = ""
 
 
 # ---------------------------------------------------------------------------
@@ -850,6 +855,10 @@ def lint_content(lines: list[str], metadata: dict[str, str] | None = None) -> li
     # Parse sections
     sections = parse_sections(lines)
 
+    # Remember the prose text per line so we can attach anchor context to each
+    # finding afterwards (the text the checks actually matched against).
+    prose_by_line: dict[int, str] = {}
+
     # Line-by-line checks
     for section_name, line_num, line in sections:
         if not line.strip():
@@ -862,6 +871,7 @@ def lint_content(lines: list[str], metadata: dict[str, str] | None = None) -> li
         # [text](url) to their text so URL slugs (e.g. /open-source-security)
         # are not flagged as copy errors. Link/CTA checks still see the URL.
         prose = re.sub(r'\[([^\]]*)\]\([^)]*\)', r'\1', line)
+        prose_by_line[line_num] = prose
 
         findings.extend(check_uk_spelling(prose, section_name, line_num))
         findings.extend(check_product_names(prose, section_name, line_num))
@@ -879,6 +889,26 @@ def lint_content(lines: list[str], metadata: dict[str, str] | None = None) -> li
     # Cross-line checks
     findings.extend(check_link_consistency(all_links))
     findings.extend(check_duplicate_ctas(all_links))
+
+    # Attach anchor context (text before/after the match) to each finding, so
+    # the change can be located unambiguously in source. Capped to a window;
+    # repeated matches on a line are disambiguated with a moving cursor.
+    ANCHOR_WINDOW = 60
+    cursor: dict[tuple[int, str], int] = {}
+    for f in findings:
+        if not f.found:
+            continue
+        prose = prose_by_line.get(f.line)
+        if not prose:
+            continue
+        key = (f.line, f.found)
+        start = prose.find(f.found, cursor.get(key, 0))
+        if start == -1:
+            continue
+        end = start + len(f.found)
+        cursor[key] = end
+        f.preceding = prose[max(0, start - ANCHOR_WINDOW):start]
+        f.following = prose[end:end + ANCHOR_WINDOW]
 
     return findings
 
