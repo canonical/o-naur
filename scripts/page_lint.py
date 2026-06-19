@@ -423,7 +423,10 @@ def check_punctuation(text: str, section: str, line_num: int) -> list[Finding]:
     """Check punctuation rules."""
     findings = []
 
-    if "—" in text:
+    # Flag only isolated em dashes used as sentence breaks. A run of two or
+    # more dashes (— – -) is a decorative divider, not prose, so skip any em
+    # dash that sits adjacent to another dash character.
+    for _ in re.finditer(r'(?<![-–—])—(?![-–—])', text):
         findings.append(Finding(
             rule="punctuation",
             severity="minor",
