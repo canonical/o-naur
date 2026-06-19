@@ -24,7 +24,6 @@ import json
 import re
 import subprocess
 import sys
-from dataclasses import asdict
 from datetime import date
 from pathlib import Path
 from urllib.parse import urlparse
