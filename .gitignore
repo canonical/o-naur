@@ -7,3 +7,9 @@ dist/
 # Python
 __pycache__/
 *.pyc
+
+# Generated linter output at the reports/ root (the dashboard only reads
+# reports/{site}/audits/). Commit deliverables explicitly with `git add -f`.
+/reports/*.md
+/reports/*.json
+/reports/*.txt
