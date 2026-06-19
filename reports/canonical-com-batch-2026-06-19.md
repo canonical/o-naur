@@ -1,7 +1,7 @@
 # Batch lint report – canonical.com
 **Date:** 2026-06-19
-**Pages scanned:** 5
-**Must fix:** 21 | **Nice to fix:** 39
+**Pages scanned:** 152
+**Must fix:** 546 | **Nice to fix:** 1150
 
 ---
 
@@ -10,18 +10,6 @@
 Typos, UK spelling, product names, punctuation, missing metadata, placeholders.
 
 - 🟡 `/` | **Metadata** – Page has no meta description
-- 🟡 `/` | **Get full-stack security, support, and compliance** – "open source" — no hyphen
-  - Found: `open-source`
-- 🟡 `/` | **Get full-stack security, support, and compliance** – "open source" — no hyphen
-  - Found: `open-source`
-- 🟡 `/` | **Do more with trusted open source** – "open source" — no hyphen
-  - Found: `open-source`
-- 🟡 `/` | **Do more with trusted open source** – "open source" — no hyphen
-  - Found: `open-source`
-- 🟡 `/` | **Prepare your devices for the CRA** – "open source" — no hyphen
-  - Found: `open-source`
-- 🟡 `/` | **The state of global open source** – "open source" — no hyphen
-  - Found: `open-source`
 - 🔵 `/` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
   - Found: `—`
 - 🟡 `/cloud-marketplace` | **Metadata** – Page has no meta description
@@ -32,13 +20,13 @@ Typos, UK spelling, product names, punctuation, missing metadata, placeholders.
   - Found: `—`
 - 🟡 `/observability/what-is-observability` | **Metadata** – Page has no meta description
 - 🟡 `/observability/managed` | **Metadata** – Page has no meta description
-- 🟡 `/observability/managed` | **Latest updates** – "open source" — lowercase mid-sentence
+- 🟡 `/observability/managed` | **Managed Open Source Observability** – "open source" — lowercase mid-sentence
   - Found: `Open Source`
 - 🟡 `/observability/managed` | **No lock-in** – "open source" — no hyphen
   - Found: `open-source`
-- 🟡 `/observability/managed` | **No lock-in** – Use "Expanded Security Maintenance"
+- 🟡 `/observability/managed` | **Reliable monitoring tools you can count on** – Use "Expanded Security Maintenance"
   - Found: `Extended Security Maintenance`
-- 🟡 `/observability/managed` | **No lock-in** – "open source" — no hyphen
+- 🟡 `/observability/managed` | **Reliable monitoring tools you can count on** – "open source" — no hyphen
   - Found: `open-source`
 - 🔵 `/observability/managed` | **Powerful monitoring, simple and predictable price, cost-efficient** – No exclamation marks in webpage copy
   - Found: `!`
@@ -46,6 +34,922 @@ Typos, UK spelling, product names, punctuation, missing metadata, placeholders.
   - Found: `Data Centre`
 - 🔵 `/observability/managed` | **Contact us about Managed Observability** – Use en dash with spaces ( – ) not em dash (—)
   - Found: `—`
+- 🟡 `/microk8s` | **Metadata** – Page has no meta description
+- 🔵 `/microk8s` | **Submit a question** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/microk8s/tutorials` | **Metadata** – Page has no meta description
+- 🟡 `/microk8s/tutorials` | **[Install a local** – "open source" — no hyphen
+  - Found: `open-source`
+- 🟡 `/microk8s/features` | **Metadata** – Page has no meta description
+- 🔵 `/microk8s/features` | **High availability (HA)** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🟡 `/microk8s/features` | **Strict confinement** – UK spelling "minimise" — use "minimize"
+  - Found: `minimise`
+- 🟡 `/microk8s/features` | **NVIDIA GPU support, ideal for AI/ML and HPC** – UK spelling "optimised" — use "optimize"
+  - Found: `optimised`
+- 🔵 `/microk8s/features` | **Custom launch configurations** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/microk8s/features` | **Better user experience with addons** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/microk8s/features` | **Better user experience with addons** – UK spelling "favourite" — use US spelling "favorite"
+  - Found: `favourite`
+- 🔵 `/microk8s/features` | **Submit a question** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/microk8s/resources` | **Metadata** – Page has no meta description
+- 🟡 `/microk8s/resources` | **[Kubernetes: a secure,** – UK spelling "optimise" — use "optimize"
+  - Found: `optimise`
+- 🔵 `/microk8s/resources` | **[Kubernetes: a secure,** – No exclamation marks in webpage copy
+  - Found: `!`
+- 🟡 `/microk8s/compare` | **Metadata** – Page has no meta description
+- 🔵 `/microk8s/compare` | **Why MicroK8s?** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/microk8s/compare` | **Webinars** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🔵 `/microk8s/compare` | **Submit a question** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/press-center` | **Metadata** – Page has no meta description
+- 🟡 `/mlops` | **Metadata** – Page has no meta description
+- 🔵 `/mlops` | **Charmed MLFlow** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/mlops` | **Talk to our MLOps experts** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/mlops/mlflow` | **Metadata** – Page has no meta description
+- 🔵 `/mlops/mlflow` | **Talk to our MLOps experts** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/mlops/kubeflow` | **Metadata** – Page has no meta description
+- 🔵 `/mlops/kubeflow` | **Talk to our MLOps experts** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/mlops/kubeflow/what-is-kubeflow` | **Metadata** – Page has no meta description
+- 🔵 `/mlops/kubeflow/what-is-kubeflow` | **More...** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/mlops/kubeflow/what-is-kubeflow` | **MLOps at any scale** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/mlops/kubeflow/what-is-kubeflow` | **Who uses Kubeflow?** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/mlops/kubeflow/what-is-kubeflow` | **Who uses Kubeflow?** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/mlops/kubeflow/what-is-kubeflow` | **Talk to our MLOps experts** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/mlops/feast` | **Metadata** – Page has no meta description
+- 🔵 `/mlops/feast` | **Talk to our MLOps experts** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/mlops/mlops-workshop` | **Metadata** – Page has no meta description
+- 🟡 `/mlops/mlops-workshop` | **Learn from experts in the industry** – "open source" — no hyphen
+  - Found: `open-source`
+- 🔵 `/mlops/mlops-workshop` | **Talk to our MLOps experts** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data` | **Metadata** – Page has no meta description
+- 🔵 `/data` | **Get in touch** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/cassandra` | **Metadata** – Page has no meta description
+- 🟡 `/data/cassandra` | **Run Apache Cassandra across public and private clouds** – VMware — lowercase 'w', not 'W'
+  - Found: `VMWare`
+- 🔵 `/data/cassandra` | **Talk to our Cassandra experts** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/kafka` | **Metadata** – Page has no meta description
+- 🟡 `/data/kafka` | **Run Kafka on any public, private, or hybrid cloud** – VMware — lowercase 'w', not 'W'
+  - Found: `VMWare`
+- 🔵 `/data/kafka` | **Talk to our Apache Kafka solution architects** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/kafka/managed` | **Metadata** – Page has no meta description
+- 🟡 `/data/kafka/managed` | **Managed Kafka by Canonical** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🟡 `/data/kafka/managed` | **Secure by design** – UK spelling "Minimise" — use "minimize"
+  - Found: `Minimise`
+- 🟡 `/data/kafka/managed` | **Turnkey service** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🟡 `/data/kafka/managed` | **Managed Kafka on OpenStack** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🔵 `/data/kafka/managed` | **Managed Kafka resources** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🟡 `/data/kafka/managed` | **Managed Kafka resources** – "white paper" — use "whitepaper"
+  - Found: `white paper`
+- 🔵 `/data/kafka/managed` | **Talk to our Apache Kafka solution architects** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/kafka/support` | **Metadata** – Page has no meta description
+- 🟡 `/data/kafka/support` | **Go further** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🟡 `/data/kafka/support` | **Kafka platform deployment service** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🔵 `/data/kafka/support` | **Talk to our Apache Kafka solution architects** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/kafka/what-is-kafka` | **Metadata** – Page has no meta description
+- 🟡 `/data/kafka/what-is-kafka` | **Durable** – UK spelling "minimised" — use "minimize"
+  - Found: `minimised`
+- 🟡 `/data/kafka/what-is-kafka` | **Charmed Kafka** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🟡 `/data/kafka/what-is-kafka` | **Kafka consultancy and support** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🔵 `/data/kafka/what-is-kafka` | **Talk to our Apache Kafka solution architects** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/spark` | **Metadata** – Page has no meta description
+- 🔵 `/data/spark` | **Talk to our Apache Spark solution architects** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/spark/managed` | **Metadata** – Page has no meta description
+- 🟡 `/data/spark/managed` | **Managed Spark by Canonical** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🟡 `/data/spark/managed` | **Turnkey service** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🟡 `/data/spark/managed` | **$9470** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🟡 `/data/spark/managed` | **[Build an online datahub with Spark](https://ubuntu.com/engage/spark_online_data_hub)** – "white paper" — use "whitepaper"
+  - Found: `white paper`
+- 🔵 `/data/spark/managed` | **Talk to our Apache Spark solution architects** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/spark/support` | **Metadata** – Page has no meta description
+- 🟡 `/data/spark/support` | **Go further** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🟡 `/data/spark/support` | **Spark data lake platform deployment service** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🔵 `/data/spark/support` | **Talk to our Apache Spark solution architects** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/spark/what-is-spark` | **Metadata** – Page has no meta description
+- 🔵 `/data/spark/what-is-spark` | **Talk to our Apache Spark solution architects** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/relational-databases` | **Metadata** – Page has no meta description
+- 🟡 `/data/relational-databases` | **A system for managing digital information** – UK spelling "organise" — use "organize"
+  - Found: `organise`
+- 🟡 `/data/relational-databases` | **When you can’t afford to lose data** – UK spelling "favour" — use US spelling "favor"
+  - Found: `favour`
+- 🟡 `/data/relational-databases` | **When the size of your data matters** – UK spelling "optimised" — use "optimize"
+  - Found: `optimised`
+- 🟡 `/data/relational-databases` | **When you have dynamic or changing access patterns** – UK spelling "optimised" — use "optimize"
+  - Found: `optimised`
+- 🟡 `/data/relational-databases` | **When you would like to centralise your data management** – UK spelling "centralise" — use "centralize"
+  - Found: `centralise`
+- 🟡 `/data/relational-databases` | **When you would like to centralise your data management** – UK spelling "specialised" — use "specialize"
+  - Found: `specialised`
+- 🟡 `/data/relational-databases` | **When you would like to centralise your data management** – UK spelling "specialised" — use "specialize"
+  - Found: `specialised`
+- 🟡 `/data/relational-databases` | **1969** – UK spelling "specialised" — use "specialize"
+  - Found: `specialised`
+- 🟡 `/data/relational-databases` | **[SQL** – UK spelling "optimised" — use "optimize"
+  - Found: `optimised`
+- 🟡 `/data/relational-databases` | **From our blog** – "open source" — no hyphen
+  - Found: `open-source`
+- 🔵 `/data/relational-databases` | **Talk to our relational databases' experts** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/warehouse` | **Metadata** – Page has no meta description
+- 🟡 `/data/warehouse` | **OLAP vs OLTP** – UK spelling "optimised" — use "optimize"
+  - Found: `optimised`
+- 🔵 `/data/warehouse` | **Contact the Canonical team** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/spark-on-kubernetes` | **Metadata** – Page has no meta description
+- 🔵 `/data/spark-on-kubernetes` | **Talk to our Apache Spark solution architects** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/etcd` | **Metadata** – Page has no meta description
+- 🔵 `/data/etcd` | **Talk to our etcd experts** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/opensearch` | **Metadata** – Page has no meta description
+- 🟡 `/data/opensearch` | **Run OpenSearch on any public, private or hybrid cloud** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🟡 `/data/opensearch` | **Run OpenSearch on any public, private or hybrid cloud** – MicroCloud requires capital C
+  - Found: `Microcloud`
+- 🟡 `/data/opensearch` | **Run OpenSearch on any public, private or hybrid cloud** – VMware — lowercase 'w', not 'W'
+  - Found: `VMWare`
+- 🟡 `/data/opensearch` | **From $3099** – UK spelling "centre" — use US spelling "center"
+  - Found: `centre`
+- 🟡 `/data/opensearch` | **OpenSearch use cases** – "open source" — no hyphen
+  - Found: `open-source`
+- 🔵 `/data/opensearch` | **Talk to our OpenSearch® experts** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/opensearch/managed` | **Metadata** – Page has no meta description
+- 🟡 `/data/opensearch/managed` | **1. Deployment** – UK spelling "Specialised" — use "specialize"
+  - Found: `Specialised`
+- 🟡 `/data/opensearch/managed` | **Key features** – UK spelling "Minimise" — use "minimize"
+  - Found: `Minimise`
+- 🟡 `/data/opensearch/managed` | **Key features** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🟡 `/data/opensearch/managed` | **$9470** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🔵 `/data/opensearch/managed` | **Talk to our OpenSearch® experts** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/opensearch/what-is-opensearch` | **Metadata** – Page has no meta description
+- 🟡 `/data/opensearch/what-is-opensearch` | **The flexibility of open source** – UK spelling "customise" — use "customize"
+  - Found: `customise`
+- 🟡 `/data/opensearch/what-is-opensearch` | **Search engine** – UK spelling "organise" — use "organize"
+  - Found: `organise`
+- 🟡 `/data/opensearch/what-is-opensearch` | **OpenSearch plugins** – UK spelling "optimise" — use "optimize"
+  - Found: `optimise`
+- 🟡 `/data/opensearch/what-is-opensearch` | **Charmed OpenSearch** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🟡 `/data/opensearch/what-is-opensearch` | **Advanced professional services for OpenSearch, when you need them** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🟡 `/data/opensearch/what-is-opensearch` | **Learn more about Opensearch** – UK spelling "utilise" — use "utilize (or better: use)"
+  - Found: `utilise`
+- 🔵 `/data/opensearch/what-is-opensearch` | **Talk to our OpenSearch® experts** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/opensearch/support` | **Metadata** – Page has no meta description
+- 🔵 `/data/opensearch/support` | **Full-stack support** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/opensearch/support` | **Go further** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🟡 `/data/opensearch/support` | **OpenSearch platform deployment service** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🔵 `/data/opensearch/support` | **Talk to our OpenSearch® experts** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/lakehouse` | **Metadata** – Page has no meta description
+- 🔵 `/data/lakehouse` | **Apache Spark ®** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🔵 `/data/lakehouse` | **Talk to our Apache Spark solution architects** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/mysql` | **Metadata** – Page has no meta description
+- 🟡 `/data/mysql` | **Run MySQL on any public, private or hybrid cloud** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🟡 `/data/mysql` | **Run MySQL on any public, private or hybrid cloud** – UK spelling "optimised" — use "optimize"
+  - Found: `optimised`
+- 🟡 `/data/mysql` | **Run MySQL on any public, private or hybrid cloud** – VMware — lowercase 'w', not 'W'
+  - Found: `VMWare`
+- 🟡 `/data/mysql` | **From $3099** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🟡 `/data/mysql` | **[PostgreSQL vs MySQL webinar](https://www.linkedin.com/events/choosingbetweenthemostpopularop7094241865746542592/theater/)** – "open source" — no hyphen
+  - Found: `open-source`
+- 🔵 `/data/mysql` | **Talk to our relational databases' experts** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/mysql/managed` | **Metadata** – Page has no meta description
+- 🟡 `/data/mysql/managed` | **Managed MySQL on your cloud** – VMware — lowercase 'w', not 'W'
+  - Found: `VMWare`
+- 🔵 `/data/mysql/managed` | **Talk to our relational databases' experts** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/mysql/support` | **Metadata** – Page has no meta description
+- 🟡 `/data/mysql/support` | **[PostgreSQL vs MySQL webinar](https://ubuntu.com/engage/postgresql-mysql)** – "open source" — no hyphen
+  - Found: `open-source`
+- 🔵 `/data/mysql/support` | **Talk to our relational databases' experts** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/streaming` | **Metadata** – Page has no meta description
+- 🔵 `/data/streaming` | **Talk to our Apache Kafka solution architects** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/valkey` | **Metadata** – Page has no meta description
+- 🔵 `/data/valkey` | **Talk to our Valkey experts** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/valkey/what-is-valkey` | **Metadata** – Page has no meta description
+- 🟡 `/data/postgresql` | **Metadata** – Page has no meta description
+- 🟡 `/data/postgresql` | **Run PostgreSQL on any public, private or hybrid cloud** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🟡 `/data/postgresql` | **Run PostgreSQL on any public, private or hybrid cloud** – UK spelling "optimised" — use "optimize"
+  - Found: `optimised`
+- 🟡 `/data/postgresql` | **Run PostgreSQL on any public, private or hybrid cloud** – VMware — lowercase 'w', not 'W'
+  - Found: `VMWare`
+- 🟡 `/data/postgresql` | **From $3099** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🟡 `/data/postgresql` | **Go further with Charmed PostgreSQL** – "open source" — no hyphen
+  - Found: `open-source`
+- 🔵 `/data/postgresql` | **Talk to our relational databases' experts** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/postgresql/managed` | **Metadata** – Page has no meta description
+- 🟡 `/data/postgresql/managed` | **Managed PostgreSQL on your cloud** – VMware — lowercase 'w', not 'W'
+  - Found: `VMWare`
+- 🟡 `/data/postgresql/managed` | **[PostgreSQL vs MySQL webinar](https://ubuntu.com/engage/postgresql-mysql)** – "open source" — no hyphen
+  - Found: `open-source`
+- 🔵 `/data/postgresql/managed` | **Talk to our relational databases' experts** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/postgresql/what-is-postgresql` | **Metadata** – Page has no meta description
+- 🟡 `/data/postgresql/what-is-postgresql` | **What is PostgreSQL?** – "open source" — no hyphen
+  - Found: `open-source`
+- 🟡 `/data/postgresql/what-is-postgresql` | **Open source and open ecosystem** – "open source" — no hyphen
+  - Found: `open-source`
+- 🟡 `/data/postgresql/what-is-postgresql` | **Loved by developers** – UK spelling "favourite" — use US spelling "favorite"
+  - Found: `favourite`
+- 🟡 `/data/postgresql/what-is-postgresql` | **Installing PostgreSQL** – UK spelling "favourite" — use US spelling "favorite"
+  - Found: `favourite`
+- 🟡 `/data/postgresql/what-is-postgresql` | **Canonical's PostgreSQL** – UK spelling "Optimised" — use "optimize"
+  - Found: `Optimised`
+- 🟡 `/data/postgresql/what-is-postgresql` | **Learn more about PostgreSQL** – "open source" — no hyphen
+  - Found: `open-source`
+- 🔵 `/data/postgresql/what-is-postgresql` | **Talk to our relational databases' experts** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/postgresql/support` | **Metadata** – Page has no meta description
+- 🟡 `/data/postgresql/support` | **Deliver Proof of Concepts** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🟡 `/data/postgresql/support` | **[PostgreSQL vs MySQL webinar](https://ubuntu.com/engage/postgresql-mysql)** – "open source" — no hyphen
+  - Found: `open-source`
+- 🔵 `/data/postgresql/support` | **Talk to our relational databases' experts** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/mongodb` | **Metadata** – Page has no meta description
+- 🟡 `/data/mongodb` | **Run MongoDB ® on any public, private, or hybrid cloud** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🟡 `/data/mongodb` | **Run MongoDB ® on any public, private, or hybrid cloud** – UK spelling "optimised" — use "optimize"
+  - Found: `optimised`
+- 🟡 `/data/mongodb` | **Run MongoDB ® on any public, private, or hybrid cloud** – MicroCloud requires capital C
+  - Found: `Microcloud`
+- 🟡 `/data/mongodb` | **Run MongoDB ® on any public, private, or hybrid cloud** – VMware — lowercase 'w', not 'W'
+  - Found: `VMWare`
+- 🟡 `/data/mongodb` | **Webinar: MongoDB ® for modern data management** – UK spelling "modernise" — use "modernize"
+  - Found: `modernise`
+- 🟡 `/data/mongodb` | **Managed MongoDB ®** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🟡 `/data/mongodb` | **Learn more about Charmed MongoDB** – VMware — lowercase 'w', not 'W'
+  - Found: `VMWare`
+- 🔵 `/data/mongodb` | **Talk to our MongoDB experts** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/mongodb/managed` | **Metadata** – Page has no meta description
+- 🟡 `/data/mongodb/managed` | **Managed MongoDB ® by Canonical** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🔵 `/data/mongodb/managed` | **Innovate at scale with your data** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/mongodb/managed` | **1. Deployment** – UK spelling "Specialised" — use "specialize"
+  - Found: `Specialised`
+- 🟡 `/data/mongodb/managed` | **Why choose Managed MongoDB ® ?** – UK spelling "Minimise" — use "minimize"
+  - Found: `Minimise`
+- 🟡 `/data/mongodb/managed` | **Why choose Managed MongoDB ® ?** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🟡 `/data/mongodb/managed` | **$9470** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🔵 `/data/mongodb/managed` | **Talk to our MongoDB experts** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/mongodb/what-is-mongodb` | **Metadata** – Page has no meta description
+- 🔵 `/data/mongodb/what-is-mongodb` | **Secure storage** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🔵 `/data/mongodb/what-is-mongodb` | **How does MongoDB ® work?** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🔵 `/data/mongodb/what-is-mongodb` | **How does MongoDB ® work?** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🔵 `/data/mongodb/what-is-mongodb` | **How does MongoDB ® work?** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🔵 `/data/mongodb/what-is-mongodb` | **How does MongoDB ® work?** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/mongodb/what-is-mongodb` | **Charmed MongoDB** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🔵 `/data/mongodb/what-is-mongodb` | **Charmed MongoDB** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/mongodb/what-is-mongodb` | **MongoDB ® consultancy and support** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🟡 `/data/mongodb/what-is-mongodb` | **Learn more about MongoDB** – VMware — lowercase 'w', not 'W'
+  - Found: `VMWare`
+- 🟡 `/data/mongodb/support` | **Metadata** – Page has no meta description
+- 🔵 `/data/mongodb/support` | **Full-stack support** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/mongodb/support` | **Go further** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🔵 `/data/mongodb/support` | **Go further** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/data/mongodb/support` | **MongoDB deployment service** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🔵 `/data/mongodb/support` | **Talk to our MongoDB experts** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/consulting` | **Metadata** – Page has no meta description
+- 🔵 `/consulting` | **Kubernetes** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/consulting` | **Kubernetes** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/consulting` | **AI/MLOps** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🔵 `/consulting` | **Get in touch with our consulting team** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/mir` | **Metadata** – Page has no meta description
+- 🔵 `/mir` | **Let's get your project to market faster!** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/mir` | **Let's get your project to market faster!** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/maas` | **Metadata** – Page has no meta description
+- 🔵 `/maas` | **[Build a MAAS and LXD environment in 30 minutes with Multipass on Ubuntu](/maas/tutorials/build-a-maas-and-lxd-environment-in-30-minutes-with-multipass-on-ubuntu)** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🔵 `/maas` | **Self-support Free for all machines** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/maas` | **Essential $30 per year, per managed machine** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/maas` | **Standard $50 per year, per managed machine** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/maas` | **Advanced $100 per year, per managed machine** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/maas` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/maas/tutorials` | **Metadata** – Page has no meta description
+- 🟡 `/maas/resources` | **Metadata** – Page has no meta description
+- 🔵 `/maas/resources` | **Building the datacenter** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/maas/resources` | **Building the datacenter** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🟡 `/maas/resources` | **How Roblox went from Windows to Ubuntu in seven days for edge compute** – UK spelling "containerised" — use "containerize"
+  - Found: `containerised`
+- 🟡 `/maas/resources` | **[Turbo charge your bare metal cloud with MAAS](https://ubuntu.com/engage/epa-for-open-ran-infrastructure)** – UK spelling "maximise" — use "maximize"
+  - Found: `maximise`
+- 🔵 `/maas/resources` | **Exploring MAAS with LXD** – No exclamation marks in webpage copy
+  - Found: `!`
+- 🟡 `/maas/how-maas-works` | **Metadata** – Page has no meta description
+- 🟡 `/maas/how-maas-works` | **Protocols** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🟡 `/maas/how-maas-works` | **Physical availability zones** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🔵 `/maas/how-maas-works` | **The node lifecycle** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/maas/support` | **Metadata** – Page has no meta description
+- 🟡 `/maas/features` | **Metadata** – Page has no meta description
+- 🟡 `/solutions` | **Metadata** – Page has no meta description
+- 🔵 `/solutions` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/solutions/industrial` | **Metadata** – Page has no meta description
+- 🔵 `/solutions/industrial` | **Let's get your project to market faster!** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/solutions/industrial` | **Let's get your project to market faster!** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/solutions/industrial` | **Let's get your project to market faster!** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/solutions/education` | **Metadata** – Page has no meta description
+- 🔵 `/solutions/education` | **Contact us about Canonical solutions for Education** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/solutions/ai` | **Metadata** – Page has no meta description
+- 🔵 `/solutions/ai` | **Fast-track compliance with trusted AI software** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/solutions/ai` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/solutions/ai/edge` | **Metadata** – Page has no meta description
+- 🟡 `/solutions/ai/edge` | **Why Canonical for enterprise AI edge computing?** – UK spelling "optimised" — use "optimize"
+  - Found: `optimised`
+- 🟡 `/solutions/ai/edge` | **Solve edge AI complexity with an integrated and optimised stack** – UK spelling "optimised" — use "optimize"
+  - Found: `optimised`
+- 🟡 `/solutions/ai/edge` | **Solve edge AI complexity with an integrated and optimised stack** – UK spelling "optimised" — use "optimize"
+  - Found: `optimised`
+- 🟡 `/solutions/ai/edge` | **Solve edge AI complexity with an integrated and optimised stack** – UK spelling "optimised" — use "optimize"
+  - Found: `optimised`
+- 🟡 `/solutions/ai/edge` | **Move faster with certified hardware** – UK spelling "optimise" — use "optimize"
+  - Found: `optimise`
+- 🟡 `/solutions/ai/edge` | **Ubuntu Core: the edge-optimised OS** – UK spelling "optimised" — use "optimize"
+  - Found: `optimised`
+- 🟡 `/solutions/ai/edge` | **Ubuntu Core: the edge-optimised OS** – UK spelling "optimised" — use "optimize"
+  - Found: `optimised`
+- 🟡 `/solutions/ai/edge` | **Ubuntu Core: the edge-optimised OS** – UK spelling "containerised" — use "containerize"
+  - Found: `containerised`
+- 🟡 `/solutions/ai/edge` | **Continuous security and long-term value with OTA updates** – UK spelling "centralised" — use "centralize"
+  - Found: `centralised`
+- 🔵 `/solutions/ai/edge` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/solutions/ai/infrastructure` | **Metadata** – Page has no meta description
+- 🔵 `/solutions/ai/infrastructure` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/solutions/ai/genai` | **Metadata** – Page has no meta description
+- 🔵 `/solutions/ai/genai` | **Enhance your LLM outputs with RAG** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🔵 `/solutions/ai/genai` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/solutions/automotive` | **Metadata** – Page has no meta description
+- 🔵 `/solutions/automotive` | **Preferred by developers** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🟡 `/solutions/automotive` | **Whitepaper** – "open source" — no hyphen
+  - Found: `open-source`
+- 🔵 `/solutions/automotive` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/solutions/automotive/buyers-guide` | **Metadata** – Page has no meta description
+- 🟡 `/solutions/automotive/buyers-guide` | **Power management** – UK spelling "minimised" — use "minimize"
+  - Found: `minimised`
+- 🔵 `/solutions/automotive/buyers-guide` | **EB corbos Linux — built on Ubuntu** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🔵 `/solutions/automotive/buyers-guide` | **EB corbos Linux — built on Ubuntu** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/solutions/telco` | **Metadata** – Page has no meta description
+- 🟡 `/solutions/telco` | **Optimal virtualization infrastructure** – MicroCloud requires capital C
+  - Found: `Microcloud`
+- 🔵 `/solutions/telco` | **Watch our webinars** – No exclamation marks in webpage copy
+  - Found: `!`
+- 🔵 `/solutions/telco` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/solutions/telco/open-ran` | **Metadata** – Page has no meta description
+- 🔵 `/solutions/telco/open-ran` | **Contact the Canonical telco team** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/solutions/telco/5g-edge` | **Metadata** – Page has no meta description
+- 🟡 `/solutions/telco/5g-edge` | **Highly scalable and resilient infrastructure** – UK spelling "Utilise" — use "utilize (or better: use)"
+  - Found: `Utilise`
+- 🔵 `/solutions/telco/5g-edge` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/solutions/telco/5g-core` | **Metadata** – Page has no meta description
+- 🔵 `/solutions/telco/5g-core` | **Webinars** – No exclamation marks in webpage copy
+  - Found: `!`
+- 🔵 `/solutions/telco/5g-core` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/solutions/financial-services` | **Metadata** – Page has no meta description
+- 🔵 `/solutions/financial-services` | **Deploy your favorite data and AI solutions on Ubuntu** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔴 `/solutions/financial-services` | **Financial services industry leaders' guide to secure open source** – Unprovable security claim: "secure open source" — use 'trusted open source'
+  - Found: `secure open source`
+- 🟡 `/solutions/financial-services` | **Financial services industry leaders' guide to secure open source** – "open source" — no hyphen
+  - Found: `open-source`
+- 🔴 `/solutions/financial-services` | **Financial services industry leaders' guide to secure open source** – Unprovable security claim: "secure open source" — use 'trusted open source'
+  - Found: `secure open source`
+- 🟡 `/solutions/financial-services` | **Let's help you drive down IT costs and accelerate innovation.** – Never use "Ubuntu Linux" — just "Ubuntu"
+  - Found: `Ubuntu Linux`
+- 🔵 `/solutions/financial-services` | **Let's help you drive down IT costs and accelerate innovation.** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/solutions/financial-services` | **Let's help you drive down IT costs and accelerate innovation.** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/solutions/automation` | **Metadata** – Page has no meta description
+- 🔵 `/solutions/automation` | **Automation that works, anywhere** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/solutions/automation` | **Automate a highly available platform for all your apps and services** – UK spelling "data centre" — use "data center"
+  - Found: `data centre`
+- 🔵 `/solutions/automation` | **Get expert help with your automation** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/solutions/open-source-security` | **Metadata** – Page has no meta description
+- 🔴 `/solutions/open-source-security` | **Contact Canonical** – Unprovable security claim: "secure open source" — use 'trusted open source'
+  - Found: `secure open source`
+- 🔵 `/solutions/open-source-security` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/solutions/open-source-security/cyber-resilience-act` | **Metadata** – Page has no meta description
+- 🟡 `/solutions/open-source-security/cyber-resilience-act` | **See Ubuntu Pro in action** – UK spelling "authorised" — use "authorize"
+  - Found: `authorised`
+- 🔵 `/solutions/open-source-security/cyber-resilience-act` | **Get in touch with our experts on the Cyber Resilience Act (CRA) compliance** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/solutions/iot-and-devices` | **Metadata** – Page has no meta description
+- 🔵 `/solutions/iot-and-devices` | **Talk to us about your IoT goals** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/solutions/cloud-native-development` | **Metadata** – Page has no meta description
+- 🔵 `/solutions/cloud-native-development` | **True open source composability** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/solutions/cloud-native-development` | **Get in touch** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/solutions/infrastructure` | **Metadata** – Page has no meta description
+- 🔵 `/solutions/infrastructure` | **What customers say** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/solutions/infrastructure` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/solutions/infrastructure/virtualization-solutions` | **Metadata** – Page has no meta description
+- 🔵 `/solutions/infrastructure/virtualization-solutions` | **Talk to Canonical experts** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/solutions/infrastructure/sovereign-cloud` | **Metadata** – Page has no meta description
+- 🔵 `/solutions/infrastructure/sovereign-cloud` | **Meeting compliance and regulations** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🔵 `/solutions/infrastructure/sovereign-cloud` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/solutions/infrastructure/private-cloud-pricing` | **Metadata** – Page has no meta description
+- 🔵 `/solutions/infrastructure/private-cloud-pricing` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/solutions/infrastructure/edge-computing` | **Metadata** – Page has no meta description
+- 🔵 `/solutions/infrastructure/edge-computing` | **Edge computing by the numbers** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/solutions/infrastructure/edge-computing` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/solutions/data-and-ai` | **Metadata** – Page has no meta description
+- 🔵 `/solutions/data-and-ai` | **Data lakehouse** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🔵 `/solutions/data-and-ai` | **Contact the Canonical team** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/solutions/ubuntu-os` | **Metadata** – Page has no meta description
+- 🟡 `/solutions/ubuntu-os` | **Ubuntu Server** – UK spelling "data centres" — use "data center"
+  - Found: `data centres`
+- 🔵 `/solutions/ubuntu-os` | **Get in touch with the Ubuntu team** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/solutions/ubuntu-os/workstations` | **Metadata** – Page has no meta description
+- 🟡 `/solutions/ubuntu-os/workstations` | **What customers say** – "open source" — no hyphen
+  - Found: `open-source`
+- 🟡 `/solutions/ubuntu-os/workstations` | **46%** – "open source" — lowercase mid-sentence
+  - Found: `Open Source`
+- 🔵 `/solutions/ubuntu-os/workstations` | **Get in touch with the Ubuntu team** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/open-source-adoption` | **Metadata** – Page has no meta description
+- 🟡 `/open-source-adoption` | **Further reading** – "open source" — lowercase mid-sentence
+  - Found: `Open Source`
+- 🔵 `/open-source-adoption` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/dqlite` | **Metadata** – Page has no meta description
+- 🟡 `/dqlite` | **Open Source** – "open source" — lowercase mid-sentence
+  - Found: `Open Source`
+- 🟡 `/academy` | **Metadata** – Page has no meta description
+- 🟡 `/academy` | **Why certify with us?** – "open source" — no hyphen
+  - Found: `open-source`
+- 🔵 `/academy` | **Why certify with us?** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🟡 `/academy/exam-content` | **Metadata** – Page has no meta description
+- 🟡 `/academy/self-study` | **Metadata** – Page has no meta description
+- 🟡 `/academy/exam-guide` | **Metadata** – Page has no meta description
+- 🟡 `/academy/exam-guide` | **Exam contents overview and domain weight** – "open source" — lowercase mid-sentence
+  - Found: `Open Source`
+- 🟡 `/anbox-cloud` | **Metadata** – Page has no meta description
+- 🔵 `/anbox-cloud` | **Leaning on a strong cloud ecosystem** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/anbox-cloud` | **Tell us what you have in mind** – No exclamation marks in webpage copy
+  - Found: `!`
+- 🟡 `/anbox-cloud` | **Tell us what you have in mind** – "open source" — lowercase mid-sentence
+  - Found: `Open Source`
+- 🔵 `/anbox-cloud` | **Let's get in touch** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/lxd` | **Metadata** – Page has no meta description
+- 🔵 `/lxd` | **Security-maintained and scalable** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🔵 `/lxd` | **Key features** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/lxd` | **Enhance your experience with best-in-class open-source tools** – "open source" — no hyphen
+  - Found: `open-source`
+- 🟡 `/lxd` | **MicroCloud: a LXD–based cloud solution** – "open source" — no hyphen
+  - Found: `open-source`
+- 🟡 `/lxd/install` | **Metadata** – Page has no meta description
+- 🔵 `/lxd/install` | **4. Run commands** – No exclamation marks in webpage copy
+  - Found: `!`
+- 🔵 `/lxd/install` | **Let's get in touch.** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/lxd/manage` | **Metadata** – Page has no meta description
+- 🟡 `/lxd/manage` | **Third-party integrations** – UK spelling "centre" — use US spelling "center"
+  - Found: `centre`
+- 🟡 `/lxd/manage` | **Third-party integrations** – UK spelling "centre" — use US spelling "center"
+  - Found: `centre`
+- 🔵 `/lxd/manage` | **Let's get in touch.** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/company` | **Metadata** – Page has no meta description
+- 🔵 `/company` | **Helping innovators build the future since 2004** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/company` | **Community is in our DNA** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/company` | **Product portfolio** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🟡 `/case-study` | **Metadata** – Page has no meta description
+- 🟡 `/case-study` | **Filter by** – MicroCloud requires capital M and C
+  - Found: `microcloud`
+- 🔵 `/case-study` | **[A Telefônica Brasil seleciona o Charmed OpenStack da Canonical para seu sistema de cobrança online baseado em nuvem líder da indústria.](https://ubuntu.com/engage/pt/telefonica-openstack-estudo-de-caso)** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🟡 `/case-study` | **[O Ubuntu Pro ajuda grande editora de jogos a proteger dependências de código e evitar migrações caras.](https://ubuntu.com/engage/pt/manutencao-seguranca-pacotes-php-desatualizados-ubuntu-pro)** – Use "Expanded Security Maintenance"
+  - Found: `Extended Security Maintenance`
+- 🟡 `/case-study/tntech-microcloud-cyber-range-pt-br` | **Metadata** – Page has no meta description
+- 🟡 `/case-study/tntech-microcloud-cyber-range-pt-br` | **Metadata** – page title is 101 characters (limit: 60)
+  - Found: `TNTECH evita aumento de preço em infraestrutura com migração para MicroCloud em ...`
+- 🔵 `/case-study/tntech-microcloud-cyber-range-pt-br` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/case-study/nova-telecommunications` | **Metadata** – Page has no meta description
+- 🟡 `/case-study/nova-telecommunications` | **Metadata** – page title is 74 characters (limit: 60)
+  - Found: `Nova chooses open source to build a cost-effective telco cloud | Canonical`
+- 🔵 `/case-study/nova-telecommunications` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/case-study/sbi-bits` | **Metadata** – Page has no meta description
+- 🟡 `/case-study/sbi-bits` | **Metadata** – page title is 78 characters (limit: 60)
+  - Found: `SBI BITS ensures business continuity during an OpenStack migration | Canonical`
+- 🔵 `/case-study/sbi-bits` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/case-study/episensor` | **Metadata** – Page has no meta description
+- 🟡 `/case-study/episensor` | **Metadata** – page title is 84 characters (limit: 60)
+  - Found: `EpiSensor accelerates the sustainable energy transition with Ubuntu Core | Canon...`
+- 🔵 `/case-study/episensor` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/case-study/unibap-space-computing` | **Metadata** – Page has no meta description
+- 🟡 `/case-study/unibap-space-computing` | **Metadata** – page title is 75 characters (limit: 60)
+  - Found: `Unibap powers robust and accessible space computing with Ubuntu | Canonical`
+- 🟡 `/case-study/unibap-space-computing` | **Solution** – "open source" — lowercase mid-sentence
+  - Found: `Open Source`
+- 🔵 `/case-study/unibap-space-computing` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/case-study/ubuntu-pro-support-for-games-developer` | **Metadata** – Page has no meta description
+- 🟡 `/case-study/ubuntu-pro-support-for-games-developer` | **Metadata** – page title is 102 characters (limit: 60)
+  - Found: `Ubuntu Pro helps large games publisher secure code dependencies and avoid costly...`
+- 🔵 `/case-study/ubuntu-pro-support-for-games-developer` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/case-study/tntech-microcloud-cyber-range` | **Metadata** – Page has no meta description
+- 🟡 `/case-study/tntech-microcloud-cyber-range` | **Metadata** – page title is 75 characters (limit: 60)
+  - Found: `TNTECH avoids infra price hike with 4-week MicroCloud migration | Canonical`
+- 🔵 `/case-study/tntech-microcloud-cyber-range` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/case-study/airlock-digital-ubuntu-pro-azure-case-study` | **Metadata** – Page has no meta description
+- 🟡 `/case-study/airlock-digital-ubuntu-pro-azure-case-study` | **Metadata** – page title is 96 characters (limit: 60)
+  - Found: `Airlock Digital gains up to 40% in performance and cost savings with Ubuntu on A...`
+- 🟡 `/case-study/airlock-digital-ubuntu-pro-azure-case-study` | **Airlock Digital boosts operational performance on Azure by 30% with an OS and support model that 'just works'** – Use "End of Standard Support"
+  - Found: `End of Life`
+- 🟡 `/case-study/airlock-digital-ubuntu-pro-azure-case-study` | **Airlock Digital boosts operational performance on Azure by 30% with an OS and support model that 'just works'** – Use "End of Standard Support"
+  - Found: `EoL`
+- 🟡 `/case-study/airlock-digital-ubuntu-pro-azure-case-study` | **Challenge** – Use "End of Standard Support"
+  - Found: `EoL`
+- 🔵 `/case-study/airlock-digital-ubuntu-pro-azure-case-study` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/case-study/grundium-ubuntu-pro-for-devices` | **Metadata** – Page has no meta description
+- 🟡 `/case-study/grundium-ubuntu-pro-for-devices` | **Metadata** – page title is 73 characters (limit: 60)
+  - Found: `Grundium secures critical systems with Ubuntu Pro for Devices | Canonical`
+- 🟡 `/case-study/grundium-ubuntu-pro-for-devices` | **About Grundium** – UK spelling "specialises" — use "specialize"
+  - Found: `specialises`
+- 🔴 `/case-study/grundium-ubuntu-pro-for-devices` | **Positive patient outcomes depend on reliable, robust and secure technology** – Unprovable security claim: "always secure" — use 'security-maintained'
+  - Found: `always secure`
+- 🟡 `/case-study/grundium-ubuntu-pro-for-devices` | **Solution** – UK spelling "optimised" — use "optimize"
+  - Found: `optimised`
+- 🔵 `/case-study/grundium-ubuntu-pro-for-devices` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/case-study/esa` | **Metadata** – Page has no meta description
+- 🟡 `/case-study/esa` | **Metadata** – page title is 98 characters (limit: 60)
+  - Found: `Infrastructure solutions and managed IT services for critical space mission oper...`
+- 🟡 `/case-study/esa` | **About the European Space Agency (ESA)** – UK spelling "centre" — use US spelling "center"
+  - Found: `centre`
+- 🟡 `/case-study/esa` | **Solution** – UK spelling "data centres" — use "data center"
+  - Found: `data centres`
+- 🟡 `/case-study/esa` | **Solution** – UK spelling "centre" — use US spelling "center"
+  - Found: `centre`
+- 🟡 `/case-study/esa` | **Solution** – UK spelling "containerised" — use "containerize"
+  - Found: `containerised`
+- 🟡 `/case-study/esa` | **Solution** – UK spelling "specialised" — use "specialize"
+  - Found: `specialised`
+- 🟡 `/case-study/esa` | **Solution** – UK spelling "specialised" — use "specialize"
+  - Found: `specialised`
+- 🔵 `/case-study/esa` | **Solution** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/case-study/esa` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/case-study/oediv-de` | **Metadata** – Page has no meta description
+- 🟡 `/case-study/oediv-de` | **Metadata** – page title is 85 characters (limit: 60)
+  - Found: `Null Ausfallzeiten seit sechs Jahren: OEDIV standardisiert auf Ubuntu Pro | Cano...`
+- 🔵 `/case-study/oediv-de` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/case-study/managed-kafka-for-smart-safety` | **Metadata** – Page has no meta description
+- 🔵 `/case-study/managed-kafka-for-smart-safety` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/case-study/phonepe` | **Metadata** – Page has no meta description
+- 🟡 `/case-study/phonepe` | **Metadata** – page title is 65 characters (limit: 60)
+  - Found: `PhonePe simplifies fintech compliance with Ubuntu Pro | Canonical`
+- 🔵 `/case-study/phonepe` | **Results** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/case-study/phonepe` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/case-study/elementary-ai-machine-vision` | **Metadata** – Page has no meta description
+- 🟡 `/case-study/elementary-ai-machine-vision` | **Metadata** – page title is 74 characters (limit: 60)
+  - Found: `Elementary scales AI machine vision solutions with Ubuntu core | Canonical`
+- 🔵 `/case-study/elementary-ai-machine-vision` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/case-study/lucid-aws-fedramp-compliance-case-study` | **Metadata** – Page has no meta description
+- 🟡 `/case-study/lucid-aws-fedramp-compliance-case-study` | **Metadata** – page title is 68 characters (limit: 60)
+  - Found: `FedRAMP compliance case study | Lucid FIPS 140-2 for AWS | Canonical`
+- 🔵 `/case-study/lucid-aws-fedramp-compliance-case-study` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/case-study/ubuntu-pro-fips-on-aws` | **Metadata** – Page has no meta description
+- 🟡 `/case-study/ubuntu-pro-fips-on-aws` | **Metadata** – page title is 69 characters (limit: 60)
+  - Found: `Effortless FedRAMP compliance with Ubuntu Pro FIPS on AWS | Canonical`
+- 🔵 `/case-study/ubuntu-pro-fips-on-aws` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/case-study/machine-learning-for-financial-services` | **Metadata** – Page has no meta description
+- 🔵 `/case-study/machine-learning-for-financial-services` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/case-study/caregility` | **Metadata** – Page has no meta description
+- 🟡 `/case-study/caregility` | **Metadata** – page title is 87 characters (limit: 60)
+  - Found: `Caregility ensures uninterrupted patient care with remote device management | Ca...`
+- 🔵 `/case-study/caregility` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/case-study/oediv` | **Metadata** – Page has no meta description
+- 🟡 `/case-study/oediv` | **Metadata** – page title is 75 characters (limit: 60)
+  - Found: `OEDIV standardizes with Ubuntu Pro for 6 years of zero downtime | Canonical`
+- 🔵 `/case-study/oediv` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/openstack` | **Metadata** – Page has no meta description
+- 🔵 `/openstack` | **Get in touch with the OpenStack team** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/openstack/resources` | **Metadata** – Page has no meta description
+- 🟡 `/openstack/resources` | **[Canonical Infrastructure for the public sector](https://assets.ubuntu.com/v1/774776c6-Canonical%20infrastructure%20for%20the%20public%20sector.pdf)** – UK spelling "centre" — use US spelling "center"
+  - Found: `centre`
+- 🔵 `/openstack/resources` | **[47% of OpenStack clouds run on Ubuntu - this is why](https://www.youtube.com/watch?v=5SqYw3gbVpU)** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🟡 `/openstack/resources` | **[47% of OpenStack clouds run on Ubuntu - this is why](https://www.youtube.com/watch?v=5SqYw3gbVpU)** – "open source" — no hyphen
+  - Found: `open-source`
+- 🟡 `/openstack/resources` | **[OpenStack vs Kubernetes. Which one to pick? That is the question.](https://www.youtube.com/watch?v=xUhslnruvkg)** – "open source" — no hyphen
+  - Found: `open-source`
+- 🔵 `/openstack/resources` | **[Join Canonical at the first-ever African OpenInfra Days](/blog/join-canonical-at-the-first-ever-african-openinfra-days)** – No exclamation marks in webpage copy
+  - Found: `!`
+- 🔵 `/openstack/resources` | **[OpenStack cloud – happy 15th anniversary!](/blog/openstack-cloud-happy-15th-anniversary)** – No exclamation marks in webpage copy
+  - Found: `!`
+- 🟡 `/openstack/features` | **Metadata** – Page has no meta description
+- 🔵 `/openstack/features` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/openstack/support` | **Metadata** – Page has no meta description
+- 🟡 `/openstack/support` | **With support from Canonical** – UK spelling "centre" — use US spelling "center"
+  - Found: `centre`
+- 🔵 `/openstack/support` | **Contact Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/openstack/compare` | **Metadata** – Page has no meta description
+- 🔵 `/openstack/compare` | **OpenStack distributions: a comparison** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🔵 `/openstack/compare` | **Repatriate your cloud workloads and regain control over your data** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🔵 `/openstack/compare` | **Contact the Canonical team** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/openstack/architecture` | **Metadata** – Page has no meta description
+- 🔵 `/openstack/architecture` | **Why Canonical OpenStack?** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/documentation` | **Metadata** – Page has no meta description
+- 🔵 `/documentation` | **Documentation as practice** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🔵 `/documentation` | **Documentation with rigour** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🔵 `/documentation` | **Documentation with rigour** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🔵 `/documentation` | **Direction** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/documentation/open-documentation-academy` | **Metadata** – Page has no meta description
+- 🟡 `/documentation/open-documentation-academy` | **Open Documentation Academy** – "open source" — no hyphen
+  - Found: `open-source`
+- 🟡 `/documentation/open-documentation-academy` | **Open Documentation Academy** – "open source" — no hyphen
+  - Found: `open-source`
+- 🟡 `/documentation/open-documentation-academy` | **What we offer** – UK spelling "colour" — use US spelling "color"
+  - Found: `colour`
+- 🟡 `/documentation/open-roles` | **Metadata** – Page has no meta description
+- 🟡 `/documentation/open-roles` | **Security engineering** – "open source" — no hyphen
+  - Found: `open-source`
+- 🟡 `/documentation/open-roles` | **Security engineering** – "open source" — no hyphen
+  - Found: `open-source`
+- 🟡 `/documentation/open-roles` | **Snap** – "open source" — no hyphen
+  - Found: `open-source`
+- 🔵 `/documentation/open-roles` | **Written interview** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/documentation/open-roles` | **Written interview** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🟡 `/documentation/beyond-canonical` | **Metadata** – Page has no meta description
+- 🟡 `/documentation/beyond-canonical` | **Documentation practice at Canonical** – "open source" — no hyphen
+  - Found: `open-source`
+- 🔵 `/documentation/beyond-canonical` | **Documentation practice beyond Canonical** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/documentation/beyond-canonical` | **Workshops and talks at open-source events** – "open source" — no hyphen
+  - Found: `open-source`
+- 🟡 `/documentation/beyond-canonical` | **Workshops and talks at open-source events** – "open source" — no hyphen
+  - Found: `open-source`
+- 🟡 `/documentation/beyond-canonical` | **Workshops and talks at open-source events** – "open source" — no hyphen
+  - Found: `open-source`
+- 🟡 `/documentation/beyond-canonical` | **Workshops and talks at open-source events** – "open source" — no hyphen
+  - Found: `open-source`
+- 🟡 `/documentation/beyond-canonical` | **Workshops and talks at open-source events** – "open source" — no hyphen
+  - Found: `open-source`
+- 🟡 `/documentation/beyond-canonical` | **Supporting open-source projects** – "open source" — no hyphen
+  - Found: `open-source`
+- 🟡 `/documentation/beyond-canonical` | **Supporting open-source projects** – "open source" — no hyphen
+  - Found: `open-source`
+- 🟡 `/microcloud` | **Metadata** – Page has no meta description
+- 🔵 `/microcloud` | **Let's get in touch** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/microcloud/resources` | **Metadata** – Page has no meta description
+- 🟡 `/microcloud/resources` | **[Introduction to MicroClouds](https://ubuntu.com/engage/introduction-to-microcloud)** – "open source" — no hyphen
+  - Found: `open-source`
+- 🟡 `/microcloud/what-is-microcloud` | **Metadata** – Page has no meta description
+- 🔵 `/microcloud/what-is-microcloud` | **Let's get in touch** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/juju` | **Metadata** – Page has no meta description
+- 🟡 `/juju` | **Deploy and integrate with enterprise-grade software operators** – UK spelling "centre" — use US spelling "center"
+  - Found: `centre`
+- 🟡 `/juju` | **Add visibility and compliance controls with JAAS.** – UK spelling "centralised" — use "centralize"
+  - Found: `centralised`
+- 🔵 `/juju` | **Get in touch** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/juju/charmhub-community` | **Metadata** – Page has no meta description
+- 🔵 `/juju/charmhub-community` | **Get in touch** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/juju/charms-architecture` | **Metadata** – Page has no meta description
+- 🔵 `/juju/charms-architecture` | **Get in touch** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/juju/model-driven-operations-manifesto` | **Metadata** – Page has no meta description
+- 🔵 `/juju/model-driven-operations-manifesto` | **Security** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/juju/model-driven-operations-manifesto` | **Multi-cloud optimisation** – UK spelling "optimise" — use "optimize"
+  - Found: `optimise`
+- 🔵 `/juju/model-driven-operations-manifesto` | **Reusability** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/juju/model-driven-operations-manifesto` | **Scalability** – UK spelling "optimise" — use "optimize"
+  - Found: `optimise`
+- 🟡 `/juju/integrations` | **Metadata** – Page has no meta description
+- 🔵 `/juju/integrations` | **How do integrations work?** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🔵 `/juju/integrations` | **How do integrations work?** – No exclamation marks in webpage copy
+  - Found: `!`
+- 🔵 `/juju/integrations` | **Get in touch** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/juju/juju-architecture` | **Metadata** – Page has no meta description
+- 🟡 `/juju/juju-architecture` | **A single tool to deploy and manage apps across VMs, Kubernetes, bare metal and cloud** – UK spelling "centralised" — use "centralize"
+  - Found: `centralised`
+- 🔵 `/juju/juju-architecture` | **Get in touch** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/juju/why-juju` | **Metadata** – Page has no meta description
+- 🟡 `/juju/why-juju` | **What makes Juju and charms different?** – UK spelling "optimise" — use "optimize"
+  - Found: `optimise`
+- 🔵 `/juju/why-juju` | **Get in touch** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/juju/how-juju-works` | **Metadata** – Page has no meta description
+- 🔵 `/juju/how-juju-works` | **Get in touch** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/legal` | **Metadata** – Page has no meta description
+- 🟡 `/legal` | **Metadata** – page title is 72 characters (limit: 60)
+  - Found: `Ubuntu legal terms and policies | Ubuntu and Canonical Legal | Canonical`
+- 🟡 `/legal/contributors` | **Metadata** – Page has no meta description
+- 🟡 `/legal/contributors` | **Metadata** – page title is 70 characters (limit: 60)
+  - Found: `Contributor licence agreement | Ubuntu and Canonical Legal | Canonical`
+- 🔵 `/legal/contributors` | **Canonical contributor licence agreement** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/legal/contributors/faq` | **Metadata** – Page has no meta description
+- 🟡 `/legal/contributors/agreement` | **Metadata** – Page has no meta description
+- 🟡 `/multipass` | **Metadata** – Page has no meta description
+- 🔵 `/multipass` | **Get started with Ubuntu the fast way** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🟡 `/multipass` | **Optimised VM performance** – UK spelling "Optimised" — use "optimize"
+  - Found: `Optimised`
+- 🟡 `/multipass` | **A curated catalogue of images** – UK spelling "catalogue" — use US spelling "catalog"
+  - Found: `catalogue`
+- 🟡 `/multipass` | **A curated catalogue of images** – UK spelling "catalogue" — use US spelling "catalog"
+  - Found: `catalogue`
+- 🟡 `/multipass/install` | **Metadata** – Page has no meta description
+- 🟡 `/events` | **Metadata** – Page has no meta description
+- 🟡 `/events/canonical-days` | **Metadata** – Page has no meta description
+- 🔵 `/events/canonical-days` | **What to expect** – Use en dash with spaces ( – ) not hyphen ( - ) for sentence breaks
+  - Found: ` - `
+- 🟡 `/jaas` | **Metadata** – Page has no meta description
+- 🔵 `/jaas` | **Get in touch** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/ceph` | **Metadata** – Page has no meta description
+- 🔵 `/ceph` | **Contact us about software-defined storage** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/ceph/support` | **Metadata** – Page has no meta description
+- 🔵 `/ceph/support` | **Contact us about software-defined storage** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/public-sector` | **Metadata** – Page has no meta description
+- 🔵 `/public-sector` | **Ubuntu for public sector** – Use en dash with spaces ( – ) not em dash (—)
+  - Found: `—`
+- 🟡 `/projects` | **Metadata** – Page has no meta description
+- 🟡 `/navigation/navigation-nojs` | **Metadata** – Page has no meta description
+- 🟡 `/navigation/navigation-nojs` | **Private cloud** – UK spelling "Data Centre" — use "data center"
+  - Found: `Data Centre`
+- 🟡 `/navigation/navigation-nojs` | **Partners** – UK spelling "Data centres" — use "data center"
+  - Found: `Data centres`
 
 ---
 
@@ -53,82 +957,2304 @@ Typos, UK spelling, product names, punctuation, missing metadata, placeholders.
 
 Banned/flowery words, vague link text, superlatives, heading structure, number formatting.
 
-- 🟡 `/` | **Start with Ubuntu** – Superlative "most" — verify it is backed by evidence
+- 🔵 `/` | **Innovate on your own terms** – Superlative "most" — verify it is backed by evidence
   - Found: `most`
-- 🟡 `/` | **Build apps at speed and stay secure** – Superlative "best" — verify it is backed by evidence
+- 🔵 `/` | **Innovate on your own terms** – Superlative "best" — verify it is backed by evidence
   - Found: `best`
-- 🟡 `/` | **Do more with trusted open source** – Avoid "not only of Kubernetes but also" — wordy — simplify
+- 🟡 `/` | **Lowering the cost and complexity of critical space missions** – Avoid "not only of Kubernetes but also" — wordy — simplify
   - Found: `not only of Kubernetes but also`
-- 🟡 `/` | **Do more with trusted open source** – Superlative "only" — verify it is backed by evidence
+- 🔵 `/` | **Lowering the cost and complexity of critical space missions** – Superlative "only" — verify it is backed by evidence
   - Found: `only`
-- 🟡 `/` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+- 🔵 `/` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
   - Found: `First`
 - 🟡 `/cloud-marketplace` | **Enterprise-grade security, automation, and reliability** – Avoid "leverage" — use 'use' instead
   - Found: `leverage`
-- 🟡 `/cloud-marketplace` | **Enterprise-grade security, automation, and reliability** – Superlative "Best" — verify it is backed by evidence
+- 🔵 `/cloud-marketplace` | **Enterprise-grade security, automation, and reliability** – Superlative "Best" — verify it is backed by evidence
   - Found: `Best`
-- 🟡 `/cloud-marketplace` | **Enterprise-grade security, automation, and reliability** – Superlative "best" — verify it is backed by evidence
-  - Found: `best`
-- 🟡 `/cloud-marketplace` | **Enterprise-grade security, automation, and reliability** – Superlative "Best in class" — verify it is backed by evidence
+- 🔵 `/cloud-marketplace` | **Enterprise-grade security, automation, and reliability** – Superlative "Best in class" — verify it is backed by evidence
   - Found: `Best in class`
-- 🟡 `/cloud-marketplace` | **Contact the Canonical team** – Superlative "First" — verify it is backed by evidence
+- 🔵 `/cloud-marketplace` | **Enterprise-grade security, automation, and reliability** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/cloud-marketplace` | **Contact the Canonical team** – Superlative "First" — verify it is backed by evidence
   - Found: `First`
-- 🟡 `/cloud-marketplace` | **Latest updates** – CTA "get in touch to be part of our private preview." appears 3 times on the page
-  - Found: `get in touch to be part of our private preview.`
-- 🟡 `/observability` | **Latest updates** – Avoid "bare metal" — avoid 'bare metal'
+- 🟡 `/observability` | **Open source observability for enterprises** – Avoid "bare metal" — avoid 'bare metal'
   - Found: `bare metal`
-- 🟡 `/observability` | **Latest updates** – Superlative "best" — verify it is backed by evidence
+- 🔵 `/observability` | **Open source observability for enterprises** – Superlative "best" — verify it is backed by evidence
   - Found: `best`
-- 🟡 `/observability` | **Latest updates** – Superlative "best- in- class" — verify it is backed by evidence
+- 🔵 `/observability` | **Open source observability for enterprises** – Superlative "best- in- class" — verify it is backed by evidence
   - Found: `best- in- class`
-- 🟡 `/observability` | **Latest updates** – Avoid "Learn more about observability &rsaquo;" as link text — use descriptive text
-  - Found: `Learn more about observability &rsaquo;`
-- 🟡 `/observability` | **Latest updates** – Superlative "best" — verify it is backed by evidence
+- 🟡 `/observability` | **Open source observability for enterprises** – Avoid "Learn more about observability ›" as link text — use descriptive text
+  - Found: `Learn more about observability ›`
+- 🔵 `/observability` | **Reliable monitoring tools you can count on** – Superlative "best" — verify it is backed by evidence
   - Found: `best`
-- 🟡 `/observability` | **Latest updates** – Superlative "most" — verify it is backed by evidence
+- 🔵 `/observability` | **Reliable monitoring tools you can count on** – Superlative "most" — verify it is backed by evidence
   - Found: `most`
-- 🟡 `/observability` | **Latest updates** – Superlative "best-in-class" — verify it is backed by evidence
+- 🔵 `/observability` | **Reliable monitoring tools you can count on** – Superlative "best-in-class" — verify it is backed by evidence
   - Found: `best-in-class`
-- 🟡 `/observability` | **You focus on your business, we run the monitoring tools for you** – Avoid "Learn more about managed services &rsaquo;" as link text — use descriptive text
-  - Found: `Learn more about managed services &rsaquo;`
-- 🟡 `/observability` | **Let's talk about open source enterprise observability** – Superlative "First" — verify it is backed by evidence
+- 🟡 `/observability` | **You focus on your business, we run the monitoring tools for you** – Avoid "Learn more about managed services ›" as link text — use descriptive text
+  - Found: `Learn more about managed services ›`
+- 🔵 `/observability` | **Let's talk about open source enterprise observability** – Superlative "First" — verify it is backed by evidence
   - Found: `First`
-- 🟡 `/observability/what-is-observability` | **Distributed traces** – Superlative "most" — verify it is backed by evidence
+- 🔵 `/observability/what-is-observability` | **Distributed traces** – Superlative "most" — verify it is backed by evidence
   - Found: `most`
-- 🟡 `/observability/what-is-observability` | **Telemetry correlation for deeper insights** – Superlative "most" — verify it is backed by evidence
+- 🔵 `/observability/what-is-observability` | **Telemetry correlation for deeper insights** – Superlative "most" — verify it is backed by evidence
   - Found: `most`
-- 🟡 `/observability/what-is-observability` | **Telemetry context** – Superlative "most" — verify it is backed by evidence
+- 🔵 `/observability/what-is-observability` | **Telemetry context** – Superlative "most" — verify it is backed by evidence
   - Found: `most`
-- 🟡 `/observability/what-is-observability` | **Telemetry context** – Avoid "Learn more about model-driven operations" as link text — use descriptive text
+- 🟡 `/observability/what-is-observability` | **Controllability: observability in action** – Avoid "Learn more about model-driven operations" as link text — use descriptive text
   - Found: `Learn more about model-driven operations`
-- 🟡 `/observability/what-is-observability` | **Telemetry context** – Superlative "best" — verify it is backed by evidence
+- 🔵 `/observability/what-is-observability` | **Ready to make your applications observable?** – Superlative "best" — verify it is backed by evidence
   - Found: `best`
-- 🟡 `/observability/what-is-observability` | **Telemetry context** – Superlative "best-of-breed" — verify it is backed by evidence
+- 🔵 `/observability/what-is-observability` | **Ready to make your applications observable?** – Superlative "best-of-breed" — verify it is backed by evidence
   - Found: `best-of-breed`
-- 🟡 `/observability/managed` | **Latest updates** – Superlative "unique" — verify it is backed by evidence
+- 🔵 `/observability/managed` | **Managed Open Source Observability** – Superlative "unique" — verify it is backed by evidence
   - Found: `unique`
-- 🟡 `/observability/managed` | **Latest updates** – Superlative "best" — verify it is backed by evidence
+- 🔵 `/observability/managed` | **Managed Open Source Observability** – Superlative "best" — verify it is backed by evidence
   - Found: `best`
-- 🟡 `/observability/managed` | **Latest updates** – Superlative "best-in-class" — verify it is backed by evidence
+- 🔵 `/observability/managed` | **Managed Open Source Observability** – Superlative "best-in-class" — verify it is backed by evidence
   - Found: `best-in-class`
-- 🟡 `/observability/managed` | **Never miss another outage** – Superlative "best" — verify it is backed by evidence
+- 🔵 `/observability/managed` | **Never miss another outage** – Superlative "best" — verify it is backed by evidence
   - Found: `best`
-- 🟡 `/observability/managed` | **99.9% uptime** – Superlative "best" — verify it is backed by evidence
+- 🔵 `/observability/managed` | **99.9% uptime** – Superlative "best" — verify it is backed by evidence
   - Found: `best`
-- 🟡 `/observability/managed` | **Security first** – Superlative "first" — verify it is backed by evidence
+- 🔵 `/observability/managed` | **Security first** – Superlative "first" — verify it is backed by evidence
   - Found: `first`
-- 🟡 `/observability/managed` | **Security first** – Superlative "best" — verify it is backed by evidence
+- 🔵 `/observability/managed` | **Security first** – Superlative "best" — verify it is backed by evidence
   - Found: `best`
 - 🟡 `/observability/managed` | **No lock-in** – Avoid "leverage" — use 'use' instead
   - Found: `leverage`
 - 🟡 `/observability/managed` | **Multi-cloud ready** – Avoid "leverage" — use 'use' instead
   - Found: `leverage`
-- 🟡 `/observability/managed` | **Powerful monitoring, simple and predictable price, cost-efficient** – Superlative "best" — verify it is backed by evidence
+- 🔵 `/observability/managed` | **Powerful monitoring, simple and predictable price, cost-efficient** – Superlative "best" — verify it is backed by evidence
   - Found: `best`
 - 🟡 `/observability/managed` | **Powerful monitoring, simple and predictable price, cost-efficient** – Avoid "bare metal" — avoid 'bare metal'
   - Found: `bare metal`
-- 🟡 `/observability/managed` | **Can't find what you're looking for?** – Superlative "unique" — verify it is backed by evidence
+- 🔵 `/observability/managed` | **Can't find what you're looking for?** – Superlative "unique" — verify it is backed by evidence
   - Found: `unique`
-- 🟡 `/observability/managed` | **Contact us about Managed Observability** – Superlative "First" — verify it is backed by evidence
+- 🔵 `/observability/managed` | **Contact us about Managed Observability** – Superlative "First" — verify it is backed by evidence
   - Found: `First`
+- 🟡 `/observability/managed` | **Managed Open Source Observability** – CTA "contact us" appears 3 times on the page
+  - Found: `contact us`
+- 🔵 `/microk8s` | **For Developers** – Superlative "fastest" — verify it is backed by evidence
+  - Found: `fastest`
+- 🟡 `/microk8s` | **For software vendors** – Avoid "Leverage" — use 'use' instead
+  - Found: `Leverage`
+- 🔵 `/microk8s` | **Enterprise support, timely fixes, and no license fees** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/microk8s` | **Enterprise support, timely fixes, and no license fees** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/microk8s` | **Enterprise support, timely fixes, and no license fees** – Avoid "Learn more about Ubuntu Pro" as link text — use descriptive text
+  - Found: `Learn more about Ubuntu Pro`
+- 🟡 `/microk8s` | **Zero-ops infrastructure** – Avoid "eliminate" — avoid violent/negative language
+  - Found: `eliminate`
+- 🔵 `/microk8s` | **The most popular cloud native projects at your fingertips. No config needed** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/microk8s` | **The most popular cloud native projects at your fingertips. No config needed** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/microk8s` | **Minimal, CNCF-certified distribution** – Avoid "leverage" — use 'use' instead
+  - Found: `leverage`
+- 🔵 `/microk8s` | **Submit a question** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/microk8s` | **Install MicroK8s** – Link text "learn how ›" points to 2 different URLs
+  - Found: `"learn how ›" → /microk8s/docs/working-with-kubectl#heading--kubectl-windows, microk8s/docs/working-with-kubectl#heading--kubectl-macos`
+- 🟡 `/microk8s` | **Install MicroK8s** – CTA "read the docs to learn more ›" appears 3 times on the page
+  - Found: `read the docs to learn more ›`
+- 🟡 `/microk8s` | **Install MicroK8s** – CTA "connect with our community and see what others are doing with microk8s ›" appears 3 times on the page
+  - Found: `connect with our community and see what others are doing with microk8s ›`
+- 🔵 `/microk8s/tutorials` | **[Install a local** – Superlative "fastest" — verify it is backed by evidence
+  - Found: `fastest`
+- 🟡 `/microk8s/tutorials` | **[Gitlab CI/CD pipelines** – Avoid "in order to" — simplify to 'to'
+  - Found: `in order to`
+- 🟡 `/microk8s/features` | **Autonomous HA Kubernetes** – Avoid "Learn more about how HA MicroK8s works ›" as link text — use descriptive text
+  - Found: `Learn more about how HA MicroK8s works ›`
+- 🔵 `/microk8s/features` | **Strict confinement** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/microk8s/features` | **NVIDIA GPU support, ideal for AI/ML and HPC** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/microk8s/features` | **NVIDIA GPU support, ideal for AI/ML and HPC** – Avoid "Learn more about NVIDIA GPU support on MicroK8s ›" as link text — use descriptive text
+  - Found: `Learn more about NVIDIA GPU support on MicroK8s ›`
+- 🔵 `/microk8s/features` | **Better user experience with addons** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/microk8s/features` | **Better user experience with addons** – Superlative "Most" — verify it is backed by evidence
+  - Found: `Most`
+- 🔵 `/microk8s/features` | **Submit a question** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/microk8s/resources` | **Videos and webinars** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/microk8s/resources` | **Videos and webinars** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/microk8s/resources` | **[Kubernetes** – Avoid "leverage" — use 'use' instead
+  - Found: `leverage`
+- 🟡 `/microk8s/resources` | **[From lightweight to** – Avoid "form factor" — avoid 'form factor'
+  - Found: `form factor`
+- 🔵 `/microk8s/compare` | **Compare features** – No space between value and unit: "540 MB"
+  - Found: `540 MB`
+- 🔵 `/microk8s/compare` | **Compare features** – No space between value and unit: "512 MB"
+  - Found: `512 MB`
+- 🔵 `/microk8s/compare` | **Compare features** – No space between value and unit: "644 MB"
+  - Found: `644 MB`
+- 🔵 `/microk8s/compare` | **Why MicroK8s?** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/microk8s/compare` | **Why MicroK8s?** – Superlative "unique" — verify it is backed by evidence
+  - Found: `unique`
+- 🔵 `/microk8s/compare` | **Submit a question** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/mlops` | **Charmed Kubeflow** – Avoid "Learn more about Charmed Kubeflow" as link text — use descriptive text
+  - Found: `Learn more about Charmed Kubeflow`
+- 🟡 `/mlops` | **Charmed MLFlow** – Avoid "Learn more about Charmed MLFlow" as link text — use descriptive text
+  - Found: `Learn more about Charmed MLFlow`
+- 🟡 `/mlops` | **Charmed Feast** – Avoid "Learn more about Charmed Feast" as link text — use descriptive text
+  - Found: `Learn more about Charmed Feast`
+- 🔵 `/mlops` | **Talk to our MLOps experts** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/mlops/mlflow` | **Get the features of upstream MLflow** – Avoid "Learn more about MLflow ›" as link text — use descriptive text
+  - Found: `Learn more about MLflow ›`
+- 🟡 `/mlops/mlflow` | **Enterprise support** – Avoid "Learn more about enterprise support ›" as link text — use descriptive text
+  - Found: `Learn more about enterprise support ›`
+- 🟡 `/mlops/mlflow` | **Long-term security maintenance** – Avoid "Learn more about security maintenance ›" as link text — use descriptive text
+  - Found: `Learn more about security maintenance ›`
+- 🔵 `/mlops/mlflow` | **MLflow resources** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/mlops/mlflow` | **Talk to our MLOps experts** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/mlops/kubeflow` | **Kubeflow AI and MLOps at any scale** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🔵 `/mlops/kubeflow` | **Why choose Charmed Kubeflow?** – Superlative "fastest" — verify it is backed by evidence
+  - Found: `fastest`
+- 🟡 `/mlops/kubeflow` | **Scale experiments, effortlessly** – Avoid "Leverage" — use 'use' instead
+  - Found: `Leverage`
+- 🔵 `/mlops/kubeflow` | **Talk to our MLOps experts** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/mlops/kubeflow/what-is-kubeflow` | **Kubeflow dashboard** – Avoid "leverage" — use 'use' instead
+  - Found: `leverage`
+- 🔵 `/mlops/kubeflow/what-is-kubeflow` | **Hyperparameter tuning / AutoML** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/mlops/kubeflow/what-is-kubeflow` | **Why MLOps?** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🟡 `/mlops/kubeflow/what-is-kubeflow` | **Why MLOps?** – Avoid "Read more about MLOps" as link text — use descriptive text
+  - Found: `Read more about MLOps`
+- 🔵 `/mlops/kubeflow/what-is-kubeflow` | **Kubeflow resources** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/mlops/kubeflow/what-is-kubeflow` | **Talk to our MLOps experts** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/mlops/kubeflow/what-is-kubeflow` | **Kubeflow Pipelines** – Link text "learn more ›" points to 2 different URLs
+  - Found: `"learn more ›" → https://ubuntu.com/blog/data-science-workflows-on-kubernetes-with-kubeflow-pipelines-part-1, https://ubuntu.com/blog/what-is-kfserving`
+- 🔵 `/mlops/feast` | **Best in class feature store, integrated into your MLOps stack** – Superlative "Best" — verify it is backed by evidence
+  - Found: `Best`
+- 🔵 `/mlops/feast` | **Best in class feature store, integrated into your MLOps stack** – Superlative "Best in class" — verify it is backed by evidence
+  - Found: `Best in class`
+- 🟡 `/mlops/feast` | **All the features of upstream Feast** – Avoid "Learn more about Feast" as link text — use descriptive text
+  - Found: `Learn more about Feast`
+- 🟡 `/mlops/feast` | **Use Charmed Feast with** – Avoid "Learn more about Apache Spark on Kubernetes" as link text — use descriptive text
+  - Found: `Learn more about Apache Spark on Kubernetes`
+- 🟡 `/mlops/feast` | **Use Charmed Feast with** – Avoid "Learn more about Kubeflow" as link text — use descriptive text
+  - Found: `Learn more about Kubeflow`
+- 🟡 `/mlops/feast` | **Use Charmed Feast with** – Avoid "Learn more about Juju" as link text — use descriptive text
+  - Found: `Learn more about Juju`
+- 🔵 `/mlops/feast` | **Talk to our MLOps experts** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/mlops/mlops-workshop` | **Define your MLOps architecture** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/mlops/mlops-workshop` | **Learn from experts in the industry** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/mlops/mlops-workshop` | **Make the best use of existing infrastructure** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/mlops/mlops-workshop` | **Make the best use of existing infrastructure** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/mlops/mlops-workshop` | **MLOps workshop structure** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/mlops/mlops-workshop` | **Talk to our MLOps experts** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/data` | **Enterprise-grade solutions for your mission critical data** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/data` | **Security, support, and automation across clouds** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🔵 `/data` | **Get in touch** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/data/cassandra` | **Talk to our Cassandra experts** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/data/kafka` | **Easy to deploy and manage** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/kafka` | **Easy to deploy and manage** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/data/kafka` | **Kafka security** – Avoid "Learn more about Ubuntu Pro" as link text — use descriptive text
+  - Found: `Learn more about Ubuntu Pro`
+- 🟡 `/data/kafka` | **Kafka support** – Avoid "Learn more about Kafka support" as link text — use descriptive text
+  - Found: `Learn more about Kafka support`
+- 🔵 `/data/kafka` | **Kafka use cases** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/kafka` | **Talk to our Apache Kafka solution architects** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/data/kafka/managed` | **Secure by design** – Use commas in numbers over 999: "27001" → "27,001"
+  - Found: `27001`
+- 🟡 `/data/kafka/managed` | **[Learn more about Managed Services ›](https://ubuntu.com/managed)** – Avoid "Learn more about Managed Services ›" as link text — use descriptive text
+  - Found: `Learn more about Managed Services ›`
+- 🔵 `/data/kafka/managed` | **Managed Kafka resources** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/kafka/managed` | **Talk to our Apache Kafka solution architects** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/data/kafka/support` | **What our customers say** – Avoid "not only of Kubernetes but also" — wordy — simplify
+  - Found: `not only of Kubernetes but also`
+- 🔵 `/data/kafka/support` | **What our customers say** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/data/kafka/support` | **Full-stack support** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/kafka/support` | **Full-stack support** – Superlative "best in class" — verify it is backed by evidence
+  - Found: `best in class`
+- 🔵 `/data/kafka/support` | **Fast response time** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/kafka/support` | **Containers** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/data/kafka/support` | **Firefighting support** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/kafka/support` | **Firefighting support** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/kafka/support` | **Kafka platform architecture consulting** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/kafka/support` | **Come for Kafka support, get the full stack** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/kafka/support` | **Come for Kafka support, get the full stack** – Superlative "best-in-class" — verify it is backed by evidence
+  - Found: `best-in-class`
+- 🔵 `/data/kafka/support` | **Talk to our Apache Kafka solution architects** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/data/kafka/support` | **Come for Kafka support, get the full stack** – Link text "learn more ›" points to 8 different URLs
+  - Found: `"learn more ›" → /data/kafka, /data/mongodb, /data/mysql, /data/opensearch, /data/postgresql, /data/spark, /mlops/kubeflow, /mlops/mlflow`
+- 🟡 `/data/kafka/support` | **Come for Kafka support, get the full stack** – CTA "learn more ›" appears 8 times on the page
+  - Found: `learn more ›`
+- 🟡 `/data/kafka/what-is-kafka` | **What is Kafka?** – Avoid "Learn more about Apache Kafka ›" as link text — use descriptive text
+  - Found: `Learn more about Apache Kafka ›`
+- 🟡 `/data/kafka/what-is-kafka` | **How does Kafka work?** – Avoid "in order to" — simplify to 'to'
+  - Found: `in order to`
+- 🟡 `/data/kafka/what-is-kafka` | **How does Kafka work?** – Avoid "in order to" — simplify to 'to'
+  - Found: `in order to`
+- 🟡 `/data/kafka/what-is-kafka` | **Charmed Kafka** – Prefer plain English: "purchase" → "buy"
+  - Found: `purchase`
+- 🔵 `/data/kafka/what-is-kafka` | **Charmed Kafka** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/data/kafka/what-is-kafka` | **Charmed Kafka** – Avoid "Learn more about Charmed Apache Kafka ›" as link text — use descriptive text
+  - Found: `Learn more about Charmed Apache Kafka ›`
+- 🔵 `/data/kafka/what-is-kafka` | **Kafka OCI-compliant container image** – Superlative "fastest" — verify it is backed by evidence
+  - Found: `fastest`
+- 🔵 `/data/kafka/what-is-kafka` | **Talk to our Apache Kafka solution architects** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/data/spark` | **A complete solution for Spark ® with enterprise-grade support** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/spark` | **Talk to our Apache Spark solution architects** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/data/spark/managed` | **Our process** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/spark/managed` | **Secure by design** – Use commas in numbers over 999: "27001" → "27,001"
+  - Found: `27001`
+- 🟡 `/data/spark/managed` | **$9470** – Avoid "Learn more about Managed Services ›" as link text — use descriptive text
+  - Found: `Learn more about Managed Services ›`
+- 🔵 `/data/spark/managed` | **Talk to our Apache Spark solution architects** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/data/spark/support` | **Full-stack support** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/spark/support` | **Full-stack support** – Superlative "best in class" — verify it is backed by evidence
+  - Found: `best in class`
+- 🔵 `/data/spark/support` | **Fast response time** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/spark/support` | **Firefighting support** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/spark/support` | **Firefighting support** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/spark/support` | **Spark data lake platform architecture consulting** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/spark/support` | **Come for Spark support, get the full stack** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/spark/support` | **Come for Spark support, get the full stack** – Superlative "best-in-class" — verify it is backed by evidence
+  - Found: `best-in-class`
+- 🔵 `/data/spark/support` | **Talk to our Apache Spark solution architects** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/data/spark/support` | **Come for Spark support, get the full stack** – Link text "learn more ›" points to 8 different URLs
+  - Found: `"learn more ›" → /data/kafka, /data/mongodb, /data/mysql, /data/opensearch, /data/postgresql, /data/spark, /mlops/kubeflow, /mlops/mlflow`
+- 🟡 `/data/spark/support` | **Come for Spark support, get the full stack** – CTA "learn more ›" appears 8 times on the page
+  - Found: `learn more ›`
+- 🟡 `/data/spark/what-is-spark` | **How does Spark work?** – Avoid "in order to" — simplify to 'to'
+  - Found: `in order to`
+- 🟡 `/data/spark/what-is-spark` | **How does Spark work?** – Avoid "in order to" — simplify to 'to'
+  - Found: `in order to`
+- 🟡 `/data/spark/what-is-spark` | **Charmed Apache Spark** – Avoid "Find out more about Ubuntu Pro ›" as link text — use descriptive text
+  - Found: `Find out more about Ubuntu Pro ›`
+- 🟡 `/data/spark/what-is-spark` | **Charmed Spark** – Prefer plain English: "purchase" → "buy"
+  - Found: `purchase`
+- 🔵 `/data/spark/what-is-spark` | **Charmed Spark** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/data/spark/what-is-spark` | **Charmed Spark** – Avoid "Learn more about Charmed Spark ›" as link text — use descriptive text
+  - Found: `Learn more about Charmed Spark ›`
+- 🟡 `/data/spark/what-is-spark` | **Spark resources** – Prefer plain English: "facilitate" → "help"
+  - Found: `facilitate`
+- 🔵 `/data/spark/what-is-spark` | **Talk to our Apache Spark solution architects** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/data/relational-databases` | **Structure** – Skipped heading level: H3 → H5
+  - Found: `##### Note`
+- 🔵 `/data/relational-databases` | **Relational model and relational databases** – Superlative "Most" — verify it is backed by evidence
+  - Found: `Most`
+- 🔵 `/data/relational-databases` | **When you can’t afford to lose data** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/data/relational-databases` | **When you can’t afford to lose data** – Avoid "the ability to" — rephrase — e.g. 'can'
+  - Found: `the ability to`
+- 🔵 `/data/relational-databases` | **When you can’t afford to lose data** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/relational-databases` | **When the size of your data matters** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/relational-databases` | **When you have dynamic or changing access patterns** – Superlative "Most" — verify it is backed by evidence
+  - Found: `Most`
+- 🔵 `/data/relational-databases` | **When you would like to centralise your data management** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/relational-databases` | **1969** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/data/relational-databases` | **Examples of popular relational databases** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/relational-databases` | **Talk to our relational databases' experts** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/data/warehouse` | **Data warehouse architecture** – Avoid "end user" — use 'user' instead
+  - Found: `end user`
+- 🔵 `/data/warehouse` | **Canonical's solution for enterprise data warehouses** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/data/warehouse` | **Canonical's solution for enterprise data warehouses** – Avoid "Learn more about Charmed PostgreSQL ›" as link text — use descriptive text
+  - Found: `Learn more about Charmed PostgreSQL ›`
+- 🔵 `/data/warehouse` | **Contact the Canonical team** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/data/spark-on-kubernetes` | **The best way to run Spark** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/spark-on-kubernetes` | **Cost-effective** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🟡 `/data/spark-on-kubernetes` | **[Learn more about Charmed Spark ›](/data/spark)** – Avoid "Learn more about Charmed Spark ›" as link text — use descriptive text
+  - Found: `Learn more about Charmed Spark ›`
+- 🔵 `/data/spark-on-kubernetes` | **Can I use Charmed Spark for free?** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/data/spark-on-kubernetes` | **Watch** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/spark-on-kubernetes` | **Talk to our Apache Spark solution architects** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/data/etcd` | **Popular etcd use cases** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/etcd` | **Talk to our etcd experts** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/data/opensearch` | **Easy to deploy and manage OpenSearch** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/data/opensearch` | **OpenSearch use cases** – Avoid "Learn more about OpenSearch ›" as link text — use descriptive text
+  - Found: `Learn more about OpenSearch ›`
+- 🟡 `/data/opensearch` | **Vector databases** – Avoid "the ability to" — rephrase — e.g. 'can'
+  - Found: `the ability to`
+- 🔵 `/data/opensearch` | **Talk to our OpenSearch® experts** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/data/opensearch/managed` | **Our process** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/opensearch/managed` | **Key features** – Use commas in numbers over 999: "27001" → "27,001"
+  - Found: `27001`
+- 🟡 `/data/opensearch/managed` | **$9470** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/data/opensearch/managed` | **$9470** – Avoid "Learn more about Managed Services ›" as link text — use descriptive text
+  - Found: `Learn more about Managed Services ›`
+- 🔵 `/data/opensearch/managed` | **Talk to our OpenSearch® experts** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/data/opensearch/what-is-opensearch` | **Structure** – Skipped heading level: H2 → H5
+  - Found: `##### Search`
+- 🔵 `/data/opensearch/what-is-opensearch` | **What is OpenSearch?** – Superlative "unique" — verify it is backed by evidence
+  - Found: `unique`
+- 🟡 `/data/opensearch/what-is-opensearch` | **Distributed search and analytics engine** – Prefer plain English: "numerous" → "many"
+  - Found: `numerous`
+- 🟡 `/data/opensearch/what-is-opensearch` | **Distributed search and analytics engine** – Avoid "End users" — use 'user' instead
+  - Found: `End users`
+- 🟡 `/data/opensearch/what-is-opensearch` | **Distributed search and analytics engine** – Avoid "in order to" — simplify to 'to'
+  - Found: `in order to`
+- 🔵 `/data/opensearch/what-is-opensearch` | **Search engine** – Superlative "unique" — verify it is backed by evidence
+  - Found: `unique`
+- 🟡 `/data/opensearch/what-is-opensearch` | **The role of OpenSearch vector databases in LLM applications** – Prefer plain English: "facilitate" → "help"
+  - Found: `facilitate`
+- 🔵 `/data/opensearch/what-is-opensearch` | **OpenSearch plugins** – Superlative "Most" — verify it is backed by evidence
+  - Found: `Most`
+- 🟡 `/data/opensearch/what-is-opensearch` | **OpenSearch plugins** – Avoid "execute" — avoid violent/negative language
+  - Found: `execute`
+- 🟡 `/data/opensearch/what-is-opensearch` | **Charmed OpenSearch** – Prefer plain English: "purchase" → "buy"
+  - Found: `purchase`
+- 🟡 `/data/opensearch/what-is-opensearch` | **Learn more about Opensearch** – Prefer plain English: "utilise" → "use"
+  - Found: `utilise`
+- 🔵 `/data/opensearch/what-is-opensearch` | **Talk to our OpenSearch® experts** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/data/opensearch/what-is-opensearch` | **What is OpenSearch?** – Link text "contact us" points to 2 different URLs
+  - Found: `"contact us" → /contact-us, /data/opensearch#get-in-touch`
+- 🟡 `/data/opensearch/what-is-opensearch` | **What is OpenSearch?** – Link text "datasheet" points to 2 different URLs
+  - Found: `"datasheet" → https://assets.ubuntu.com/v1/6dc3440a-Charmed%20OpenSearch%20-%20Datasheet%20-%20amended%2004%2006%202024.pdf, https://assets.ubuntu.com/v1/6dc3440a-Charmed%20OpenSearch%20-%20Datasheet%20-%20amended%2004%2006%202024.pdf?_gl=1*76e20f*_gcl_au*MTY4OTkyMTA1My4xNzE2NTQxNjg0`
+- 🟡 `/data/opensearch/support` | **OpenSearch support** – Prefer plain English: "assist" → "help"
+  - Found: `assist`
+- 🔵 `/data/opensearch/support` | **Full-stack support** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/opensearch/support` | **Fast response time** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/opensearch/support` | **Snaps** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/data/opensearch/support` | **Containers** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/data/opensearch/support` | **Firefighting support** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/opensearch/support` | **Firefighting support** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/opensearch/support` | **OpenSearch platform architecture consulting** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/opensearch/support` | **Training** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/opensearch/support` | **Come for OpenSearch support, get the full stack** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/opensearch/support` | **Come for OpenSearch support, get the full stack** – Superlative "best-in-class" — verify it is backed by evidence
+  - Found: `best-in-class`
+- 🔵 `/data/opensearch/support` | **Talk to our OpenSearch® experts** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/data/opensearch/support` | **Come for OpenSearch support, get the full stack** – Link text "learn more ›" points to 8 different URLs
+  - Found: `"learn more ›" → /data/kafka, /data/mongodb, /data/mysql, /data/opensearch, /data/postgresql, /data/spark, /mlops/kubeflow, /mlops/mlflow`
+- 🟡 `/data/opensearch/support` | **Come for OpenSearch support, get the full stack** – CTA "learn more ›" appears 8 times on the page
+  - Found: `learn more ›`
+- 🔵 `/data/lakehouse` | **Data lakehouses explained** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/lakehouse` | **Apache Spark ®** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/lakehouse` | **Apache Spark ®** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/lakehouse` | **Apache Spark ®** – Superlative "best-in-class" — verify it is backed by evidence
+  - Found: `best-in-class`
+- 🟡 `/data/lakehouse` | **Apache Spark ®** – Avoid "Learn more about Charmed Spark ›" as link text — use descriptive text
+  - Found: `Learn more about Charmed Spark ›`
+- 🟡 `/data/lakehouse` | **Apache Kafka ®** – Avoid "Learn more about Charmed Kafka ›" as link text — use descriptive text
+  - Found: `Learn more about Charmed Kafka ›`
+- 🔵 `/data/lakehouse` | **Talk to our Apache Spark solution architects** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/data/mysql` | **MySQL security** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/mysql` | **MySQL use cases** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/mysql` | **[A guide to database cloud migration](https://ubuntu.com/engage/database-cloud-migration)** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/mysql` | **[PostgreSQL vs MySQL webinar](https://www.linkedin.com/events/choosingbetweenthemostpopularop7094241865746542592/theater/)** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/mysql` | **Talk to our relational databases' experts** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/data/mysql/managed` | **Service delivery with security in mind.** – Use commas in numbers over 999: "27001" → "27,001"
+  - Found: `27001`
+- 🟡 `/data/mysql/managed` | **Managed MySQL on bare metal nodes** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/data/mysql/managed` | **[Learn more about Managed Services ›](https://ubuntu.com/managed)** – Avoid "Learn more about Managed Services ›" as link text — use descriptive text
+  - Found: `Learn more about Managed Services ›`
+- 🔵 `/data/mysql/managed` | **[A guide to database cloud migration](https://ubuntu.com/engage/database-cloud-migration)** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/mysql/managed` | **[PostgreSQL vs MySQL webinar](https://ubuntu.com/engage/postgresql-mysql)** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/mysql/managed` | **Talk to our relational databases' experts** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/data/mysql/support` | **Firefighting support** – Avoid "Learn more about firefighting support ›" as link text — use descriptive text
+  - Found: `Learn more about firefighting support ›`
+- 🟡 `/data/mysql/support` | **Managed MySQL** – Avoid "Learn more about our Managed MySQL offering ›" as link text — use descriptive text
+  - Found: `Learn more about our Managed MySQL offering ›`
+- 🔵 `/data/mysql/support` | **Multiple packaging formats** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/mysql/support` | **Debs** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/mysql/support` | **Snaps** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/mysql/support` | **Containers** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/data/mysql/support` | **Deliver Proof of Concept** – Avoid "Bare metal" — avoid 'bare metal'
+  - Found: `Bare metal`
+- 🔵 `/data/mysql/support` | **MySQL training** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/data/mysql/support` | **MySQL training** – Avoid "Learn more about our training offers ›" as link text — use descriptive text
+  - Found: `Learn more about our training offers ›`
+- 🔵 `/data/mysql/support` | **Come for MySQL, get security and support for your entire stack** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/mysql/support` | **Come for MySQL, get security and support for your entire stack** – Superlative "best-in-class" — verify it is backed by evidence
+  - Found: `best-in-class`
+- 🔵 `/data/mysql/support` | **[A guide to database cloud migration](https://ubuntu.com/engage/database-cloud-migration)** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/mysql/support` | **[PostgreSQL vs MySQL webinar](https://ubuntu.com/engage/postgresql-mysql)** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/mysql/support` | **Talk to our relational databases' experts** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/data/mysql/support` | **Come for MySQL, get security and support for your entire stack** – Link text "learn more ›" points to 8 different URLs
+  - Found: `"learn more ›" → /data/kafka, /data/mongodb, /data/mysql, /data/opensearch, /data/postgresql, /data/spark, /mlops/kubeflow, /mlops/mlflow`
+- 🟡 `/data/mysql/support` | **Come for MySQL, get security and support for your entire stack** – CTA "learn more ›" appears 8 times on the page
+  - Found: `learn more ›`
+- 🟡 `/data/streaming` | **Data streaming explained** – Prefer plain English: "whilst" → "while"
+  - Found: `whilst`
+- 🔵 `/data/streaming` | **Apache Spark®** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/streaming` | **Apache Spark®** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/streaming` | **Apache Spark®** – Superlative "best-in-class" — verify it is backed by evidence
+  - Found: `best-in-class`
+- 🟡 `/data/streaming` | **Apache Spark®** – Avoid "Learn more about Charmed Spark" as link text — use descriptive text
+  - Found: `Learn more about Charmed Spark`
+- 🟡 `/data/streaming` | **Apache Kafka®** – Avoid "Learn more about Charmed Kafka" as link text — use descriptive text
+  - Found: `Learn more about Charmed Kafka`
+- 🔵 `/data/streaming` | **Talk to our Apache Kafka solution architects** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/data/valkey` | **Valkey™ support and security maintenance** – Prefer plain English: "assist" → "help"
+  - Found: `assist`
+- 🔵 `/data/valkey` | **Fast response time** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/valkey` | **Snaps** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/data/valkey` | **Containers** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/data/valkey` | **Containers** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/data/valkey` | **Data and AI platform architecture consulting** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/valkey` | **Come for Valkey™ support, get the full stack** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/valkey` | **Come for Valkey™ support, get the full stack** – Superlative "best-in-class" — verify it is backed by evidence
+  - Found: `best-in-class`
+- 🔵 `/data/valkey` | **Talk to our Valkey experts** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/data/valkey` | **Come for Valkey™ support, get the full stack** – Link text "learn more ›" points to 8 different URLs
+  - Found: `"learn more ›" → /data/kafka, /data/mongodb, /data/mysql, /data/opensearch, /data/postgresql, /data/spark, /mlops/kubeflow, /mlops/mlflow`
+- 🟡 `/data/valkey` | **Come for Valkey™ support, get the full stack** – CTA "learn more ›" appears 8 times on the page
+  - Found: `learn more ›`
+- 🟡 `/data/valkey/what-is-valkey` | **Real-time analytics** – Prefer plain English: "utilize" → "use"
+  - Found: `utilize`
+- 🟡 `/data/valkey/what-is-valkey` | **How does Valkey work?** – Prefer plain English: "whilst" → "while"
+  - Found: `whilst`
+- 🔵 `/data/valkey/what-is-valkey` | **How does Valkey work?** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/data/valkey/what-is-valkey` | **Choose the right database to fit your requirements*** – No space between value and unit: "10 TB"
+  - Found: `10 TB`
+- 🔵 `/data/valkey/what-is-valkey` | **Choose the right database to fit your requirements*** – No space between value and unit: "50 TB"
+  - Found: `50 TB`
+- 🔵 `/data/valkey/what-is-valkey` | **Choose the right database to fit your requirements*** – Superlative "Only" — verify it is backed by evidence
+  - Found: `Only`
+- 🟡 `/data/valkey/what-is-valkey` | **Enterprise Valkey offered by Canonical** – Avoid "Learn more about Valkey from Canonical  ›" as link text — use descriptive text
+  - Found: `Learn more about Valkey from Canonical  ›`
+- 🔵 `/data/postgresql` | **PostgreSQL security** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/postgresql` | **PostgreSQL use cases** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/postgresql` | **Go further with Charmed PostgreSQL** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/postgresql` | **Go further with Charmed PostgreSQL** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/postgresql` | **Talk to our relational databases' experts** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/data/postgresql/managed` | **Service delivery with security in mind.** – Use commas in numbers over 999: "27001" → "27,001"
+  - Found: `27001`
+- 🟡 `/data/postgresql/managed` | **[Learn more about Managed Services ›](https://ubuntu.com/managed)** – Avoid "Learn more about Managed Services ›" as link text — use descriptive text
+  - Found: `Learn more about Managed Services ›`
+- 🔵 `/data/postgresql/managed` | **[A guide to database cloud migration](https://ubuntu.com/engage/database-cloud-migration)** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/postgresql/managed` | **[PostgreSQL vs MySQL webinar](https://ubuntu.com/engage/postgresql-mysql)** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/postgresql/managed` | **Talk to our relational databases' experts** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/data/postgresql/what-is-postgresql` | **Structure** – Skipped heading level: H2 → H5
+  - Found: `##### Analytics`
+- 🔵 `/data/postgresql/what-is-postgresql` | **What is PostgreSQL?** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🔵 `/data/postgresql/what-is-postgresql` | **Choose the right database to fit your requirements*** – Superlative "Only" — verify it is backed by evidence
+  - Found: `Only`
+- 🔵 `/data/postgresql/what-is-postgresql` | **Learn more about PostgreSQL** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/postgresql/what-is-postgresql` | **Further reading** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/postgresql/what-is-postgresql` | **Talk to our relational databases' experts** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/data/postgresql/support` | **Firefighting support** – Avoid "Learn more about firefighting support ›" as link text — use descriptive text
+  - Found: `Learn more about firefighting support ›`
+- 🟡 `/data/postgresql/support` | **Managed PostgreSQL** – Avoid "Learn more about our Managed PostgreSQL offering ›" as link text — use descriptive text
+  - Found: `Learn more about our Managed PostgreSQL offering ›`
+- 🔵 `/data/postgresql/support` | **Multiple packaging formats** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/postgresql/support` | **Snaps** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/data/postgresql/support` | **Snaps** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/postgresql/support` | **Containers** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/data/postgresql/support` | **Containers** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/data/postgresql/support` | **Containers** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/data/postgresql/support` | **Deliver Proof of Concepts** – Avoid "Bare metal" — avoid 'bare metal'
+  - Found: `Bare metal`
+- 🔵 `/data/postgresql/support` | **PostgreSQL training** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/data/postgresql/support` | **PostgreSQL training** – Avoid "Learn more about our training offers ›" as link text — use descriptive text
+  - Found: `Learn more about our training offers ›`
+- 🔵 `/data/postgresql/support` | **Come for PostgreSQL, get security and support for your entire stack** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/postgresql/support` | **Come for PostgreSQL, get security and support for your entire stack** – Superlative "best-in-class" — verify it is backed by evidence
+  - Found: `best-in-class`
+- 🔵 `/data/postgresql/support` | **[A guide to database cloud migration](https://ubuntu.com/engage/database-cloud-migration)** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/postgresql/support` | **[PostgreSQL vs MySQL webinar](https://ubuntu.com/engage/postgresql-mysql)** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/postgresql/support` | **Talk to our relational databases' experts** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/data/postgresql/support` | **Come for PostgreSQL, get security and support for your entire stack** – Link text "learn more ›" points to 8 different URLs
+  - Found: `"learn more ›" → /data/kafka, /data/mongodb, /data/mysql, /data/opensearch, /data/postgresql, /data/spark, /mlops/kubeflow, /mlops/mlflow`
+- 🟡 `/data/postgresql/support` | **Come for PostgreSQL, get security and support for your entire stack** – CTA "learn more ›" appears 8 times on the page
+  - Found: `learn more ›`
+- 🔵 `/data/mongodb` | **Easy to deploy and manage** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/data/mongodb` | **MongoDB ® security** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/data/mongodb` | **MongoDB ® security** – Avoid "Learn more about Ubuntu Pro" as link text — use descriptive text
+  - Found: `Learn more about Ubuntu Pro`
+- 🟡 `/data/mongodb` | **Data solutions advisory services** – Avoid "Learn more about our advisory services ›" as link text — use descriptive text
+  - Found: `Learn more about our advisory services ›`
+- 🟡 `/data/mongodb` | **MongoDB ® use cases** – Avoid "Learn more about MongoDB ›" as link text — use descriptive text
+  - Found: `Learn more about MongoDB ›`
+- 🔵 `/data/mongodb` | **Learn more about Charmed MongoDB** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/mongodb` | **Talk to our MongoDB experts** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/data/mongodb/managed` | **Our process** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/mongodb/managed` | **Why choose Managed MongoDB ® ?** – Use commas in numbers over 999: "27001" → "27,001"
+  - Found: `27001`
+- 🟡 `/data/mongodb/managed` | **$9470** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/data/mongodb/managed` | **$9470** – Avoid "Learn more about Managed Services ›" as link text — use descriptive text
+  - Found: `Learn more about Managed Services ›`
+- 🔵 `/data/mongodb/managed` | **Talk to our MongoDB experts** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/data/mongodb/what-is-mongodb` | **Charmed MongoDB** – Prefer plain English: "purchase" → "buy"
+  - Found: `purchase`
+- 🔵 `/data/mongodb/what-is-mongodb` | **Charmed MongoDB** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/data/mongodb/what-is-mongodb` | **Charmed MongoDB** – Avoid "Learn more about enterprise-grade MongoDB ›" as link text — use descriptive text
+  - Found: `Learn more about enterprise-grade MongoDB ›`
+- 🔵 `/data/mongodb/what-is-mongodb` | **Choose the right database to fit your requirements** – No space between value and unit: "10 TB"
+  - Found: `10 TB`
+- 🔵 `/data/mongodb/what-is-mongodb` | **Choose the right database to fit your requirements** – No space between value and unit: "50 TB"
+  - Found: `50 TB`
+- 🔵 `/data/mongodb/what-is-mongodb` | **Choose the right database to fit your requirements** – Superlative "Only" — verify it is backed by evidence
+  - Found: `Only`
+- 🔵 `/data/mongodb/what-is-mongodb` | **Learn more about MongoDB** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/mongodb/what-is-mongodb` | **Learn more about MongoDB** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/mongodb/support` | **Full-stack support** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/mongodb/support` | **Full-stack support** – Superlative "best in class" — verify it is backed by evidence
+  - Found: `best in class`
+- 🔵 `/data/mongodb/support` | **Fast response time** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/mongodb/support` | **Firefighting support** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/mongodb/support` | **Firefighting support** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/data/mongodb/support` | **MongoDB architecture consulting** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/mongodb/support` | **Come for MongoDB ® support, access all Canonical solutions** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/data/mongodb/support` | **Come for MongoDB ® support, access all Canonical solutions** – Superlative "best-in-class" — verify it is backed by evidence
+  - Found: `best-in-class`
+- 🔵 `/data/mongodb/support` | **Talk to our MongoDB experts** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/data/mongodb/support` | **Come for MongoDB ® support, access all Canonical solutions** – Link text "learn more ›" points to 8 different URLs
+  - Found: `"learn more ›" → /data/kafka, /data/mongodb, /data/mysql, /data/opensearch, /data/postgresql, /data/spark, /mlops/kubeflow, /mlops/mlflow`
+- 🟡 `/data/mongodb/support` | **Come for MongoDB ® support, access all Canonical solutions** – CTA "learn more ›" appears 8 times on the page
+  - Found: `learn more ›`
+- 🔵 `/consulting` | **Why choose Canonical’s open source consulting services?** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/consulting` | **Container security** – Avoid "the ability to" — rephrase — e.g. 'can'
+  - Found: `the ability to`
+- 🔵 `/consulting` | **Databases** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/consulting` | **Databases** – Avoid "end users" — use 'user' instead
+  - Found: `end users`
+- 🟡 `/consulting` | **AI/MLOps** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🔵 `/consulting` | **Observability** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/consulting` | **Observability** – Superlative "best-of-breed" — verify it is backed by evidence
+  - Found: `best-of-breed`
+- 🔵 `/consulting` | **Ubuntu Desktop and Server Enterprise deployments** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🔵 `/consulting` | **Get in touch with our consulting team** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/mir` | **The fast, open and secure display server for any device** – Superlative "fastest" — verify it is backed by evidence
+  - Found: `fastest`
+- 🔵 `/mir` | **The fast, open and secure display server for any device** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/mir` | **Full enterprise support available** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/mir` | **Let's get your project to market faster!** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/maas` | **Bare metal and data center automation made easy** – Avoid "Bare metal" — avoid 'bare metal'
+  - Found: `Bare metal`
+- 🟡 `/maas` | **Turn hardware into programmable, cloud-like bare metal infrastructure** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🔵 `/maas` | **Deploy any OS image on any hardware** – Superlative "fastest" — verify it is backed by evidence
+  - Found: `fastest`
+- 🟡 `/maas` | **Integrated hardware diagnostics** – Avoid "Execute" — avoid violent/negative language
+  - Found: `Execute`
+- 🔵 `/maas` | **Integrated hardware diagnostics** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/maas` | **IPAM, DHCP, DNS** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/maas` | **IPAM, DHCP, DNS** – Superlative "best of breed" — verify it is backed by evidence
+  - Found: `best of breed`
+- 🟡 `/maas` | **MAAS use cases** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/maas` | **MAAS use cases** – Avoid "Bare metal" — avoid 'bare metal'
+  - Found: `Bare metal`
+- 🟡 `/maas` | **MAAS use cases** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/maas` | **MAAS use cases** – Avoid "Learn more about running workloads on bare metal Kubernetes with MAAS ›" as link text — use descriptive text
+  - Found: `Learn more about running workloads on bare metal Kubernetes with MAAS ›`
+- 🔵 `/maas` | **T-Mobile implements bare-metal self-service** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/maas` | **From Windows to Ubuntu in 7 days** – Prefer plain English: "approximately" → "about"
+  - Found: `approximately`
+- 🟡 `/maas` | **[Build your own bare metal cloud using a Raspberry Pi cluster with MAAS](/maas/tutorials/build-your-own-bare-metal-cloud-using-a-raspberry-pi-cluster-with-maas)** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/maas` | **[Build your own bare metal cloud using a Raspberry Pi cluster with MAAS](/maas/tutorials/build-your-own-bare-metal-cloud-using-a-raspberry-pi-cluster-with-maas)** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🔵 `/maas` | **[Build a MAAS and LXD environment in 30 minutes with Multipass on Ubuntu](/maas/tutorials/build-a-maas-and-lxd-environment-in-30-minutes-with-multipass-on-ubuntu)** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🟡 `/maas` | **[Bare metal Kubernetes hands on tutorial with MAAS and Juju](https://www.youtube.com/watch?v=sLADei_c9Qg)** – Avoid "Bare metal" — avoid 'bare metal'
+  - Found: `Bare metal`
+- 🟡 `/maas` | **[Bare metal Kubernetes hands on tutorial with MAAS and Juju](https://www.youtube.com/watch?v=sLADei_c9Qg)** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/maas` | **Ubuntu Pro** – Avoid "Learn more about Ubuntu Pro" as link text — use descriptive text
+  - Found: `Learn more about Ubuntu Pro`
+- 🟡 `/maas` | **MAAS Standalone Support** – Avoid "in order to" — simplify to 'to'
+  - Found: `in order to`
+- 🔵 `/maas` | **MAAS standalone support pricing** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/maas` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/maas` | **Contact Canonical** – Avoid "Bare Metal" — avoid 'bare metal'
+  - Found: `Bare Metal`
+- 🟡 `/maas` | **Essential $30 per year, per managed machine** – CTA "contact us ›" appears 3 times on the page
+  - Found: `contact us ›`
+- 🟡 `/maas/tutorials` | **Structure** – Skipped heading level: H1 → H3
+  - Found: `### [Build your own bare metal cloud using a Raspberry Pi cluster with MAAS](/maas/tutorials/build-your-own-bare-metal-cloud-using-a-raspberry-pi-cluster-with-maas)`
+- 🟡 `/maas/tutorials` | **[Build your own bare metal cloud using a Raspberry Pi cluster with MAAS](/maas/tutorials/build-your-own-bare-metal-cloud-using-a-raspberry-pi-cluster-with-maas)** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/maas/tutorials` | **[Build your own bare metal cloud using a Raspberry Pi cluster with MAAS](/maas/tutorials/build-your-own-bare-metal-cloud-using-a-raspberry-pi-cluster-with-maas)** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/maas/resources` | **Understand MAAS: Resources** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🔵 `/maas/resources` | **Building the datacenter** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/maas/resources` | **How Roblox went from Windows to Ubuntu in seven days for edge compute** – Prefer plain English: "approximately" → "about"
+  - Found: `approximately`
+- 🟡 `/maas/resources` | **[Easy and automated bare metal Kubernetes: The definitive whitepaper](https://ubuntu.com/engage/bare-metal-kubernetes)** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/maas/resources` | **[Easy and automated bare metal Kubernetes: The definitive whitepaper](https://ubuntu.com/engage/bare-metal-kubernetes)** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/maas/resources` | **[Easy and automated bare metal Kubernetes: The definitive whitepaper](https://ubuntu.com/engage/bare-metal-kubernetes)** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/maas/resources` | **[Easy and automated bare metal Kubernetes: The definitive whitepaper](https://ubuntu.com/engage/bare-metal-kubernetes)** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/maas/resources` | **[Easy and automated bare metal Kubernetes: The definitive whitepaper](https://ubuntu.com/engage/bare-metal-kubernetes)** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/maas/resources` | **[Turbo charge your bare metal cloud with MAAS](https://ubuntu.com/engage/epa-for-open-ran-infrastructure)** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/maas/resources` | **[Turbo charge your bare metal cloud with MAAS](https://ubuntu.com/engage/epa-for-open-ran-infrastructure)** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/maas/resources` | **[Provisioning Bare Metal Kubernetes Clusters](https://ubuntu.com/blog/bare-metal-kubernetes-clusters-spectro-cloud-maas)** – Avoid "Bare Metal" — avoid 'bare metal'
+  - Found: `Bare Metal`
+- 🟡 `/maas/resources` | **[Provisioning Bare Metal Kubernetes Clusters](https://ubuntu.com/blog/bare-metal-kubernetes-clusters-spectro-cloud-maas)** – Avoid "Bare Metal" — avoid 'bare metal'
+  - Found: `Bare Metal`
+- 🟡 `/maas/resources` | **[Provisioning Bare Metal Kubernetes Clusters](https://ubuntu.com/blog/bare-metal-kubernetes-clusters-spectro-cloud-maas)** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/maas/resources` | **[MAAS automated testing capabilities](https://ubuntu.com/engage/maas-hardware-testing)** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/maas/resources` | **Bare metal Kubernetes hands on tutorial** – Avoid "Bare metal" — avoid 'bare metal'
+  - Found: `Bare metal`
+- 🟡 `/maas/resources` | **Bare metal Kubernetes hands on tutorial** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/maas/resources` | **[Introduction to bare metal cloud](https://ubuntu.com/engage/introduction-to-bare-metal-cloud)** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/maas/resources` | **[Introduction to bare metal cloud](https://ubuntu.com/engage/introduction-to-bare-metal-cloud)** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/maas/resources` | **[Introduction to bare metal cloud](https://ubuntu.com/engage/introduction-to-bare-metal-cloud)** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/maas/resources` | **MAASberry Pi** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/maas/resources` | **Bare metal Kubernetes hands on tutorial** – Avoid "Bare metal" — avoid 'bare metal'
+  - Found: `Bare metal`
+- 🟡 `/maas/resources` | **Bare metal Kubernetes hands on tutorial** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/maas/resources` | **Bare metal Kubernetes hands on tutorial** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/maas/resources` | **Bare metal Kubernetes hands on tutorial** – Avoid "Bare metal" — avoid 'bare metal'
+  - Found: `Bare metal`
+- 🟡 `/maas/resources` | **Building the datacenter** – Link text "watch the presentation" points to 2 different URLs
+  - Found: `"watch the presentation" → https://youtu.be/SwlU4U-BWRo, https://youtu.be/dSZqax12Q7A`
+- 🔵 `/maas/how-maas-works` | **How MAAS works** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/maas/how-maas-works` | **High availability in MAAS** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🟡 `/maas/support` | **Get bare metal-support** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/maas/support` | **Bare metal enterprise support** – Avoid "Bare metal" — avoid 'bare metal'
+  - Found: `Bare metal`
+- 🔵 `/maas/support` | **Bare metal enterprise support** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/maas/support` | **Professional services** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🟡 `/maas/support` | **MAAS Standalone support** – CTA "contact us" appears 3 times on the page
+  - Found: `contact us`
+- 🟡 `/maas/features` | **Visual guide to bare metal provisioning, cloud integration, and automated server deployment with MAAS** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/maas/features` | **Automate your infrastructure setup** – Avoid "Learn more about adding new nodes to MAAS ›" as link text — use descriptive text
+  - Found: `Learn more about adding new nodes to MAAS ›`
+- 🟡 `/maas/features` | **Manage your servers without leaving your seat** – Avoid "Learn more about the node actions ›" as link text — use descriptive text
+  - Found: `Learn more about the node actions ›`
+- 🟡 `/maas/features` | **Manage your servers without leaving your seat** – Avoid "Learn more about images ›" as link text — use descriptive text
+  - Found: `Learn more about images ›`
+- 🟡 `/maas/features` | **Manage your servers without leaving your seat** – Avoid "Learn more about commissioning machines ›" as link text — use descriptive text
+  - Found: `Learn more about commissioning machines ›`
+- 🟡 `/maas/features` | **Keep an eye on your hardware** – Avoid "Learn more about hardware testing ›" as link text — use descriptive text
+  - Found: `Learn more about hardware testing ›`
+- 🟡 `/maas/features` | **Configure your servers with a few clicks** – Avoid "Learn more about storage ›" as link text — use descriptive text
+  - Found: `Learn more about storage ›`
+- 🟡 `/maas/features` | **IPAM (IP address management) for operational efficiency** – Avoid "Learn more about DHCP in MAAS ›" as link text — use descriptive text
+  - Found: `Learn more about DHCP in MAAS ›`
+- 🔵 `/maas/features` | **And much more** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/maas/features` | **Create and manage custom LXD VMs** – Avoid "Learn more about KVM in MAAS ›" as link text — use descriptive text
+  - Found: `Learn more about KVM in MAAS ›`
+- 🔵 `/solutions` | **Partners include** – Use commas in numbers over 999: "21434" → "21,434"
+  - Found: `21434`
+- 🔵 `/solutions` | **Don’t see your solution? Let’s build it together.** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/solutions` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/solutions` | **Available on** – Link text "browse more ›" points to 4 different URLs
+  - Found: `"browse more ›" → /partners/find-a-partner, /partners/ihv-and-oem, /partners/public-cloud, /partners/silicon`
+- 🟡 `/solutions` | **Available on** – Link text "read the story ›" points to 4 different URLs
+  - Found: `"read the story ›" → /case-study/grundium-ubuntu-pro-for-devices, /case-study/lucid-aws-fedramp-compliance-case-study, https://assets.ubuntu.com/v1/b97b2df6-AWS%20LaunchDarkly%20Case%20Study%20v3%203.6.2024.pdf, https://pages.ubuntu.com/rs/066-EOV-335/images/BT_Open%20Source%20Infrastructure_Case%20Study.pdf`
+- 🟡 `/solutions` | **Available on** – CTA "browse more ›" appears 4 times on the page
+  - Found: `browse more ›`
+- 🟡 `/solutions` | **Available on** – CTA "read the story ›" appears 4 times on the page
+  - Found: `read the story ›`
+- 🔵 `/solutions/industrial` | **Press release** – Use commas in numbers over 999: "21434" → "21,434"
+  - Found: `21434`
+- 🟡 `/solutions/industrial` | **Harness data to supercharge shop floor productivity** – Avoid "Learn more about virtualization on edge gateways ›" as link text — use descriptive text
+  - Found: `Learn more about virtualization on edge gateways ›`
+- 🟡 `/solutions/industrial` | **Cloud-native edge clusters for on premise intelligence** – Avoid "Learn more about OpenStack on Kubernetes ›" as link text — use descriptive text
+  - Found: `Learn more about OpenStack on Kubernetes ›`
+- 🟡 `/solutions/industrial` | **Cloud-native edge clusters for on premise intelligence** – Avoid "Learn more about MicroK8s ›" as link text — use descriptive text
+  - Found: `Learn more about MicroK8s ›`
+- 🟡 `/solutions/industrial` | **Cloud-native edge clusters for on premise intelligence** – Avoid "Learn more about LXD ›" as link text — use descriptive text
+  - Found: `Learn more about LXD ›`
+- 🟡 `/solutions/industrial` | **Speed, precision and quality** – Avoid "Leverage" — use 'use' instead
+  - Found: `Leverage`
+- 🔵 `/solutions/industrial` | **Speed, precision and quality** – Superlative "cutting-edge" — verify it is backed by evidence
+  - Found: `cutting-edge`
+- 🟡 `/solutions/industrial` | **Speed, precision and quality** – Avoid "Learn more about robotics" as link text — use descriptive text
+  - Found: `Learn more about robotics`
+- 🔵 `/solutions/industrial` | **Let's get your project to market faster!** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🔵 `/solutions/industrial` | **Let's get your project to market faster!** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/solutions/industrial` | **Let's get your project to market faster!** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/solutions/education` | **A securely designed foundation** – Avoid "Learn more about Ubuntu Pro ›" as link text — use descriptive text
+  - Found: `Learn more about Ubuntu Pro ›`
+- 🟡 `/solutions/education` | **Bring systems to the edge** – Avoid "Find out more about edge computing ›" as link text — use descriptive text
+  - Found: `Find out more about edge computing ›`
+- 🟡 `/solutions/education` | **Our public cloud partners** – Avoid "Learn more about Canonical’s partnership with AWS ›" as link text — use descriptive text
+  - Found: `Learn more about Canonical’s partnership with AWS ›`
+- 🟡 `/solutions/education` | **Our public cloud partners** – Avoid "Learn more about Canonical’s partnership with Microsoft Azure ›" as link text — use descriptive text
+  - Found: `Learn more about Canonical’s partnership with Microsoft Azure ›`
+- 🟡 `/solutions/education` | **Our public cloud partners** – Avoid "Learn more about Canonical’s partnership with Google Cloud ›" as link text — use descriptive text
+  - Found: `Learn more about Canonical’s partnership with Google Cloud ›`
+- 🟡 `/solutions/education` | **Our public cloud partners** – Avoid "Learn more about Canonical’s public cloud partnerships ›" as link text — use descriptive text
+  - Found: `Learn more about Canonical’s public cloud partnerships ›`
+- 🟡 `/solutions/education` | **Our public cloud partners** – Avoid "Learn more about Canonical’s public cloud partnerships ›" as link text — use descriptive text
+  - Found: `Learn more about Canonical’s public cloud partnerships ›`
+- 🔵 `/solutions/education` | **Additional resources** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/solutions/education` | **Additional resources** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/solutions/education` | **Helping you stay compliant** – Avoid "Learn more about meeting FIPS requirements with Canonical ›" as link text — use descriptive text
+  - Found: `Learn more about meeting FIPS requirements with Canonical ›`
+- 🟡 `/solutions/education` | **Helping you stay compliant** – Avoid "Learn more about meeting DISA-STIG requirements with Canonical ›" as link text — use descriptive text
+  - Found: `Learn more about meeting DISA-STIG requirements with Canonical ›`
+- 🟡 `/solutions/education` | **Helping you stay compliant** – Avoid "Learn more about meeting FedRAMP requirements with Canonical ›" as link text — use descriptive text
+  - Found: `Learn more about meeting FedRAMP requirements with Canonical ›`
+- 🟡 `/solutions/education` | **Helping you stay compliant** – Avoid "Learn more about meeting CIS requirements with Canonical ›" as link text — use descriptive text
+  - Found: `Learn more about meeting CIS requirements with Canonical ›`
+- 🔵 `/solutions/education` | **Canonical can support unique requirements for academic institutions. [Contact us to discuss your use case ›](/contact-us)** – Superlative "unique" — verify it is backed by evidence
+  - Found: `unique`
+- 🔵 `/solutions/education` | **Contact us about Canonical solutions for Education** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/solutions/ai` | **Structure** – Skipped heading level: H2 → H5
+  - Found: `##### Confidential AI protects your models and data`
+- 🔵 `/solutions/ai` | **Kick-start your enterprise AI journey** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🔵 `/solutions/ai` | **Designed for any silicon** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/solutions/ai` | **From development to production on one platform** – Avoid "Learn more about Ubuntu for AI ›" as link text — use descriptive text
+  - Found: `Learn more about Ubuntu for AI ›`
+- 🟡 `/solutions/ai` | **Power smart things with your models** – Avoid "Find out more about edge AI ›" as link text — use descriptive text
+  - Found: `Find out more about edge AI ›`
+- 🔵 `/solutions/ai` | **[What are large language models (LLMs)?](https://ubuntu.com/blog/what-are-large-language-models-llms)** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/solutions/ai` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/solutions/ai` | **Fast-track compliance with trusted AI software** – Link text "get the full case study ›" points to 3 different URLs
+  - Found: `"get the full case study ›" → https://ubuntu.com/engage/ai-ml-casestudy-tasmania, https://ubuntu.com/engage/machine-learning-media-entertainment, https://ubuntu.com/engage/securing-open-source-AI-with-Everything-LTS`
+- 🟡 `/solutions/ai` | **All the open source you need for AI** – Link text "learn more ›" points to 8 different URLs
+  - Found: `"learn more ›" → /data/kafka, /data/mongodb, /data/opensearch, /data/postgresql, /data/spark, /data/valkey, /mlops/kubeflow, /mlops/mlflow`
+- 🟡 `/solutions/ai` | **Fast-track compliance with trusted AI software** – CTA "get the full case study ›" appears 3 times on the page
+  - Found: `get the full case study ›`
+- 🟡 `/solutions/ai` | **All the open source you need for AI** – CTA "learn more ›" appears 8 times on the page
+  - Found: `learn more ›`
+- 🔵 `/solutions/ai/edge` | **Develop AI models and run them at the edge – all on the same open source stack** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/solutions/ai/edge` | **Move faster with certified hardware** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/solutions/ai/edge` | **Move faster with certified hardware** – Avoid "Learn more about certified hardware ›" as link text — use descriptive text
+  - Found: `Learn more about certified hardware ›`
+- 🟡 `/solutions/ai/edge` | **Low footprint Kubernetes with AI integrations** – Avoid "Learn more about MicroK8s ›" as link text — use descriptive text
+  - Found: `Learn more about MicroK8s ›`
+- 🔵 `/solutions/ai/edge` | **Learn more about edge and AI** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/solutions/ai/edge` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/solutions/ai/infrastructure` | **Tested and certified with the world's largest hardware vendors** – Superlative "largest" — verify it is backed by evidence
+  - Found: `largest`
+- 🟡 `/solutions/ai/infrastructure` | **Start your journey with a workshop** – Avoid "Learn more about our workshop" as link text — use descriptive text
+  - Found: `Learn more about our workshop`
+- 🔵 `/solutions/ai/infrastructure` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/solutions/ai/genai` | **Scale up your project with optimized GenAI infrastructure** – Avoid "Bare metal" — avoid 'bare metal'
+  - Found: `Bare metal`
+- 🔵 `/solutions/ai/genai` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/solutions/automotive` | **The best operating system for all your needs** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/solutions/automotive` | **The best operating system for all your needs** – Use commas in numbers over 999: "21434" → "21,434"
+  - Found: `21434`
+- 🟡 `/solutions/automotive` | **The best operating system for all your needs** – Avoid "Read more about Ubuntu Pro for Devices ›" as link text — use descriptive text
+  - Found: `Read more about Ubuntu Pro for Devices ›`
+- 🟡 `/solutions/automotive` | **Next level cloud experience** – Avoid "Read more about Anbox Cloud ›" as link text — use descriptive text
+  - Found: `Read more about Anbox Cloud ›`
+- 🟡 `/solutions/automotive` | **Open source quality management in automotive** – Avoid "Read more about our commitment to quality management" as link text — use descriptive text
+  - Found: `Read more about our commitment to quality management`
+- 🔵 `/solutions/automotive` | **Top rated security. Best-in-class isolation.** – Superlative "Best" — verify it is backed by evidence
+  - Found: `Best`
+- 🔵 `/solutions/automotive` | **Top rated security. Best-in-class isolation.** – Superlative "Best-in-class" — verify it is backed by evidence
+  - Found: `Best-in-class`
+- 🟡 `/solutions/automotive` | **Top rated security. Best-in-class isolation.** – Avoid "Read more about Ubuntu’s security posture ›" as link text — use descriptive text
+  - Found: `Read more about Ubuntu’s security posture ›`
+- 🔵 `/solutions/automotive` | **Compatible with all major architectures** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/solutions/automotive` | **Snaps and App Store** – Avoid "Learn more about snapd ›" as link text — use descriptive text
+  - Found: `Learn more about snapd ›`
+- 🔵 `/solutions/automotive` | **Automated factories, smarter robots** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/solutions/automotive` | **Automated factories, smarter robots** – Avoid "Learn more about digital twins in automotive supply chains and factories ›" as link text — use descriptive text
+  - Found: `Learn more about digital twins in automotive supply chains and factories ›`
+- 🟡 `/solutions/automotive` | **Build the dealerships of the future** – Avoid "Read more about our solutions for cloud-native app development ›" as link text — use descriptive text
+  - Found: `Read more about our solutions for cloud-native app development ›`
+- 🔵 `/solutions/automotive` | **Preferred by developers** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/solutions/automotive` | **Preferred by developers** – Avoid "Read more about the Ubuntu developer experience ›" as link text — use descriptive text
+  - Found: `Read more about the Ubuntu developer experience ›`
+- 🔵 `/solutions/automotive` | **Announcements** – Use commas in numbers over 999: "21434" → "21,434"
+  - Found: `21434`
+- 🔵 `/solutions/automotive` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/solutions/automotive` | **Whitepaper** – Link text "read here ›" points to 2 different URLs
+  - Found: `"read here ›" → https://ubuntu.com/blog/unravelling-complexity-in-a-software-defined-vehicles-industry, https://ubuntu.com/engage/software-defined-vehicles-whitepaper`
+- 🔵 `/solutions/automotive/buyers-guide` | **Compatibility** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/solutions/automotive/buyers-guide` | **Download our buyer's guide** – Superlative "unique" — verify it is backed by evidence
+  - Found: `unique`
+- 🔵 `/solutions/automotive/buyers-guide` | **Contact us** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/solutions/automotive/buyers-guide` | **Security** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/solutions/automotive/buyers-guide` | **Download our buyer's guide** – Superlative "unique" — verify it is backed by evidence
+  - Found: `unique`
+- 🔵 `/solutions/automotive/buyers-guide` | **Contact us** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/solutions/automotive/buyers-guide` | **Developer support** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/solutions/automotive/buyers-guide` | **Download our buyer's guide** – Superlative "unique" — verify it is backed by evidence
+  - Found: `unique`
+- 🔵 `/solutions/automotive/buyers-guide` | **Contact us** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/solutions/automotive/buyers-guide` | **Certifications and compliance** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/solutions/automotive/buyers-guide` | **Certifications and compliance** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/solutions/automotive/buyers-guide` | **Certifications and compliance** – Use commas in numbers over 999: "21434" → "21,434"
+  - Found: `21434`
+- 🔵 `/solutions/automotive/buyers-guide` | **Certifications and compliance** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/solutions/automotive/buyers-guide` | **Certifications and compliance** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/solutions/automotive/buyers-guide` | **Certifications and compliance** – Avoid "in order to" — simplify to 'to'
+  - Found: `in order to`
+- 🔵 `/solutions/automotive/buyers-guide` | **Certifications and compliance** – Use commas in numbers over 999: "26262" → "26,262"
+  - Found: `26262`
+- 🔵 `/solutions/automotive/buyers-guide` | **Certifications and compliance** – Use commas in numbers over 999: "21434" → "21,434"
+  - Found: `21434`
+- 🔵 `/solutions/automotive/buyers-guide` | **Download our buyer's guide** – Superlative "unique" — verify it is backed by evidence
+  - Found: `unique`
+- 🔵 `/solutions/automotive/buyers-guide` | **Contact us** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/solutions/automotive/buyers-guide` | **Power management** – Prefer plain English: "numerous" → "many"
+  - Found: `numerous`
+- 🔵 `/solutions/automotive/buyers-guide` | **Power management** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/solutions/automotive/buyers-guide` | **Download our buyer's guide** – Superlative "unique" — verify it is backed by evidence
+  - Found: `unique`
+- 🔵 `/solutions/automotive/buyers-guide` | **Contact us** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/solutions/automotive/buyers-guide` | **Open source** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/solutions/automotive/buyers-guide` | **Download our buyer's guide** – Superlative "unique" — verify it is backed by evidence
+  - Found: `unique`
+- 🔵 `/solutions/automotive/buyers-guide` | **Contact us** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/solutions/automotive/buyers-guide` | **EB corbos Linux — built on Ubuntu** – Avoid "in order to" — simplify to 'to'
+  - Found: `in order to`
+- 🔵 `/solutions/automotive/buyers-guide` | **Download our buyer's guide** – Superlative "unique" — verify it is backed by evidence
+  - Found: `unique`
+- 🔵 `/solutions/automotive/buyers-guide` | **Contact us** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/solutions/automotive/buyers-guide` | **Download our buyer's guide** – Superlative "unique" — verify it is backed by evidence
+  - Found: `unique`
+- 🔵 `/solutions/automotive/buyers-guide` | **Contact us** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/solutions/automotive/buyers-guide` | **Contact us** – CTA "canonical's privacy notice" appears 8 times on the page
+  - Found: `canonical's privacy notice`
+- 🟡 `/solutions/automotive/buyers-guide` | **Contact us** – CTA "privacy policy" appears 9 times on the page
+  - Found: `privacy policy`
+- 🟡 `/solutions/telco` | **Structure** – Skipped heading level: H2 → H5
+  - Found: `##### Gary Roberts`
+- 🔵 `/solutions/telco` | **Gain flexibility and innovate at speed with open source** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/solutions/telco` | **Gary Roberts** – Superlative "Most" — verify it is backed by evidence
+  - Found: `Most`
+- 🔵 `/solutions/telco` | **Jahanzeb Arshad** – Superlative "unique" — verify it is backed by evidence
+  - Found: `unique`
+- 🔵 `/solutions/telco` | **Trusted operating system** – Superlative "fastest" — verify it is backed by evidence
+  - Found: `fastest`
+- 🔵 `/solutions/telco` | **Trusted operating system** – Superlative "largest" — verify it is backed by evidence
+  - Found: `largest`
+- 🔵 `/solutions/telco` | **Trusted operating system** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/solutions/telco` | **Trusted operating system** – Avoid "Learn more about Ubuntu for telco ›" as link text — use descriptive text
+  - Found: `Learn more about Ubuntu for telco ›`
+- 🔵 `/solutions/telco` | **Full security coverage** – Superlative "largest" — verify it is backed by evidence
+  - Found: `largest`
+- 🔵 `/solutions/telco` | **Full security coverage** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/solutions/telco` | **Full security coverage** – Avoid "Learn more about Ubuntu Pro ›" as link text — use descriptive text
+  - Found: `Learn more about Ubuntu Pro ›`
+- 🔵 `/solutions/telco` | **Get more system efficiency with Canonical's silicon partnerships** – Superlative "cutting-edge" — verify it is backed by evidence
+  - Found: `cutting-edge`
+- 🟡 `/solutions/telco` | **Watch our webinars** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/solutions/telco` | **Download our whitepapers** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🔵 `/solutions/telco` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/solutions/telco/open-ran` | **Canonical's telco infrastructure portfolio** – Avoid "Learn more about Canonical's open source infrastructure solutions ›" as link text — use descriptive text
+  - Found: `Learn more about Canonical's open source infrastructure solutions ›`
+- 🟡 `/solutions/telco/open-ran` | **Performance** – Avoid "Leverage" — use 'use' instead
+  - Found: `Leverage`
+- 🔵 `/solutions/telco/open-ran` | **Guaranteed bounded low-latency** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/solutions/telco/open-ran` | **Immutable** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🟡 `/solutions/telco/open-ran` | **Optimized** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🔵 `/solutions/telco/open-ran` | **Optimized** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/solutions/telco/open-ran` | **Optimized** – Superlative "cutting-edge" — verify it is backed by evidence
+  - Found: `cutting-edge`
+- 🟡 `/solutions/telco/open-ran` | **Optimized** – Avoid "Learn more about certified hardware ›" as link text — use descriptive text
+  - Found: `Learn more about certified hardware ›`
+- 🔵 `/solutions/telco/open-ran` | **Security-maintained and compliant** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/solutions/telco/open-ran` | **Security-maintained and compliant** – Avoid "Learn more about Ubuntu Pro ›" as link text — use descriptive text
+  - Found: `Learn more about Ubuntu Pro ›`
+- 🔵 `/solutions/telco/open-ran` | **Enhanced platform features** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/solutions/telco/open-ran` | **Enhanced platform features** – Avoid "Learn more about Canonical’s edge computing solutions ›" as link text — use descriptive text
+  - Found: `Learn more about Canonical’s edge computing solutions ›`
+- 🟡 `/solutions/telco/open-ran` | **Vendor neutral products** – Avoid "Learn more about our hardware partners ›" as link text — use descriptive text
+  - Found: `Learn more about our hardware partners ›`
+- 🟡 `/solutions/telco/open-ran` | **Canonical data platforms for Open RAN** – Avoid "Learn more about our Data Solutions portfolio ›" as link text — use descriptive text
+  - Found: `Learn more about our Data Solutions portfolio ›`
+- 🔵 `/solutions/telco/open-ran` | **Contact the Canonical telco team** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/solutions/telco/5g-edge` | **Deploy the next-generation 5G edge with Canonical** – Avoid "end user" — use 'user' instead
+  - Found: `end user`
+- 🔵 `/solutions/telco/5g-edge` | **Customize Ubuntu for diverse edge hardware** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/solutions/telco/5g-edge` | **What's included** – Avoid "Read more about Canonical OpenStack ›" as link text — use descriptive text
+  - Found: `Read more about Canonical OpenStack ›`
+- 🟡 `/solutions/telco/5g-edge` | **What's included** – Avoid "Leverage" — use 'use' instead
+  - Found: `Leverage`
+- 🟡 `/solutions/telco/5g-edge` | **Highly scalable and resilient infrastructure** – Prefer plain English: "utilise" → "use"
+  - Found: `utilise`
+- 🟡 `/solutions/telco/5g-edge` | **Highly scalable and resilient infrastructure** – Avoid "Learn more about MicroCloud ›" as link text — use descriptive text
+  - Found: `Learn more about MicroCloud ›`
+- 🟡 `/solutions/telco/5g-edge` | **Bring data processing and AI/ML capabilities to the edge** – Prefer plain English: "alleviate" → "ease"
+  - Found: `alleviate`
+- 🟡 `/solutions/telco/5g-edge` | **Multi-cloud data solutions portfolio** – Avoid "Learn more about our Data Solutions portfolio ›" as link text — use descriptive text
+  - Found: `Learn more about our Data Solutions portfolio ›`
+- 🔵 `/solutions/telco/5g-edge` | **See what industry players have to say** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/solutions/telco/5g-edge` | **See what industry players have to say** – Superlative "best-of-breed" — verify it is backed by evidence
+  - Found: `best-of-breed`
+- 🟡 `/solutions/telco/5g-edge` | **Suggested reading** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🔵 `/solutions/telco/5g-edge` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/solutions/telco/5g-core` | **Transform your 5G infrastructure with Canonical** – Superlative "exceptional" — verify it is backed by evidence
+  - Found: `exceptional`
+- 🔵 `/solutions/telco/5g-core` | **Trusted by leading telco providers** – Superlative "Most" — verify it is backed by evidence
+  - Found: `Most`
+- 🟡 `/solutions/telco/5g-core` | **Zero touch provisioning** – Avoid "Eliminate" — avoid violent/negative language
+  - Found: `Eliminate`
+- 🟡 `/solutions/telco/5g-core` | **Real-time kernel capabilities** – Avoid "Learn more about Real-time Ubuntu ›" as link text — use descriptive text
+  - Found: `Learn more about Real-time Ubuntu ›`
+- 🔵 `/solutions/telco/5g-core` | **Security as standard** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/solutions/telco/5g-core` | **Comprehensive hardware support and integration** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/solutions/telco/5g-core` | **Comprehensive hardware support and integration** – Avoid "Learn more about Ubuntu certified hardware ›" as link text — use descriptive text
+  - Found: `Learn more about Ubuntu certified hardware ›`
+- 🔵 `/solutions/telco/5g-core` | **Cloudify your data center** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/solutions/telco/5g-core` | **What's included** – Avoid "Read more about Canonical OpenStack ›" as link text — use descriptive text
+  - Found: `Read more about Canonical OpenStack ›`
+- 🟡 `/solutions/telco/5g-core` | **What's included** – Avoid "Learn more about Canonical Kubernetes ›" as link text — use descriptive text
+  - Found: `Learn more about Canonical Kubernetes ›`
+- 🟡 `/solutions/telco/5g-core` | **Leading in open source and cloud-native transformation** – Avoid "Learn more ›" as link text — use descriptive text
+  - Found: `Learn more ›`
+- 🟡 `/solutions/telco/5g-core` | **Leading in open source and cloud-native transformation** – Avoid "Learn more ›" as link text — use descriptive text
+  - Found: `Learn more ›`
+- 🟡 `/solutions/telco/5g-core` | **Leading in open source and cloud-native transformation** – Avoid "Learn more ›" as link text — use descriptive text
+  - Found: `Learn more ›`
+- 🟡 `/solutions/telco/5g-core` | **Leading in open source and cloud-native transformation** – Avoid "Learn more ›" as link text — use descriptive text
+  - Found: `Learn more ›`
+- 🟡 `/solutions/telco/5g-core` | **Leading in open source and cloud-native transformation** – Avoid "Learn more ›" as link text — use descriptive text
+  - Found: `Learn more ›`
+- 🟡 `/solutions/telco/5g-core` | **Webinars** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/solutions/telco/5g-core` | **Suggested reading** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🔵 `/solutions/telco/5g-core` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/solutions/telco/5g-core` | **Leading in open source and cloud-native transformation** – Link text "learn more ›" points to 5 different URLs
+  - Found: `"learn more ›" → https://openairinterface.org/, https://opennetworking.org/, https://sylvaproject.org/, https://www.cncf.io/, https://www.etsi.org/`
+- 🟡 `/solutions/telco/5g-core` | **Leading in open source and cloud-native transformation** – CTA "learn more ›" appears 5 times on the page
+  - Found: `learn more ›`
+- 🟡 `/solutions/financial-services` | **Open source for financial services** – Prefer plain English: "whilst" → "while"
+  - Found: `whilst`
+- 🟡 `/solutions/financial-services` | **Open source for financial services** – Avoid "Learn more in our whitepaper" as link text — use descriptive text
+  - Found: `Learn more in our whitepaper`
+- 🟡 `/solutions/financial-services` | **Let's help you drive down IT costs and accelerate innovation.** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🔵 `/solutions/financial-services` | **Let's help you drive down IT costs and accelerate innovation.** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/solutions/automation` | **Open source IT automation** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/solutions/automation` | **Automation that works, anywhere** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/solutions/automation` | **Turn bare metal into on-demand resources** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/solutions/automation` | **Quickly provision or tear down physical and virtual servers** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/solutions/automation` | **Quickly provision or tear down physical and virtual servers** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/solutions/automation` | **Manage, secure, upgrade, monitor, and inventory all versions of Ubuntu** – Avoid "Learn more about Canonical’s Landscape ›" as link text — use descriptive text
+  - Found: `Learn more about Canonical’s Landscape ›`
+- 🔵 `/solutions/automation` | **Build your easiest, most performant cloud yet** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/solutions/automation` | **Moving from the public cloud to bare metal using Canonical’s open source tools saved OneUptime $352,500 a year, or around 76% of their total cloud costs. [Read how they did it ›](https://ubuntu.com/engage/oneuptime-cost-savings-case-study)** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🔵 `/solutions/automation` | **Optimize your virtualization layer** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/solutions/automation` | **Automate a highly available platform for all your apps and services** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🟡 `/solutions/automation` | **Automate a highly available platform for all your apps and services** – Avoid "Learn more about Canonical Kubernetes ›" as link text — use descriptive text
+  - Found: `Learn more about Canonical Kubernetes ›`
+- 🟡 `/solutions/automation` | **Build a cloud with full transparency, through open source** – Avoid "Learn more about MicroCloud ›" as link text — use descriptive text
+  - Found: `Learn more about MicroCloud ›`
+- 🟡 `/solutions/automation` | **Automate operations across cloud, metal, VMs and Kubernetes** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/solutions/automation` | **Automate operations across cloud, metal, VMs and Kubernetes** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/solutions/automation` | **Automate operations across cloud, metal, VMs and Kubernetes** – Avoid "Learn more about Juju ›" as link text — use descriptive text
+  - Found: `Learn more about Juju ›`
+- 🟡 `/solutions/automation` | **Seamless integrations across different clouds** – Avoid "Learn more about Juju’s powerful integration management ›" as link text — use descriptive text
+  - Found: `Learn more about Juju’s powerful integration management ›`
+- 🟡 `/solutions/automation` | **Lifecycle management for your system, not individual applications** – Avoid "Learn more about Juju’s lifecycle maintenance ›" as link text — use descriptive text
+  - Found: `Learn more about Juju’s lifecycle maintenance ›`
+- 🟡 `/solutions/automation` | **Apply hardening and configs at scale across your whole estate** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/solutions/automation` | **Turn on automated defences against your greatest security threats** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/solutions/automation` | **Turn on automated defences against your greatest security threats** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/solutions/automation` | **Turn on automated defences against your greatest security threats** – Avoid "Learn more about Ubuntu Pro ›" as link text — use descriptive text
+  - Found: `Learn more about Ubuntu Pro ›`
+- 🔵 `/solutions/automation` | **See our solutions in action** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/solutions/automation` | **See our solutions in action** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/solutions/automation` | **Get expert help with your automation** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/solutions/automation` | **Get expert help with your automation** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/solutions/open-source-security` | **Structure** – Skipped heading level: H2 → H5
+  - Found: `##### IoT and edge`
+- 🔵 `/solutions/open-source-security` | **Simplify vulnerability management. Drive developer productivity.** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/solutions/open-source-security` | **Meet your compliance requirements faster** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/solutions/open-source-security` | **Meet your compliance requirements faster** – Avoid "Learn more about the security standards we support ›" as link text — use descriptive text
+  - Found: `Learn more about the security standards we support ›`
+- 🔵 `/solutions/open-source-security` | **[70% of IT teams spend more than 6 hours per week on security patching – IDC research](/blog/70-of-it-teams-spend-more-than-6-hours-per-week-on-security-patching-new-idc-research)** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/solutions/open-source-security` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/solutions/open-source-security` | **What customers say** – Link text "read the case study ›" points to 2 different URLs
+  - Found: `"read the case study ›" → https://ubuntu.com/case-study/ubuntu-pro-support-for-games-developer, https://ubuntu.com/engage/LaunchDarkly-FedRAMP-case-study`
+- 🔵 `/solutions/open-source-security/cyber-resilience-act` | **Fast-track compliance with Ubuntu Pro for Devices** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/solutions/open-source-security/cyber-resilience-act` | **See Ubuntu Pro in action** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🔵 `/solutions/open-source-security/cyber-resilience-act` | **How long until manufacturers and other groups have to follow the CRA?** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🟡 `/solutions/open-source-security/cyber-resilience-act` | **Dive deep into the CRA with our free resources** – Avoid "in order to" — simplify to 'to'
+  - Found: `in order to`
+- 🟡 `/solutions/open-source-security/cyber-resilience-act` | **Dive deep into the CRA with our free resources** – Avoid "in order to" — simplify to 'to'
+  - Found: `in order to`
+- 🔵 `/solutions/open-source-security/cyber-resilience-act` | **Get in touch with our experts on the Cyber Resilience Act (CRA) compliance** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/solutions/open-source-security/cyber-resilience-act` | **See Ubuntu Pro in action** – Link text "download the case study" points to 3 different URLs
+  - Found: `"download the case study" → /case-study/airlock-digital-ubuntu-pro-azure-case-study, /case-study/lucid-aws-fedramp-compliance-case-study, https://ubuntu.com/engage/LaunchDarkly-FedRAMP-case-study`
+- 🟡 `/solutions/open-source-security/cyber-resilience-act` | **See Ubuntu Pro in action** – CTA "download the case study" appears 3 times on the page
+  - Found: `download the case study`
+- 🔵 `/solutions/iot-and-devices` | **Build, secure and manage IoT devices at scale** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/solutions/iot-and-devices` | **Choose your device management platform** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/solutions/iot-and-devices` | **Choose your device management platform** – Avoid "Learn more about our device management approach ›" as link text — use descriptive text
+  - Found: `Learn more about our device management approach ›`
+- 🔵 `/solutions/iot-and-devices` | **Put high-priority processes first with Real-time Ubuntu** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🔵 `/solutions/iot-and-devices` | **Ideal for low-latency use cases** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🟡 `/solutions/iot-and-devices` | **What our customers say** – Prefer plain English: "assist" → "help"
+  - Found: `assist`
+- 🔵 `/solutions/iot-and-devices` | **Talk to us about your IoT goals** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/solutions/iot-and-devices` | **Robotics** – Link text "read the case study ›" points to 3 different URLs
+  - Found: `"read the case study ›" → https://ubuntu.com/case-study/grundium-ubuntu-pro-for-devices, https://ubuntu.com/engage/rehrig-pacific-secures-edge-AI, https://ubuntu.com/engage/small-robot-company`
+- 🟡 `/solutions/iot-and-devices` | **Robotics** – CTA "read the case study ›" appears 3 times on the page
+  - Found: `read the case study ›`
+- 🔵 `/solutions/cloud-native-development` | **True open source composability** – Superlative "unique" — verify it is backed by evidence
+  - Found: `unique`
+- 🔵 `/solutions/cloud-native-development` | **True open source composability** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/solutions/cloud-native-development` | **Choose your app modernization journey** – Avoid "Read more on our blog ›" as link text — use descriptive text
+  - Found: `Read more on our blog ›`
+- 🟡 `/solutions/cloud-native-development` | **Choose your app modernization journey** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🔵 `/solutions/cloud-native-development` | **Choose your app modernization journey** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/solutions/cloud-native-development` | **Let us handle the dependencies** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/solutions/cloud-native-development` | **Run your apps on your chosen platform** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🔵 `/solutions/cloud-native-development` | **One subscription. No surprises.** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/solutions/cloud-native-development` | **What our customers say** – Avoid "not only of Kubernetes but also" — wordy — simplify
+  - Found: `not only of Kubernetes but also`
+- 🔵 `/solutions/cloud-native-development` | **What our customers say** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/solutions/cloud-native-development` | **What our customers say** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/solutions/cloud-native-development` | **Get in touch** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/solutions/infrastructure` | **The best of both worlds with a hybrid environment** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/solutions/infrastructure` | **Accessible open source infrastructure** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🟡 `/solutions/infrastructure` | **Full-stack automation** – Avoid "execute" — avoid violent/negative language
+  - Found: `execute`
+- 🔵 `/solutions/infrastructure` | **What customers say** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🟡 `/solutions/infrastructure` | **What customers say** – Avoid "not only of Kubernetes but also" — wordy — simplify
+  - Found: `not only of Kubernetes but also`
+- 🔵 `/solutions/infrastructure` | **What customers say** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🟡 `/solutions/infrastructure` | **What customers say** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/solutions/infrastructure` | **Sovereign cloud** – Avoid "Learn more about building sovereign clouds with Canonical ›" as link text — use descriptive text
+  - Found: `Learn more about building sovereign clouds with Canonical ›`
+- 🟡 `/solutions/infrastructure` | **Manage your cloud** – Prefer plain English: "assist" → "help"
+  - Found: `assist`
+- 🔵 `/solutions/infrastructure` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/solutions/infrastructure` | **What customers say** – Link text "read the case study ›" points to 5 different URLs
+  - Found: `"read the case study ›" → https://ubuntu.com/engage/European-space-agency-case-study, https://ubuntu.com/engage/kubernetes-openstack-case-study-firmus, https://ubuntu.com/engage/oneuptime-cost-savings-case-study, https://ubuntu.com/engage/phoenix-systems-case-study-ibm-openstack, https://ubuntu.com/engage/university-ontario-francais-microcloud-case-study`
+- 🟡 `/solutions/infrastructure` | **Tooling for every scale and area of compute** – Link text "learn more ›" points to 5 different URLs
+  - Found: `"learn more ›" → /maas, /microcloud, /openstack, https://ubuntu.com/ceph, https://ubuntu.com/kubernetes`
+- 🟡 `/solutions/infrastructure` | **What customers say** – CTA "read the case study ›" appears 5 times on the page
+  - Found: `read the case study ›`
+- 🟡 `/solutions/infrastructure` | **Tooling for every scale and area of compute** – CTA "learn more ›" appears 5 times on the page
+  - Found: `learn more ›`
+- 🔵 `/solutions/infrastructure/virtualization-solutions` | **Talk to Canonical experts** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/solutions/infrastructure/sovereign-cloud` | **Structure** – Skipped heading level: H2 → H5
+  - Found: `##### Digital sovereignty in the cloud`
+- 🔵 `/solutions/infrastructure/sovereign-cloud` | **What is a sovereign cloud?** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/solutions/infrastructure/sovereign-cloud` | **Digital sovereignty in the cloud** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/solutions/infrastructure/sovereign-cloud` | **Reducing dependence on foreign vendors** – Avoid "Find out more about geopatriation of clouds ›" as link text — use descriptive text
+  - Found: `Find out more about geopatriation of clouds ›`
+- 🟡 `/solutions/infrastructure/sovereign-cloud` | **Improve resilience and disaster recovery** – Prefer plain English: "whilst" → "while"
+  - Found: `whilst`
+- 🔵 `/solutions/infrastructure/sovereign-cloud` | **Health care** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/solutions/infrastructure/sovereign-cloud` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/solutions/infrastructure/private-cloud-pricing` | **Cost estimates are for informational purposes only** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/solutions/infrastructure/private-cloud-pricing` | **[Architecting private clouds for price-performance](https://ubuntu.com/engage/gsi-private-cloud)** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/solutions/infrastructure/private-cloud-pricing` | **[How GCP pricing works](/blog/gcp-pricing)** – Superlative "sole" — verify it is backed by evidence
+  - Found: `sole`
+- 🔵 `/solutions/infrastructure/private-cloud-pricing` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/solutions/infrastructure/private-cloud-pricing` | **Price-performance guaranteed** – Link text "read the case study ›" points to 3 different URLs
+  - Found: `"read the case study ›" → https://ubuntu.com/engage/kubernetes-openstack-case-study-firmus, https://ubuntu.com/engage/sbi-casestudy, https://ubuntu.com/engage/sicredi-openstack-case-study`
+- 🟡 `/solutions/infrastructure/private-cloud-pricing` | **Price-performance guaranteed** – CTA "read the case study ›" appears 3 times on the page
+  - Found: `read the case study ›`
+- 🔵 `/solutions/infrastructure/edge-computing` | **Innovate on your chosen hardware and devices** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/solutions/infrastructure/edge-computing` | **Fully-functional edge clouds** – Avoid "Learn more about MicroCloud ›" as link text — use descriptive text
+  - Found: `Learn more about MicroCloud ›`
+- 🟡 `/solutions/infrastructure/edge-computing` | **Manage your edge infrastructure with ease** – Prefer plain English: "whilst" → "while"
+  - Found: `whilst`
+- 🟡 `/solutions/infrastructure/edge-computing` | **Edge computing that drives real impact across industries** – Prefer plain English: "whilst" → "while"
+  - Found: `whilst`
+- 🔵 `/solutions/infrastructure/edge-computing` | **Edge computing that drives real impact across industries** – Superlative "largest" — verify it is backed by evidence
+  - Found: `largest`
+- 🔵 `/solutions/infrastructure/edge-computing` | **Get security coverage and enterprise grade support** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/solutions/infrastructure/edge-computing` | **Get security coverage and enterprise grade support** – Avoid "Learn more about Ubuntu Pro" as link text — use descriptive text
+  - Found: `Learn more about Ubuntu Pro`
+- 🔵 `/solutions/infrastructure/edge-computing` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/solutions/infrastructure/edge-computing` | **Edge computing that drives real impact across industries** – Link text "read the full case study ›" points to 6 different URLs
+  - Found: `"read the full case study ›" → /blog/lonestar-data-centre-moon, https://canonical.com/case-study/grundium-ubuntu-pro-for-devices, https://ubuntu.com/engage/5G-with-open-source-infrastructure, https://ubuntu.com/engage/casestudy-imsevolve, https://ubuntu.com/engage/rehrig-pacific-secures-edge-AI, https://ubuntu.com/engage/secure-digital-signage-screenly`
+- 🟡 `/solutions/infrastructure/edge-computing` | **Whitepaper: Edge computing use cases** – Link text "read more ›" points to 3 different URLs
+  - Found: `"read more ›" → /blog/unlocking-edge-ai-a-collaborative-reference-architecture-with-nvidia, https://ubuntu.com/engage/edge-computing-use-cases, https://ubuntu.com/engage/guide-to-micro-clouds`
+- 🟡 `/solutions/infrastructure/edge-computing` | **Edge computing that drives real impact across industries** – CTA "read the full case study ›" appears 6 times on the page
+  - Found: `read the full case study ›`
+- 🟡 `/solutions/infrastructure/edge-computing` | **Whitepaper: Edge computing use cases** – CTA "read more ›" appears 3 times on the page
+  - Found: `read more ›`
+- 🔵 `/solutions/data-and-ai` | **Observability** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/solutions/data-and-ai` | **Observability** – Superlative "best-in-class" — verify it is backed by evidence
+  - Found: `best-in-class`
+- 🟡 `/solutions/data-and-ai` | **RAG** – Avoid "Learn more about GenAI infrastructure and RAG ›" as link text — use descriptive text
+  - Found: `Learn more about GenAI infrastructure and RAG ›`
+- 🟡 `/solutions/data-and-ai` | **Managed Services** – Avoid "Learn more about our managed services ›" as link text — use descriptive text
+  - Found: `Learn more about our managed services ›`
+- 🔵 `/solutions/data-and-ai` | **Contact the Canonical team** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/solutions/ubuntu-os` | **A single platform for the entire compute spectrum** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/solutions/ubuntu-os` | **A single platform for the entire compute spectrum** – Avoid "Find out more about hardware certification ›" as link text — use descriptive text
+  - Found: `Find out more about hardware certification ›`
+- 🟡 `/solutions/ubuntu-os` | **Security in-depth, at the platform level** – Avoid "Learn more in our introductory whitepaper ›" as link text — use descriptive text
+  - Found: `Learn more in our introductory whitepaper ›`
+- 🔵 `/solutions/ubuntu-os` | **A single subscription for security and compliance** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/solutions/ubuntu-os` | **Ubuntu for Public Clouds** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/solutions/ubuntu-os` | **Ubuntu for Public Clouds** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/solutions/ubuntu-os` | **[Learn about open source vulnerability management](https://ubuntu.com/engage/vulnerability-management)** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/solutions/ubuntu-os` | **Get in touch with the Ubuntu team** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/solutions/ubuntu-os` | **Everywhere and for everyone** – Link text "read the case study ›" points to 7 different URLs
+  - Found: `"read the case study ›" → https://pages.ubuntu.com/rs/066-EOV-335/images/Pentera's_migration_from_CentOS_to_Ubuntu_Case_Study.pdf, https://ubuntu.com/blog/amr-with-canonical-and-husarion, https://ubuntu.com/engage/LaunchDarkly-FedRAMP-case-study, https://ubuntu.com/engage/bewell-ubuntu-core-case-study, https://ubuntu.com/engage/hypervisor-to-lxd-case-study, https://ubuntu.com/engage/new-mexico-state-university-physical-science-laboratory-drives-agile-and-compliant-federal-research-with-ubuntu, https://ubuntu.com/engage/screenly-empowers-security-conscious-enterprises`
+- 🟡 `/solutions/ubuntu-os` | **Everywhere and for everyone** – CTA "read the case study ›" appears 7 times on the page
+  - Found: `read the case study ›`
+- 🟡 `/solutions/ubuntu-os/workstations` | **Manageable. Mature. Compliant.** – Avoid "Learn more about integration with cloud identity providers ›" as link text — use descriptive text
+  - Found: `Learn more about integration with cloud identity providers ›`
+- 🔵 `/solutions/ubuntu-os/workstations` | **Your hardware. Certified for Ubuntu.** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/solutions/ubuntu-os/workstations` | **Your hardware. Certified for Ubuntu.** – Avoid "Learn more about hardware certification ›" as link text — use descriptive text
+  - Found: `Learn more about hardware certification ›`
+- 🔵 `/solutions/ubuntu-os/workstations` | **Virtual desktop infrastructure on AWS** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🟡 `/solutions/ubuntu-os/workstations` | **Virtual desktop infrastructure on AWS** – Avoid "Learn more about Ubuntu WorkSpaces ›" as link text — use descriptive text
+  - Found: `Learn more about Ubuntu WorkSpaces ›`
+- 🔵 `/solutions/ubuntu-os/workstations` | **What customers say** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/solutions/ubuntu-os/workstations` | **What customers say** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/solutions/ubuntu-os/workstations` | **What customers say** – Superlative "game-chang" — verify it is backed by evidence
+  - Found: `game-chang`
+- 🔵 `/solutions/ubuntu-os/workstations` | **Dive into Ubuntu’s** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/solutions/ubuntu-os/workstations` | **Get in touch with the Ubuntu team** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/open-source-adoption` | **Fueling open source adoption, together** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/open-source-adoption` | **Adopting open source helps attract technical talent** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/open-source-adoption` | **Why Canonical?** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/open-source-adoption` | **Why Canonical?** – Superlative "largest" — verify it is backed by evidence
+  - Found: `largest`
+- 🟡 `/open-source-adoption` | **Enterprise open source: the Ubuntu way** – Prefer plain English: "whilst" → "while"
+  - Found: `whilst`
+- 🟡 `/open-source-adoption` | **Open source with enterprise-grade support** – Prefer plain English: "facilitate" → "help"
+  - Found: `facilitate`
+- 🟡 `/open-source-adoption` | **Edge devices** – Avoid "Learn more in the case study ›" as link text — use descriptive text
+  - Found: `Learn more in the case study ›`
+- 🟡 `/open-source-adoption` | **Security and compliance for highly regulated markets** – Avoid "Find out more in the case study ›" as link text — use descriptive text
+  - Found: `Find out more in the case study ›`
+- 🟡 `/open-source-adoption` | **Customer testimonials** – Avoid "Learn more in the case study ›" as link text — use descriptive text
+  - Found: `Learn more in the case study ›`
+- 🟡 `/open-source-adoption` | **Customer testimonials** – Avoid "Find out more in the case study ›" as link text — use descriptive text
+  - Found: `Find out more in the case study ›`
+- 🔵 `/open-source-adoption` | **Further reading** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/open-source-adoption` | **Further reading** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/open-source-adoption` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/dqlite` | **Enterprise-grade SQL database for the Edge and IoT** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/academy` | **Structure** – Skipped heading level: H2 → H5
+  - Found: `##### Canonical Academy SysAdmin`
+- 🔵 `/academy` | **Self-driven learning. Real-world results.** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/academy` | **Why certify with us?** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/academy` | **Why certify with us?** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/academy` | **Using Linux Terminal** – Link text "here" points to 3 different URLs
+  - Found: `"here" → /academy/exam-content?exam=Using%20Linux%20Terminal, /academy/exam-content?exam=Using%20Ubuntu%20Desktop, /academy/exam-content?exam=Using%20Ubuntu%20Server`
+- 🟡 `/academy` | **Using Ubuntu Desktop** – Link text "test beta" points to 2 different URLs
+  - Found: `"test beta" → https://academy.canonical.com/shop?exam_index=1, https://academy.canonical.com/sign-up/tester`
+- 🟡 `/academy` | **Using Linux Terminal** – CTA "here" appears 3 times on the page
+  - Found: `here`
+- 🔵 `/academy/exam-content` | **Exam Content** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/academy/self-study` | **Exam Tips:** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🟡 `/academy/self-study` | **Exam Tips:** – Prefer plain English: "prior to" → "before"
+  - Found: `prior to`
+- 🟡 `/academy/exam-guide` | **On this page** – Prefer plain English: "purchase" → "buy"
+  - Found: `purchase`
+- 🟡 `/academy/exam-guide` | **Preparing for a Complete Qualification** – Prefer plain English: "prior to" → "before"
+  - Found: `prior to`
+- 🔵 `/academy/exam-guide` | **Exam Content Development** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/academy/exam-guide` | **Purchase & Schedule the exam** – Prefer plain English: "purchase" → "buy"
+  - Found: `purchase`
+- 🟡 `/academy/exam-guide` | **Scheduling policies** – Prefer plain English: "prior to" → "before"
+  - Found: `prior to`
+- 🔵 `/academy/exam-guide` | **Scheduling policies** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🟡 `/academy/exam-guide` | **System Requirements** – Avoid "in order to" — simplify to 'to'
+  - Found: `in order to`
+- 🟡 `/academy/exam-guide` | **System Requirements** – Prefer plain English: "prior to" → "before"
+  - Found: `prior to`
+- 🔵 `/academy/exam-guide` | **Test Taker Computer** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🟡 `/academy/exam-guide` | **Consequences of Rule Violations** – Prefer plain English: "prior to" → "before"
+  - Found: `prior to`
+- 🟡 `/academy/exam-guide` | **Attestations and Agreements** – Avoid "in order to" — simplify to 'to'
+  - Found: `in order to`
+- 🔵 `/academy/exam-guide` | **Confidentiality Agreement** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/academy/exam-guide` | **Terms of Service** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/academy/exam-guide` | **Code of Conduct** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/academy/exam-guide` | **Violations** – Superlative "sole" — verify it is backed by evidence
+  - Found: `sole`
+- 🔵 `/academy/exam-guide` | **Violations** – Superlative "sole" — verify it is backed by evidence
+  - Found: `sole`
+- 🔵 `/academy/exam-guide` | **Downloads** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🟡 `/academy/exam-guide` | **Downloads** – Prefer plain English: "facilitate" → "help"
+  - Found: `facilitate`
+- 🟡 `/academy/exam-guide` | **Photo ID and Recording** – Avoid "In order to" — simplify to 'to'
+  - Found: `In order to`
+- 🟡 `/academy/exam-guide` | **Features & Completion** – Avoid "terminate" — avoid violent/negative language
+  - Found: `terminate`
+- 🟡 `/academy/exam-guide` | **Your Exams page does not reflect purchase immediately** – Prefer plain English: "purchase" → "buy"
+  - Found: `purchase`
+- 🔵 `/academy/exam-guide` | **Starting the exam only loads a black screen** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/academy/exam-guide` | **Starting the exam only loads a black screen** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🟡 `/academy/exam-guide` | **Scheduling policies** – Link text "academy.canonical.com" points to 2 different URLs
+  - Found: `"academy.canonical.com" → https://academy.canonical.com, https://academy.canonical.com/`
+- 🟡 `/academy/exam-guide` | **Preparing for a Complete Qualification** – CTA "exams@canonical.com" appears 9 times on the page
+  - Found: `exams@canonical.com`
+- 🟡 `/academy/exam-guide` | **Scheduling policies** – CTA "academy.canonical.com" appears 3 times on the page
+  - Found: `academy.canonical.com`
+- 🟡 `/anbox-cloud` | **Cost-effective** – Avoid "Eliminate" — avoid violent/negative language
+  - Found: `Eliminate`
+- 🟡 `/anbox-cloud` | **Anbox Cloud enterprise support** – Avoid "Learn more about Ubuntu Pro" as link text — use descriptive text
+  - Found: `Learn more about Ubuntu Pro`
+- 🟡 `/anbox-cloud` | **Leaning on a strong cloud ecosystem** – Avoid "in order to" — simplify to 'to'
+  - Found: `in order to`
+- 🔵 `/anbox-cloud` | **Let's get in touch** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/lxd` | **Structure** – Skipped heading level: H2 → H4
+  - Found: `#### “With LXD there’s no loss of function like you get with a hypervisor. We benchmarked it against our existing environment and it delivered twice the performance on our database with half the resources.”`
+- 🟡 `/lxd` | **Suzie Roseberry** – Avoid "Read more in the WYDOT case study ›" as link text — use descriptive text
+  - Found: `Read more in the WYDOT case study ›`
+- 🟡 `/lxd` | **Run any type of workload** – Prefer plain English: "numerous" → "many"
+  - Found: `numerous`
+- 🔵 `/lxd` | **Alternatives for running workloads** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/lxd` | **System containers** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🔵 `/lxd` | **Enhance your experience with best-in-class open-source tools** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/lxd` | **Enhance your experience with best-in-class open-source tools** – Superlative "best-in-class" — verify it is backed by evidence
+  - Found: `best-in-class`
+- 🟡 `/lxd` | **Easily manage bare metal infrastructure with MAAS and LXD** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/lxd/install` | **Instances** – Avoid "Learn more about containers and VMs ›" as link text — use descriptive text
+  - Found: `Learn more about containers and VMs ›`
+- 🟡 `/lxd/install` | **Security** – Avoid "Learn more about LXD and security ›" as link text — use descriptive text
+  - Found: `Learn more about LXD and security ›`
+- 🟡 `/lxd/install` | **Images** – Avoid "Learn more about common operations with images ›" as link text — use descriptive text
+  - Found: `Learn more about common operations with images ›`
+- 🔵 `/lxd/install` | **Let's get in touch.** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/lxd/manage` | **LXD CLI** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/lxd/manage` | **LXD graphical user interface (UI)** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/lxd/manage` | **Third-party integrations** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/lxd/manage` | **Third-party integrations** – Prefer plain English: "regarding" → "about"
+  - Found: `regarding`
+- 🔵 `/lxd/manage` | **Let's get in touch.** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/lxd/manage` | **Third-party integrations** – Link text "juju" points to 2 different URLs
+  - Found: `"juju" → #juju, /juju`
+- 🟡 `/lxd/manage` | **Third-party integrations** – Link text "maas" points to 2 different URLs
+  - Found: `"maas" → #maas, https://maas.io`
+- 🟡 `/lxd/manage` | **Third-party integrations** – Link text "ansible" points to 2 different URLs
+  - Found: `"ansible" → #ansible, https://www.ansible.com/`
+- 🟡 `/lxd/manage` | **Third-party integrations** – Link text "terraform" points to 2 different URLs
+  - Found: `"terraform" → #terraform, https://www.terraform.io/`
+- 🟡 `/lxd/manage` | **Third-party integrations** – Link text "packer" points to 2 different URLs
+  - Found: `"packer" → #packer, https://www.packer.io/`
+- 🟡 `/lxd/manage` | **Third-party integrations** – Link text "plugin" points to 2 different URLs
+  - Found: `"plugin" → https://docs.ansible.com/ansible/latest/collections/community/general/lxd_container_module.html, https://docs.ansible.com/ansible/latest/collections/community/general/lxd_profile_module.html`
+- 🟡 `/lxd/manage` | **Third-party integrations** – CTA ""getting started"" appears 4 times on the page
+  - Found: `"getting started"`
+- 🟡 `/company` | **Helping innovators build the future since 2004** – Avoid "end user" — use 'user' instead
+  - Found: `end user`
+- 🟡 `/company` | **Helping innovators build the future since 2004** – Avoid "end users" — use 'user' instead
+  - Found: `end users`
+- 🔵 `/company` | **Helping innovators build the future since 2004** – Superlative "largest" — verify it is backed by evidence
+  - Found: `largest`
+- 🟡 `/company` | **Product portfolio** – Avoid "Learn more about our products ›" as link text — use descriptive text
+  - Found: `Learn more about our products ›`
+- 🔵 `/company` | **Your trusted partners for everything open source** – Superlative "exceptional" — verify it is backed by evidence
+  - Found: `exceptional`
+- 🟡 `/case-study` | **Filter by** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🔵 `/case-study` | **[PhonePe simplifies fintech compliance with Ubuntu Pro](/case-study/phonepe)** – Superlative "largest" — verify it is backed by evidence
+  - Found: `largest`
+- 🟡 `/case-study` | **[Caregility ensures uninterrupted patient care with remote device management](/case-study/caregility)** – Avoid "the ability to" — rephrase — e.g. 'can'
+  - Found: `the ability to`
+- 🔵 `/case-study` | **[Super Protocol builds industry’s first confidential Web3 AI & Data marketplace with Ubuntu confidential VMs](https://ubuntu.com/engage/super-protocol-confidential-ai-case-study)** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🔵 `/case-study/tntech-microcloud-cyber-range-pt-br` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/case-study/nova-telecommunications` | **About Nova** – Avoid "in order to" — simplify to 'to'
+  - Found: `in order to`
+- 🟡 `/case-study/nova-telecommunications` | **Keeping up the pace for a growing customer base** – Avoid "In order to" — simplify to 'to'
+  - Found: `In order to`
+- 🟡 `/case-study/nova-telecommunications` | **Solution** – Avoid "the ability to" — rephrase — e.g. 'can'
+  - Found: `the ability to`
+- 🔵 `/case-study/nova-telecommunications` | **Solution** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/case-study/nova-telecommunications` | **Results** – Prefer plain English: "whilst" → "while"
+  - Found: `whilst`
+- 🔵 `/case-study/nova-telecommunications` | **Results** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/case-study/nova-telecommunications` | **Results** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/case-study/nova-telecommunications` | **Results** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/case-study/nova-telecommunications` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/case-study/sbi-bits` | **About SBI BITS** – Superlative "largest" — verify it is backed by evidence
+  - Found: `largest`
+- 🔵 `/case-study/sbi-bits` | **About SBI BITS** – Superlative "largest" — verify it is backed by evidence
+  - Found: `largest`
+- 🟡 `/case-study/sbi-bits` | **Challenge** – Prefer plain English: "numerous" → "many"
+  - Found: `numerous`
+- 🔵 `/case-study/sbi-bits` | **Challenge** – Superlative "largest" — verify it is backed by evidence
+  - Found: `largest`
+- 🔵 `/case-study/sbi-bits` | **Challenge** – Superlative "unique" — verify it is backed by evidence
+  - Found: `unique`
+- 🟡 `/case-study/sbi-bits` | **Challenge** – Avoid "execute" — avoid violent/negative language
+  - Found: `execute`
+- 🟡 `/case-study/sbi-bits` | **Results** – Prefer plain English: "approximately" → "about"
+  - Found: `approximately`
+- 🔵 `/case-study/sbi-bits` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/case-study/episensor` | **In the energy sector, there can be no compromises when it comes to the reliability and security of IoT infrastructure.** – Avoid "the ability to" — rephrase — e.g. 'can'
+  - Found: `the ability to`
+- 🔵 `/case-study/episensor` | **In the energy sector, there can be no compromises when it comes to the reliability and security of IoT infrastructure.** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/case-study/episensor` | **Challenge** – Superlative "largest" — verify it is backed by evidence
+  - Found: `largest`
+- 🔵 `/case-study/episensor` | **Solution** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/case-study/episensor` | **Solution** – Avoid "end users" — use 'user' instead
+  - Found: `end users`
+- 🔵 `/case-study/episensor` | **Results** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🔵 `/case-study/episensor` | **Results** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/case-study/episensor` | **Results** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/case-study/episensor` | **Results** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🔵 `/case-study/episensor` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/case-study/unibap-space-computing` | **About Unibap** – Superlative "state-of-the-art" — verify it is backed by evidence
+  - Found: `state-of-the-art`
+- 🔵 `/case-study/unibap-space-computing` | **Highlights** – Superlative "Most" — verify it is backed by evidence
+  - Found: `Most`
+- 🔵 `/case-study/unibap-space-computing` | **A space platform that creates space for innovation** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/case-study/unibap-space-computing` | **Challenge** – Superlative "cutting-edge" — verify it is backed by evidence
+  - Found: `cutting-edge`
+- 🟡 `/case-study/unibap-space-computing` | **Challenge** – Prefer plain English: "whilst" → "while"
+  - Found: `whilst`
+- 🔵 `/case-study/unibap-space-computing` | **Challenge** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/case-study/unibap-space-computing` | **Results** – Prefer plain English: "whilst" → "while"
+  - Found: `whilst`
+- 🔵 `/case-study/unibap-space-computing` | **Results** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/case-study/unibap-space-computing` | **Results** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/case-study/unibap-space-computing` | **Results** – Avoid "Learn more about Ubuntu Pro ›" as link text — use descriptive text
+  - Found: `Learn more about Ubuntu Pro ›`
+- 🔵 `/case-study/unibap-space-computing` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/case-study/ubuntu-pro-support-for-games-developer` | **Highlights** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/case-study/ubuntu-pro-support-for-games-developer` | **Challenge** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🟡 `/case-study/ubuntu-pro-support-for-games-developer` | **Solution** – Avoid "disruptive" — avoid 'disruptive'
+  - Found: `disruptive`
+- 🔵 `/case-study/ubuntu-pro-support-for-games-developer` | **Solution** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/case-study/ubuntu-pro-support-for-games-developer` | **Results** – Avoid "Learn more about Ubuntu Pro ›" as link text — use descriptive text
+  - Found: `Learn more about Ubuntu Pro ›`
+- 🔵 `/case-study/ubuntu-pro-support-for-games-developer` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/case-study/tntech-microcloud-cyber-range` | **About Tennessee Tech University** – Prefer plain English: "approximately" → "about"
+  - Found: `approximately`
+- 🔵 `/case-study/tntech-microcloud-cyber-range` | **About Tennessee Tech University** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/case-study/tntech-microcloud-cyber-range` | **Highlights** – Superlative "cutting-edge" — verify it is backed by evidence
+  - Found: `cutting-edge`
+- 🔵 `/case-study/tntech-microcloud-cyber-range` | **Building the cybersecurity infrastructure of tomorrow** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/case-study/tntech-microcloud-cyber-range` | **Building the cybersecurity infrastructure of tomorrow** – Prefer plain English: "approximately" → "about"
+  - Found: `approximately`
+- 🟡 `/case-study/tntech-microcloud-cyber-range` | **Challenge** – Avoid "In order to" — simplify to 'to'
+  - Found: `In order to`
+- 🔵 `/case-study/tntech-microcloud-cyber-range` | **Challenge** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🟡 `/case-study/tntech-microcloud-cyber-range` | **Solution** – Prefer plain English: "facilitate" → "help"
+  - Found: `facilitate`
+- 🟡 `/case-study/tntech-microcloud-cyber-range` | **Solution** – Avoid "the ability to" — rephrase — e.g. 'can'
+  - Found: `the ability to`
+- 🔵 `/case-study/tntech-microcloud-cyber-range` | **Results** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/case-study/tntech-microcloud-cyber-range` | **Results** – Superlative "cutting-edge" — verify it is backed by evidence
+  - Found: `cutting-edge`
+- 🔵 `/case-study/tntech-microcloud-cyber-range` | **Results** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/case-study/tntech-microcloud-cyber-range` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/case-study/airlock-digital-ubuntu-pro-azure-case-study` | **Challenge** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/case-study/airlock-digital-ubuntu-pro-azure-case-study` | **Challenge** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/case-study/airlock-digital-ubuntu-pro-azure-case-study` | **Solution** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/case-study/airlock-digital-ubuntu-pro-azure-case-study` | **Solution** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/case-study/airlock-digital-ubuntu-pro-azure-case-study` | **Solution** – Prefer plain English: "purchase" → "buy"
+  - Found: `purchase`
+- 🔵 `/case-study/airlock-digital-ubuntu-pro-azure-case-study` | **Benefits** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/case-study/airlock-digital-ubuntu-pro-azure-case-study` | **Benefits** – Superlative "game-chang" — verify it is backed by evidence
+  - Found: `game-chang`
+- 🔵 `/case-study/airlock-digital-ubuntu-pro-azure-case-study` | **Benefits** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/case-study/airlock-digital-ubuntu-pro-azure-case-study` | **Benefits** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/case-study/airlock-digital-ubuntu-pro-azure-case-study` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/case-study/grundium-ubuntu-pro-for-devices` | **Solution** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/case-study/grundium-ubuntu-pro-for-devices` | **Solution** – Avoid "in order to" — simplify to 'to'
+  - Found: `in order to`
+- 🔵 `/case-study/grundium-ubuntu-pro-for-devices` | **Solution** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🟡 `/case-study/grundium-ubuntu-pro-for-devices` | **Results** – Avoid "Learn more about Ubuntu Pro for Devices ›" as link text — use descriptive text
+  - Found: `Learn more about Ubuntu Pro for Devices ›`
+- 🔵 `/case-study/grundium-ubuntu-pro-for-devices` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/case-study/esa` | **About the European Space Agency (ESA)** – Superlative "unique" — verify it is backed by evidence
+  - Found: `unique`
+- 🔵 `/case-study/esa` | **You can’t explore space without infrastructure.** – Superlative "unique" — verify it is backed by evidence
+  - Found: `unique`
+- 🔵 `/case-study/esa` | **You can’t explore space without infrastructure.** – Superlative "unique" — verify it is backed by evidence
+  - Found: `unique`
+- 🟡 `/case-study/esa` | **You can’t explore space without infrastructure.** – Avoid "in order to" — simplify to 'to'
+  - Found: `in order to`
+- 🔵 `/case-study/esa` | **Challenge** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/case-study/esa` | **Solution** – Avoid "not only of Kubernetes but also" — wordy — simplify
+  - Found: `not only of Kubernetes but also`
+- 🔵 `/case-study/esa` | **Solution** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🟡 `/case-study/esa` | **Results** – Avoid "the ability to" — rephrase — e.g. 'can'
+  - Found: `the ability to`
+- 🟡 `/case-study/esa` | **Results** – Avoid "the ability to" — rephrase — e.g. 'can'
+  - Found: `the ability to`
+- 🔵 `/case-study/esa` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/case-study/oediv-de` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/case-study/managed-kafka-for-smart-safety` | **Highlights** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/case-study/managed-kafka-for-smart-safety` | **Challenge** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/case-study/managed-kafka-for-smart-safety` | **Results** – Avoid "disruptive" — avoid 'disruptive'
+  - Found: `disruptive`
+- 🔵 `/case-study/managed-kafka-for-smart-safety` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/case-study/phonepe` | **About PhonePe** – Superlative "largest" — verify it is backed by evidence
+  - Found: `largest`
+- 🟡 `/case-study/phonepe` | **About PhonePe** – Prefer plain English: "approximately" → "about"
+  - Found: `approximately`
+- 🔵 `/case-study/phonepe` | **About PhonePe** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/case-study/phonepe` | **Highlights** – Avoid "is able to" — rephrase — e.g. 'can'
+  - Found: `is able to`
+- 🔵 `/case-study/phonepe` | **A trusted OS for a trusted payments platform** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/case-study/phonepe` | **A trusted OS for a trusted payments platform** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🔵 `/case-study/phonepe` | **Challenge** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🟡 `/case-study/phonepe` | **Challenge** – Avoid "in order to" — simplify to 'to'
+  - Found: `in order to`
+- 🟡 `/case-study/phonepe` | **Results** – Avoid "is able to" — rephrase — e.g. 'can'
+  - Found: `is able to`
+- 🟡 `/case-study/phonepe` | **Results** – Avoid "Learn more about Ubuntu Pro ›" as link text — use descriptive text
+  - Found: `Learn more about Ubuntu Pro ›`
+- 🔵 `/case-study/phonepe` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/case-study/elementary-ai-machine-vision` | **Challenge** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🟡 `/case-study/elementary-ai-machine-vision` | **Challenge** – Avoid "eliminate" — avoid violent/negative language
+  - Found: `eliminate`
+- 🟡 `/case-study/elementary-ai-machine-vision` | **Solution** – Avoid "form factor" — avoid 'form factor'
+  - Found: `form factor`
+- 🟡 `/case-study/elementary-ai-machine-vision` | **Solution** – Avoid "form factor" — avoid 'form factor'
+  - Found: `form factor`
+- 🟡 `/case-study/elementary-ai-machine-vision` | **Solution** – Avoid "form factor" — avoid 'form factor'
+  - Found: `form factor`
+- 🟡 `/case-study/elementary-ai-machine-vision` | **Solution** – Avoid "form factor" — avoid 'form factor'
+  - Found: `form factor`
+- 🟡 `/case-study/elementary-ai-machine-vision` | **Solution** – Prefer plain English: "whilst" → "while"
+  - Found: `whilst`
+- 🔵 `/case-study/elementary-ai-machine-vision` | **Solution** – Use commas in numbers over 999: "14700" → "14,700"
+  - Found: `14700`
+- 🔵 `/case-study/elementary-ai-machine-vision` | **Solution** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/case-study/elementary-ai-machine-vision` | **Solution** – Superlative "Most" — verify it is backed by evidence
+  - Found: `Most`
+- 🟡 `/case-study/elementary-ai-machine-vision` | **Results** – Prefer plain English: "prior to" → "before"
+  - Found: `prior to`
+- 🟡 `/case-study/elementary-ai-machine-vision` | **Results** – Prefer plain English: "alleviate" → "ease"
+  - Found: `alleviate`
+- 🔵 `/case-study/elementary-ai-machine-vision` | **Results** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/case-study/elementary-ai-machine-vision` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/case-study/lucid-aws-fedramp-compliance-case-study` | **Overview** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/case-study/lucid-aws-fedramp-compliance-case-study` | **Challenge** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/case-study/lucid-aws-fedramp-compliance-case-study` | **Benefits** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/case-study/lucid-aws-fedramp-compliance-case-study` | **Benefits** – Superlative "best-in-class" — verify it is backed by evidence
+  - Found: `best-in-class`
+- 🔵 `/case-study/lucid-aws-fedramp-compliance-case-study` | **Benefits** – Superlative "Best" — verify it is backed by evidence
+  - Found: `Best`
+- 🔵 `/case-study/lucid-aws-fedramp-compliance-case-study` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/case-study/ubuntu-pro-fips-on-aws` | **About the customer** – Prefer plain English: "numerous" → "many"
+  - Found: `numerous`
+- 🔵 `/case-study/ubuntu-pro-fips-on-aws` | **For businesses delivering cloud products and services to federal clients, FedRAMP compliance is a critical requirement.** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/case-study/ubuntu-pro-fips-on-aws` | **Challenge** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/case-study/ubuntu-pro-fips-on-aws` | **Solution** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/case-study/ubuntu-pro-fips-on-aws` | **Results** – Use commas in numbers over 999: "27001" → "27,001"
+  - Found: `27001`
+- 🔵 `/case-study/ubuntu-pro-fips-on-aws` | **Results** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/case-study/ubuntu-pro-fips-on-aws` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/case-study/machine-learning-for-financial-services` | **Highlights** – Superlative "unprecedented" — verify it is backed by evidence
+  - Found: `unprecedented`
+- 🟡 `/case-study/machine-learning-for-financial-services` | **Overview** – Avoid "in order to" — simplify to 'to'
+  - Found: `in order to`
+- 🔵 `/case-study/machine-learning-for-financial-services` | **Challenge** – Superlative "unique" — verify it is backed by evidence
+  - Found: `unique`
+- 🟡 `/case-study/machine-learning-for-financial-services` | **Results** – Prefer plain English: "utilize" → "use"
+  - Found: `utilize`
+- 🔵 `/case-study/machine-learning-for-financial-services` | **Results** – Superlative "Most" — verify it is backed by evidence
+  - Found: `Most`
+- 🔵 `/case-study/machine-learning-for-financial-services` | **Results** – Superlative "game chang" — verify it is backed by evidence
+  - Found: `game chang`
+- 🔵 `/case-study/machine-learning-for-financial-services` | **Results** – Superlative "Most" — verify it is backed by evidence
+  - Found: `Most`
+- 🔵 `/case-study/machine-learning-for-financial-services` | **Results** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🔵 `/case-study/machine-learning-for-financial-services` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/case-study/caregility` | **Challenge** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/case-study/caregility` | **Solution** – Avoid "in order to" — simplify to 'to'
+  - Found: `in order to`
+- 🟡 `/case-study/caregility` | **Solution** – Avoid "the ability to" — rephrase — e.g. 'can'
+  - Found: `the ability to`
+- 🟡 `/case-study/caregility` | **Solution** – Avoid "the ability to" — rephrase — e.g. 'can'
+  - Found: `the ability to`
+- 🔵 `/case-study/caregility` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/case-study/oediv` | **About OEDIV** – Superlative "largest" — verify it is backed by evidence
+  - Found: `largest`
+- 🟡 `/case-study/oediv` | **Introduction** – Avoid "in order to" — simplify to 'to'
+  - Found: `in order to`
+- 🟡 `/case-study/oediv` | **Challenge** – Avoid "In order to" — simplify to 'to'
+  - Found: `In order to`
+- 🟡 `/case-study/oediv` | **Solution** – Avoid "the ability to" — rephrase — e.g. 'can'
+  - Found: `the ability to`
+- 🟡 `/case-study/oediv` | **Solution** – Avoid "is able to" — rephrase — e.g. 'can'
+  - Found: `is able to`
+- 🟡 `/case-study/oediv` | **Results** – Avoid "the ability to" — rephrase — e.g. 'can'
+  - Found: `the ability to`
+- 🟡 `/case-study/oediv` | **Results** – Avoid "Learn more about Ubuntu Pro ›" as link text — use descriptive text
+  - Found: `Learn more about Ubuntu Pro ›`
+- 🔵 `/case-study/oediv` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/openstack` | **Endorsed by executives, globally** – Avoid "in order to" — simplify to 'to'
+  - Found: `in order to`
+- 🔵 `/openstack` | **Endorsed by executives, globally** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/openstack` | **Endorsed by executives, globally** – Superlative "best-in-class" — verify it is backed by evidence
+  - Found: `best-in-class`
+- 🔵 `/openstack` | **Get Canonical OpenStack** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/openstack` | **Get Canonical OpenStack** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/openstack` | **Self-deployed** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/openstack` | **Canonical-deployed** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/openstack` | **Canonical-deployed** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/openstack` | **Get in touch with the OpenStack team** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/openstack` | **Proven record of success** – Link text "read the case study ›" points to 2 different URLs
+  - Found: `"read the case study ›" → https://ubuntu.com/case-study/sbi-bits, https://ubuntu.com/engage/kubernetes-openstack-case-study-firmus`
+- 🔵 `/openstack/resources` | **[Canonical OpenStack datasheet](https://assets.ubuntu.com/v1/cb9568ea-Datasheet%20-%20Canonical%20OpenStack.pdf)** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/openstack/resources` | **[Canonical OpenStack reference architecture](https://ubuntu.com/engage/canonical-openstack-reference-architecture)** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/openstack/resources` | **[Install OpenStack yourself](https://ubuntu.com/openstack/install)** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🟡 `/openstack/resources` | **[Browse Canonical OpenStack documentation](https://canonical-openstack.readthedocs-hosted.com/en/latest/)** – Avoid "end users" — use 'user' instead
+  - Found: `end users`
+- 🔵 `/openstack/resources` | **[Browse Canonical OpenStack documentation](https://canonical-openstack.readthedocs-hosted.com/en/latest/)** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/openstack/resources` | **[Cloud Pricing Report](https://ubuntu.com/engage/cloud-pricing-report)** – Avoid "In order to" — simplify to 'to'
+  - Found: `In order to`
+- 🔵 `/openstack/resources` | **[Why OpenStack is the Best Solution for Your Cloud Strategy](https://www.youtube.com/watch?v=2dyWztiKECg)** – Superlative "Best" — verify it is backed by evidence
+  - Found: `Best`
+- 🔵 `/openstack/resources` | **[47% of OpenStack clouds run on Ubuntu - this is why](https://www.youtube.com/watch?v=5SqYw3gbVpU)** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/openstack/resources` | **[Own your data; leveraging OpenStack and Sunbeam to deploy a sovereign AI cloud](https://www.youtube.com/watch?v=xUhslnruvkg)** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🔵 `/openstack/resources` | **[What is OpenStack and why does it matter?](https://ubuntu.com/engage/what-is-openstack)** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/openstack/resources` | **[Join Canonical at the first-ever African OpenInfra Days](/blog/join-canonical-at-the-first-ever-african-openinfra-days)** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🔵 `/openstack/resources` | **[Join Canonical at the first-ever African OpenInfra Days](/blog/join-canonical-at-the-first-ever-african-openinfra-days)** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🔵 `/openstack/resources` | **[OpenStack PoC? No problem!](/blog/openstack-poc)** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🔵 `/openstack/resources` | **Sign up for our monthly OpenStack newsletter** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🔵 `/openstack/features` | **At the forefront of innovation** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/openstack/features` | **Appreciated by key industry players** – Avoid "leverage" — use 'use' instead
+  - Found: `leverage`
+- 🔵 `/openstack/features` | **Appreciated by key industry players** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🟡 `/openstack/features` | **OpenStack, tamed** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🔵 `/openstack/features` | **Cloud storage** – No space between value and unit: "128 TB"
+  - Found: `128 TB`
+- 🟡 `/openstack/features` | **Bare metal automation** – Avoid "Bare metal" — avoid 'bare metal'
+  - Found: `Bare metal`
+- 🟡 `/openstack/features` | **Bare metal automation** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🔵 `/openstack/features` | **Full commercial support across your entire open source estate** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/openstack/features` | **Tailored to the most demanding market needs** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/openstack/features` | **Highly scalable and composable enterprise cloud solution** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/openstack/features` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/openstack/support` | **OpenStack support** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/openstack/support` | **Canonical's services** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🟡 `/openstack/support` | **Cloud on-boarding** – Prefer plain English: "assist" → "help"
+  - Found: `assist`
+- 🔵 `/openstack/support` | **Firefighting support** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/openstack/support` | **Cost-effective OpenStack support** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/openstack/support` | **Contact Canonical** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/openstack/compare` | **OpenStack distributions: a comparison** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/openstack/compare` | **OpenStack distributions: a comparison** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/openstack/compare` | **OpenStack distributions: a comparison** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🔵 `/openstack/compare` | **OpenStack distributions: a comparison** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/openstack/compare` | **OpenStack distributions: a comparison** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/openstack/compare` | **Backed by the most trusted platform in the community** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/openstack/compare` | **Backed by the most trusted platform in the community** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/openstack/compare` | **Enterprise-grade stability** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/openstack/compare` | **Contact the Canonical team** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/openstack/architecture` | **OpenStack architecture** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/openstack/architecture` | **Is OpenStack complex?** – Avoid "end users" — use 'user' instead
+  - Found: `end users`
+- 🔵 `/openstack/architecture` | **Is OpenStack complex?** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/openstack/architecture` | **Opinionated design** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🟡 `/openstack/architecture` | **OpenStack under the hood** – Avoid "In order to" — simplify to 'to'
+  - Found: `In order to`
+- 🔵 `/openstack/architecture` | **OpenStack under the hood** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🟡 `/openstack/architecture` | **OpenStack components** – Prefer plain English: "facilitate" → "help"
+  - Found: `facilitate`
+- 🟡 `/openstack/architecture` | **OpenStack provisions resources** – Avoid "In order to" — simplify to 'to'
+  - Found: `In order to`
+- 🔵 `/documentation` | **Documentation practice at Canonical** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/documentation` | **Documentation practice at Canonical** – Avoid "Read more" as link text — use descriptive text
+  - Found: `Read more`
+- 🔵 `/documentation` | **Documentation with rigour** – Superlative "state of the art" — verify it is backed by evidence
+  - Found: `state of the art`
+- 🔵 `/documentation` | **Equipment** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/documentation/open-documentation-academy` | **Documentation practice at Canonical** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/documentation/open-documentation-academy` | **What you'll get out of it** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🔵 `/documentation/open-documentation-academy` | **What we offer** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🔵 `/documentation/open-documentation-academy` | **What we offer** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🔵 `/documentation/open-documentation-academy` | **What you will do** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🔵 `/documentation/open-roles` | **Documentation practice at Canonical** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/documentation/open-roles` | **Open technical author roles** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/documentation/open-roles` | **Security engineering** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🟡 `/documentation/open-roles` | **How we hire** – Prefer plain English: "numerous" → "many"
+  - Found: `numerous`
+- 🔵 `/documentation/open-roles` | **Written interview** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/documentation/open-roles` | **Written interview** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/documentation/working-in-documentation` | **Documentation practice at Canonical** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/documentation/working-in-documentation` | **Documentation platform engineer** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/documentation/beyond-canonical` | **Documentation practice at Canonical** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/documentation/beyond-canonical` | **Workshops and talks at open-source events** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🔵 `/documentation/beyond-canonical` | **Workshops and talks at open-source events** – Superlative "Most" — verify it is backed by evidence
+  - Found: `Most`
+- 🔵 `/microcloud` | **Fast and scalable cloud infrastructure** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🟡 `/microcloud` | **Fast and scalable cloud infrastructure** – Avoid "Learn more in the case study ›" as link text — use descriptive text
+  - Found: `Learn more in the case study ›`
+- 🔵 `/microcloud` | **Open source with enterprise-grade support** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/microcloud` | **Edge computing at scale** – Avoid "Learn more about MicroCloud for the edge ›" as link text — use descriptive text
+  - Found: `Learn more about MicroCloud for the edge ›`
+- 🔵 `/microcloud` | **Integrate with the best hardware vendors** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/microcloud` | **Get Canonical MicroCloud.** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/microcloud` | **Get Canonical MicroCloud.** – Prefer plain English: "purchase" → "buy"
+  - Found: `purchase`
+- 🔵 `/microcloud` | **Get Canonical MicroCloud.** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/microcloud` | **Get Canonical MicroCloud.** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/microcloud` | **Let's get in touch** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/microcloud` | **Open source with enterprise-grade support** – CTA "ubuntu pro" appears 3 times on the page
+  - Found: `ubuntu pro`
+- 🔵 `/microcloud/resources` | **[VDI with MicroCloud and HP Anyware](https://ubuntu.com/engage/webinar-vdi-microcloud-hp-anyware)** – Superlative "game-chang" — verify it is backed by evidence
+  - Found: `game-chang`
+- 🔵 `/microcloud/resources` | **[Canonical announces the first MicroCloud LTS release](https://ubuntu.com/blog/canonical-releases-microcloud-lts)** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🟡 `/microcloud/resources` | **[VDI with MicroCloud and HP Anyware](https://ubuntu.com/engage/webinar-vdi-microcloud-hp-anyware)** – Link text "explore all" points to 2 different URLs
+  - Found: `"explore all" → https://ubuntu.com/blog/tag/microcloud, https://ubuntu.com/engage?tag=microcloud`
+- 🟡 `/microcloud/resources` | **[VDI with MicroCloud and HP Anyware](https://ubuntu.com/engage/webinar-vdi-microcloud-hp-anyware)** – CTA "explore all" appears 3 times on the page
+  - Found: `explore all`
+- 🟡 `/microcloud/what-is-microcloud` | **What makes up a MicroCloud?** – Avoid "Learn more in the LXD datasheet ›" as link text — use descriptive text
+  - Found: `Learn more in the LXD datasheet ›`
+- 🟡 `/microcloud/what-is-microcloud` | **What makes up a MicroCloud?** – Avoid "Learn more about Ceph’s features ›" as link text — use descriptive text
+  - Found: `Learn more about Ceph’s features ›`
+- 🟡 `/microcloud/what-is-microcloud` | **What makes up a MicroCloud?** – Avoid "Learn more about MicroCloud’s networking approach ›" as link text — use descriptive text
+  - Found: `Learn more about MicroCloud’s networking approach ›`
+- 🔵 `/microcloud/what-is-microcloud` | **Let's get in touch** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/juju` | **Shift from application to system lifecycle management** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🔵 `/juju` | **Shift from application to system lifecycle management** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🟡 `/juju` | **Reuse operations code across Kubernetes and VMs** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🔵 `/juju` | **Get in touch** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/juju/charmhub-community` | **Join the community** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/juju/charmhub-community` | **Join the community** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/juju/charmhub-community` | **Get in touch** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/juju/charms-architecture` | **What is a charm?** – Avoid "the ability to" — rephrase — e.g. 'can'
+  - Found: `the ability to`
+- 🟡 `/juju/charms-architecture` | **How do charms work?** – Avoid "execute" — avoid violent/negative language
+  - Found: `execute`
+- 🔵 `/juju/charms-architecture` | **Get in touch** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/juju/model-driven-operations-manifesto` | **Structure** – Skipped heading level: H1 → H3
+  - Found: `### Source required`
+- 🔵 `/juju/model-driven-operations-manifesto` | **Community-driven** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/juju/model-driven-operations-manifesto` | **Patches** – Prefer plain English: "facilitate" → "help"
+  - Found: `facilitate`
+- 🔵 `/juju/model-driven-operations-manifesto` | **High-level config** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/juju/model-driven-operations-manifesto` | **Application graph** – Superlative "Most" — verify it is backed by evidence
+  - Found: `Most`
+- 🔵 `/juju/model-driven-operations-manifesto` | **Interoperability** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/juju/integrations` | **Seamlessly connect applications across clouds with cross model integrations** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🔵 `/juju/integrations` | **Get in touch** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/juju/juju-architecture` | **Juju high-level architecture** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/juju/juju-architecture` | **A single tool to deploy and manage apps across VMs, Kubernetes, bare metal and cloud** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🔵 `/juju/juju-architecture` | **A single tool to deploy and manage apps across VMs, Kubernetes, bare metal and cloud** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/juju/juju-architecture` | **Juju on k8s** – Avoid "in order to" — simplify to 'to'
+  - Found: `in order to`
+- 🔵 `/juju/juju-architecture` | **Get in touch** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/juju/why-juju` | **It's time to open source the operations code** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/juju/why-juju` | **It's time to open source the operations code** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🟡 `/juju/why-juju` | **What makes Juju and charms different?** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🔵 `/juju/why-juju` | **What makes Juju and charms different?** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🔵 `/juju/why-juju` | **Juju compared to similar tools** – Superlative "Most" — verify it is backed by evidence
+  - Found: `Most`
+- 🔵 `/juju/why-juju` | **Get in touch** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/juju/how-juju-works` | **Get in touch** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/legal` | **Structure** – Skipped heading level: H1 → H3
+  - Found: `### Business Code of Conduct`
+- 🟡 `/legal` | **General conditions of purchase** – Prefer plain English: "purchase" → "buy"
+  - Found: `purchase`
+- 🟡 `/legal` | **General conditions of purchase** – Prefer plain English: "purchase" → "buy"
+  - Found: `purchase`
+- 🟡 `/legal` | **General conditions of purchase** – Prefer plain English: "purchase" → "buy"
+  - Found: `purchase`
+- 🟡 `/legal` | **General conditions of purchase** – Prefer plain English: "purchase" → "buy"
+  - Found: `purchase`
+- 🟡 `/legal/contributors` | **Structure** – Skipped heading level: H1 → H3
+  - Found: `### Sign the contributor agreement`
+- 🔵 `/legal/contributors` | **Canonical contributor licence agreement** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/legal/contributors` | **Sign the contributor agreement** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🟡 `/legal/contributors` | **Frequently asked questions** – Prefer plain English: "regarding" → "about"
+  - Found: `regarding`
+- 🔵 `/legal/contributors/faq` | **Do I have to submit the Contributor License Agreement form for each project I contribute to?** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🔵 `/multipass` | **VMs for Windows, macOS and Linux** – Superlative "fastest" — verify it is backed by evidence
+  - Found: `fastest`
+- 🔵 `/multipass` | **Optimised VM performance** – Superlative "Most" — verify it is backed by evidence
+  - Found: `Most`
+- 🟡 `/multipass` | **Optimised VM performance** – Avoid "Learn more about cloud-init" as link text — use descriptive text
+  - Found: `Learn more about cloud-init`
+- 🔵 `/multipass/install` | **How to launch LTS instances** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🔵 `/events/canonical-days` | **Join your local Canonical Day** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🔵 `/events/canonical-days` | **You bring the ideas, we bring the open source** – Superlative "best" — verify it is backed by evidence
+  - Found: `best`
+- 🟡 `/jaas` | **Enhanced control and visibility for your Juju deployment** – Avoid "Execute" — avoid violent/negative language
+  - Found: `Execute`
+- 🔵 `/jaas` | **Enhanced control and visibility for your Juju deployment** – Superlative "unique" — verify it is backed by evidence
+  - Found: `unique`
+- 🔵 `/jaas` | **Get in touch** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/ceph` | **Structure** – Skipped heading level: H2 → H5
+  - Found: `##### [Canonical Ceph for Enterprise](https://ubuntu.com/engage/enterprise-ceph)`
+- 🟡 `/ceph` | **Canonical Ceph** – Prefer plain English: "numerous" → "many"
+  - Found: `numerous`
+- 🔵 `/ceph` | **Success stories with Canonical Ceph** – Superlative "only" — verify it is backed by evidence
+  - Found: `only`
+- 🟡 `/ceph` | **Success stories with Canonical Ceph** – Avoid "Learn more about Ceph support ›" as link text — use descriptive text
+  - Found: `Learn more about Ceph support ›`
+- 🟡 `/ceph` | **More choice for your infrastructure** – Avoid "Find out more on Charmhub ›" as link text — use descriptive text
+  - Found: `Find out more on Charmhub ›`
+- 🟡 `/ceph` | **More choice for your infrastructure** – Avoid "Find out more on GitHub ›" as link text — use descriptive text
+  - Found: `Find out more on GitHub ›`
+- 🟡 `/ceph` | **More choice for your infrastructure** – Avoid "Find out more in the Snap Store ›" as link text — use descriptive text
+  - Found: `Find out more in the Snap Store ›`
+- 🔵 `/ceph` | **Contact us about software-defined storage** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/ceph/support` | **Design and delivery** – Superlative "unique" — verify it is backed by evidence
+  - Found: `unique`
+- 🟡 `/ceph/support` | **Firefighting support** – Prefer plain English: "assist" → "help"
+  - Found: `assist`
+- 🔵 `/ceph/support` | **Firefighting support** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/ceph/support` | **Contact us about software-defined storage** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🟡 `/public-sector` | **Security maintenance for years to come** – Avoid "Learn more about Ubuntu Pro" as link text — use descriptive text
+  - Found: `Learn more about Ubuntu Pro`
+- 🟡 `/public-sector` | **Helping you stay compliant** – Avoid "Learn more about meeting FIPS requirements with Canonical ›" as link text — use descriptive text
+  - Found: `Learn more about meeting FIPS requirements with Canonical ›`
+- 🟡 `/public-sector` | **Helping you stay compliant** – Avoid "Learn more about meeting DISA-STIG requirements with Canonical ›" as link text — use descriptive text
+  - Found: `Learn more about meeting DISA-STIG requirements with Canonical ›`
+- 🟡 `/public-sector` | **Helping you stay compliant** – Avoid "Learn more about meeting FedRAMP requirements with Canonical ›" as link text — use descriptive text
+  - Found: `Learn more about meeting FedRAMP requirements with Canonical ›`
+- 🟡 `/public-sector` | **Helping you stay compliant** – Avoid "Learn more about meeting CIS requirements with Canonical ›" as link text — use descriptive text
+  - Found: `Learn more about meeting CIS requirements with Canonical ›`
+- 🟡 `/public-sector` | **Bring systems to the edge** – Avoid "Find out more about edge computing ›" as link text — use descriptive text
+  - Found: `Find out more about edge computing ›`
+- 🔵 `/public-sector` | **LaunchDarkly becomes the first FedRAMP-authorized feature management platform thanks to Ubuntu Pro** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🟡 `/public-sector` | **Our public cloud partners** – Avoid "Learn more about Canonical's partnership with AWS ›" as link text — use descriptive text
+  - Found: `Learn more about Canonical's partnership with AWS ›`
+- 🟡 `/public-sector` | **Our public cloud partners** – Avoid "Learn more about Canonical's partnership with Microsoft Azure ›" as link text — use descriptive text
+  - Found: `Learn more about Canonical's partnership with Microsoft Azure ›`
+- 🟡 `/public-sector` | **Our public cloud partners** – Avoid "Learn more about Canonical's partnership with Google Cloud ›" as link text — use descriptive text
+  - Found: `Learn more about Canonical's partnership with Google Cloud ›`
+- 🟡 `/public-sector` | **Our public cloud partners** – Avoid "Learn more about Canonical's public cloud partnerships ›" as link text — use descriptive text
+  - Found: `Learn more about Canonical's public cloud partnerships ›`
+- 🟡 `/public-sector` | **Our public cloud partners** – Avoid "Learn more about Canonical's public cloud partnerships ›" as link text — use descriptive text
+  - Found: `Learn more about Canonical's public cloud partnerships ›`
+- 🔵 `/public-sector` | **[Contact us](/contact-us)** – Superlative "unique" — verify it is backed by evidence
+  - Found: `unique`
+- 🔵 `/public-sector` | **Ubuntu for public sector** – Superlative "First" — verify it is backed by evidence
+  - Found: `First`
+- 🔵 `/projects` | **Some of the open source projects we support** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/projects` | **Some of the open source projects we support** – Superlative "largest" — verify it is backed by evidence
+  - Found: `largest`
+- 🟡 `/projects` | **Some of the open source projects we support** – Avoid "bare metal" — avoid 'bare metal'
+  - Found: `bare metal`
+- 🔵 `/projects` | **Some of the open source projects we support** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/projects` | **Some of the open source projects we support** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🟡 `/projects` | **[Ubuntu Matrix Server](https://ubuntu.com/community/communications/matrix/usage)** – Prefer plain English: "whilst" → "while"
+  - Found: `whilst`
+- 🟡 `/navigation/navigation-nojs` | **Featured** – Avoid "Bare metal" — avoid 'bare metal'
+  - Found: `Bare metal`
+- 🟡 `/navigation/navigation-nojs` | **Private cloud** – Avoid "Bare metal" — avoid 'bare metal'
+  - Found: `Bare metal`
+- 🔵 `/navigation/navigation-nojs` | **Public cloud** – Superlative "most" — verify it is backed by evidence
+  - Found: `most`
+- 🔵 `/navigation/navigation-nojs` | **Developer tools** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🔵 `/navigation/navigation-nojs` | **Developer tools** – Superlative "first" — verify it is backed by evidence
+  - Found: `first`
+- 🟡 `/navigation/navigation-nojs` | **Products** – Link text "certified hardware" points to 2 different URLs
+  - Found: `"certified hardware" → #products-certified-hardware-navigation, https://ubuntu.com/certified`
+- 🟡 `/navigation/navigation-nojs` | **Featured** – CTA "ubuntu server scalable linux for the cloud" appears 3 times on the page
+  - Found: `ubuntu server scalable linux for the cloud`
+- 🟡 `/navigation/navigation-nojs` | **Featured** – CTA "ubuntu pro security & compliance subscription" appears 3 times on the page
+  - Found: `ubuntu pro security & compliance subscription`
 
