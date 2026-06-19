@@ -188,7 +188,24 @@ UK_WORDS = {
     "honour": "honor",
     "centre": "center",
     "centres": "centers",
+    "catalogue": "catalog",
+    "catalogues": "catalogs",
+    "sceptical": "skeptical",
+    "travelling": "traveling",
+    "defence": "defense",
 }
+
+# Canonical house-style spellings (style guide "Consistency" section).
+# Deterministic single-form preferences — each has one correct replacement.
+# Context-dependent pairs (setup/set up, backup/back up, license/licence,
+# program/programme) are deliberately excluded: they need human judgement.
+HOUSE_STYLE_WORDS = [
+    (r"\be-mails?\b", "email"),
+    (r"\bon-line\b", "online"),
+    (r"\bwhite[\s-]papers?\b", "whitepaper"),
+    (r"\bmulti[\s]cloud\b", "multi-cloud"),
+    (r"\bmulticloud\b", "multi-cloud"),
+]
 
 
 def check_uk_spelling(text: str, section: str, line_num: int) -> list[Finding]:
@@ -253,6 +270,21 @@ def check_uk_spelling(text: str, section: str, line_num: int) -> list[Finding]:
                 line=line_num,
             ))
 
+    # House-style spellings (Canonical consistency rules)
+    for pattern, replacement in HOUSE_STYLE_WORDS:
+        for m in re.finditer(pattern, text, re.IGNORECASE):
+            if m.group().lower() == replacement.lower():
+                continue  # already the correct form
+            findings.append(Finding(
+                rule="house-style",
+                severity="needs-work",
+                section=section,
+                message=f'"{m.group()}" — use "{replacement}"',
+                found=m.group(),
+                suggestion=replacement,
+                line=line_num,
+            ))
+
     return findings
 
 
@@ -275,6 +307,12 @@ PRODUCT_NAME_RULES = [
     (r"(?<!\w)open-source(?!\w)", '"open source" — no hyphen', "open source", "needs-work"),
     (r"(?<!\w)opensource(?!\w)", '"open source" — two words', "open source", "needs-work"),
     (r"(?<![.A-Z])Open\s+Source(?!\s+(Initiative|Definition|Security))", '"open source" — lowercase mid-sentence', "open source", "needs-work"),
+    # Product names with a single canonical spelling that are commonly mistyped.
+    # Conservative set only — context-dependent casing (charm, snap, chisel) is
+    # excluded to avoid false positives on ordinary English words.
+    (r"\bMaas\b", "MAAS — all capitals", "MAAS", "needs-work"),
+    (r"\bCharm\s+[Hh]ub\b|\bCharmHub\b", "Charmhub — one word, capital C only", "Charmhub", "needs-work"),
+    (r"\bSnap\s+craft\b|\bSnapCraft\b", "Snapcraft — one word, capital S only", "Snapcraft", "needs-work"),
 ]
 
 

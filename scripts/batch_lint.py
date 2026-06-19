@@ -124,8 +124,8 @@ def main():
 
     # Split into must-fix vs nice-to-fix
     MUST_FIX_RULES = {
-        "uk-spelling", "product-names", "punctuation", "placeholder",
-        "metadata", "character-limits", "security-claims",
+        "uk-spelling", "house-style", "product-names", "punctuation",
+        "placeholder", "metadata", "character-limits", "security-claims",
     }
     # Nice-to-fix: everything else that's actionable
     NICE_TO_FIX_RULES = {
