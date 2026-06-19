@@ -59,6 +59,69 @@ sys.path.insert(0, str(Path(__file__).parent))
 from page_lint import fetch_html_metadata, fetch_page_markdown
 
 # ---------------------------------------------------------------------------
+# Style guide citations — every recommendation must point a page owner back to
+# the rule it is based on, so the "why" is clear and not just our opinion.
+#
+# STYLE_GUIDE_URL: where the published copy style guide lives. When set, each
+# citation renders as a deep link (URL#anchor). Until then, citations still
+# carry the section name + a short quoted principle, so the "why" is
+# self-contained even with no live link. Anchors follow GitHub heading slugs.
+# ---------------------------------------------------------------------------
+
+STYLE_GUIDE_URL = os.environ.get("STYLE_GUIDE_URL", "")
+
+STYLE_GUIDE_REFS = {
+    "brand-voice": (
+        "Brand voice", "brand-voice",
+        "We say what we mean using specific, accurate language, and avoid "
+        "overly convoluted sentences. We prioritize the most important "
+        "information and present it clearly."),
+    "ai-filler": (
+        "AI writing guidelines", "ai-writing-guidelines",
+        "Content must read as though written by a human expert — not as "
+        "generic LLM output. Avoid filler phrases, hedging language, and "
+        "over-formal constructions."),
+    "words-to-avoid": (
+        "Words and phrases to avoid", "words-and-phrases-to-avoid",
+        "Avoid jargon and long-winded, flowery wording; keep it simple "
+        "(e.g. 'leverage' → 'use', 'utilize' → 'use', 'facilitate' → 'help')."),
+    "superlatives": (
+        "Superlatives", "superlatives",
+        "Don't add impact with superlatives you cannot justify "
+        "(e.g. 'cutting edge', 'state-of-the-art', 'best in class'); check "
+        "your facts and use them sparingly."),
+    "security-claims": (
+        "Security claims, hyperbolic and absolute statements",
+        "security-claims-hyperbolic-and-absolute-statements",
+        "Don't make hyperbolic or absolute claims that cannot be backed up "
+        "(e.g. 'game-changing', 'revolutionary', 'most secure')."),
+    "active-sentences": (
+        "Active sentences", "active-sentences",
+        "Keep sentences concise and active (subject-verb-object). Get to the "
+        "point, fast — especially on the web."),
+    "sentence-length": (
+        "Sentence length", "sentence-length",
+        "Average sentence length should be between 12 and 20 words. Not longer."),
+    "readability": (
+        "Readability", "readability",
+        "Website copy targets roughly Flesch-Kincaid Grade 7 — clear and easy "
+        "to read."),
+    "headings": (
+        "Headings and capitalization", "headings-and-capitalization",
+        "Headings should be sentence case and genuinely describe the content "
+        "beneath them."),
+}
+
+
+def _allowed_refs_block() -> str:
+    """Render the allowed style_ref ids + their gist, for the prompt."""
+    lines = []
+    for key, (section, _anchor, principle) in STYLE_GUIDE_REFS.items():
+        lines.append(f'- "{key}" — {section}: {principle}')
+    return "\n".join(lines)
+
+
+# ---------------------------------------------------------------------------
 # The judgement checklist — adapted from automated-ux-qa-checklist.
 # Only items that (a) need judgement an LLM can give and (b) are NOT already
 # handled deterministically by page_lint.py. Deterministic items (spelling,
@@ -99,6 +162,11 @@ Do NOT report any of the following (handled elsewhere or not determinable from t
 - Exact banned phrases like "click here" / "read more" (already caught by rules).
 - Image alt text, form field labels, focus order, or anything requiring the live
   DOM / rendered page — you are only seeing extracted text.
+- Apparent gaps where a command or code snippet seems missing (e.g. "Don't have
+  the  command?"). Code blocks are stripped from the input you receive; these are
+  NOT copy defects, so never flag them.
+- The cookie/newsletter/form-success boilerplate, the country dropdown list, and
+  the global nav/footer — this is shared chrome, not page copy.
 """
 
 SYSTEM_PROMPT = (
@@ -111,18 +179,27 @@ SYSTEM_PROMPT = (
 
 
 def build_prompt(url: str, metadata: dict, content: str) -> str:
-    title = metadata.get("title", "") if metadata else ""
+    title = metadata.get("page title", metadata.get("title", "")) if metadata else ""
     desc = metadata.get("description", "") if metadata else ""
     return f"""\
-Review the copy of this live web page against the judgement checklist below.
+You are reviewing the copy of this live web page so its OWNER (often not a
+writer) can decide what to change. Write every finding so a non-expert
+understands it without further help.
 
 URL: {url}
 Meta title: {title}
 Meta description: {desc}
 
+Audience note: judge the copy against its likely target reader (e.g. a developer
+page may use technical terms its readers expect — that is not jargon to them).
+
 {JUDGEMENT_CHECKLIST}
 
 {OUT_OF_SCOPE}
+
+Every finding MUST cite the style-guide rule it is based on, using one of these
+exact ids in "style_ref" (pick the single best fit):
+{_allowed_refs_block()}
 
 Return STRICT JSON only (no prose, no markdown fences) in exactly this shape:
 {{
@@ -131,17 +208,25 @@ Return STRICT JSON only (no prose, no markdown fences) in exactly this shape:
       "section": "<page section/heading the issue sits under, best guess>",
       "category": "<Structure|CTAs|Clarity|Voice>",
       "severity": "<critical|needs-work|minor>",
-      "issue": "<what is wrong and why it matters, one or two sentences>",
+      "style_ref": "<one id from the list above>",
       "found": "<the exact text you are reacting to, verbatim>",
-      "recommendation": "<concrete suggested improvement>"
+      "issue": "<plain-language: what is weak here, one sentence>",
+      "why_it_matters": "<plain-language: the effect on the reader, one sentence>",
+      "recommendation": "<a concrete rewrite or specific action the owner can apply>"
     }}
   ],
   "what_looks_good": ["<specific genuine positive>", "..."]
 }}
 
-Severity guide: critical = blocks comprehension or misleads; needs-work = vague
-or weak copy that should change; minor = small polish. Only include findings you
-are confident about.
+Rules for quality:
+- "recommendation" must be actionable and specific. Prefer a drop-in rewrite in
+  quotes. Never say "consider rephrasing" without showing the rewrite.
+- "issue" and "why_it_matters" must be jargon-free and stand on their own.
+- Only include findings you are confident about. A clean page should return few
+  or no findings — do not pad the list.
+
+Severity guide: critical = blocks comprehension or misleads the reader;
+needs-work = vague or weak copy that should change; minor = small polish.
 
 PAGE CONTENT (extracted visible text, markdown):
 ---
@@ -237,6 +322,17 @@ _SEV = [("critical", "🔴 Critical"), ("needs-work", "🟡 Needs work"),
         ("minor", "🔵 Minor")]
 
 
+def _cite(style_ref: str) -> str:
+    """Render a style-guide citation: section name + quoted principle, linked
+    if STYLE_GUIDE_URL is configured."""
+    ref = STYLE_GUIDE_REFS.get(style_ref or "")
+    if not ref:
+        return ""
+    section, anchor, principle = ref
+    label = f"[{section}]({STYLE_GUIDE_URL}#{anchor})" if STYLE_GUIDE_URL else f"**{section}**"
+    return f"  - *Why (copy style guide → {label}):* \"{principle}\""
+
+
 def render_report(url: str, result: dict, model: str) -> str:
     findings = result.get("findings", [])
     good = result.get("what_looks_good", [])
@@ -284,10 +380,15 @@ def render_report(url: str, result: dict, model: str) -> str:
                 for f in items:
                     lines.append(
                         f"- **{label}** [{f.get('category','')}] — {f.get('issue','')}")
+                    if f.get("why_it_matters"):
+                        lines.append(f"  - *Why it matters:* {f['why_it_matters']}")
                     if f.get("found"):
                         lines.append(f"  - *Found:* \"{f['found']}\"")
                     if f.get("recommendation"):
-                        lines.append(f"  - *Suggestion:* {f['recommendation']}")
+                        lines.append(f"  - *Suggested fix:* {f['recommendation']}")
+                    cite = _cite(f.get("style_ref", ""))
+                    if cite:
+                        lines.append(cite)
             lines.append("")
 
     lines.append("---")
@@ -301,6 +402,72 @@ def render_report(url: str, result: dict, model: str) -> str:
         lines.append("_No specific positives noted._")
     lines.append("")
     return "\n".join(lines)
+
+
+# ---------------------------------------------------------------------------
+# Dashboard JSON (Option B: review.py writes the dashboard data directly)
+#
+# The React dashboard reads /data/{slug}.json (deterministic audits, written by
+# build-data.mjs) and /data/{slug}-review.json (this advisory lane, written
+# here). review.py is the SOLE writer of the -review.json file, so it merges
+# page-by-page: re-running for one URL updates only that page, never the others.
+# This file deliberately stays separate from the audit data and from Bauer.
+# ---------------------------------------------------------------------------
+
+def to_dashboard_page(url: str, result: dict) -> dict:
+    """Map review findings into one dashboard PageAudit (see src/types.ts)."""
+    by_cat: dict[str, list] = {}
+    order: list[str] = []
+    for f in result.get("findings", []):
+        cat = f.get("category") or "Other"
+        if cat not in by_cat:
+            by_cat[cat] = []
+            order.append(cat)
+        issue = {
+            "description": f.get("issue", ""),
+            "location": f.get("section", ""),
+            "severity": f.get("severity", "minor"),
+        }
+        if f.get("found"):
+            issue["found"] = f["found"]
+        if f.get("recommendation"):
+            issue["recommendation"] = f["recommendation"]
+        if f.get("why_it_matters"):
+            issue["whyItMatters"] = f["why_it_matters"]
+        ref = STYLE_GUIDE_REFS.get(f.get("style_ref") or "")
+        if ref:
+            section, anchor, principle = ref
+            style_ref = {"section": section, "anchor": anchor, "principle": principle}
+            if STYLE_GUIDE_URL:
+                style_ref["url"] = f"{STYLE_GUIDE_URL}#{anchor}"
+            issue["styleRef"] = style_ref
+        by_cat[cat].append(issue)
+    return {
+        "path": urlparse(url).path or "/",
+        "url": url,
+        "date": date.today().isoformat(),
+        "categories": [{"name": c, "issues": by_cat[c]} for c in order],
+    }
+
+
+def write_dashboard_json(url: str, result: dict) -> Path:
+    """Merge this page's findings into public/data/{slug}-review.json."""
+    domain = urlparse(url).netloc
+    out_dir = Path("public/data")
+    out_dir.mkdir(parents=True, exist_ok=True)
+    out = out_dir / f"{domain.replace('.', '-')}-review.json"
+    if out.exists():
+        site_data = json.loads(out.read_text(encoding="utf-8"))
+    else:
+        site_data = {"site": domain, "pages": []}
+    page = to_dashboard_page(url, result)
+    # Replace any existing entry for this path, then re-sort by path.
+    pages = [p for p in site_data.get("pages", []) if p.get("path") != page["path"]]
+    pages.append(page)
+    pages.sort(key=lambda p: p.get("path", ""))
+    site_data["pages"] = pages
+    out.write_text(json.dumps(site_data, indent=2) + "\n", encoding="utf-8")
+    return out
 
 
 # ---------------------------------------------------------------------------
@@ -320,7 +487,10 @@ def main():
                         help="Render from a saved model JSON response instead of "
                              "calling the API (testing/offline)")
     parser.add_argument("--save", action="store_true",
-                        help="Save the report to reports/")
+                        help="Save the markdown report to reports/")
+    parser.add_argument("--dashboard", action="store_true",
+                        help="Write/merge findings into public/data/{slug}-review.json "
+                             "for the dashboard (advisory lane, never sent to Bauer)")
     args = parser.parse_args()
 
     print(f"Fetching: {args.url}", file=sys.stderr)
@@ -350,6 +520,10 @@ def main():
         out = report_dir / f"{domain}-{slug}-review-{date.today().isoformat()}.md"
         out.write_text(report + "\n", encoding="utf-8")
         print(f"\n📄 Saved: {out}", file=sys.stderr)
+
+    if args.dashboard:
+        out = write_dashboard_json(args.url, result)
+        print(f"📊 Dashboard data: {out}", file=sys.stderr)
 
 
 if __name__ == "__main__":
