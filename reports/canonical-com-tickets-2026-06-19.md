@@ -1,13 +1,13 @@
 # Ticketable copy fixes – canonical.com
 **Date:** 2026-06-19
 **Pages scanned:** 172
-**Clean tickets:** 383
+**Clean tickets:** 382
 
 Every item below is an exact find→replace, ready to submit as a copy-update ticket. Judgement-call findings are excluded.
 
 ---
 
-**By rule:** uk-spelling (117), punctuation (116), product-names (67), flowery-language (66), number-formatting (15), house-style (2)
+**By rule:** uk-spelling (117), punctuation (116), product-names (66), flowery-language (66), number-formatting (15), house-style (2)
 
 ---
 
@@ -35,7 +35,6 @@ Every item below is an exact find→replace, ready to submit as a copy-update ti
 ## `/anbox-cloud`
 
 - **Leaning on a strong cloud ecosystem** | [punctuation] ` - ` → ` – `
-- **Tell us what you have in mind** | [product-names] `Open Source` → `open source`
 
 ## `/careers/alliances-and-channels`
 

@@ -302,28 +302,6 @@
           "in_table": false,
           "in_metadata": false
         }
-      },
-      {
-        "id": "onaur-aef6562ba169",
-        "anchor": {
-          "preceding_text": " LLC. Anbox Cloud uses assets available through the Android ",
-          "following_text": " Project."
-        },
-        "change": {
-          "type": "replace",
-          "original_text": "Open Source",
-          "new_text": "open source"
-        },
-        "verification": {
-          "text_before_change": " LLC. Anbox Cloud uses assets available through the Android Open Source Project.",
-          "text_after_change": " LLC. Anbox Cloud uses assets available through the Android open source Project."
-        },
-        "location": {
-          "section": "Body",
-          "parent_heading": "Tell us what you have in mind",
-          "in_table": false,
-          "in_metadata": false
-        }
       }
     ]
   },
