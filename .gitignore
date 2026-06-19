@@ -13,3 +13,6 @@ __pycache__/
 /reports/*.md
 /reports/*.json
 /reports/*.txt
+
+# Personal/local editor + AI tool settings (per-machine, not shared)
+**/settings.local.json

@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "mcp__plugin_figma_figma__whoami",
-      "Bash(claude mcp *)",
-      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d.get\\('mcpServers',{}\\), indent=2\\)\\)\")"
-    ]
-  }
-}
