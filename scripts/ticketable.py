@@ -82,6 +82,8 @@ def collect_tickets(urls: list[str]) -> list[dict]:
                         "found": f.found,
                         "suggestion": f.suggestion,
                         "message": f.message,
+                        "preceding": f.preceding,
+                        "following": f.following,
                     })
         except Exception as e:
             print(f"  ⚠️  Error: {e}", file=sys.stderr)
@@ -129,6 +131,55 @@ def render_markdown(tickets: list[dict], domain: str, pages: int) -> str:
     return "\n".join(lines)
 
 
+def to_bauer(tickets: list[dict]) -> list[dict]:
+    """Group tickets by page and emit Bauer-shaped ActionableSuggestions.
+
+    Mirrors canonical/Bauer's internal/gdocs schema: one entry per page
+    carries `suggested_url` (Bauer resolves the target template file from it)
+    and a list of suggestions in ActionableSuggestion form. We never call
+    Bauer — this is a self-contained JSON artifact for them to ingest.
+    """
+    import hashlib
+
+    by_url: dict[str, list[dict]] = {}
+    for t in tickets:
+        by_url.setdefault(t["url"], []).append(t)
+
+    pages = []
+    for url in sorted(by_url):
+        suggestions = []
+        for t in by_url[url]:
+            before = t["preceding"] + t["found"] + t["following"]
+            after = t["preceding"] + t["suggestion"] + t["following"]
+            sid = hashlib.sha1(
+                f"{t['path']}|{t['preceding']}|{t['found']}".encode()
+            ).hexdigest()[:12]
+            suggestions.append({
+                "id": f"onaur-{sid}",
+                "anchor": {
+                    "preceding_text": t["preceding"],
+                    "following_text": t["following"],
+                },
+                "change": {
+                    "type": "replace",
+                    "original_text": t["found"],
+                    "new_text": t["suggestion"],
+                },
+                "verification": {
+                    "text_before_change": before,
+                    "text_after_change": after,
+                },
+                "location": {
+                    "section": "Body",
+                    "parent_heading": t["section"],
+                    "in_table": False,
+                    "in_metadata": False,
+                },
+            })
+        pages.append({"suggested_url": url, "suggestions": suggestions})
+    return pages
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Produce the clean, ticketable copy-fix list from a sitemap")
@@ -137,6 +188,9 @@ def main():
                         help="Limit number of pages to scan (0 = all)")
     parser.add_argument("--json", action="store_true",
                         help="Print the tickets as JSON instead of markdown")
+    parser.add_argument("--bauer", action="store_true",
+                        help="Emit Bauer-shaped ActionableSuggestions JSON "
+                             "(grouped by page) instead of markdown")
     parser.add_argument("--save", action="store_true",
                         help="Save markdown + JSON to reports/ and push to GitHub")
     args = parser.parse_args()
@@ -155,7 +209,9 @@ def main():
     tickets = collect_tickets(urls)
     domain = urlparse(urls[0]).netloc if urls else "unknown"
 
-    if args.json:
+    if args.bauer:
+        output = json.dumps(to_bauer(tickets), indent=2)
+    elif args.json:
         output = json.dumps(tickets, indent=2)
     else:
         output = render_markdown(tickets, domain, len(urls))
@@ -170,14 +226,20 @@ def main():
         today = date.today().isoformat()
         md_path = report_dir / f"{slug}-tickets-{today}.md"
         json_path = report_dir / f"{slug}-tickets-{today}.json"
+        bauer_path = report_dir / f"{slug}-bauer-{today}.json"
 
         md_path.write_text(render_markdown(tickets, domain, len(urls)) + "\n",
                            encoding="utf-8")
         json_path.write_text(json.dumps(tickets, indent=2) + "\n",
                             encoding="utf-8")
-        print(f"📄 Saved: {md_path} and {json_path}", file=sys.stderr)
+        bauer_path.write_text(json.dumps(to_bauer(tickets), indent=2) + "\n",
+                             encoding="utf-8")
+        print(f"📄 Saved: {md_path}, {json_path} and {bauer_path}",
+              file=sys.stderr)
 
-        subprocess.run(["git", "add", str(md_path), str(json_path)], check=True)
+        subprocess.run(
+            ["git", "add", str(md_path), str(json_path), str(bauer_path)],
+            check=True)
         subprocess.run(
             ["git", "commit", "-m",
              f"report: ticketable fixes {domain} ({len(tickets)} tickets)"],
