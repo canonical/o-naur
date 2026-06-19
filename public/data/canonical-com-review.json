@@ -1,0 +1,118 @@
+{
+  "site": "canonical.com",
+  "pages": [
+    {
+      "path": "/solutions/telco",
+      "url": "https://canonical.com/solutions/telco",
+      "date": "2026-06-19",
+      "categories": [
+        {
+          "name": "Voice",
+          "issues": [
+            {
+              "description": "The opening leans on stock marketing phrases ('achieve digital transformation', 'innovate with confidence') that don't say anything specific.",
+              "location": "Hero",
+              "severity": "needs-work",
+              "found": "boost network performance, optimize costs and achieve digital transformation with open source. Get enterprise-grade security and support to innovate with confidence.",
+              "recommendation": "Swap in a concrete outcome, e.g. \"Cut licensing costs and get up to 15 years of security maintenance for your open source telco stack.\"",
+              "whyItMatters": "A telco buyer skims the hero first; if it could describe any vendor, they have no reason to keep reading.",
+              "styleRef": {
+                "section": "AI writing guidelines",
+                "anchor": "ai-writing-guidelines",
+                "principle": "Content must read as though written by a human expert \u2014 not as generic LLM output. Avoid filler phrases, hedging language, and over-formal constructions."
+              }
+            },
+            {
+              "description": "Two hype words ('Supercharge', 'cutting-edge') sit on a line that otherwise lists concrete, credible technology.",
+              "location": "Silicon partnerships",
+              "severity": "needs-work",
+              "found": "Supercharge your performance and efficiency with cutting-edge technologies such as Smart NICs, DPUs, and GPUs",
+              "recommendation": "State it plainly: \"Improve performance and efficiency with Smart NICs, DPUs, and GPUs.\"",
+              "whyItMatters": "Unbacked hype undercuts trust right next to genuinely strong technical proof.",
+              "styleRef": {
+                "section": "Superlatives",
+                "anchor": "superlatives",
+                "principle": "Don't add impact with superlatives you cannot justify (e.g. 'cutting edge', 'state-of-the-art', 'best in class'); check your facts and use them sparingly."
+              }
+            },
+            {
+              "description": "'Harness the full potential' is a clich\u00e9 that adds words without meaning.",
+              "location": "Trusted operating system",
+              "severity": "minor",
+              "found": "Harness the full potential of the latest hardware supporting Hugepages and DPDK",
+              "recommendation": "\"Use the latest hardware features, including Hugepages and DPDK.\"",
+              "whyItMatters": "Filler phrasing dilutes an otherwise specific, technical sentence.",
+              "styleRef": {
+                "section": "Words and phrases to avoid",
+                "anchor": "words-and-phrases-to-avoid",
+                "principle": "Avoid jargon and long-winded, flowery wording; keep it simple (e.g. 'leverage' \u2192 'use', 'utilize' \u2192 'use', 'facilitate' \u2192 'help')."
+              }
+            }
+          ]
+        },
+        {
+          "name": "Structure",
+          "issues": [
+            {
+              "description": "These three reasons are bare fragments with no lead-in and no supporting detail.",
+              "location": "Why choose Canonical for telco?",
+              "severity": "needs-work",
+              "found": "Improved agility and reduced costs / Experts to help optimize your systems / Long-term support and security updates",
+              "recommendation": "Add a short lead-in sentence and one concrete proof point under each (e.g. name the support window, or quantify the cost reduction).",
+              "whyItMatters": "Without specifics they read as generic claims, so a reader can't tell what Canonical actually delivers.",
+              "styleRef": {
+                "section": "Brand voice",
+                "anchor": "brand-voice",
+                "principle": "We say what we mean using specific, accurate language, and avoid overly convoluted sentences. We prioritize the most important information and present it clearly."
+              }
+            },
+            {
+              "description": "The heading is a marketing slogan that doesn't describe what's below it (a list of blog posts).",
+              "location": "Gain a competitive edge with the latest advances in open source",
+              "severity": "minor",
+              "found": "Gain a competitive edge with the latest advances in open source",
+              "recommendation": "Use a descriptive heading, e.g. \"Latest telco engineering articles\".",
+              "whyItMatters": "Readers use headings to navigate; a vague one makes them guess what the section contains.",
+              "styleRef": {
+                "section": "Headings and capitalization",
+                "anchor": "headings-and-capitalization",
+                "principle": "Headings should be sentence case and genuinely describe the content beneath them."
+              }
+            }
+          ]
+        },
+        {
+          "name": "Clarity",
+          "issues": [
+            {
+              "description": "The sentence describes a feeling and delays the actual point.",
+              "location": "Automate operations to lower your total cost of ownership",
+              "severity": "needs-work",
+              "found": "Navigating uncertainty of next-generation infrastructure investment can be overwhelming.",
+              "recommendation": "Lead with the benefit, e.g. \"Automation tools cut the manual work of running next-generation infrastructure, lowering your total cost of ownership.\"",
+              "whyItMatters": "Readers scanning the web want the benefit immediately; an abstract opener makes them work to find it.",
+              "styleRef": {
+                "section": "Active sentences",
+                "anchor": "active-sentences",
+                "principle": "Keep sentences concise and active (subject-verb-object). Get to the point, fast \u2014 especially on the web."
+              }
+            },
+            {
+              "description": "A statistic appears with no source or date.",
+              "location": "Trusted operating system",
+              "severity": "minor",
+              "found": "66% of experienced developers prefer Ubuntu.",
+              "recommendation": "Add the source and year (e.g. \"...in the 2024 Stack Overflow survey\"), or move it into an attributed proof-point block.",
+              "whyItMatters": "An uncited number invites doubt rather than building confidence.",
+              "styleRef": {
+                "section": "Security claims, hyperbolic and absolute statements",
+                "anchor": "security-claims-hyperbolic-and-absolute-statements",
+                "principle": "Don't make hyperbolic or absolute claims that cannot be backed up (e.g. 'game-changing', 'revolutionary', 'most secure')."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
