@@ -16,3 +16,7 @@ __pycache__/
 
 # Personal/local editor + AI tool settings (per-machine, not shared)
 **/settings.local.json
+
+# Local "where did we leave off" log for Claude Code / Copilot (see
+# CLAUDE.md and .github/copilot-instructions.md). Machine-local, not shared.
+PROJECT_LOG.md
