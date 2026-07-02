@@ -52,7 +52,7 @@ from batch_lint import fetch_sitemap_urls, should_exclude
 # If a finding's suggestion matches any of these it is NOT ticketable.
 _HINT_RE = re.compile(
     r"rephrase|simplify|verify|trim|consider|^use\b|^add\b|^avoid\b|"
-    r"distinct|descriptive|backed by",
+    r"^remove\b|distinct|descriptive|backed by",
     re.IGNORECASE,
 )
 
