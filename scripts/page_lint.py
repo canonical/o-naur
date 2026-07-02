@@ -384,16 +384,23 @@ BANNED_PHRASES = [
     (r"\bthe ability to\b", "rephrase — e.g. 'can'"),
     (r"\bis able to\b", "rephrase — e.g. 'can'"),
     (r"\bnot only\b.*?\bbut also\b", "wordy — simplify"),
-    (r"\bbare\s+metal\b", "avoid 'bare metal'"),
-    (r"\b(eliminate|execute|terminate|kill)\b", "avoid violent/negative language"),
+    # "eliminate" alone; execute/terminate/kill dropped — all three are
+    # standard technical vocabulary (execute a command, terminate an
+    # instance, kill a process) and Canonical's own content uses them
+    # routinely, so the "violent/negative language" framing produces
+    # false positives rather than catching hype-y marketing copy.
+    (r"\beliminate\b", "avoid violent/negative language"),
     (r"\bleverage\b", "use 'use' instead"),
     (r"\bgoing forward\b", "remove — adds nothing"),
     (r"\bin order to\b", "simplify to 'to'"),
-    (r"\bform factor\b", "avoid 'form factor'"),
-    (r"\bend\s+users?\b", "use 'user' instead"),
     (r"\bdisruptive\b", "avoid 'disruptive'"),
     (r"\bexplosive\b", "avoid 'explosive'"),
 ]
+
+# "bare metal", "form factor" and "end user(s)" were removed entirely: all
+# three are legitimate Canonical product/technical terms (bare-metal
+# provisioning via MAAS, device form factors, end-user vs. internal-user
+# distinctions), not marketing fluff — banning them would be actively wrong.
 
 FLOWERY_WORDS = {
     "assist": "help",
