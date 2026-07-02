@@ -272,7 +272,10 @@ def cmd_scan(args):
         print(f"📄 Saved: {md_path} and {json_path}", file=sys.stderr)
 
         subprocess.run(
-            ["git", "add", str(md_path), str(json_path)], check=True)
+            # -f: reports/*.md and *.json are gitignored by default (see
+            # .gitignore) so new dated filenames are untracked; force-add
+            # the deliverables we explicitly want committed.
+            ["git", "add", "-f", str(md_path), str(json_path)], check=True)
         subprocess.run(
             ["git", "commit", "-m",
              f"report: candidate ticket list {domain} "
@@ -318,7 +321,7 @@ def cmd_approve(args):
         bauer_path = Path("reports") / f"{slug}-bauer-{today}.json"
         bauer_path.write_text(output + "\n", encoding="utf-8")
 
-        subprocess.run(["git", "add", str(bauer_path)], check=True)
+        subprocess.run(["git", "add", "-f", str(bauer_path)], check=True)
         subprocess.run(
             ["git", "commit", "-m",
              f"report: approved Bauer submission {domain} "
