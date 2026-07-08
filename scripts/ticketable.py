@@ -35,6 +35,7 @@ import json
 import re
 import subprocess
 import sys
+import time
 from collections import Counter
 from datetime import date
 from pathlib import Path
@@ -42,7 +43,7 @@ from urllib.parse import urlparse
 
 sys.path.insert(0, str(Path(__file__).parent))
 from page_lint import fetch_html_metadata, fetch_page_markdown, lint_content, Finding
-from batch_lint import fetch_sitemap_urls, should_exclude
+from batch_lint import fetch_sitemap_urls, should_exclude, REQUEST_DELAY_SECONDS
 
 # ---------------------------------------------------------------------------
 # The ticketable filter — single source of truth for what gets submitted
@@ -98,6 +99,8 @@ def collect_tickets(urls: list[str]) -> list[dict]:
     tickets: list[dict] = []
     for i, url in enumerate(urls, 1):
         print(f"[{i}/{len(urls)}] {url}", file=sys.stderr)
+        if i > 1:
+            time.sleep(REQUEST_DELAY_SECONDS)
         try:
             metadata = fetch_html_metadata(url)
             content = fetch_page_markdown(url)
