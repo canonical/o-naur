@@ -104,11 +104,11 @@
         "change": {
           "type": "replace",
           "original_text": "Data Centre",
-          "new_text": "data center"
+          "new_text": "Data Center"
         },
         "verification": {
           "text_before_change": "Private Cloud/Data Centre",
-          "text_after_change": "Private Cloud/data center"
+          "text_after_change": "Private Cloud/Data Center"
         },
         "location": {
           "section": "Body",
