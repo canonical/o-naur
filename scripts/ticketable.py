@@ -16,17 +16,20 @@ a judgement call, not an objective style-guide violation like UK spelling.
 
 Two-step workflow — nothing reaches Bauer without a human checking it first:
 
-    1. scan   — crawl a sitemap, write a candidate checklist to reports/
+    1. scan    — crawl a sitemap, write a "Copy edits for review" checklist
+                 to reports/pending/ (awaiting review)
     2. approve — read back your checked-off items, emit the Bauer artifact
-                 for approved items only
+                 for approved items only, and file the reviewed checklist
+                 into reports/reviewed/ (done) — so reports/pending/ always
+                 shows what's still outstanding, at a glance
 
 Usage:
     python3 scripts/ticketable.py https://canonical.com/sitemap_tree.xml --save
     python3 scripts/ticketable.py https://canonical.com/sitemap_tree.xml --limit 20
     python3 scripts/ticketable.py https://canonical.com/sitemap_tree.xml --json
 
-    # after checking off approved items in the saved *-tickets-*.md:
-    python3 scripts/ticketable.py --approve reports/canonical-com-tickets-2026-07-02.md --save
+    # after checking off approved items in the saved *-copy-edits-*.md:
+    python3 scripts/ticketable.py --approve reports/pending/canonical-com-copy-edits-2026-07-08.md --save
 """
 
 import argparse
@@ -78,6 +81,12 @@ _FRAGMENT_RE = re.compile(r"/navigation/|/templates?/|nojs", re.IGNORECASE)
 # Checkbox line format used in the reviewed markdown checklist, e.g.:
 #   - [x] `a1b2c3d4e5f6` **Section** | [rule] `found` -> `suggestion`
 _CHECKBOX_RE = re.compile(r"^-\s*\[([xX ])\]\s*`([a-f0-9]{12})`")
+
+# Where a freshly-scanned checklist lands, awaiting review, and where it gets
+# filed away once --approve has processed it. Keeping these separate means
+# reports/pending/ always reflects what's actually still outstanding.
+PENDING_DIR = Path("reports") / "pending"
+REVIEWED_DIR = Path("reports") / "reviewed"
 
 
 def is_ticketable(f: Finding) -> bool:
@@ -131,7 +140,7 @@ def collect_tickets(urls: list[str]) -> list[dict]:
 def render_markdown(tickets: list[dict], domain: str, pages: int) -> str:
     """Render the candidate checklist grouped by page, ready for review."""
     lines = [
-        f"# Ticketable copy fixes – {domain}",
+        f"# Copy edits for review – {domain}",
         f"**Date:** {date.today().isoformat()}",
         f"**Pages scanned:** {pages}",
         f"**Candidates:** {len(tickets)}",
@@ -143,11 +152,13 @@ def render_markdown(tickets: list[dict], domain: str, pages: int) -> str:
         "commit this file, then run:",
         "",
         "```",
-        f"python3 scripts/ticketable.py --approve reports/{domain.replace('.', '-')}"
-        f"-tickets-{date.today().isoformat()}.md --save",
+        f"python3 scripts/ticketable.py --approve reports/pending/"
+        f"{domain.replace('.', '-')}-copy-edits-{date.today().isoformat()}.md --save",
         "```",
         "",
-        "Unchecked items are treated as rejected and will not be submitted.",
+        "Unchecked items are treated as rejected and will not be submitted. "
+        "Once approved, this checklist is filed into reports/reviewed/ — "
+        "it won't sit here indefinitely.",
         "",
         "---",
         "",
@@ -240,6 +251,21 @@ def to_bauer(tickets: list[dict], approved_ids: set[str] | None = None) -> list[
     return pages
 
 
+def _file_away(src: Path, dst: Path) -> None:
+    """Move src to dst, preferring `git mv` so file history follows it.
+
+    Falls back to a plain filesystem move if git doesn't track src (e.g. a
+    reviewer's local scratch copy) rather than failing the whole approve run.
+    """
+    if src.resolve() == dst.resolve():
+        return
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    result = subprocess.run(["git", "mv", "-f", str(src), str(dst)],
+                             capture_output=True)
+    if result.returncode != 0:
+        src.replace(dst)
+
+
 def cmd_scan(args):
     print(f"Fetching sitemap: {args.sitemap}", file=sys.stderr)
     all_urls = fetch_sitemap_urls(args.sitemap)
@@ -265,12 +291,11 @@ def cmd_scan(args):
           f"items before running --approve", file=sys.stderr)
 
     if args.save:
-        report_dir = Path("reports")
-        report_dir.mkdir(exist_ok=True)
+        PENDING_DIR.mkdir(parents=True, exist_ok=True)
         slug = domain.replace(".", "-")
         today = date.today().isoformat()
-        md_path = report_dir / f"{slug}-tickets-{today}.md"
-        json_path = report_dir / f"{slug}-tickets-{today}.json"
+        md_path = PENDING_DIR / f"{slug}-copy-edits-{today}.md"
+        json_path = PENDING_DIR / f"{slug}-copy-edits-{today}.json"
 
         md_path.write_text(render_markdown(tickets, domain, len(urls)) + "\n",
                            encoding="utf-8")
@@ -279,18 +304,19 @@ def cmd_scan(args):
         print(f"📄 Saved: {md_path} and {json_path}", file=sys.stderr)
 
         subprocess.run(
-            # -f: reports/*.md and *.json are gitignored by default (see
-            # .gitignore) so new dated filenames are untracked; force-add
-            # the deliverables we explicitly want committed.
+            # -f: reports/*.md and *.json are gitignored at the reports/ root
+            # (see .gitignore); reports/pending/ isn't covered by that
+            # pattern, but -f is kept as a harmless defensive habit in case
+            # the ignore rules ever widen.
             ["git", "add", "-f", str(md_path), str(json_path)], check=True)
         subprocess.run(
             ["git", "commit", "-m",
-             f"report: candidate ticket list {domain} "
+             f"report: copy edits for review — {domain} "
              f"({len(tickets)} candidates, pending review)"],
             check=True)
         subprocess.run(["git", "push"], check=True)
-        print("✅ Pushed candidate list to GitHub — nothing sent to Bauer yet",
-              file=sys.stderr)
+        print(f"✅ Pushed to {PENDING_DIR}/ — nothing sent to Bauer yet, "
+              "awaiting review", file=sys.stderr)
 
 
 def cmd_approve(args):
@@ -298,7 +324,7 @@ def cmd_approve(args):
     candidates_path = review_path.with_suffix(".json")
     if not candidates_path.exists():
         sys.exit(f"Candidates file not found: {candidates_path}\n"
-                  f"(expected the *-tickets-*.json saved alongside {review_path})")
+                  f"(expected the *-copy-edits-*.json saved alongside {review_path})")
 
     all_tickets = json.loads(candidates_path.read_text(encoding="utf-8"))
     all_ids = {t["id"] for t in all_tickets}
@@ -325,16 +351,30 @@ def cmd_approve(args):
         domain = urlparse(all_tickets[0]["url"]).netloc if all_tickets else "unknown"
         slug = domain.replace(".", "-")
         today = date.today().isoformat()
-        bauer_path = Path("reports") / f"{slug}-bauer-{today}.json"
+
+        REVIEWED_DIR.mkdir(parents=True, exist_ok=True)
+        bauer_path = REVIEWED_DIR / f"{slug}-bauer-{today}.json"
         bauer_path.write_text(output + "\n", encoding="utf-8")
 
-        subprocess.run(["git", "add", "-f", str(bauer_path)], check=True)
+        # File the reviewed checklist away — out of reports/pending/ (still
+        # awaiting review) and into reports/reviewed/ (done) — alongside the
+        # Bauer artifact it produced, so the two directories always show
+        # what's outstanding vs. filed at a glance.
+        filed_md = REVIEWED_DIR / review_path.name
+        filed_json = REVIEWED_DIR / candidates_path.name
+        _file_away(review_path, filed_md)
+        _file_away(candidates_path, filed_json)
+
+        subprocess.run(
+            ["git", "add", "-f", str(bauer_path), str(filed_md), str(filed_json)],
+            check=True)
         subprocess.run(
             ["git", "commit", "-m",
-             f"report: approved Bauer submission {domain} "
-             f"({approved_count} fixes)"],
+             f"review: file reviewed copy edits + approved Bauer submission "
+             f"for {domain} ({approved_count} fixes)"],
             check=True)
         subprocess.run(["git", "push"], check=True)
+        print(f"📄 Filed: {filed_md} and {filed_json}", file=sys.stderr)
         print(f"📄 Saved & pushed: {bauer_path}", file=sys.stderr)
 
 
@@ -345,9 +385,11 @@ def main():
     parser.add_argument("sitemap", nargs="?",
                         help="Sitemap XML URL (omit when using --approve)")
     parser.add_argument("--approve", metavar="REVIEW_MD",
-                        help="Path to a reviewed checklist (*-tickets-*.md); "
-                             "emits the Bauer artifact for approved items only "
-                             "and skips scanning")
+                        help="Path to a reviewed checklist (*-copy-edits-*.md, "
+                             "normally in reports/pending/); emits the Bauer "
+                             "artifact for approved items only, files the "
+                             "checklist into reports/reviewed/, and skips "
+                             "scanning")
     parser.add_argument("--limit", type=int, default=0,
                         help="Limit number of pages to scan (0 = all)")
     parser.add_argument("--json", action="store_true",

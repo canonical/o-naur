@@ -80,19 +80,26 @@ ticketable.py    Filters findings down to the subset that are safe to
 ### Scan → review → approve → Bauer
 
 Nothing is auto-submitted. Every run requires a human to check off which
-candidates are approved before a Bauer artifact is produced:
+candidates are approved before a Bauer artifact is produced. The checklist
+("Copy edits for review") lives in `reports/pending/` while it's awaiting
+review, then gets filed into `reports/reviewed/` once it's been approved —
+so `reports/pending/` always shows exactly what's still outstanding:
 
 ```bash
 # 1. Scan a site and save a checklist of candidate fixes
 python3 scripts/ticketable.py https://canonical.com/sitemap_tree.xml --save
-#    → reports/{site}-tickets-{date}.md   (checklist, - [ ] per candidate)
-#    → reports/{site}-tickets-{date}.json (full candidate data)
+#    → reports/pending/{site}-copy-edits-{date}.md   (checklist, - [ ] per candidate)
+#    → reports/pending/{site}-copy-edits-{date}.json (full candidate data)
 
 # 2. Open the .md file, tick the boxes for fixes you approve (- [x])
 
-# 3. Emit the Bauer artifact for approved items only
-python3 scripts/ticketable.py --approve reports/{site}-tickets-{date}.md --save
-#    → reports/{site}-bauer-{date}.json
+# 3. Emit the Bauer artifact for approved items only — this also files the
+#    reviewed checklist (.md + .json) out of reports/pending/ and into
+#    reports/reviewed/, alongside the Bauer artifact it produced
+python3 scripts/ticketable.py --approve reports/pending/{site}-copy-edits-{date}.md --save
+#    → reports/reviewed/{site}-copy-edits-{date}.md
+#    → reports/reviewed/{site}-copy-edits-{date}.json
+#    → reports/reviewed/{site}-bauer-{date}.json
 ```
 
 Only findings that are unambiguous, exact-replacement fixes are ever
@@ -172,6 +179,8 @@ reports/                      # All audit reports (committed to repo)
   canonical.com/
     paths.txt
     audits/
+  pending/                    # Copy-edit checklists awaiting review
+  reviewed/                   # Filed-away checklists + approved Bauer artifacts
 
 scripts/
   build-data.mjs              # Parses .md reports → public/data/*.json

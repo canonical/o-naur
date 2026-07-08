@@ -21,7 +21,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent / "scripts"))
 
 from page_lint import lint_content, Finding
-from ticketable import is_ticketable, ticket_id, to_bauer, parse_approved_ids, render_markdown
+from ticketable import (is_ticketable, ticket_id, to_bauer, parse_approved_ids,
+                         render_markdown, _file_away)
 
 
 def findings_for(text: str) -> list[Finding]:
@@ -263,6 +264,52 @@ class TestApprovalGate(unittest.TestCase):
         tickets = self._make_tickets()
         bauer = to_bauer(tickets)
         self.assertEqual(sum(len(p["suggestions"]) for p in bauer), 2)
+
+
+class TestReviewChecklistNaming(unittest.TestCase):
+    # Regression: the checklist used to be titled "Ticketable copy fixes"
+    # and pointed reviewers at a flat reports/ dir. Renamed to something a
+    # non-engineer reviewer would actually recognise, and split into
+    # reports/pending/ (awaiting review) vs. reports/reviewed/ (filed away).
+    def test_title_is_copy_edits_for_review(self):
+        md = render_markdown([], "x.com", 1)
+        self.assertIn("# Copy edits for review", md)
+
+    def test_approve_hint_points_at_pending_dir(self):
+        md = render_markdown([], "x.com", 1)
+        self.assertIn("reports/pending/x-com-copy-edits-", md)
+
+
+class TestFileAway(unittest.TestCase):
+    # Regression coverage for the pending -> reviewed filing step that runs
+    # after --approve --save, so a reviewed checklist doesn't just pile up
+    # forever next to still-outstanding ones.
+    def test_moves_reviewed_checklist_out_of_pending(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            pending = Path(d) / "pending"
+            reviewed = Path(d) / "reviewed"
+            pending.mkdir()
+            src = pending / "x-com-copy-edits-2026-07-08.md"
+            src.write_text("- [x] some line")
+            dst = reviewed / src.name
+
+            _file_away(src, dst)
+
+            self.assertFalse(src.exists())
+            self.assertTrue(dst.exists())
+            self.assertEqual(dst.read_text(), "- [x] some line")
+
+    def test_noop_when_src_and_dst_are_the_same_path(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            p = Path(d) / "same.md"
+            p.write_text("hello")
+
+            _file_away(p, p)
+
+            self.assertTrue(p.exists())
+            self.assertEqual(p.read_text(), "hello")
 
 
 if __name__ == "__main__":
