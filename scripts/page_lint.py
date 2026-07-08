@@ -21,6 +21,10 @@ import sys
 from dataclasses import dataclass, field, asdict
 from pathlib import Path
 
+# Identify this tool's traffic to whoever's watching web server logs —
+# distinguishes it from generic anonymous scraping.
+USER_AGENT = "o-naur-content-audit/1.0 (Canonical internal content QA tool)"
+
 
 # ---------------------------------------------------------------------------
 # Data structures
@@ -81,7 +85,7 @@ def fetch_html_metadata(url: str) -> dict[str, str]:
     metadata = {}
     try:
         result = subprocess.run(
-            ["curl", "-sL", "--max-time", "15", url],
+            ["curl", "-sL", "-A", USER_AGENT, "--max-time", "15", url],
             capture_output=True, text=True, timeout=20
         )
         html = result.stdout
@@ -933,7 +937,7 @@ def fetch_page_markdown(url: str) -> str:
     """Fetch a URL and return its visible text as markdown."""
     try:
         result = subprocess.run(
-            ["curl", "-sL", "--max-time", "15", url],
+            ["curl", "-sL", "-A", USER_AGENT, "--max-time", "15", url],
             capture_output=True, text=True, timeout=20
         )
         html = result.stdout
@@ -1071,7 +1075,9 @@ def main():
         print(f"\n📄 Report saved: {report_path}", file=sys.stderr)
 
         # Git add, commit, push
-        subprocess.run(["git", "add", str(report_path)], check=True)
+        # -f: reports/*.md is gitignored by default so new dated filenames
+        # are untracked; force-add the deliverable we explicitly want committed.
+        subprocess.run(["git", "add", "-f", str(report_path)], check=True)
         subprocess.run(
             ["git", "commit", "-m", f"report: lint {source}"],
             check=True

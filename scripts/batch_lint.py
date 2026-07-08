@@ -15,6 +15,7 @@ import argparse
 import re
 import subprocess
 import sys
+import time
 from datetime import date
 from pathlib import Path
 from urllib.parse import urlparse
@@ -22,8 +23,13 @@ from urllib.parse import urlparse
 # Import the linter
 sys.path.insert(0, str(Path(__file__).parent))
 from page_lint import (
-    fetch_html_metadata, fetch_page_markdown, lint_content, Finding, SEVERITY_ICONS
+    fetch_html_metadata, fetch_page_markdown, lint_content, Finding,
+    SEVERITY_ICONS, USER_AGENT
 )
+
+# Pause between sequential page fetches so a full-sitemap scan doesn't
+# hammer the site with back-to-back requests.
+REQUEST_DELAY_SECONDS = 0.5
 
 # ---------------------------------------------------------------------------
 # Exclusion patterns — paths to skip
@@ -60,7 +66,7 @@ def fetch_sitemap_urls(sitemap_url: str) -> list[str]:
     """Fetch URLs from a sitemap XML."""
     try:
         result = subprocess.run(
-            ["curl", "-sL", "--max-time", "15", sitemap_url],
+            ["curl", "-sL", "-A", USER_AGENT, "--max-time", "15", sitemap_url],
             capture_output=True, text=True, timeout=20
         )
         urls = re.findall(r'<loc>([^<]+)</loc>', result.stdout)
@@ -103,6 +109,8 @@ def main():
     all_findings: list[tuple[str, Finding]] = []
     for i, url in enumerate(urls, 1):
         print(f"[{i}/{len(urls)}] {url}", file=sys.stderr)
+        if i > 1:
+            time.sleep(REQUEST_DELAY_SECONDS)
         try:
             metadata = fetch_html_metadata(url)
             content = fetch_page_markdown(url)
@@ -204,7 +212,9 @@ def main():
         report_path.write_text(report + "\n", encoding="utf-8")
         print(f"\n📄 Report saved: {report_path}", file=sys.stderr)
 
-        subprocess.run(["git", "add", str(report_path)], check=True)
+        # -f: reports/*.md is gitignored by default so new dated filenames
+        # are untracked; force-add the deliverable we explicitly want committed.
+        subprocess.run(["git", "add", "-f", str(report_path)], check=True)
         subprocess.run(
             ["git", "commit", "-m", f"report: batch lint {domain} ({len(urls)} pages)"],
             check=True
