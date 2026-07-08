@@ -22,11 +22,11 @@ Unchecked items are treated as rejected and will not be submitted.
 ## `/microk8s/features`
 
 - [ ] `03aafbb945bf` **High availability (HA)** | [punctuation] ` - ` → ` – `
-- [ ] `d08677090e42` **Strict confinement** | [uk-spelling] `minimise` → `minimize`
-- [ ] `c36d1ce8b1f0` **NVIDIA GPU support, ideal for AI/ML and HPC** | [uk-spelling] `optimised` → `optimize`
+- [x] `d08677090e42` **Strict confinement** | [uk-spelling] `minimise` → `minimize`
+- [x] `c36d1ce8b1f0` **NVIDIA GPU support, ideal for AI/ML and HPC** | [uk-spelling] `optimised` → `optimize`
 - [ ] `a9e74efea075` **Custom launch configurations** | [punctuation] ` - ` → ` – `
-- [ ] `062618066725` **Better user experience with addons** | [punctuation] `—` → ` – `
-- [ ] `b7c382b65b1c` **Better user experience with addons** | [uk-spelling] `favourite` → `favorite`
+- [x] `062618066725` **Better user experience with addons** | [punctuation] `—` → ` – `
+- [x] `b7c382b65b1c` **Better user experience with addons** | [uk-spelling] `favourite` → `favorite`
 
 ## `/microk8s/tutorials`
 
@@ -38,5 +38,5 @@ Unchecked items are treated as rejected and will not be submitted.
 - [ ] `69a04d27b1a8` **No lock-in** | [product-names] `open-source` → `open source`
 - [ ] `c1369865e510` **Reliable monitoring tools you can count on** | [product-names] `Extended Security Maintenance` → `Expanded Security Maintenance`
 - [ ] `3b467bd7c236` **Reliable monitoring tools you can count on** | [product-names] `open-source` → `open source`
-- [ ] `3e11d87a1040` **Contact us about Managed Observability** | [uk-spelling] `Data Centre` → `data center`
+- [x] `3e11d87a1040` **Contact us about Managed Observability** | [uk-spelling] `Data Centre` → `data center`
 
