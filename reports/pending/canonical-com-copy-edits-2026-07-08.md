@@ -1,4 +1,4 @@
-# Ticketable copy fixes – canonical.com
+# Copy edits for review – canonical.com
 **Date:** 2026-07-08
 **Pages scanned:** 40
 **Candidates:** 80
@@ -8,10 +8,10 @@ Every item below is an exact find→replace. Judgement-call findings (including 
 **Review before submitting:** check the box for each fix you approve, commit this file, then run:
 
 ```
-python3 scripts/ticketable.py --approve reports/canonical-com-tickets-2026-07-08.md --save
+python3 scripts/ticketable.py --approve reports/pending/canonical-com-copy-edits-2026-07-08.md --save
 ```
 
-Unchecked items are treated as rejected and will not be submitted.
+Unchecked items are treated as rejected and will not be submitted. Once approved, this checklist is filed into reports/reviewed/ — it won't sit here indefinitely.
 
 ---
 
