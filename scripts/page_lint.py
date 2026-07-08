@@ -168,6 +168,28 @@ def check_page_metadata(metadata: dict[str, str]) -> list[Finding]:
 # Style guide: UK spelling variants
 # ---------------------------------------------------------------------------
 
+def _match_case(original: str, replacement: str) -> str:
+    """Re-apply `original`'s capitalization pattern to `replacement`.
+
+    These suggestions are exact-replacement ticketable fixes — they get
+    dropped into the live page verbatim, with no human rewrite in between.
+    A hardcoded-lowercase replacement for a capitalized source word (start
+    of a sentence, a Title Case heading, an ALL CAPS label) would silently
+    introduce a *new* casing error while "fixing" the spelling. Handles ALL
+    CAPS, Title Case (every word capitalized, word count must match), and
+    Sentence case (first letter capitalized); anything else is left as-is.
+    """
+    if original.isupper():
+        return replacement.upper()
+    orig_words = original.split()
+    repl_words = replacement.split()
+    if (orig_words and len(orig_words) == len(repl_words)
+            and all(w[:1].isupper() for w in orig_words)):
+        return " ".join(w[:1].upper() + w[1:] if w else w for w in repl_words)
+    if original[:1].isupper():
+        return replacement[:1].upper() + replacement[1:]
+    return replacement
+
 ISE_WORDS = [
     (r"\borganise[sd]?\b", "organize"),
     (r"\bvirtualise[sd]?\b", "virtualize"),
@@ -226,41 +248,48 @@ def check_uk_spelling(text: str, section: str, line_num: int) -> list[Finding]:
     # "data centre" compound phrase
     for m in re.finditer(r"\bdata\s+centres?\b", text, re.IGNORECASE):
         matched_spans.append((m.start(), m.end()))
+        suggestion = _match_case(m.group(), "data center")
         findings.append(Finding(
             rule="uk-spelling",
             severity="needs-work",
             section=section,
-            message=f'UK spelling "{m.group()}" — use "data center"',
+            message=f'UK spelling "{m.group()}" — use "{suggestion}"',
             found=m.group(),
-            suggestion="data center",
+            suggestion=suggestion,
             line=line_num,
         ))
 
     # "per cent"
     for m in re.finditer(r"\bper\s+cent\b", text, re.IGNORECASE):
+        suggestion = _match_case(m.group(), "percent")
         findings.append(Finding(
             rule="uk-spelling",
             severity="needs-work",
             section=section,
-            message='"per cent" — use "percent"',
+            message=f'"per cent" — use "{suggestion}"',
             found=m.group(),
-            suggestion="percent",
+            suggestion=suggestion,
             line=line_num,
         ))
 
-    # Exact UK words
+    # Exact UK words. Match against the original-case text (not the
+    # lowercased copy) so `found` reflects what's actually on the page —
+    # otherwise a capitalized/ALL CAPS instance produces a lowercase
+    # `found` that can't be located again for anchoring, and the finding
+    # would still pass through as ticketable with an empty, useless anchor.
     for uk, us in UK_WORDS.items():
         pattern = rf"\b{uk}\b"
-        for m in re.finditer(pattern, lower):
+        for m in re.finditer(pattern, text, re.IGNORECASE):
             if any(s <= m.start() < e for s, e in matched_spans):
                 continue
+            suggestion = _match_case(m.group(), us)
             findings.append(Finding(
                 rule="uk-spelling",
                 severity="needs-work",
                 section=section,
-                message=f'UK spelling "{m.group()}" — use US spelling "{us}"',
+                message=f'UK spelling "{m.group()}" — use US spelling "{suggestion}"',
                 found=m.group(),
-                suggestion=us,
+                suggestion=suggestion,
                 line=line_num,
             ))
 
@@ -269,13 +298,14 @@ def check_uk_spelling(text: str, section: str, line_num: int) -> list[Finding]:
         if replacement is None:
             continue
         for m in re.finditer(pattern, text, re.IGNORECASE):
+            suggestion = _match_case(m.group(), replacement)
             findings.append(Finding(
                 rule="uk-spelling",
                 severity="needs-work",
                 section=section,
-                message=f'UK spelling "{m.group()}" — use "{replacement}"',
+                message=f'UK spelling "{m.group()}" — use "{suggestion}"',
                 found=m.group(),
-                suggestion=replacement,
+                suggestion=suggestion,
                 line=line_num,
             ))
 
@@ -284,13 +314,14 @@ def check_uk_spelling(text: str, section: str, line_num: int) -> list[Finding]:
         for m in re.finditer(pattern, text, re.IGNORECASE):
             if m.group().lower() == replacement.lower():
                 continue  # already the correct form
+            suggestion = _match_case(m.group(), replacement)
             findings.append(Finding(
                 rule="house-style",
                 severity="needs-work",
                 section=section,
-                message=f'"{m.group()}" — use "{replacement}"',
+                message=f'"{m.group()}" — use "{suggestion}"',
                 found=m.group(),
-                suggestion=replacement,
+                suggestion=suggestion,
                 line=line_num,
             ))
 
