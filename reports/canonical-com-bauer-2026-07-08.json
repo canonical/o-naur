@@ -1,0 +1,122 @@
+[
+  {
+    "suggested_url": "https://canonical.com/microk8s/features",
+    "suggestions": [
+      {
+        "id": "onaur-d08677090e42",
+        "anchor": {
+          "preceding_text": "Get isolation and ",
+          "following_text": " risk with strict confinement. Run sophisticated and otherwi"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "minimise",
+          "new_text": "minimize"
+        },
+        "verification": {
+          "text_before_change": "Get isolation and minimise risk with strict confinement. Run sophisticated and otherwi",
+          "text_after_change": "Get isolation and minimize risk with strict confinement. Run sophisticated and otherwi"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Strict confinement",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-c36d1ce8b1f0",
+        "anchor": {
+          "preceding_text": "your Kubernetes workloads will be able to run on containers ",
+          "following_text": " for AI/ML workloads or High Performance computing (HPC) tas"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "optimised",
+          "new_text": "optimize"
+        },
+        "verification": {
+          "text_before_change": "your Kubernetes workloads will be able to run on containers optimised for AI/ML workloads or High Performance computing (HPC) tas",
+          "text_after_change": "your Kubernetes workloads will be able to run on containers optimize for AI/ML workloads or High Performance computing (HPC) tas"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "NVIDIA GPU support, ideal for AI/ML and HPC",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-062618066725",
+        "anchor": {
+          "preceding_text": "MicroK8s addresses this with addons ",
+          "following_text": " extra services that can easily be added to MicroK8s. You ca"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "\u2014",
+          "new_text": " \u2013 "
+        },
+        "verification": {
+          "text_before_change": "MicroK8s addresses this with addons \u2014 extra services that can easily be added to MicroK8s. You ca",
+          "text_after_change": "MicroK8s addresses this with addons  \u2013  extra services that can easily be added to MicroK8s. You ca"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Better user experience with addons",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-b7c382b65b1c",
+        "anchor": {
+          "preceding_text": "ction of addons made by our community and partners. If your ",
+          "following_text": " is missing, you can easily make your own."
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "favourite",
+          "new_text": "favorite"
+        },
+        "verification": {
+          "text_before_change": "ction of addons made by our community and partners. If your favourite is missing, you can easily make your own.",
+          "text_after_change": "ction of addons made by our community and partners. If your favorite is missing, you can easily make your own."
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Better user experience with addons",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/observability/managed",
+    "suggestions": [
+      {
+        "id": "onaur-3e11d87a1040",
+        "anchor": {
+          "preceding_text": "Private Cloud/",
+          "following_text": ""
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "Data Centre",
+          "new_text": "data center"
+        },
+        "verification": {
+          "text_before_change": "Private Cloud/Data Centre",
+          "text_after_change": "Private Cloud/data center"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Contact us about Managed Observability",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  }
+]
