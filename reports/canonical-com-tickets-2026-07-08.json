@@ -101,8 +101,8 @@
     "section": "NVIDIA GPU support, ideal for AI/ML and HPC",
     "rule": "uk-spelling",
     "found": "optimised",
-    "suggestion": "optimize",
-    "message": "UK spelling \"optimised\" \u2014 use \"optimize\"",
+    "suggestion": "optimized",
+    "message": "UK spelling \"optimised\" \u2014 use \"optimized\"",
     "preceding": "your Kubernetes workloads will be able to run on containers ",
     "following": " for AI/ML workloads or High Performance computing (HPC) tas",
     "id": "c36d1ce8b1f0"
@@ -338,18 +338,6 @@
   {
     "url": "https://canonical.com/data/kafka/managed",
     "path": "/data/kafka/managed",
-    "section": "Secure by design",
-    "rule": "number-formatting",
-    "found": "27001",
-    "suggestion": "27,001",
-    "message": "Use commas in numbers over 999: \"27001\" \u2192 \"27,001\"",
-    "preceding": "rmance to industry standards and legislation like GDPR, ISO:",
-    "following": " and SOC-2 Type II.",
-    "id": "5cc7b5c404e7"
-  },
-  {
-    "url": "https://canonical.com/data/kafka/managed",
-    "path": "/data/kafka/managed",
     "section": "Turnkey service",
     "rule": "uk-spelling",
     "found": "data centre",
@@ -425,8 +413,8 @@
     "section": "Durable",
     "rule": "uk-spelling",
     "found": "minimised",
-    "suggestion": "minimize",
-    "message": "UK spelling \"minimised\" \u2014 use \"minimize\"",
+    "suggestion": "minimized",
+    "message": "UK spelling \"minimised\" \u2014 use \"minimized\"",
     "preceding": "of your event data across the cluster, so that data loss is ",
     "following": " when a server goes offline.",
     "id": "7e6369fd0e0a"
@@ -466,18 +454,6 @@
     "preceding": "LA. Canonical delivers the service in your cloud tenancy or ",
     "following": ".",
     "id": "968a71ba9c41"
-  },
-  {
-    "url": "https://canonical.com/data/spark/managed",
-    "path": "/data/spark/managed",
-    "section": "Secure by design",
-    "rule": "number-formatting",
-    "found": "27001",
-    "suggestion": "27,001",
-    "message": "Use commas in numbers over 999: \"27001\" \u2192 \"27,001\"",
-    "preceding": "rmance to industry standards and legislation like GDPR, ISO:",
-    "following": ", and SOC-2 Type II.",
-    "id": "14518059578c"
   },
   {
     "url": "https://canonical.com/data/spark/managed",
@@ -569,8 +545,8 @@
     "section": "When the size of your data matters",
     "rule": "uk-spelling",
     "found": "optimised",
-    "suggestion": "optimize",
-    "message": "UK spelling \"optimised\" \u2014 use \"optimize\"",
+    "suggestion": "optimized",
+    "message": "UK spelling \"optimised\" \u2014 use \"optimized\"",
     "preceding": "Moreover, most RDBMS are ",
     "following": " for disk access and can scale well to TBs of data per singl",
     "id": "1733238d6049"
@@ -581,8 +557,8 @@
     "section": "When you have dynamic or changing access patterns",
     "rule": "uk-spelling",
     "found": "optimised",
-    "suggestion": "optimize",
-    "message": "UK spelling \"optimised\" \u2014 use \"optimize\"",
+    "suggestion": "optimized",
+    "message": "UK spelling \"optimised\" \u2014 use \"optimized\"",
     "preceding": "e. Most popular RDBMS\u2019 engines are capable of generating an ",
     "following": "",
     "id": "e8417b1fb5f2"
@@ -605,8 +581,8 @@
     "section": "When you would like to centralise your data management",
     "rule": "uk-spelling",
     "found": "specialised",
-    "suggestion": "specialize",
-    "message": "UK spelling \"specialised\" \u2014 use \"specialize\"",
+    "suggestion": "specialized",
+    "message": "UK spelling \"specialised\" \u2014 use \"specialized\"",
     "preceding": "There are undeniable benefits to using the best ",
     "following": " database for every use case you need to",
     "id": "e986e3ab2987"
@@ -617,8 +593,8 @@
     "section": "When you would like to centralise your data management",
     "rule": "uk-spelling",
     "found": "specialised",
-    "suggestion": "specialize",
-    "message": "UK spelling \"specialised\" \u2014 use \"specialize\"",
+    "suggestion": "specialized",
+    "message": "UK spelling \"specialised\" \u2014 use \"specialized\"",
     "preceding": "more ",
     "following": " database.",
     "id": "ff31d188c093"
@@ -629,8 +605,8 @@
     "section": "1969",
     "rule": "uk-spelling",
     "found": "specialised",
-    "suggestion": "specialize",
-    "message": "UK spelling \"specialised\" \u2014 use \"specialize\"",
+    "suggestion": "specialized",
+    "message": "UK spelling \"specialised\" \u2014 use \"specialized\"",
     "preceding": "Rise of ",
     "following": " relational databases: SQLite (embedded) and GreenPlum (anal",
     "id": "c19ea425e81a"
@@ -641,8 +617,8 @@
     "section": "[SQL",
     "rule": "uk-spelling",
     "found": "optimised",
-    "suggestion": "optimize",
-    "message": "UK spelling \"optimised\" \u2014 use \"optimize\"",
+    "suggestion": "optimized",
+    "message": "UK spelling \"optimised\" \u2014 use \"optimized\"",
     "preceding": "Jointly with Microsoft, we maintain and support ",
     "following": " images for SQL Server on Ubuntu.",
     "id": "7bf604a2f231"
@@ -665,8 +641,8 @@
     "section": "OLAP vs OLTP",
     "rule": "uk-spelling",
     "found": "optimised",
-    "suggestion": "optimize",
-    "message": "UK spelling \"optimised\" \u2014 use \"optimize\"",
+    "suggestion": "optimized",
+    "message": "UK spelling \"optimised\" \u2014 use \"optimized\"",
     "preceding": "Data warehouses are typically ",
     "following": " for OLAP workloads, aiming at enabling rapid analysis of la",
     "id": "eb7ed7b99a19"
@@ -737,8 +713,8 @@
     "section": "1. Deployment",
     "rule": "uk-spelling",
     "found": "Specialised",
-    "suggestion": "Specialize",
-    "message": "UK spelling \"Specialised\" \u2014 use \"Specialize\"",
+    "suggestion": "Specialized",
+    "message": "UK spelling \"Specialised\" \u2014 use \"Specialized\"",
     "preceding": "",
     "following": " Canonical engineers deploy a database sustainably and effic",
     "id": "0e44bd896031"
@@ -754,18 +730,6 @@
     "preceding": "",
     "following": " risks. Canonical managed services are routinely audited for",
     "id": "c6017c80af21"
-  },
-  {
-    "url": "https://canonical.com/data/opensearch/managed",
-    "path": "/data/opensearch/managed",
-    "section": "Key features",
-    "rule": "number-formatting",
-    "found": "27001",
-    "suggestion": "27,001",
-    "message": "Use commas in numbers over 999: \"27001\" \u2192 \"27,001\"",
-    "preceding": "rmance to industry standards and legislation like GDPR, ISO:",
-    "following": " and SOC-2 Type II.",
-    "id": "7fc91e7affe4"
   },
   {
     "url": "https://canonical.com/data/opensearch/managed",
@@ -857,8 +821,8 @@
     "section": "Learn more about Opensearch",
     "rule": "uk-spelling",
     "found": "utilise",
-    "suggestion": "utilize (or better: use)",
-    "message": "UK spelling \"utilise\" \u2014 use \"utilize (or better: use)\"",
+    "suggestion": "utilize",
+    "message": "UK spelling \"utilise\" \u2014 use \"utilize\"",
     "preceding": "ries. It\u2019s a tool that can revolutionise how you access and ",
     "following": " data. Charmed OpenSearch",
     "id": "4c8e12782d1b"
@@ -929,8 +893,8 @@
     "section": "Run MySQL on any public, private or hybrid cloud",
     "rule": "uk-spelling",
     "found": "optimised",
-    "suggestion": "optimize",
-    "message": "UK spelling \"optimised\" \u2014 use \"optimize\"",
+    "suggestion": "optimized",
+    "message": "UK spelling \"optimised\" \u2014 use \"optimized\"",
     "preceding": "When you use Canonical's MySQL, you benefit from ",
     "following": " configurations for every cloud. You can run MySQL on Azure,",
     "id": "0fbed664e9b9"
@@ -982,18 +946,6 @@
     "preceding": "ter on top of MAAS and MicroCloud, Kubernetes, OpenStack or ",
     "following": ".",
     "id": "74e72bde9454"
-  },
-  {
-    "url": "https://canonical.com/data/mysql/managed",
-    "path": "/data/mysql/managed",
-    "section": "Service delivery with security in mind.",
-    "rule": "number-formatting",
-    "found": "27001",
-    "suggestion": "27,001",
-    "message": "Use commas in numbers over 999: \"27001\" \u2192 \"27,001\"",
-    "preceding": "rmance to industry standards and legislation like GDPR, ISO:",
-    "following": " and SOC-2 Type II.",
-    "id": "0ffc0c143a40"
   },
   {
     "url": "https://canonical.com/data/mysql/support",
