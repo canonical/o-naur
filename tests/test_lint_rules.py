@@ -66,6 +66,47 @@ class TestNumberFormatting(unittest.TestCase):
         self.assertFalse(any(f.rule == "number-formatting" for f in findings))
 
 
+class TestUkSpellingCasing(unittest.TestCase):
+    # Regression: found this while running a real scan → approve cycle
+    # end to end. The UK-word check used to match against a fully-
+    # lowercased copy of the text, so `found` came back lowercase even
+    # when the source word was capitalized. That broke anchor-matching
+    # (which searches the original-case text for the literal `found`
+    # string) silently — findings still passed is_ticketable with empty
+    # preceding/following context, meaning Bauer would have received a
+    # submission with no way to locate the edit, whose "original text"
+    # didn't even match what's really on the page.
+    def test_capitalized_word_gets_capitalized_suggestion_and_anchor(self):
+        findings = findings_for("Choose your Colour scheme carefully before you launch.")
+        uk = [f for f in findings if f.rule == "uk-spelling"]
+        self.assertTrue(uk)
+        f = uk[0]
+        self.assertEqual(f.found, "Colour")
+        self.assertEqual(f.suggestion, "Color")
+        self.assertNotEqual(f.preceding, "", "anchor context must not be silently dropped")
+
+    def test_all_caps_word_gets_all_caps_suggestion(self):
+        findings = findings_for("OUR FAVOURITE COLOUR IS BLUE AND BOLD TODAY.")
+        by_found = {f.found: f.suggestion for f in findings if f.rule == "uk-spelling"}
+        self.assertEqual(by_found.get("COLOUR"), "COLOR")
+        self.assertEqual(by_found.get("FAVOURITE"), "FAVORITE")
+
+    def test_title_case_data_centre_is_not_lowercased(self):
+        # Regression: this used to always suggest lowercase "data center"
+        # even for a Title Case source like "Data Centre" in a heading
+        # or nav label, which would introduce a new casing error.
+        findings = findings_for("Private Cloud/Data Centre choices for your workload.")
+        uk = [f for f in findings if f.rule == "uk-spelling" and f.found == "Data Centre"]
+        self.assertTrue(uk)
+        self.assertEqual(uk[0].suggestion, "Data Center")
+
+    def test_lowercase_word_is_unaffected(self):
+        findings = findings_for("We support your favourite colour combos every day.")
+        by_found = {f.found: f.suggestion for f in findings if f.rule == "uk-spelling"}
+        self.assertEqual(by_found.get("favourite"), "favorite")
+        self.assertEqual(by_found.get("colour"), "color")
+
+
 class TestPunctuation(unittest.TestCase):
     def test_isolated_em_dash_is_flagged(self):
         findings = findings_for("We build software—and we do it well.")
