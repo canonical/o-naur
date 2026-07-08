@@ -53,8 +53,8 @@
     "section": "Contact us about Managed Observability",
     "rule": "uk-spelling",
     "found": "Data Centre",
-    "suggestion": "data center",
-    "message": "UK spelling \"Data Centre\" \u2014 use \"data center\"",
+    "suggestion": "Data Center",
+    "message": "UK spelling \"Data Centre\" \u2014 use \"Data Center\"",
     "preceding": "Private Cloud/",
     "following": "",
     "id": "3e11d87a1040"
