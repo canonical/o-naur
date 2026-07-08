@@ -51,9 +51,13 @@ from batch_lint import fetch_sitemap_urls, should_exclude, REQUEST_DELAY_SECONDS
 
 # Suggestion text that is a judgement prompt, not a literal drop-in replacement.
 # If a finding's suggestion matches any of these it is NOT ticketable.
+# "\(.*\bbetter\b" is a defensive backstop for the same bug class as
+# "going forward"/"remove — adds nothing": a rule that embeds editorial
+# commentary in parentheses (e.g. "utilize (or better: use)") instead of a
+# clean word would otherwise slip through as an exact literal replacement.
 _HINT_RE = re.compile(
     r"rephrase|simplify|verify|trim|consider|^use\b|^add\b|^avoid\b|"
-    r"^remove\b|distinct|descriptive|backed by",
+    r"^remove\b|distinct|descriptive|backed by|\(.*\bbetter\b",
     re.IGNORECASE,
 )
 
