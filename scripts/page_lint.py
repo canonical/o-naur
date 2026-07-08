@@ -190,22 +190,26 @@ def _match_case(original: str, replacement: str) -> str:
         return replacement[:1].upper() + replacement[1:]
     return replacement
 
-ISE_WORDS = [
-    (r"\borganise[sd]?\b", "organize"),
-    (r"\bvirtualise[sd]?\b", "virtualize"),
-    (r"\boptimise[sd]?\b", "optimize"),
-    (r"\bcustomise[sd]?\b", "customize"),
-    (r"\bminimise[sd]?\b", "minimize"),
-    (r"\bmaximise[sd]?\b", "maximize"),
-    (r"\butilise[sd]?\b", "utilize (or better: use)"),
-    (r"\bcontainerise[sd]?\b", "containerize"),
-    (r"\bmodernise[sd]?\b", "modernize"),
-    (r"\bprioritise[sd]?\b", "prioritize"),
-    (r"\bauthorise[sd]?\b", "authorize"),
-    (r"\bstandardise[sd]?\b", "standardize"),
-    (r"\bspecialise[sd]?\b", "specialize"),
-    (r"\bcentralise[sd]?\b", "centralize"),
-]
+# Bare "-ise" -> "-ize" verb pairs. The matching loop below appends
+# whatever suffix ("", "s", or "d") was actually found back onto the US
+# form, so a suggestion never changes the source's verb tense (see the
+# "optimised" regression this was fixed alongside).
+ISE_WORDS = {
+    "organise": "organize",
+    "virtualise": "virtualize",
+    "optimise": "optimize",
+    "customise": "customize",
+    "minimise": "minimize",
+    "maximise": "maximize",
+    "utilise": "utilize",
+    "containerise": "containerize",
+    "modernise": "modernize",
+    "prioritise": "prioritize",
+    "authorise": "authorize",
+    "standardise": "standardize",
+    "specialise": "specialize",
+    "centralise": "centralize",
+}
 
 UK_WORDS = {
     "colour": "color",
@@ -293,12 +297,15 @@ def check_uk_spelling(text: str, section: str, line_num: int) -> list[Finding]:
                 line=line_num,
             ))
 
-    # -ise words
-    for pattern, replacement in ISE_WORDS:
-        if replacement is None:
-            continue
+    # -ise words. Capture the optional verb suffix (-s/-d) separately and
+    # re-append it to the US base form, so "optimised" suggests "optimized"
+    # rather than the bare "optimize" — a hardcoded bare-form suggestion
+    # would silently change the verb's tense if dropped into the page as-is.
+    for uk, us in ISE_WORDS.items():
+        pattern = rf"\b{uk}([sd]?)\b"
         for m in re.finditer(pattern, text, re.IGNORECASE):
-            suggestion = _match_case(m.group(), replacement)
+            suffix = m.group(1).lower()
+            suggestion = _match_case(m.group(), us + suffix)
             findings.append(Finding(
                 rule="uk-spelling",
                 severity="needs-work",
@@ -747,9 +754,10 @@ def check_numbers(text: str, section: str, line_num: int) -> list[Finding]:
         preceding = text[:start]
         if re.search(r'https?://\S*$', preceding) or re.search(r'\]\([^)]*$', preceding):
             continue
-        # Skip standard/spec identifiers (e.g. ISO 27001, IEC 21434, RFC 1918)
+        # Skip standard/spec identifiers (e.g. ISO 27001, IEC 21434, RFC 1918,
+        # or "ISO:27001" as seen live on canonical.com/data/kafka/managed)
         # — these are names, not quantities, and must not get thousands separators.
-        if re.search(r'\b(ISO|IEC|RFC|CVE|SOC|ANSI|NIST|FIPS|PCI|DSS|EN|UL|SAE|AS)[\s/-]*$',
+        if re.search(r'\b(ISO|IEC|RFC|CVE|SOC|ANSI|NIST|FIPS|PCI|DSS|EN|UL|SAE|AS)[\s/:-]*$',
                      preceding, re.IGNORECASE):
             continue
         if "," not in num and int(num) >= 10000:

@@ -56,7 +56,12 @@ class TestNumberFormatting(unittest.TestCase):
     def test_standard_identifiers_are_not_flagged(self):
         # Regression: ISO 27001, IEC 21434 etc. are names, not quantities.
         for text in ["Certified to ISO 27001.", "Compliant with IEC 21434.",
-                     "See RFC 1918 for details."]:
+                     "See RFC 1918 for details.",
+                     # Regression: found live on canonical.com/data/kafka/managed
+                     # — a colon separator ("ISO:27001") wasn't in the
+                     # exemption's trailing-punctuation set, so it slipped
+                     # through as a plain number needing a thousands comma.
+                     "Compliant with GDPR, ISO:27001 and SOC-2 Type II."]:
             findings = findings_for(text)
             self.assertFalse(any(f.rule == "number-formatting" for f in findings),
                               f"standard identifier wrongly flagged in: {text!r}")
@@ -105,6 +110,51 @@ class TestUkSpellingCasing(unittest.TestCase):
         by_found = {f.found: f.suggestion for f in findings if f.rule == "uk-spelling"}
         self.assertEqual(by_found.get("favourite"), "favorite")
         self.assertEqual(by_found.get("colour"), "color")
+
+
+class TestIseVerbSuffix(unittest.TestCase):
+    # Regression: found live on canonical.com/data/relational-databases and
+    # /data/kafka/what-is-kafka while reviewing a wider real scan. The
+    # -ise -> -ize rules always suggested the bare present-tense form
+    # regardless of the matched word's actual suffix, so "optimised"
+    # suggested "optimize" and "minimised" suggested "minimize" — a
+    # ticketable, exact-replacement fix that would have broken the
+    # sentence's grammar (e.g. "data loss is minimize") while "fixing"
+    # the spelling.
+    def test_past_tense_suffix_is_preserved(self):
+        findings = findings_for("Data loss is minimised when a server goes offline.")
+        uk = [f for f in findings if f.rule == "uk-spelling" and f.found == "minimised"]
+        self.assertTrue(uk)
+        self.assertEqual(uk[0].suggestion, "minimized")
+
+    def test_capitalized_past_tense_is_preserved(self):
+        findings = findings_for("Specialised engineers deploy the database.")
+        uk = [f for f in findings if f.rule == "uk-spelling" and f.found == "Specialised"]
+        self.assertTrue(uk)
+        self.assertEqual(uk[0].suggestion, "Specialized")
+
+    def test_bare_form_is_unaffected(self):
+        findings = findings_for("You can customise every dashboard widget you like.")
+        uk = [f for f in findings if f.rule == "uk-spelling" and f.found == "customise"]
+        self.assertTrue(uk)
+        self.assertEqual(uk[0].suggestion, "customize")
+
+    def test_utilise_suggestion_has_no_leaked_parenthetical(self):
+        # Regression: this used to suggest the literal string
+        # "utilize (or better: use)" — the same bug class as "going
+        # forward", just missed by the original hint-pattern fix.
+        findings = findings_for("Learn how you can utilise our platform today.")
+        uk = [f for f in findings if f.rule == "uk-spelling" and f.found == "utilise"]
+        self.assertTrue(uk)
+        self.assertEqual(uk[0].suggestion, "utilize")
+
+    def test_utilise_style_hint_is_not_ticketable_defense_in_depth(self):
+        # Even if a future rule embeds an "(or better: ...)" hint again,
+        # the ticketable filter should catch it as a backstop.
+        f = Finding(rule="uk-spelling", severity="needs-work", section="Intro",
+                    message="x", found="utilise",
+                    suggestion="utilize (or better: use)")
+        self.assertFalse(is_ticketable(f))
 
 
 class TestPunctuation(unittest.TestCase):
