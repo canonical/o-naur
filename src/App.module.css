@@ -39,6 +39,23 @@
   gap: 20px;
 }
 
+.toggles {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.advisory {
+  font-size: 12px;
+  color: var(--text-secondary);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--needs-work);
+  border-radius: var(--radius);
+  padding: 8px 12px;
+  line-height: 1.45;
+}
+
 .status {
   color: var(--text-secondary);
   font-size: 13px;
