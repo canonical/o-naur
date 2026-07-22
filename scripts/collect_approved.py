@@ -1,18 +1,20 @@
 #!/usr/bin/env python3
 """
-Collect approved findings from GitHub triage issues and output Bauer JSON.
+Collect approved findings from a triage checklist and output Bauer JSON.
 
-Reads the per-page triage issues (created by generate_triage_issues.py),
-checks which checkboxes are ticked, and outputs only the approved items
-as Bauer-shaped ActionableSuggestions JSON.
+Supports two input modes:
+  --file   Read a markdown checklist file (triage-checklist.md)
+  --tracking-issue  Read GitHub Issues via the API (requires GITHUB_TOKEN)
 
 Usage:
+    python3 scripts/collect_approved.py --file reports/triage-checklist.md
+    python3 scripts/collect_approved.py --file reports/triage-checklist.md --output reports/approved-bauer.json
+
     export GITHUB_TOKEN=ghp_...
     python3 scripts/collect_approved.py --tracking-issue 42
-    python3 scripts/collect_approved.py --tracking-issue 42 --output reports/approved-bauer.json
 
 Environment:
-    GITHUB_TOKEN — Personal access token with repo scope
+    GITHUB_TOKEN — Only needed for --tracking-issue mode
 """
 
 import argparse
@@ -53,8 +55,40 @@ def get_issue(repo: str, issue_number: int) -> dict:
         return json.loads(resp.read())
 
 
+def parse_checklist_file(path: str) -> tuple[list[dict], list[dict]]:
+    """Parse a markdown checklist file and return (approved, archived)."""
+    approved = []
+    archived = []
+    current_url = ""
+
+    with open(path, encoding="utf-8") as f:
+        for line in f:
+            # Track current page URL
+            url_match = re.match(r"\*\*Page:\*\* (https?://\S+)", line)
+            if url_match:
+                current_url = url_match.group(1)
+                continue
+
+            m = CHECKBOX_RE.match(line)
+            if m and current_url:
+                finding = {
+                    "url": current_url,
+                    "path": urlparse(current_url).path or "/",
+                    "rule": m.group("rule"),
+                    "section": m.group("section").strip(),
+                    "found": m.group("found").replace("\\`", "`"),
+                    "suggestion": m.group("suggestion").replace("\\`", "`"),
+                }
+                if m.group("checked").strip().lower() == "x":
+                    approved.append(finding)
+                else:
+                    archived.append(finding)
+
+    return approved, archived
+
+
 # ---------------------------------------------------------------------------
-# Parse checked items from issue body
+# Parse checked items from GitHub issue body
 # ---------------------------------------------------------------------------
 
 # Matches: - [x] **[rule]** section: `found` → `suggestion`
@@ -156,8 +190,10 @@ def to_bauer(approved: list[dict]) -> list[dict]:
 def main():
     parser = argparse.ArgumentParser(
         description="Collect approved triage findings and output Bauer JSON")
-    parser.add_argument("--tracking-issue", type=int, required=True,
-                        help="Issue number of the tracking issue")
+    parser.add_argument("--tracking-issue", type=int, default=None,
+                        help="Issue number of the tracking issue (requires GITHUB_TOKEN)")
+    parser.add_argument("--file", type=str, default=None,
+                        help="Path to a markdown checklist file")
     parser.add_argument("--repo", default="canonical/o-naur",
                         help="GitHub repo (default: canonical/o-naur)")
     parser.add_argument("--output", type=str, default=None,
@@ -166,23 +202,29 @@ def main():
                         help="Write archived (unchecked) items to this file")
     args = parser.parse_args()
 
-    # Fetch tracking issue
-    print(f"Fetching tracking issue #{args.tracking_issue}...", file=sys.stderr)
-    tracking = get_issue(args.repo, args.tracking_issue)
-    page_numbers = get_page_issue_numbers(tracking["body"])
-    print(f"Found {len(page_numbers)} page issues to check", file=sys.stderr)
+    if not args.file and not args.tracking_issue:
+        parser.error("Provide either --file or --tracking-issue")
 
-    # Fetch each page issue and collect approved/archived
-    all_approved: list[dict] = []
-    all_archived: list[dict] = []
+    if args.file:
+        # File mode — parse the markdown checklist
+        print(f"Reading checklist: {args.file}", file=sys.stderr)
+        all_approved, all_archived = parse_checklist_file(args.file)
+    else:
+        # GitHub Issues mode
+        print(f"Fetching tracking issue #{args.tracking_issue}...", file=sys.stderr)
+        tracking = get_issue(args.repo, args.tracking_issue)
+        page_numbers = get_page_issue_numbers(tracking["body"])
+        print(f"Found {len(page_numbers)} page issues to check", file=sys.stderr)
 
-    for i, issue_num in enumerate(page_numbers, 1):
-        print(f"[{i}/{len(page_numbers)}] Reading issue #{issue_num}...",
-              file=sys.stderr)
-        issue = get_issue(args.repo, issue_num)
-        approved, archived = parse_issue_findings(issue["body"])
-        all_approved.extend(approved)
-        all_archived.extend(archived)
+        all_approved = []
+        all_archived = []
+        for i, issue_num in enumerate(page_numbers, 1):
+            print(f"[{i}/{len(page_numbers)}] Reading issue #{issue_num}...",
+                  file=sys.stderr)
+            issue = get_issue(args.repo, issue_num)
+            approved, archived = parse_issue_findings(issue["body"])
+            all_approved.extend(approved)
+            all_archived.extend(archived)
 
     print(f"\n✅ {len(all_approved)} approved → Bauer", file=sys.stderr)
     print(f"📦 {len(all_archived)} archived (unchecked)", file=sys.stderr)
