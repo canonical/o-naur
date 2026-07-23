@@ -201,13 +201,12 @@ def parse_approved_ids(review_path: Path) -> set[str]:
     return approved
 
 
-def to_bauer(tickets: list[dict], approved_ids: set[str] | None = None) -> list[dict]:
-    """Group tickets by page and emit Bauer-shaped ActionableSuggestions.
+def to_bauer(tickets: list[dict], approved_ids: set[str] | None = None) -> dict:
+    """Group tickets by page and emit Bauer-shaped parse-result JSON.
 
-    Mirrors canonical/Bauer's internal/gdocs schema: one entry per page
-    carries `suggested_url` (Bauer resolves the target template file from it)
-    and a list of suggestions in ActionableSuggestion form. We never call
-    Bauer — this is a self-contained JSON artifact for them to ingest.
+    Produces the same schema as Bauer's bauer-parse-result.json so that
+    Bauer can ingest it directly (via a --json-file flag) without needing
+    a Google Doc as input.
 
     If approved_ids is given, only tickets whose id is in that set are
     included — this is how the human-review gate is enforced.
@@ -219,14 +218,27 @@ def to_bauer(tickets: list[dict], approved_ids: set[str] | None = None) -> list[
     for t in tickets:
         by_url.setdefault(t["url"], []).append(t)
 
-    pages = []
+    # Build per-page suggestions
+    actionable_suggestions = []
+    file_mappings = {}
+    total_replacements = 0
+
     for url in sorted(by_url):
-        suggestions = []
+        page_path = by_url[url][0]["path"].lstrip("/") or "index"
+        domain = by_url[url][0]["url"].split("//")[1].split("/")[0]
+        file_key = f"{domain}{by_url[url][0]['path']}"
+        suggestion_ids = []
+
         for t in by_url[url]:
             before = t["preceding"] + t["found"] + t["following"]
             after = t["preceding"] + t["suggestion"] + t["following"]
-            suggestions.append({
-                "id": f"onaur-{t['id']}",
+            suggestion_id = f"onaur-{t['id']}"
+            suggestion_ids.append(suggestion_id)
+            total_replacements += 1
+
+            actionable_suggestions.append({
+                "id": suggestion_id,
+                "file": file_key,
                 "anchor": {
                     "preceding_text": t["preceding"],
                     "following_text": t["following"],
@@ -247,8 +259,49 @@ def to_bauer(tickets: list[dict], approved_ids: set[str] | None = None) -> list[
                     "in_metadata": False,
                 },
             })
-        pages.append({"suggested_url": url, "suggestions": suggestions})
-    return pages
+
+        file_mappings[file_key] = {
+            "suggested_file": file_key,
+            "source_reference": f"o-naur page lint: {url}",
+            "suggestion_count": len(suggestion_ids),
+            "suggestion_ids": suggestion_ids,
+        }
+
+    # Assemble the full Bauer-compatible document
+    return {
+        "document_title": "o-naur copy lint — approved fixes",
+        "document_id": None,
+        "document_metadata": {
+            "mode": "page-lint",
+            "source": "o-naur",
+            "scan_date": date.today().isoformat(),
+        },
+        "summary": {
+            "total_suggestions": total_replacements,
+            "total_files": len(file_mappings),
+            "by_file": {
+                key: {
+                    "insertions": 0,
+                    "deletions": 0,
+                    "replacements": fm["suggestion_count"],
+                    "link_adds": 0,
+                    "link_changes": 0,
+                    "link_removes": 0,
+                }
+                for key, fm in file_mappings.items()
+            },
+            "by_type": {
+                "insert": 0,
+                "delete": 0,
+                "replace": total_replacements,
+                "link_add": 0,
+                "link_change": 0,
+                "link_remove": 0,
+            },
+        },
+        "file_mappings": file_mappings,
+        "actionable_suggestions": actionable_suggestions,
+    }
 
 
 def _file_away(src: Path, dst: Path) -> None:
