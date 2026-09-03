@@ -1,0 +1,73 @@
+[
+  {
+    "suggested_url": "https://canonical.com/multipass",
+    "suggestions": [
+      {
+        "id": "onaur-339fbe18791d",
+        "anchor": {
+          "preceding_text": "### ",
+          "following_text": " VM performance"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "Optimised",
+          "new_text": "optimize"
+        },
+        "verification": {
+          "text_before_change": "### Optimised VM performance",
+          "text_after_change": "### optimize VM performance"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Optimised VM performance",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-e66e5effa007",
+        "anchor": {
+          "preceding_text": "### A curated ",
+          "following_text": " of images"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "catalogue",
+          "new_text": "catalog"
+        },
+        "verification": {
+          "text_before_change": "### A curated catalogue of images",
+          "text_after_change": "### A curated catalog of images"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "A curated catalogue of images",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-adaa2d165a89",
+        "anchor": {
+          "preceding_text": "Multipass is growing a ",
+          "following_text": " of images to initialise pre-installed applications to get s"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "catalogue",
+          "new_text": "catalog"
+        },
+        "verification": {
+          "text_before_change": "Multipass is growing a catalogue of images to initialise pre-installed applications to get s",
+          "text_after_change": "Multipass is growing a catalog of images to initialise pre-installed applications to get s"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "A curated catalogue of images",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  }
+]

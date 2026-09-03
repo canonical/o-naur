@@ -1,0 +1,269 @@
+[
+  {
+    "suggested_url": "https://canonical.com/careers/commercial-operations",
+    "suggestions": [
+      {
+        "id": "onaur-ce46f1401c56",
+        "anchor": {
+          "preceding_text": " operate with mastery if you understand your domain deeply, ",
+          "following_text": " re-use and iteration, and bring a sharp mind to every probl"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "prioritise",
+          "new_text": "prioritize"
+        },
+        "verification": {
+          "text_before_change": " operate with mastery if you understand your domain deeply, prioritise re-use and iteration, and bring a sharp mind to every probl",
+          "text_after_change": " operate with mastery if you understand your domain deeply, prioritize re-use and iteration, and bring a sharp mind to every probl"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Projects you'll work on",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-fc044ea82460",
+        "anchor": {
+          "preceding_text": "ou find time zones easy and if technical customers are your ",
+          "following_text": "."
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "favourite",
+          "new_text": "favorite"
+        },
+        "verification": {
+          "text_before_change": "ou find time zones easy and if technical customers are your favourite.",
+          "text_after_change": "ou find time zones easy and if technical customers are your favorite."
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Who you are",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/careers/company-culture/sustainability",
+    "suggestions": [
+      {
+        "id": "onaur-83e6997cda12",
+        "anchor": {
+          "preceding_text": "Whether it's travelling to see customers,  running a ",
+          "following_text": ", or just making Ubuntu energy efficient for all our users, "
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "data centre",
+          "new_text": "data center"
+        },
+        "verification": {
+          "text_before_change": "Whether it's travelling to see customers,  running a data centre, or just making Ubuntu energy efficient for all our users, ",
+          "text_after_change": "Whether it's travelling to see customers,  running a data center, or just making Ubuntu energy efficient for all our users, "
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Sustainability",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-d1eb83ba157b",
+        "anchor": {
+          "preceding_text": "Whether it's ",
+          "following_text": " to see customers,  running a data centre, or just making Ub"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "travelling",
+          "new_text": "traveling"
+        },
+        "verification": {
+          "text_before_change": "Whether it's travelling to see customers,  running a data centre, or just making Ub",
+          "text_after_change": "Whether it's traveling to see customers,  running a data centre, or just making Ub"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Sustainability",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-e8f2ee4bb2b4",
+        "anchor": {
+          "preceding_text": "our products from the kernel to Ubuntu Desktop, devices and ",
+          "following_text": ", liaising with our strategic partners."
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "data centres",
+          "new_text": "data center"
+        },
+        "verification": {
+          "text_before_change": "our products from the kernel to Ubuntu Desktop, devices and data centres, liaising with our strategic partners.",
+          "text_after_change": "our products from the kernel to Ubuntu Desktop, devices and data center, liaising with our strategic partners."
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "How we've made a difference",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-15a8f93e6ffc",
+        "anchor": {
+          "preceding_text": "We ",
+          "following_text": " sessions to share expertise around exciting topics such as "
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "organise",
+          "new_text": "organize"
+        },
+        "verification": {
+          "text_before_change": "We organise sessions to share expertise around exciting topics such as ",
+          "text_after_change": "We organize sessions to share expertise around exciting topics such as "
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Knowledge sharing",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/careers/legal",
+    "suggestions": [
+      {
+        "id": "onaur-f44dea0b05de",
+        "anchor": {
+          "preceding_text": "upport complex deals in a way that protects all parties and ",
+          "following_text": " friction."
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "minimises",
+          "new_text": "minimize"
+        },
+        "verification": {
+          "text_before_change": "upport complex deals in a way that protects all parties and minimises friction.",
+          "text_after_change": "upport complex deals in a way that protects all parties and minimize friction."
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Projects you'll work on",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/careers/sales",
+    "suggestions": [
+      {
+        "id": "onaur-44eb0f14b7ee",
+        "anchor": {
+          "preceding_text": " and goal-oriented, and you know how to invest your time to ",
+          "following_text": " the benefit for customers and the company."
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "maximise",
+          "new_text": "maximize"
+        },
+        "verification": {
+          "text_before_change": " and goal-oriented, and you know how to invest your time to maximise the benefit for customers and the company.",
+          "text_after_change": " and goal-oriented, and you know how to invest your time to maximize the benefit for customers and the company."
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Who you are",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-640b8ae95a2a",
+        "anchor": {
+          "preceding_text": "You are ",
+          "following_text": ", persistent, friendly and hard-working. You are effective i"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "organised",
+          "new_text": "organize"
+        },
+        "verification": {
+          "text_before_change": "You are organised, persistent, friendly and hard-working. You are effective i",
+          "text_after_change": "You are organize, persistent, friendly and hard-working. You are effective i"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Who you are",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/careers/web-and-design",
+    "suggestions": [
+      {
+        "id": "onaur-ecf09d4ebcca",
+        "anchor": {
+          "preceding_text": "unity to work on every layer of the stack \u2013 from bare metal ",
+          "following_text": " operations to virtualisation infrastructure and cloud, to t"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "data centre",
+          "new_text": "data center"
+        },
+        "verification": {
+          "text_before_change": "unity to work on every layer of the stack \u2013 from bare metal data centre operations to virtualisation infrastructure and cloud, to t",
+          "text_after_change": "unity to work on every layer of the stack \u2013 from bare metal data center operations to virtualisation infrastructure and cloud, to t"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Projects you'll work on",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-02a4e4b590c8",
+        "anchor": {
+          "preceding_text": "ffective in working collaboratively in a digital space, and ",
+          "following_text": " time spent face-to-face at company sprints and summits. You"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "maximise",
+          "new_text": "maximize"
+        },
+        "verification": {
+          "text_before_change": "ffective in working collaboratively in a digital space, and maximise time spent face-to-face at company sprints and summits. You",
+          "text_after_change": "ffective in working collaboratively in a digital space, and maximize time spent face-to-face at company sprints and summits. You"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Who you are",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  }
+]

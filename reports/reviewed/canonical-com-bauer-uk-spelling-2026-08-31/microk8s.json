@@ -1,0 +1,100 @@
+[
+  {
+    "suggested_url": "https://canonical.com/microk8s/features",
+    "suggestions": [
+      {
+        "id": "onaur-d08677090e42",
+        "anchor": {
+          "preceding_text": "Get isolation and ",
+          "following_text": " risk with strict confinement. Run sophisticated and otherwi"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "minimise",
+          "new_text": "minimize"
+        },
+        "verification": {
+          "text_before_change": "Get isolation and minimise risk with strict confinement. Run sophisticated and otherwi",
+          "text_after_change": "Get isolation and minimize risk with strict confinement. Run sophisticated and otherwi"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Strict confinement",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-c36d1ce8b1f0",
+        "anchor": {
+          "preceding_text": "your Kubernetes workloads will be able to run on containers ",
+          "following_text": " for AI/ML workloads or High Performance computing (HPC) tas"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "optimised",
+          "new_text": "optimize"
+        },
+        "verification": {
+          "text_before_change": "your Kubernetes workloads will be able to run on containers optimised for AI/ML workloads or High Performance computing (HPC) tas",
+          "text_after_change": "your Kubernetes workloads will be able to run on containers optimize for AI/ML workloads or High Performance computing (HPC) tas"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "NVIDIA GPU support, ideal for AI/ML and HPC",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-b7c382b65b1c",
+        "anchor": {
+          "preceding_text": "ction of addons made by our community and partners. If your ",
+          "following_text": " is missing, you can easily make your own."
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "favourite",
+          "new_text": "favorite"
+        },
+        "verification": {
+          "text_before_change": "ction of addons made by our community and partners. If your favourite is missing, you can easily make your own.",
+          "text_after_change": "ction of addons made by our community and partners. If your favorite is missing, you can easily make your own."
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Better user experience with addons",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/microk8s/resources",
+    "suggestions": [
+      {
+        "id": "onaur-8ae09efe9e51",
+        "anchor": {
+          "preceding_text": "requirements around which Kubernetes need to ",
+          "following_text": " to become the standard edge platform."
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "optimise",
+          "new_text": "optimize"
+        },
+        "verification": {
+          "text_before_change": "requirements around which Kubernetes need to optimise to become the standard edge platform.",
+          "text_after_change": "requirements around which Kubernetes need to optimize to become the standard edge platform."
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "[Kubernetes: a secure,",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  }
+]

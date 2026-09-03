@@ -1,0 +1,100 @@
+[
+  {
+    "suggested_url": "https://canonical.com/maas/how-maas-works",
+    "suggestions": [
+      {
+        "id": "onaur-60c239a93c26",
+        "anchor": {
+          "preceding_text": "and PXE to control the machines in your ",
+          "following_text": ". For converged infrastructure, MAAS talks to the chassis co"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "data centre",
+          "new_text": "data center"
+        },
+        "verification": {
+          "text_before_change": "and PXE to control the machines in your data centre. For converged infrastructure, MAAS talks to the chassis co",
+          "text_after_change": "and PXE to control the machines in your data center. For converged infrastructure, MAAS talks to the chassis co"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Protocols",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-18f6a675e7b7",
+        "anchor": {
+          "preceding_text": " deployment and the design of physical interconnects in the ",
+          "following_text": "."
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "data centre",
+          "new_text": "data center"
+        },
+        "verification": {
+          "text_before_change": " deployment and the design of physical interconnects in the data centre.",
+          "text_after_change": " deployment and the design of physical interconnects in the data center."
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Physical availability zones",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/maas/resources",
+    "suggestions": [
+      {
+        "id": "onaur-284fdf81192e",
+        "anchor": {
+          "preceding_text": "approximately 200K ",
+          "following_text": " workloads in a seven-day timeframe,"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "containerised",
+          "new_text": "containerize"
+        },
+        "verification": {
+          "text_before_change": "approximately 200K containerised workloads in a seven-day timeframe,",
+          "text_after_change": "approximately 200K containerize workloads in a seven-day timeframe,"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "How Roblox went from Windows to Ubuntu in seven days for edge compute",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-f4a6e6648caa",
+        "anchor": {
+          "preceding_text": "When deploying a bare metal cloud, it\u2019s critical to ",
+          "following_text": " your capital investment."
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "maximise",
+          "new_text": "maximize"
+        },
+        "verification": {
+          "text_before_change": "When deploying a bare metal cloud, it\u2019s critical to maximise your capital investment.",
+          "text_after_change": "When deploying a bare metal cloud, it\u2019s critical to maximize your capital investment."
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "[Turbo charge your bare metal cloud with MAAS](https://ubuntu.com/engage/epa-for-open-ran-infrastructure)",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  }
+]
