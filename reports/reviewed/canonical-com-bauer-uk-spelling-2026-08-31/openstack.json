@@ -1,0 +1,56 @@
+[
+  {
+    "suggested_url": "https://canonical.com/openstack/resources",
+    "suggestions": [
+      {
+        "id": "onaur-a280192b5197",
+        "anchor": {
+          "preceding_text": "ghtened geopolitical uncertainty, digital sovereignty takes ",
+          "following_text": " stage. As governments and their institutions increasingly r"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "centre",
+          "new_text": "center"
+        },
+        "verification": {
+          "text_before_change": "ghtened geopolitical uncertainty, digital sovereignty takes centre stage. As governments and their institutions increasingly r",
+          "text_after_change": "ghtened geopolitical uncertainty, digital sovereignty takes center stage. As governments and their institutions increasingly r"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "[Canonical Infrastructure for the public sector](https://assets.ubuntu.com/v1/774776c6-Canonical%20infrastructure%20for%20the%20public%20sector.pdf)",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/openstack/support",
+    "suggestions": [
+      {
+        "id": "onaur-f144cf2f4d0a",
+        "anchor": {
+          "preceding_text": "e came across a problem, Canonical was absolutely front and ",
+          "following_text": ". The attitude was always, 'Let's work on this together'. It"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "centre",
+          "new_text": "center"
+        },
+        "verification": {
+          "text_before_change": "e came across a problem, Canonical was absolutely front and centre. The attitude was always, 'Let's work on this together'. It",
+          "text_after_change": "e came across a problem, Canonical was absolutely front and center. The attitude was always, 'Let's work on this together'. It"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "With support from Canonical",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  }
+]

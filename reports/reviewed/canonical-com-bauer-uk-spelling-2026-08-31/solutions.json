@@ -1,0 +1,340 @@
+[
+  {
+    "suggested_url": "https://canonical.com/solutions/ai/edge",
+    "suggestions": [
+      {
+        "id": "onaur-aeb0344b0522",
+        "anchor": {
+          "preceding_text": "Edge-",
+          "following_text": " OS, Kubernetes, compute and data processing"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "optimised",
+          "new_text": "optimize"
+        },
+        "verification": {
+          "text_before_change": "Edge-optimised OS, Kubernetes, compute and data processing",
+          "text_after_change": "Edge-optimize OS, Kubernetes, compute and data processing"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Why Canonical for enterprise AI edge computing?",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-720f82c94048",
+        "anchor": {
+          "preceding_text": "## Solve edge AI complexity with an integrated and ",
+          "following_text": " stack"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "optimised",
+          "new_text": "optimize"
+        },
+        "verification": {
+          "text_before_change": "## Solve edge AI complexity with an integrated and optimised stack",
+          "text_after_change": "## Solve edge AI complexity with an integrated and optimize stack"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Solve edge AI complexity with an integrated and optimised stack",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-93af2d0fc13f",
+        "anchor": {
+          "preceding_text": "buted data processing, Canonical delivers an integrated and ",
+          "following_text": " stack purpose-built to address the specific needs of edge A"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "optimised",
+          "new_text": "optimize"
+        },
+        "verification": {
+          "text_before_change": "buted data processing, Canonical delivers an integrated and optimised stack purpose-built to address the specific needs of edge A",
+          "text_after_change": "buted data processing, Canonical delivers an integrated and optimize stack purpose-built to address the specific needs of edge A"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Solve edge AI complexity with an integrated and optimised stack",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-ea531a09ac68",
+        "anchor": {
+          "preceding_text": "LOps, compute, data processing and certified hardware \u2013 all ",
+          "following_text": " for the edge."
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "optimised",
+          "new_text": "optimize"
+        },
+        "verification": {
+          "text_before_change": "LOps, compute, data processing and certified hardware \u2013 all optimised for the edge.",
+          "text_after_change": "LOps, compute, data processing and certified hardware \u2013 all optimize for the edge."
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Solve edge AI complexity with an integrated and optimised stack",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-17a54f622e50",
+        "anchor": {
+          "preceding_text": "ified hardware. We partner directly with silicon vendors to ",
+          "following_text": " and certify our solutions with dedicated edge AI hardware, "
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "optimise",
+          "new_text": "optimize"
+        },
+        "verification": {
+          "text_before_change": "ified hardware. We partner directly with silicon vendors to optimise and certify our solutions with dedicated edge AI hardware, ",
+          "text_after_change": "ified hardware. We partner directly with silicon vendors to optimize and certify our solutions with dedicated edge AI hardware, "
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Move faster with certified hardware",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-ff20609ac1fa",
+        "anchor": {
+          "preceding_text": "## Ubuntu Core: the edge-",
+          "following_text": " OS"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "optimised",
+          "new_text": "optimize"
+        },
+        "verification": {
+          "text_before_change": "## Ubuntu Core: the edge-optimised OS",
+          "text_after_change": "## Ubuntu Core: the edge-optimize OS"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Ubuntu Core: the edge-optimised OS",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-2747a56025cf",
+        "anchor": {
+          "preceding_text": "\u2013 containerised software packages \u2013 and ",
+          "following_text": " for edge performance, security and reliable updates."
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "optimised",
+          "new_text": "optimize"
+        },
+        "verification": {
+          "text_before_change": "\u2013 containerised software packages \u2013 and optimised for edge performance, security and reliable updates.",
+          "text_after_change": "\u2013 containerised software packages \u2013 and optimize for edge performance, security and reliable updates."
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Ubuntu Core: the edge-optimised OS",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-950651991240",
+        "anchor": {
+          "preceding_text": "\u2013 ",
+          "following_text": " software packages \u2013 and optimised for edge performance, sec"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "containerised",
+          "new_text": "containerize"
+        },
+        "verification": {
+          "text_before_change": "\u2013 containerised software packages \u2013 and optimised for edge performance, sec",
+          "text_after_change": "\u2013 containerize software packages \u2013 and optimised for edge performance, sec"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Ubuntu Core: the edge-optimised OS",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-6077c3e0ea85",
+        "anchor": {
+          "preceding_text": "e, you can create your own Dedicated Snap Store: a private, ",
+          "following_text": " platform for publishing and distributing software to your d"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "centralised",
+          "new_text": "centralize"
+        },
+        "verification": {
+          "text_before_change": "e, you can create your own Dedicated Snap Store: a private, centralised platform for publishing and distributing software to your d",
+          "text_after_change": "e, you can create your own Dedicated Snap Store: a private, centralize platform for publishing and distributing software to your d"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Continuous security and long-term value with OTA updates",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/solutions/automation",
+    "suggestions": [
+      {
+        "id": "onaur-b7abb564f086",
+        "anchor": {
+          "preceding_text": "iners on your first laptop to thousands of instances in the ",
+          "following_text": ""
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "data centre",
+          "new_text": "data center"
+        },
+        "verification": {
+          "text_before_change": "iners on your first laptop to thousands of instances in the data centre",
+          "text_after_change": "iners on your first laptop to thousands of instances in the data center"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Automate a highly available platform for all your apps and services",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/solutions/automotive/buyers-guide",
+    "suggestions": [
+      {
+        "id": "onaur-cabd71599a80",
+        "anchor": {
+          "preceding_text": "ng more advanced power management to ensure energy waste is ",
+          "following_text": ". It\u2019s even more true with the electrification trend."
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "minimised",
+          "new_text": "minimize"
+        },
+        "verification": {
+          "text_before_change": "ng more advanced power management to ensure energy waste is minimised. It\u2019s even more true with the electrification trend.",
+          "text_after_change": "ng more advanced power management to ensure energy waste is minimize. It\u2019s even more true with the electrification trend."
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Power management",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/solutions/open-source-security/cyber-resilience-act",
+    "suggestions": [
+      {
+        "id": "onaur-c3c100712f76",
+        "anchor": {
+          "preceding_text": "LaunchDarkly becomes the first FedRAMP-",
+          "following_text": " feature management platform thanks to Ubuntu Pro"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "authorised",
+          "new_text": "authorize"
+        },
+        "verification": {
+          "text_before_change": "LaunchDarkly becomes the first FedRAMP-authorised feature management platform thanks to Ubuntu Pro",
+          "text_after_change": "LaunchDarkly becomes the first FedRAMP-authorize feature management platform thanks to Ubuntu Pro"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "See Ubuntu Pro in action",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/solutions/telco/5g-edge",
+    "suggestions": [
+      {
+        "id": "onaur-ef11325491b8",
+        "anchor": {
+          "preceding_text": "",
+          "following_text": " MicroCloud's scalable architecture to grow your network cap"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "Utilise",
+          "new_text": "utilize (or better: use)"
+        },
+        "verification": {
+          "text_before_change": "Utilise MicroCloud's scalable architecture to grow your network cap",
+          "text_after_change": "utilize (or better: use) MicroCloud's scalable architecture to grow your network cap"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Highly scalable and resilient infrastructure",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/solutions/ubuntu-os",
+    "suggestions": [
+      {
+        "id": "onaur-557dcd54546a",
+        "anchor": {
+          "preceding_text": "resources efficiently across public and private clouds, and ",
+          "following_text": ". Scale as and when you need with competitive, per-node pric"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "data centres",
+          "new_text": "data center"
+        },
+        "verification": {
+          "text_before_change": "resources efficiently across public and private clouds, and data centres. Scale as and when you need with competitive, per-node pric",
+          "text_after_change": "resources efficiently across public and private clouds, and data center. Scale as and when you need with competitive, per-node pric"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Ubuntu Server",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  }
+]

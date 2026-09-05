@@ -1,0 +1,51 @@
+[
+  {
+    "suggested_url": "https://canonical.com/lxd/manage",
+    "suggestions": [
+      {
+        "id": "onaur-fc98dfefa4d7",
+        "anchor": {
+          "preceding_text": "",
+          "following_text": "."
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "centre",
+          "new_text": "center"
+        },
+        "verification": {
+          "text_before_change": "centre.",
+          "text_after_change": "center."
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Third-party integrations",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-fc98dfefa4d7",
+        "anchor": {
+          "preceding_text": "",
+          "following_text": " into a bare metal cloud."
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "centre",
+          "new_text": "center"
+        },
+        "verification": {
+          "text_before_change": "centre into a bare metal cloud.",
+          "text_after_change": "center into a bare metal cloud."
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Third-party integrations",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  }
+]

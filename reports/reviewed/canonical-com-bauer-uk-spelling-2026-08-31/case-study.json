@@ -1,0 +1,188 @@
+[
+  {
+    "suggested_url": "https://canonical.com/case-study/esa",
+    "suggestions": [
+      {
+        "id": "onaur-6edce6998008",
+        "anchor": {
+          "preceding_text": "",
+          "following_text": ""
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "centre",
+          "new_text": "center"
+        },
+        "verification": {
+          "text_before_change": "centre",
+          "text_after_change": "center"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "About the European Space Agency (ESA)",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-e7c0734e3e54",
+        "anchor": {
+          "preceding_text": "ubernetes, Ceph, PostgreSQL, and Kafka distributions across ",
+          "following_text": " located at ESA\u2019s European Space Operations Centre in Darmst"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "data centres",
+          "new_text": "data center"
+        },
+        "verification": {
+          "text_before_change": "ubernetes, Ceph, PostgreSQL, and Kafka distributions across data centres located at ESA\u2019s European Space Operations Centre in Darmst",
+          "text_after_change": "ubernetes, Ceph, PostgreSQL, and Kafka distributions across data center located at ESA\u2019s European Space Operations Centre in Darmst"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Solution",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-b5b2abc03b3b",
+        "anchor": {
+          "preceding_text": "etes, Ceph, PostgreSQL, and Kafka distributions across data ",
+          "following_text": "s located at ESA\u2019s European Space Operations Centre in Darms"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "centre",
+          "new_text": "center"
+        },
+        "verification": {
+          "text_before_change": "etes, Ceph, PostgreSQL, and Kafka distributions across data centres located at ESA\u2019s European Space Operations Centre in Darms",
+          "text_after_change": "etes, Ceph, PostgreSQL, and Kafka distributions across data centers located at ESA\u2019s European Space Operations Centre in Darms"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Solution",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-c4492748648c",
+        "anchor": {
+          "preceding_text": "etes) is an open source system to deploy, scale, and manage ",
+          "following_text": " applications anywhere. Ceph is an open source storage solut"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "containerised",
+          "new_text": "containerize"
+        },
+        "verification": {
+          "text_before_change": "etes) is an open source system to deploy, scale, and manage containerised applications anywhere. Ceph is an open source storage solut",
+          "text_after_change": "etes) is an open source system to deploy, scale, and manage containerize applications anywhere. Ceph is an open source storage solut"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Solution",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-17b90fcc11f3",
+        "anchor": {
+          "preceding_text": " requirements, while keeping costs low without the need for ",
+          "following_text": " storage hardware."
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "specialised",
+          "new_text": "specialize"
+        },
+        "verification": {
+          "text_before_change": " requirements, while keeping costs low without the need for specialised storage hardware.",
+          "text_after_change": " requirements, while keeping costs low without the need for specialize storage hardware."
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Solution",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-17b90fcc11f3",
+        "anchor": {
+          "preceding_text": " requirements, while keeping costs low without the need for ",
+          "following_text": " storage hardware."
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "specialised",
+          "new_text": "specialize"
+        },
+        "verification": {
+          "text_before_change": " requirements, while keeping costs low without the need for specialised storage hardware.",
+          "text_after_change": " requirements, while keeping costs low without the need for specialize storage hardware."
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Solution",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/case-study/grundium-ubuntu-pro-for-devices",
+    "suggestions": [
+      {
+        "id": "onaur-1321a90a60b1",
+        "anchor": {
+          "preceding_text": "Grundium is a medical device manufacturer that ",
+          "following_text": " in digital microscopy. Their range of microscope scanners a"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "specialises",
+          "new_text": "specialize"
+        },
+        "verification": {
+          "text_before_change": "Grundium is a medical device manufacturer that specialises in digital microscopy. Their range of microscope scanners a",
+          "text_after_change": "Grundium is a medical device manufacturer that specialize in digital microscopy. Their range of microscope scanners a"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "About Grundium",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-80ecd1962ecf",
+        "anchor": {
+          "preceding_text": "ugh Canonical\u2019s partnership with NVIDIA, Ubuntu was already ",
+          "following_text": " and certified for this card, leading Grundium to take on NV"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "optimised",
+          "new_text": "optimize"
+        },
+        "verification": {
+          "text_before_change": "ugh Canonical\u2019s partnership with NVIDIA, Ubuntu was already optimised and certified for this card, leading Grundium to take on NV",
+          "text_after_change": "ugh Canonical\u2019s partnership with NVIDIA, Ubuntu was already optimize and certified for this card, leading Grundium to take on NV"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Solution",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  }
+]

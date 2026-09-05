@@ -1,0 +1,154 @@
+[
+  {
+    "suggested_url": "https://canonical.com/juju",
+    "suggestions": [
+      {
+        "id": "onaur-3a7d2330c2ca",
+        "anchor": {
+          "preceding_text": " can be readily integrated into any infrastructure, and the ",
+          "following_text": " of the charm community."
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "centre",
+          "new_text": "center"
+        },
+        "verification": {
+          "text_before_change": " can be readily integrated into any infrastructure, and the centre of the charm community.",
+          "text_after_change": " can be readily integrated into any infrastructure, and the center of the charm community."
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Deploy and integrate with enterprise-grade software operators",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-c54e2180bf2d",
+        "anchor": {
+          "preceding_text": "JAAS (Juju as a service) is your ",
+          "following_text": " enterprise control plane for Juju deployments."
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "centralised",
+          "new_text": "centralize"
+        },
+        "verification": {
+          "text_before_change": "JAAS (Juju as a service) is your centralised enterprise control plane for Juju deployments.",
+          "text_after_change": "JAAS (Juju as a service) is your centralize enterprise control plane for Juju deployments."
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Add visibility and compliance controls with JAAS.",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/juju/juju-architecture",
+    "suggestions": [
+      {
+        "id": "onaur-3d3078a88e68",
+        "anchor": {
+          "preceding_text": "e your deployment. You can manage everything from a single, ",
+          "following_text": " Juju controller, or you can have multiple controllers insta"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "centralised",
+          "new_text": "centralize"
+        },
+        "verification": {
+          "text_before_change": "e your deployment. You can manage everything from a single, centralised Juju controller, or you can have multiple controllers insta",
+          "text_after_change": "e your deployment. You can manage everything from a single, centralize Juju controller, or you can have multiple controllers insta"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "A single tool to deploy and manage apps across VMs, Kubernetes, bare metal and cloud",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/juju/model-driven-operations-manifesto",
+    "suggestions": [
+      {
+        "id": "onaur-edfcec6124b2",
+        "anchor": {
+          "preceding_text": "on every cloud or Kubernetes, and should also automatically ",
+          "following_text": " for its environment and take advantage of local, differenti"
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "optimise",
+          "new_text": "optimize"
+        },
+        "verification": {
+          "text_before_change": "on every cloud or Kubernetes, and should also automatically optimise for its environment and take advantage of local, differenti",
+          "text_after_change": "on every cloud or Kubernetes, and should also automatically optimize for its environment and take advantage of local, differenti"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Multi-cloud optimisation",
+          "in_table": false,
+          "in_metadata": false
+        }
+      },
+      {
+        "id": "onaur-dca2fa802838",
+        "anchor": {
+          "preceding_text": " or performance. An operator should handle dynamic changes, ",
+          "following_text": " for admin intent, and scale up or down equally well."
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "optimise",
+          "new_text": "optimize"
+        },
+        "verification": {
+          "text_before_change": " or performance. An operator should handle dynamic changes, optimise for admin intent, and scale up or down equally well.",
+          "text_after_change": " or performance. An operator should handle dynamic changes, optimize for admin intent, and scale up or down equally well."
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Scalability",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  },
+  {
+    "suggested_url": "https://canonical.com/juju/why-juju",
+    "suggestions": [
+      {
+        "id": "onaur-0536cc0e24ad",
+        "anchor": {
+          "preceding_text": " are a first class citizen in Juju, the system knows how to ",
+          "following_text": " the lifecycle management of the entire system, rather than "
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "optimise",
+          "new_text": "optimize"
+        },
+        "verification": {
+          "text_before_change": " are a first class citizen in Juju, the system knows how to optimise the lifecycle management of the entire system, rather than ",
+          "text_after_change": " are a first class citizen in Juju, the system knows how to optimize the lifecycle management of the entire system, rather than "
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "What makes Juju and charms different?",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "suggested_url": "https://canonical.com/observability/managed",
+    "suggestions": [
+      {
+        "id": "onaur-3e11d87a1040",
+        "anchor": {
+          "preceding_text": "Private Cloud/",
+          "following_text": ""
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "Data Centre",
+          "new_text": "data center"
+        },
+        "verification": {
+          "text_before_change": "Private Cloud/Data Centre",
+          "text_after_change": "Private Cloud/data center"
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "Contact us about Managed Observability",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  }
+]
