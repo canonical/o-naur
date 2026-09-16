@@ -1,0 +1,29 @@
+[
+  {
+    "suggested_url": "https://canonical.com/documentation/open-documentation-academy",
+    "suggestions": [
+      {
+        "id": "onaur-d1b94386f803",
+        "anchor": {
+          "preceding_text": "on. Research. Write. Commit. Fill blanks in your resume and ",
+          "following_text": " your GitHub Activity tracker golden."
+        },
+        "change": {
+          "type": "replace",
+          "original_text": "colour",
+          "new_text": "color"
+        },
+        "verification": {
+          "text_before_change": "on. Research. Write. Commit. Fill blanks in your resume and colour your GitHub Activity tracker golden.",
+          "text_after_change": "on. Research. Write. Commit. Fill blanks in your resume and color your GitHub Activity tracker golden."
+        },
+        "location": {
+          "section": "Body",
+          "parent_heading": "What we offer",
+          "in_table": false,
+          "in_metadata": false
+        }
+      }
+    ]
+  }
+]
